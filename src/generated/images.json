@@ -1,0 +1,729 @@
+{
+  "home/applied-science-back": {
+    "width": 1581,
+    "height": 1004,
+    "aspect": 1.5747,
+    "alpha": true,
+    "color": "#080808",
+    "placeholder": "data:image/webp;base64,UklGRmgBAABXRUJQVlA4WAoAAAAQAAAAEwAADAAAQUxQSLIAAAABgJpt27LlfuX3fwMke/JkIzjNmcAjbOBQnSVIMIFGbRDdn/d97l93iIgJQLnH5N1ydwYAnDcod+h6pcrj0WyTRWWL+juKKJW/N9tjNRYwyJ0zkBpFSAauwVgcUVhZ4x+fmuCwSmF15WcPHMYZtZpGjsOj/4uR1YUrcGh95n/UKsI9WGBXIqlBAknhWRYGMHUDOxc/JDX887YOFpWTDdMnt1H50gmHcuucAZBvmzsdgkc5VlA4IJAAAAAQBACdASoUAA0APu1iqU2ppaOiMAgBMB2JZQAAYcAkBo/171r0FswIAAD+6ZnC4R64bDcZJvkC3+MBTYje57E+B6813DqG7hPrx6Hr4ZPzEcr00D4qjT8WnFnBx2YX+4fXLtF1ganFWd2AK54jqzQy/j9jd5EmmPWF+n+9uKMMenpHIzQBqxAFmRmQ2gOoAAA=",
+    "widths": [
+      420,
+      840
+    ],
+    "avif": [
+      {
+        "w": 420,
+        "src": "/img/home/applied-science-back-420.avif",
+        "bytes": 12691
+      },
+      {
+        "w": 840,
+        "src": "/img/home/applied-science-back-840.avif",
+        "bytes": 28112
+      }
+    ],
+    "webp": [
+      {
+        "w": 420,
+        "src": "/img/home/applied-science-back-420.webp",
+        "bytes": 14178
+      },
+      {
+        "w": 840,
+        "src": "/img/home/applied-science-back-840.webp",
+        "bytes": 35054
+      }
+    ]
+  },
+  "home/craft-villages-back": {
+    "width": 963,
+    "height": 1350,
+    "aspect": 0.7133,
+    "alpha": true,
+    "color": "#080808",
+    "placeholder": "data:image/webp;base64,UklGRjgCAABXRUJQVlA4WAoAAAAQAAAAEwAAGwAAQUxQSAoBAAABkGvb1rFn+0Nss7WdKiN9OtutzQuwkx+tWttWxdK2jQe7eXUJEaG2bRuGydjfuNkTA7g8LljGO37YWeYGPG4r96mprnRFWJffopRa8816ASzKL1JRS0mKcy0hpvLDlCSphNZ8sZgNwIO9RqQWkvx/oi4I2EFhYFH+dBxzlmj46I3vjA1S8114P6Wtb8ndDvxOq6eyJYoqqW2xopwOsrJA2VKsS/lnS7Ir/pctwb7Qjw5MB7ykENrGLIYekVooS5suBFYd/UNKqc0lu+CGC5mzT0ktldE+wOV1AcGNp/8ZyyXPAADcHgB5K69ILQRvAABM5eHtl/5T8R4AwKq8ZNsbPgMAWJW7ENVzDFZQOCAIAQAAkAUAnQEqFAAcAD7tYqxQKaUkIrAYCAEwHYlsAJ0B3AuAkqB5sGpsK4kRNvb4A/B/y4mlOAAA/q0/AoHTaYC9ZXcwjBCuuNrW31RX2Fpjzh8W+T42/a86WixQ4tvUYl31OTpdZKMUJAQfW44fHbK7Z+EPJhp2/I8bPGVhsXwomQFcRn93MdpMtp/KqTfp1D2LoC09KBKODnLtfPcm5BM76AOV8mWpFGWCUfadC0WzInMUnGMQkmPdv9CJcMfjtg3eAr+iVV5KSkSulogQcoKqJvfR8WLx2zbiI9gE/npkt7yUM2cM8Au+8et1h08FI5QXqH5ppBGdI/WZ0mloq0QqQKdEDwengAAA",
+    "widths": [
+      420,
+      840
+    ],
+    "avif": [
+      {
+        "w": 420,
+        "src": "/img/home/craft-villages-back-420.avif",
+        "bytes": 31689
+      },
+      {
+        "w": 840,
+        "src": "/img/home/craft-villages-back-840.avif",
+        "bytes": 62910
+      }
+    ],
+    "webp": [
+      {
+        "w": 420,
+        "src": "/img/home/craft-villages-back-420.webp",
+        "bytes": 35308
+      },
+      {
+        "w": 840,
+        "src": "/img/home/craft-villages-back-840.webp",
+        "bytes": 78556
+      }
+    ]
+  },
+  "home/my-journey-back": {
+    "width": 1053,
+    "height": 1658,
+    "aspect": 0.6351,
+    "alpha": true,
+    "color": "#080808",
+    "placeholder": "data:image/webp;base64,UklGRjICAABXRUJQVlA4WAoAAAAQAAAAEwAAHgAAQUxQSBcBAAABkLNtm2m7A3pm5iC2k9YsbZV2UttOWrZmxcqp2Nqq7KS19c28wVpzEhETQHFg7m48+Y52rzQYn+c5IF2phcsJjFM0rSRkOJo9UEx62wlfFtgmk0xHcSWBkTFJUtRUQoGj/h3FosfNcf8ENshUaNpEADz9visVJf0ciMdRfVGmUtPFKlxgtUyZpqUEen5Uykl63R7OyJRtOsgimWoYNfG2Yk1M56f8jzkcleWZTkCnN0o5Se+7ElghyzEtJziqLsvKTGcrcQQG/0olSV974YHAVlnRL60hADhaPFX8J+pGXdw/BKYXpPRrKJ5ix3GZ9EsbCZR6urxTirrbBFdGYLUsaRSBTEft69IePNmBoXreGpeHZ/cMAsUAVlA4IPQAAACwBQCdASoUAB8APu1oqk+ppiOiMBgIATAdiWgAzvgSUr1PcsyqpKdHok4s1hFHCY0EoSAIxCgA/ucg55T6xotaMyP3wq9NPfl/Yu/eGr1SvEe1nhUhrw+z/FWRLb88w6Xus/BgfbLvB2L4VJi3x8456p1yxLcmjpaSrvE2ZrQgOYyl+pKFegrk3RAI/OYjua/BbiMbK5BYuH5UvDnJVKhhBzNcRaudFf+5DspNfkRZQ9IY0uXzkISOwsCS+R9NWSacYNY8ZqVHgMhTBESjC95I99olSN29DCV04bPH0Yjeo6XJA53uGyNaBncVuwFqbCo550gA",
+    "widths": [
+      420,
+      840
+    ],
+    "avif": [
+      {
+        "w": 420,
+        "src": "/img/home/my-journey-back-420.avif",
+        "bytes": 30393
+      },
+      {
+        "w": 840,
+        "src": "/img/home/my-journey-back-840.avif",
+        "bytes": 76305
+      }
+    ],
+    "webp": [
+      {
+        "w": 420,
+        "src": "/img/home/my-journey-back-420.webp",
+        "bytes": 33242
+      },
+      {
+        "w": 840,
+        "src": "/img/home/my-journey-back-840.webp",
+        "bytes": 88616
+      }
+    ]
+  },
+  "home/my-little-village-back": {
+    "width": 1573,
+    "height": 998,
+    "aspect": 1.5762,
+    "alpha": true,
+    "color": "#080808",
+    "placeholder": "data:image/webp;base64,UklGRpQBAABXRUJQVlA4WAoAAAAQAAAAEwAADAAAQUxQSLIAAAABgBtb2zLl/pLtLkQ7WwBDyBB6xpBqF+7aBgVoBRaRQ+yWuUMBv3zf+2BfDxExASRpBFDrXrxZIiVc7Z3beXSmrI/kT713ae/FSbLS6bGFGFiXl6wsvUlOhxUiaJwrN9P/pdaJgfYveYWdlklJGTFvITM3QELCqsqQvD7agJhtlQHzuY7rEFE7kpPMO+clpzUgpvVRhTNJ/mF/obsBkNCfyfzt7mxXM+GE0YOpjmaAOEkiVlA4ILwAAABwBACdASoUAA0APu1iqU2ppaOiMAgBMB2JbACdMoMjkngsf8ishHIGFyJ+BAD+yNZJytONREKv9+waLVhaUrNJoevXk6Q0YEu274DphO6eTZOfuaC2wbb3R2HdDN/V27ti6IqRwUhaSKEVkLAPDR/PsJkE/q310s9jihMNqGD1UGYUy67c7vHzilsPnTsN2Ulxw1OLqovhz1Y7fF180gXNy5SxvhxihFqOjX+JU3MT+hgaza+SVrJwsQAAAA==",
+    "widths": [
+      420,
+      840
+    ],
+    "avif": [
+      {
+        "w": 420,
+        "src": "/img/home/my-little-village-back-420.avif",
+        "bytes": 14383
+      },
+      {
+        "w": 840,
+        "src": "/img/home/my-little-village-back-840.avif",
+        "bytes": 30708
+      }
+    ],
+    "webp": [
+      {
+        "w": 420,
+        "src": "/img/home/my-little-village-back-420.webp",
+        "bytes": 14604
+      },
+      {
+        "w": 840,
+        "src": "/img/home/my-little-village-back-840.webp",
+        "bytes": 35176
+      }
+    ]
+  },
+  "home/stage-and-screen-back": {
+    "width": 986,
+    "height": 1333,
+    "aspect": 0.7397,
+    "alpha": true,
+    "color": "#080808",
+    "placeholder": "data:image/webp;base64,UklGRgwCAABXRUJQVlA4WAoAAAAQAAAAEwAAGgAAQUxQSA4BAAABkGptmyI5X1UtM/NK1nQDDJJBMjNYhih2UcyaSZGKzK4PKebUX/UFq28hIiYAwToGQPHq3QBlNJDYcfk9D/6ltAFU1cYhveOjv3SMAjIHb/0gnbW8AWUMEFN/8iU9xZHCCwBQMvPUkSL82/IUEpvOv6X31vHfltvYp1CEgZZLuMzvnsHCIdygMNg7duondBHIhoTn0VxN6mv6KN/Lcj9H+5hb/jPam6Q6H8XxILaJnlGeoIcugvAGRilh7jsvYo02wItQeAT7Ac568u2Zxlic/pcXIe3jyUIo4DqFFOvJF0frNKAN8IBWHPn1Zn8GoIwCgGd09Ifr1QCMwb9f8O2l1kRAxyj8/+FCKaCMRjBWUDgg2AAAAPAFAJ0BKhQAGwA+7WaqT6mlI6IwGAgBMB2JagCdMxAvVC2IjV/rXFng5OJhss6cljTVJrAIu1mwAP7Tnc0A7KzTXADmMUvnNXpi1uru2F9rObflCPPhyU2GqJq2G+wskjQhaZL0Oh05DoIUUzgKSaxfNnexuR27Awv2eyhfbeb1NVMxD0wkem0zpHDNXAQdPVaEiSL4UjsQhT2xfUChS18aS9w6ax78WEy/ZtMpQ2WytlnXsCsg8zvwDOTrXgQHWQcqC2dX6mk/y45A2CsziKPC3gFdAAAAAA==",
+    "widths": [
+      420,
+      840
+    ],
+    "avif": [
+      {
+        "w": 420,
+        "src": "/img/home/stage-and-screen-back-420.avif",
+        "bytes": 22890
+      },
+      {
+        "w": 840,
+        "src": "/img/home/stage-and-screen-back-840.avif",
+        "bytes": 48551
+      }
+    ],
+    "webp": [
+      {
+        "w": 420,
+        "src": "/img/home/stage-and-screen-back-420.webp",
+        "bytes": 25478
+      },
+      {
+        "w": 840,
+        "src": "/img/home/stage-and-screen-back-840.webp",
+        "bytes": 58260
+      }
+    ]
+  },
+  "my-journey/applied-science-1": {
+    "width": 2066,
+    "height": 1261,
+    "aspect": 1.6384,
+    "alpha": true,
+    "color": "#080808",
+    "placeholder": "data:image/webp;base64,UklGRuYAAABXRUJQVlA4WAoAAAAQAAAAEwAACwAAQUxQSDQAAAABPyAWTPxRM+ibRkQEZFATSVK0e3fkqwEcoAgJ+I9/MBDR/wkIYqiGRc6ErzkTFlPJw9oBVlA4IIwAAABQBACdASoUAAwAPu1iqU2ppaOiMAgBMB2JaAC1B8GJ/gPJx03RlDQwyT4AAPfc6r0n7XhADPceAK5Jw8wGVHFFxEjdsAJZF2u1/QlW5y3aHXD36x5icIyleDKUw75Ul+Zx0Jph9Zk8MngDr7yGx+3tLRvmZm1bl7gBRO9dTQiJa/Z4Hkx2kqxlbAAAAA==",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/my-journey/applied-science-1-480.avif",
+        "bytes": 18937
+      },
+      {
+        "w": 800,
+        "src": "/img/my-journey/applied-science-1-800.avif",
+        "bytes": 35529
+      },
+      {
+        "w": 1200,
+        "src": "/img/my-journey/applied-science-1-1200.avif",
+        "bytes": 54917
+      },
+      {
+        "w": 1600,
+        "src": "/img/my-journey/applied-science-1-1600.avif",
+        "bytes": 73792
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/my-journey/applied-science-1-480.webp",
+        "bytes": 19314
+      },
+      {
+        "w": 800,
+        "src": "/img/my-journey/applied-science-1-800.webp",
+        "bytes": 38156
+      },
+      {
+        "w": 1200,
+        "src": "/img/my-journey/applied-science-1-1200.webp",
+        "bytes": 61764
+      },
+      {
+        "w": 1600,
+        "src": "/img/my-journey/applied-science-1-1600.webp",
+        "bytes": 86954
+      }
+    ]
+  },
+  "my-journey/applied-science-2": {
+    "width": 2066,
+    "height": 1261,
+    "aspect": 1.6384,
+    "alpha": true,
+    "color": "#184838",
+    "placeholder": "data:image/webp;base64,UklGRsgAAABXRUJQVlA4WAoAAAAQAAAAEwAACwAAQUxQSDQAAAABPyAWTPxRM+ibRkQEZFATSVK0e3fkqwEcoAgJ+I9/MBDR/wkIYqiGRc6ErzkTFlPJw9oBVlA4IG4AAADwAwCdASoUAAwAPu1iqU2ppaOiMAgBMB2JZACdABwoW9Km/sZ1ETQAAP5Oa4OZb7LrnJoNBTHGfW/Z/xa1IBYzgakViMNXIJzgjMoBTtl/hWfCEnb8WSFoUPZgQtAZbIXatWQlM6LZEzkM11QAAA==",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/my-journey/applied-science-2-480.avif",
+        "bytes": 19499
+      },
+      {
+        "w": 800,
+        "src": "/img/my-journey/applied-science-2-800.avif",
+        "bytes": 37169
+      },
+      {
+        "w": 1200,
+        "src": "/img/my-journey/applied-science-2-1200.avif",
+        "bytes": 76765
+      },
+      {
+        "w": 1600,
+        "src": "/img/my-journey/applied-science-2-1600.avif",
+        "bytes": 146398
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/my-journey/applied-science-2-480.webp",
+        "bytes": 19516
+      },
+      {
+        "w": 800,
+        "src": "/img/my-journey/applied-science-2-800.webp",
+        "bytes": 39196
+      },
+      {
+        "w": 1200,
+        "src": "/img/my-journey/applied-science-2-1200.webp",
+        "bytes": 82204
+      },
+      {
+        "w": 1600,
+        "src": "/img/my-journey/applied-science-2-1600.webp",
+        "bytes": 157066
+      }
+    ]
+  },
+  "my-journey/craft-villages-1": {
+    "width": 2396,
+    "height": 1463,
+    "aspect": 1.6377,
+    "alpha": true,
+    "color": "#b8b8b8",
+    "placeholder": "data:image/webp;base64,UklGRsoAAABXRUJQVlA4WAoAAAAQAAAAEwAACwAAQUxQSDoAAAABV6CgbRuGP+G2u6EREQHonysMRZGkRsuL7+EAOQhAAj7iJVbvxEBE/yeACUNpWKSZ4GvTqWMxclwdVlA4IGoAAADwAwCdASoUAAwAPu1iqU2ppaOiMAgBMB2JaAC+SCHKG2uHNyf+NYHgAP3ipLjQxGXi9+WC+caq/rMqFoTjsvgy8ZT6hMfT8T10Qfyb8CpQBl0PVz2QiI57ZJEOyEFVOGQZhcAxdzVQAAAA",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/my-journey/craft-villages-1-480.avif",
+        "bytes": 28648
+      },
+      {
+        "w": 800,
+        "src": "/img/my-journey/craft-villages-1-800.avif",
+        "bytes": 75627
+      },
+      {
+        "w": 1200,
+        "src": "/img/my-journey/craft-villages-1-1200.avif",
+        "bytes": 153129
+      },
+      {
+        "w": 1600,
+        "src": "/img/my-journey/craft-villages-1-1600.avif",
+        "bytes": 244088
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/my-journey/craft-villages-1-480.webp",
+        "bytes": 27234
+      },
+      {
+        "w": 800,
+        "src": "/img/my-journey/craft-villages-1-800.webp",
+        "bytes": 71520
+      },
+      {
+        "w": 1200,
+        "src": "/img/my-journey/craft-villages-1-1200.webp",
+        "bytes": 145304
+      },
+      {
+        "w": 1600,
+        "src": "/img/my-journey/craft-villages-1-1600.webp",
+        "bytes": 238730
+      }
+    ]
+  },
+  "my-journey/craft-villages-2": {
+    "width": 2396,
+    "height": 1524,
+    "aspect": 1.5722,
+    "alpha": true,
+    "color": "#181818",
+    "placeholder": "data:image/webp;base64,UklGRuQAAABXRUJQVlA4WAoAAAAQAAAAEwAADAAAQUxQSDgAAAABT6CgbRuGP9Ey2D+hEREBLMgugDayDX0ioUisBzrRiFKuaERXQET/J8AyxmocaVN8kjfHUWjyB1ZQOCCGAAAA8AMAnQEqFAANAD7tYqlNqaWjojAIATAdiWMAqPQdl1BqnsUqYn6/QAD+fVbv8FSUWpWejHAkcep5FrW9bwZzhrEtmdEFNorvqxEfZbZY0A5KQPDIgVywsrK4fgjuqgWrx/HLtyxcIjSqeW+JSjKvVuJasmddWlJeWvXWZuhgeM2bAJmZAAA=",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/my-journey/craft-villages-2-480.avif",
+        "bytes": 37981
+      },
+      {
+        "w": 800,
+        "src": "/img/my-journey/craft-villages-2-800.avif",
+        "bytes": 84411
+      },
+      {
+        "w": 1200,
+        "src": "/img/my-journey/craft-villages-2-1200.avif",
+        "bytes": 151851
+      },
+      {
+        "w": 1600,
+        "src": "/img/my-journey/craft-villages-2-1600.avif",
+        "bytes": 220568
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/my-journey/craft-villages-2-480.webp",
+        "bytes": 32718
+      },
+      {
+        "w": 800,
+        "src": "/img/my-journey/craft-villages-2-800.webp",
+        "bytes": 77356
+      },
+      {
+        "w": 1200,
+        "src": "/img/my-journey/craft-villages-2-1200.webp",
+        "bytes": 151730
+      },
+      {
+        "w": 1600,
+        "src": "/img/my-journey/craft-villages-2-1600.webp",
+        "bytes": 234910
+      }
+    ]
+  },
+  "my-journey/my-little-village-1": {
+    "width": 2066,
+    "height": 1387,
+    "aspect": 1.4895,
+    "alpha": true,
+    "color": "#f8f8f8",
+    "placeholder": "data:image/webp;base64,UklGRuIAAABXRUJQVlA4WAoAAAAQAAAAEwAADAAAQUxQSC8AAAABL6CmbQOGP9286aAREfFjA8WQJDEbBBbpEM6fJ7wOIKL/E2BiTOPILfg2B4hTCgBWUDggjAAAAPADAJ0BKhQADQA+7WKpTamlo6IwCAEwHYlAE6ACn0rGq1hcLwIAsgAAzjaTv2RiOquH3cXmEV02ys8+HJCs/xesI7G1avpHw80CHYGNcSjIg13BQFcxjjJAaTuA84OKUQhvGWVbW6n+5ezA0rRtEDm9dPlKrnaioagnhQaht9Uo/QapcmlcuugSQsAA",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/my-journey/my-little-village-1-480.avif",
+        "bytes": 39432
+      },
+      {
+        "w": 800,
+        "src": "/img/my-journey/my-little-village-1-800.avif",
+        "bytes": 73492
+      },
+      {
+        "w": 1200,
+        "src": "/img/my-journey/my-little-village-1-1200.avif",
+        "bytes": 105794
+      },
+      {
+        "w": 1600,
+        "src": "/img/my-journey/my-little-village-1-1600.avif",
+        "bytes": 135625
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/my-journey/my-little-village-1-480.webp",
+        "bytes": 36548
+      },
+      {
+        "w": 800,
+        "src": "/img/my-journey/my-little-village-1-800.webp",
+        "bytes": 73930
+      },
+      {
+        "w": 1200,
+        "src": "/img/my-journey/my-little-village-1-1200.webp",
+        "bytes": 118180
+      },
+      {
+        "w": 1600,
+        "src": "/img/my-journey/my-little-village-1-1600.webp",
+        "bytes": 163592
+      }
+    ]
+  },
+  "my-journey/my-little-village-2": {
+    "width": 2066,
+    "height": 1387,
+    "aspect": 1.4895,
+    "alpha": true,
+    "color": "#282828",
+    "placeholder": "data:image/webp;base64,UklGRsQAAABXRUJQVlA4WAoAAAAQAAAAEwAADAAAQUxQSC8AAAABL6CmbQOGP9286aAREfFjA8WQJDEbBBbpEM6fJ7wOIKL/E2BiTOPILfg2B4hTCgBWUDggbgAAAPADAJ0BKhQADQA+7WSqTimlpCIwCAEwHYljAABO/BXjhdNsILvYnAAA/uO5hOhd49Dnb3iIRd5Ww6z1ruHgwu1M/qQR1U58WJd2Qou5P1tendUEC278qgjryCidSFI4+3BvWlrbfCa613WVAAAA",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/my-journey/my-little-village-2-480.avif",
+        "bytes": 17695
+      },
+      {
+        "w": 800,
+        "src": "/img/my-journey/my-little-village-2-800.avif",
+        "bytes": 43165
+      },
+      {
+        "w": 1200,
+        "src": "/img/my-journey/my-little-village-2-1200.avif",
+        "bytes": 114201
+      },
+      {
+        "w": 1600,
+        "src": "/img/my-journey/my-little-village-2-1600.avif",
+        "bytes": 221525
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/my-journey/my-little-village-2-480.webp",
+        "bytes": 17424
+      },
+      {
+        "w": 800,
+        "src": "/img/my-journey/my-little-village-2-800.webp",
+        "bytes": 44246
+      },
+      {
+        "w": 1200,
+        "src": "/img/my-journey/my-little-village-2-1200.webp",
+        "bytes": 120446
+      },
+      {
+        "w": 1600,
+        "src": "/img/my-journey/my-little-village-2-1600.webp",
+        "bytes": 235502
+      }
+    ]
+  },
+  "my-journey/my-little-village-3": {
+    "width": 4212,
+    "height": 1544,
+    "aspect": 2.728,
+    "alpha": true,
+    "color": "#080808",
+    "placeholder": "data:image/webp;base64,UklGRrQAAABXRUJQVlA4WAoAAAAQAAAAEwAABgAAQUxQSCYAAAABJyAQSPyhb42IiA8YiCTj/xUQRQT9c3EZIvo/AaW7V9CAGtA8PVZQOCBoAAAA8AMAnQEqFAAHAD7tZKlNqaWkIjAIATAdiUAXYAPSMRegt+hYPc3+AAD+zY11IGR/42A10MEvyDd8qYUTKDLB3QQdWhbz4tFoR3iLxqexq5jfb5nB8KNe194ElF3lL1K+dq5HaKPAAAA=",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/my-journey/my-little-village-3-480.avif",
+        "bytes": 14163
+      },
+      {
+        "w": 800,
+        "src": "/img/my-journey/my-little-village-3-800.avif",
+        "bytes": 28666
+      },
+      {
+        "w": 1200,
+        "src": "/img/my-journey/my-little-village-3-1200.avif",
+        "bytes": 50202
+      },
+      {
+        "w": 1600,
+        "src": "/img/my-journey/my-little-village-3-1600.avif",
+        "bytes": 75350
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/my-journey/my-little-village-3-480.webp",
+        "bytes": 13150
+      },
+      {
+        "w": 800,
+        "src": "/img/my-journey/my-little-village-3-800.webp",
+        "bytes": 28710
+      },
+      {
+        "w": 1200,
+        "src": "/img/my-journey/my-little-village-3-1200.webp",
+        "bytes": 53248
+      },
+      {
+        "w": 1600,
+        "src": "/img/my-journey/my-little-village-3-1600.webp",
+        "bytes": 81750
+      }
+    ]
+  },
+  "my-journey/stage-and-screen-1": {
+    "width": 1351,
+    "height": 1655,
+    "aspect": 0.8163,
+    "alpha": true,
+    "color": "#98b8b8",
+    "placeholder": "data:image/webp;base64,UklGRvgAAABXRUJQVlA4WAoAAAAQAAAAEwAAGAAAQUxQSDMAAAABYBpJsqqkH0SC0cCncMg+Wrknv4yICUiYICdcA71wL4lPBr/UEhl8X08DvXDbMxcyXwoAVlA4IJ4AAACQBQCdASoUABkAPuVipU2pJaOiMAwBIByJZgCdMoGv/gPIp8yVXPq9p0NOqfdpfjubnY8gAAD+1n1q077N2ig9wos2sROIP+YrM+rX2yYD8jQguxQ0kd5IJc12F1eZN1m2H94Mpn0xKdwKovxB0VqXLo2QrAyYsoyoOkwtdI0wdt534HhTzrLEh/SCnohaQNBBKDbaHSGj9EiESgAAAA==",
+    "widths": [
+      480,
+      800,
+      1200
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/my-journey/stage-and-screen-1-480.avif",
+        "bytes": 25420
+      },
+      {
+        "w": 800,
+        "src": "/img/my-journey/stage-and-screen-1-800.avif",
+        "bytes": 47702
+      },
+      {
+        "w": 1200,
+        "src": "/img/my-journey/stage-and-screen-1-1200.avif",
+        "bytes": 70616
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/my-journey/stage-and-screen-1-480.webp",
+        "bytes": 26206
+      },
+      {
+        "w": 800,
+        "src": "/img/my-journey/stage-and-screen-1-800.webp",
+        "bytes": 53376
+      },
+      {
+        "w": 1200,
+        "src": "/img/my-journey/stage-and-screen-1-1200.webp",
+        "bytes": 86174
+      }
+    ]
+  },
+  "my-journey/stage-and-screen-2": {
+    "width": 1351,
+    "height": 1655,
+    "aspect": 0.8163,
+    "alpha": true,
+    "color": "#080808",
+    "placeholder": "data:image/webp;base64,UklGRkQBAABXRUJQVlA4WAoAAAAQAAAAEwAAGAAAQUxQSDQAAAABYBtJcqKkBZFgNCxFRM9rnsw3I0JAUOiCFQ4vCC/UwEf1oS9sOI9f33wf2tr7RVYfCL4xVlA4IOoAAAAQBQCdASoUABkAPu1sqlGppaOiqAqpMB2JbACsAYzQLnX44l/fbVGHLPFmFwULGioAAPKCqiTt3JP7soZMS3ZwIkcGf35d+thp6pG65wrvDKv3c1jKsRu+BH6nR6rmeSEIX/AUFH1UOh6VS9ouKxQaNXMf69UqYiWv+q+UzbBVir9crd3b1roD6ZbwQ3OU1eK9n4DHWxh+0nEVmfy/2BTn4EXRZEo3Hpu1EiVF2fPocBg+tSwbFuy45/vK3KP8AO11OumGRd941TXnGew3lkZxz1zCky5whqZIC5GsXc5w5JCzl3iy/mAAAAA=",
+    "widths": [
+      480,
+      800,
+      1200
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/my-journey/stage-and-screen-2-480.avif",
+        "bytes": 27400
+      },
+      {
+        "w": 800,
+        "src": "/img/my-journey/stage-and-screen-2-800.avif",
+        "bytes": 45753
+      },
+      {
+        "w": 1200,
+        "src": "/img/my-journey/stage-and-screen-2-1200.avif",
+        "bytes": 67715
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/my-journey/stage-and-screen-2-480.webp",
+        "bytes": 26610
+      },
+      {
+        "w": 800,
+        "src": "/img/my-journey/stage-and-screen-2-800.webp",
+        "bytes": 48666
+      },
+      {
+        "w": 1200,
+        "src": "/img/my-journey/stage-and-screen-2-1200.webp",
+        "bytes": 78918
+      }
+    ]
+  },
+  "my-journey/stage-and-screen-3": {
+    "width": 1351,
+    "height": 1655,
+    "aspect": 0.8163,
+    "alpha": true,
+    "color": "#080808",
+    "placeholder": "data:image/webp;base64,UklGRhwBAABXRUJQVlA4WAoAAAAQAAAAEwAAGAAAQUxQSDMAAAABYBpJsqqkH0SC0cCncMg+Wrknv4yICUiYICdcA71wL4lPBr/UEhl8X08DvXDbMxcyXwoAVlA4IMIAAAAwBQCdASoUABkAPu1iqU2ppaOiMAgBMB2JbAC293+Bnh7a8ShGkIW1mCNSR+wpp5GHoAD+8rTNC25E/WWkfQE1cRpSVUPKUx19iDkv6xNLbNGlWqCwtGKFs5hM6NMPrHEnAa4A2TQ+U2jolEkmVF5lnDRSpMKvlXlTljQX7fFY6Qrroj7flp5iZkYOGqRF2HJ2f0pxHnmvHBGO3Av4y3AJLoeh2BuWD1Jfvhq4OW3r7sb0Fb+19gVozcYdEBPcQogAAA==",
+    "widths": [
+      480,
+      800,
+      1200
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/my-journey/stage-and-screen-3-480.avif",
+        "bytes": 15681
+      },
+      {
+        "w": 800,
+        "src": "/img/my-journey/stage-and-screen-3-800.avif",
+        "bytes": 29911
+      },
+      {
+        "w": 1200,
+        "src": "/img/my-journey/stage-and-screen-3-1200.avif",
+        "bytes": 51414
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/my-journey/stage-and-screen-3-480.webp",
+        "bytes": 18544
+      },
+      {
+        "w": 800,
+        "src": "/img/my-journey/stage-and-screen-3-800.webp",
+        "bytes": 37068
+      },
+      {
+        "w": 1200,
+        "src": "/img/my-journey/stage-and-screen-3-1200.webp",
+        "bytes": 65366
+      }
+    ]
+  }
+}
