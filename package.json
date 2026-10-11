@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "tsc -p . && vite build",
     "preview": "vite preview",
     "images": "node scripts/images.mjs",
     "fonts": "node scripts/fonts.mjs"
@@ -21,6 +21,7 @@
     "@types/react-dom": "^19.3.0",
     "@vitejs/plugin-react": "^5.2.0",
     "sharp": "^0.34.5",
+    "subset-font": "^2.9.0",
     "typescript": "5.9",
     "vite": "^7.3.7"
   }

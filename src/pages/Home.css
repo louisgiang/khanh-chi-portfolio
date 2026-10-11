@@ -1,0 +1,72 @@
+/* Toạ độ theo khung 1920×1080 của thiết kế, nhân với --u.
+   top đã hiệu chỉnh để baseline trùng baseline đo từ ref (xem NOTES.md). */
+.home {
+  min-height: 100svh;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+.home__stage {
+  position: relative;
+  width: calc(var(--u) * 1920);
+  height: calc(var(--u) * 1080);
+}
+.home__stage > * {
+  position: absolute;
+  margin: 0;
+}
+
+.home__flower {
+  left: calc(var(--u) * 90);
+  top: calc(var(--u) * 110);
+  width: calc(var(--u) * 880);
+  height: calc(var(--u) * 890);
+}
+
+.home__arrow {
+  left: calc(var(--u) * 850);
+  top: calc(var(--u) * 225);
+  width: calc(var(--u) * 185);
+  height: calc(var(--u) * 78);
+  color: var(--blue);
+  overflow: visible;
+}
+
+.home__story {
+  left: calc(var(--u) * 970);
+  top: calc(var(--u) * 289.5);
+  font-weight: 700;
+  font-size: calc(var(--u) * 34);
+  line-height: 1;
+  color: var(--blue);
+}
+
+.home__welcome {
+  left: calc(var(--u) * 1260.1);
+  top: calc(var(--u) * 122.8);
+  font-weight: 700;
+  font-size: calc(var(--u) * 65);
+  line-height: calc(var(--u) * 60.1);
+  color: var(--blue);
+  white-space: nowrap;
+}
+
+.home__name {
+  left: calc(var(--u) * 1259.9);
+  top: calc(var(--u) * 703.1);
+  font-weight: 700;
+  font-size: calc(var(--u) * 65);
+  line-height: 1;
+  color: var(--ink);
+  white-space: nowrap;
+}
+
+.home__tagline {
+  left: calc(var(--u) * 1259.5);
+  top: calc(var(--u) * 777.9);
+  font-weight: 500;
+  font-size: calc(var(--u) * 43);
+  line-height: calc(var(--u) * 43);
+  color: var(--ink-2);
+  white-space: nowrap;
+}

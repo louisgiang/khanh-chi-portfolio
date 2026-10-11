@@ -1,0 +1,42 @@
+@import './fonts.css';
+
+:root {
+  --bg: #f5fff0;
+  --blue: #3c88f8;
+  --ink: #000;
+  --ink-2: #2c2d2c;
+  --font: 'Helvetica Neue Web', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  /* 1 đơn vị thiết kế (khung 1920×1080), co theo cả chiều ngang lẫn chiều cao */
+  --u: calc(min(100vw, 100svh * 16 / 9) / 1920);
+  color-scheme: light;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: inherit;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}

@@ -55,3 +55,16 @@
 - Cache theo hash SHA-1 nội dung trong `.image-cache.json`; chạy lại khi không đổi: 0.1s. Tự xóa output mồ côi.
 - Mọi ảnh My Journey là PNG có **alpha (góc bo sẵn)** → giữ alpha trong AVIF/WebP; CSS vẫn bo góc.
 - `assets-src/` không commit (nặng ~100MB); `public/img/` **có** commit để deploy không cần ảnh gốc.
+
+## Bước 3 — Trang chủ + lật cánh hoa
+- **Hình học đo tự động** (script tạm, không nằm trong repo): lấy đa giác 4 đỉnh từ alpha của từng PNG cánh/tia sao, dò vị trí trong ảnh ref (khớp màu cho cánh, khớp viền vàng cho tia sao), lấy màu gradient ở các đỉnh. Kết quả: `src/components/flower/geometry.ts`. Render SVG so với ref: lệch ≤ ~1px ở mép, chỉ khác ở khử răng cưa.
+- Viền vàng tia sao #FFF551, dày 8.7px. Gradient mỗi cánh: 2 điểm dừng nối 2 đỉnh đối diện có màu khác nhau nhất (ước lượng; đoạn giữa có thể lệch nhẹ so với Figma).
+- Thứ tự chồng cánh gần như không ảnh hưởng (chỗ chồng rất nhỏ). Thứ tự Tab theo thanh tab: My Journey → Applied Science → Craft Villages → Stage & Screen → My Little Village.
+- Cỡ chữ đo từ độ rộng chữ trong ref: nhãn cánh Bold 35; "Welcome to / my Portfolio" & "Khanh Chi" Bold 65; "My Story" Bold 34; 4 dòng giới thiệu **Medium 43**. Màu xanh #3C88F8, chữ giới thiệu #2C2D2C. Vị trí chữ chỉnh theo baseline đo trên trình duyệt.
+- Mũi tên "My Story": vẽ lại bằng 1 đường cong + đầu tam giác, lệch ≤1px so với ref.
+- Mặt sau cánh: ảnh "- hover" (đã cắt sẵn) + CSS `clip-path: polygon()` cùng toạ độ với cánh (thay cho `<clipPath>` SVG vì cho phép dùng `<picture>` AVIF/WebP + srcset). Vùng hover/click là lớp SVG đa giác riêng nằm trên cùng.
+- **Tự quyết:** mặt sau có thêm tên mục chữ trắng có bóng mờ (brief cho phép "có thể kèm"; thiết kế hover không có chữ). Bỏ được dễ nếu anh/chị không thích.
+- **Alt ảnh mặt sau: bản nháp, cần duyệt** (trong `Flower.tsx`, hằng `ALT`).
+- Ảnh mặt sau tải sau sự kiện `load` + lúc rảnh, bản 420px (AVIF, tổng ~111KB). Nếu hover trước khi tải xong: hiện ảnh mờ, không bao giờ mặt trắng.
+- Trang thành phần hiện là trang tạm để thử click (Bước 4 làm thật).
+- Build thử: lần tải đầu trang chủ ≈ **179KB** (HTML + CSS + JS brotli 131KB + 2 font 47KB), chưa tính ảnh mặt sau.
