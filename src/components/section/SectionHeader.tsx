@@ -2,16 +2,16 @@ import { useRef, useEffect } from 'react';
 import { Link } from 'react-router';
 import { motion } from 'motion/react';
 import { SECTIONS, type SectionId } from '../../sections';
-import { CONTENT, isImage } from '../../content';
+import { CONTENT } from '../../content';
 import { preloadImage } from '../Img';
 import { DUR, EASE } from '../../motion';
-import { contentSizes } from './sizes';
+import { imageWidths, vwSizes } from './sizes';
 
 /** Tải sẵn ảnh đầu tiên của trang (khi hover/focus tab). */
 function prefetchFirstImage(id: SectionId) {
   const first = CONTENT[id]?.items[0];
-  const img = first?.blocks.find(isImage);
-  if (first && img) preloadImage(img.image, contentSizes(first, img));
+  const img = first && [...imageWidths(first)][0];
+  if (img) preloadImage(img[0], vwSizes(img[1]));
 }
 
 export function SectionHeader({ active }: { active: SectionId }) {

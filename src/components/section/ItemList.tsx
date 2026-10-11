@@ -1,10 +1,10 @@
-import { useCallback, useEffect, useLayoutEffect, useRef, useState } from 'react';
+import { memo, useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { motion, useReducedMotion } from 'motion/react';
 import type { Item } from '../../content';
-import { isImage } from '../../content';
-import { Img, preloadImage } from '../Img';
+import { preloadImage } from '../Img';
+import { ItemContent } from './Blocks';
 import { DUR, EASE } from '../../motion';
-import { contentSizes, toRows } from './sizes';
+import { imageWidths, vwSizes } from './sizes';
 
 const hashId = () => decodeURIComponent(window.location.hash.slice(1));
 
@@ -42,11 +42,16 @@ export function ItemList({ items }: { items: Item[] }) {
     return () => window.removeEventListener('hashchange', onHash);
   }, [items]);
 
-  const toggle = (id: string) => {
-    const next = openId === id ? null : id;
+  // Callback ổn định (không đổi giữa các lần render) → chỉ thẻ đổi trạng thái mới render lại.
+  const toggle = useCallback((id: string) => {
+    const next = openRef.current === id ? null : id;
     setOpenId(next);
     writeHash(next);
-  };
+  }, []);
+  const setRef = useCallback((id: string, el: HTMLElement | null) => {
+    if (el) refs.current.set(id, el);
+    else refs.current.delete(id);
+  }, []);
 
   // Mở xong mà đầu thẻ bị khuất phía trên → cuộn mượt cho đầu thẻ vào màn hình.
   const onOpened = useCallback(
@@ -67,27 +72,33 @@ export function ItemList({ items }: { items: Item[] }) {
           key={item.id}
           item={item}
           open={openId === item.id}
-          onToggle={() => toggle(item.id)}
-          onOpened={() => onOpened(item.id)}
-          setRef={(el) => (el ? refs.current.set(item.id, el) : refs.current.delete(item.id))}
+          onToggle={toggle}
+          onOpened={onOpened}
+          setRef={setRef}
         />
       ))}
     </div>
   );
 }
 
-type Props = { item: Item; open: boolean; onToggle: () => void; onOpened: () => void; setRef: (el: HTMLElement | null) => void };
+type Props = {
+  item: Item;
+  open: boolean;
+  onToggle: (id: string) => void;
+  onOpened: (id: string) => void;
+  setRef: (id: string, el: HTMLElement | null) => void;
+};
 
-function ExpandItem({ item, open, onToggle, onOpened, setRef }: Props) {
+const ExpandItem = memo(function ExpandItem({ item, open, onToggle, onOpened, setRef }: Props) {
   const reduce = useReducedMotion();
   // Ảnh trong ô thu gọn chỉ tải khi chuột di vào / focus / mở.
   const [warmed, setWarmed] = useState(open);
   const warm = () => {
     if (warmed) return;
     setWarmed(true);
-    for (const b of item.blocks) if (isImage(b)) preloadImage(b.image, contentSizes(item, b));
+    for (const [id, w] of imageWidths(item)) preloadImage(id, vwSizes(w));
   };
-  // Nội dung được dựng sẵn (ẩn) để lúc bấm chỉ còn animate chiều cao — không phải dựng DOM giữa chừng.
+  // Nội dung dựng sẵn (ẩn) từ lúc hover để lúc bấm chỉ còn animate chiều cao.
   // Thu xong thì ẩn hẳn (visibility) để không đọc/tab được vào nội dung đang đóng.
   const [settled, setSettled] = useState(!open);
   useEffect(() => {
@@ -97,12 +108,17 @@ function ExpandItem({ item, open, onToggle, onOpened, setRef }: Props) {
     }
   }, [open]);
 
+  const sectionRef = useCallback((el: HTMLElement | null) => setRef(item.id, el), [setRef, item.id]);
+  // Nội dung chỉ được dựng khi sắp mở (hover/focus/mở) → vào trang nhẹ; dựng xong thì giữ lại.
+  const ready = warmed || open;
+  const content = useMemo(() => (ready ? <ItemContent item={item} load /> : null), [item, ready]);
+
   const btnId = `${item.id}-btn`;
   const panelId = `${item.id}-panel`;
   const dur = reduce ? 0 : DUR.expand;
 
   return (
-    <section className={`item${open ? ' is-open' : ''}`} ref={setRef}>
+    <section className={`item${open ? ' is-open' : ''}${!open && settled ? ' is-settled' : ''}`} ref={sectionRef}>
       <span className="item__bg item__bg--closed" aria-hidden="true" />
       <span className="item__bg item__bg--open" aria-hidden="true" />
       <h2 className="item__h">
@@ -114,7 +130,7 @@ function ExpandItem({ item, open, onToggle, onOpened, setRef }: Props) {
           aria-controls={panelId}
           onClick={() => {
             warm();
-            onToggle();
+            onToggle(item.id);
           }}
           onPointerEnter={warm}
           onFocus={warm}
@@ -134,7 +150,7 @@ function ExpandItem({ item, open, onToggle, onOpened, setRef }: Props) {
         initial={false}
         animate={{ height: open ? 'auto' : 0 }}
         transition={{ duration: dur, ease: EASE }}
-        onAnimationComplete={() => (open ? onOpened() : setSettled(true))}
+        onAnimationComplete={() => (open ? onOpened(item.id) : setSettled(true))}
       >
         <motion.div
           className="item__content"
@@ -145,41 +161,9 @@ function ExpandItem({ item, open, onToggle, onOpened, setRef }: Props) {
               : { opacity: 0, y: reduce ? 0 : 16, transition: { duration: reduce ? 0.1 : 0.2, ease: EASE } }
           }
         >
-          <ItemContent item={item} load={warmed} />
+          {content}
         </motion.div>
       </motion.div>
     </section>
   );
-}
-
-function ItemContent({ item, load }: { item: Item; load: boolean }) {
-  return (
-    <>
-      {toRows(item).map((row, i) => {
-        if (row.kind === 'text') return <p key={i} className="item__text">{row.block.text}</p>;
-        if (row.kind === 'images')
-          return (
-            <div key={i} className="item__row">
-              {row.blocks.map((b) => (
-                <Img key={b.image} id={b.image} alt={b.alt} sizes={contentSizes(item, b)} load={load} className="item__img" />
-              ))}
-            </div>
-          );
-        const imgFirst = isImage(row.blocks[0]);
-        return (
-          <div key={i} className={`item__pair${imgFirst ? ' is-img-first' : ''}`}>
-            {row.blocks.map((b) =>
-              isImage(b) ? (
-                <Img key={b.image} id={b.image} alt={b.alt} sizes={contentSizes(item, b)} load={load} className="item__img" />
-              ) : (
-                <p key="t" className="item__text">
-                  {b.text}
-                </p>
-              ),
-            )}
-          </div>
-        );
-      })}
-    </>
-  );
-}
+});

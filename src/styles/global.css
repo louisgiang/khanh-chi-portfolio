@@ -28,6 +28,11 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+/* Luôn chừa chỗ thanh cuộn: trang dài/ngắn đi (mở/thu thẻ) không làm đổi bề ngang → không co giãn cả trang */
+html {
+  scrollbar-gutter: stable;
+}
+
 a {
   color: inherit;
 }

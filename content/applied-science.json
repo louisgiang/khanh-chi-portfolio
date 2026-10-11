@@ -1,0 +1,190 @@
+{
+  "$note": "Chữ chép nguyên văn từ assets-src/Applied Science/ref/. mt = khoảng cách phía trên khối (đơn vị thiết kế 1920, đo từ ref). Ảnh: grow tự tính theo tỉ lệ khung. alt có draft:true = bản nháp chờ duyệt.",
+  "title": "Applied Science",
+  "intro": "If water could speak, it would tell us everything it has carried. Applied Science is how I listen – connecting villages with the water they depend on, and that water with the natural compounds that can purify it.",
+  "items": [
+    {
+      "id": "achievements",
+      "title": "Achievements",
+      "blocks": [
+        { "mt": 32, "text": "Honored with national and international competitions, I’ve turned curiosity into research, and research into a compass pointing me towards communities in need – each award marking not just victory, but a step further along that path." },
+        { "mt": 32, "variant": "heading", "text": "Polyaniline hydroxyapatite materials for environmental treatment\nRice husk-derived Activated Carbon for the Removal of Cu(II) and Pb(II) from Wastewater" },
+        {
+          "mt": 18, "gap": 20,
+          "row": [
+            { "image": "applied-science/achievements-1", "alt": "Giấy chứng nhận iCAN Special Award, cuộc thi International Invention Innovation Competition in Canada 2026", "draft": true, "caption": { "title": "Special Award |", "text": "International Invention Innovation Competition in Canada", "inline": true } },
+            { "image": "applied-science/achievements-2", "alt": "Giấy chứng nhận huy chương bạc, International Invention Innovation Competition in Canada", "draft": true, "caption": { "title": "Silver Medal |", "text": "International Invention Innovation Competition in Canada", "inline": true } },
+            { "image": "applied-science/achievements-3", "alt": "Giấy chứng nhận Great Special Award của Highly Innovative Unique Foundation", "draft": true, "caption": { "title": "Great Special Award", "text": "Highly Innovative and Unique Foundation" } },
+            { "image": "applied-science/achievements-4", "alt": "Giấy chứng nhận Gold Award, WICO 2026", "draft": true, "caption": { "title": "Gold Medal", "text": "World Invention Creativity Olympics" } }
+          ]
+        },
+        { "mt": 28, "variant": "heading", "text": "These recognized materials were built for craft village wastewater – one removes methyl orange and\nmethylene blue from dyeing effluent, the other captures copper and lead from lacquer wastewater." },
+        {
+          "mt": 14, "gap": 10,
+          "row": [
+            { "image": "applied-science/achievements-5", "alt": "Giấy chứng nhận giải đặc biệt VSIC 2025 trao cho Lê Phạm Khánh Chi", "draft": true, "caption": { "title": "Special Prize", "text": "Vinschool Science & Innovation Challenge – Treatment System for Heavy Metal Removal from Battery Leakage" } },
+            { "image": "applied-science/achievements-6", "alt": "Giấy chứng nhận Gold Award, International Creative Papers Conference 2025", "draft": true, "caption": { "title": "Gold Award", "text": "International Creative Papers Conference – Green Economy and Vietnam’s Economic Growth" } },
+            { "image": "applied-science/achievements-7", "alt": "Giấy chứng nhận Bronze Award, International Environmental Olympiad 2026", "draft": true, "caption": { "title": "Bronze Award", "text": "International Environmental Olympiad" } },
+            { "image": "applied-science/achievements-8", "alt": "Giấy chứng nhận Very High Commendation, John Locke Institute Global Essay Prize", "draft": true, "caption": { "title": "Very High Commendation", "text": "John Locke Essay Competition – Applying discount rate to long-run environmental policies" } }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "title": "Research",
+      "blocks": [
+        { "mt": 46, "text": "Exploring where science meets the community, my research bridges environmental chemistry, data, and policy – from microbes and nanomaterials to sensors and cities – each project a step toward turning understanding into care for the environment." },
+        {
+          "mt": 41,
+          "entry": {
+            "side": "right",
+            "image": "applied-science/research-1", "alt": "Trang đầu bài báo “Microbial Treatment of Polluted Water: Mechanisms, Treatment Strategies, Applications, and Future Perspectives”", "draft": true,
+            "title": "Bioremediation of Polluted Waters using Microorganisms | Co-Author",
+            "meta": { "label": "Published:", "text": "Journal of Scientific and Engineering Research" },
+            "text": "I synthesized how microbes and constructed wetlands remove heavy metals, dyes, and other pollutants from water – comparing biosorption with biodegradation and exploring how AI and nanobiotechnology could scale them. Where microbes meet pollution, I turned scattered literature into a clearer path toward sustainable treatment."
+          }
+        },
+        {
+          "entry": {
+            "side": "left",
+            "image": "applied-science/research-2", "alt": "Trang bài báo trên ScienceDirect: Green synthesis and characteristics of Ag-ZnO doped nanoparticles utilizing plant extracts as reducing agents", "draft": true,
+            "title": "Green-Synthesized Ag-ZnO Nanoparticles for Antibiotic Removal",
+            "meta": { "label": "Published:", "text": "Hybrid Advances (Elsevier) - Scopus Q1", "href": "https://www.sciencedirect.com/science/article/pii/S2773207X26000151#abs0010" },
+            "text": "I assisted in synthesizing Ag-ZnO nanoparticles from lime juice and pomelo peel extracts, running tetracycline degradation trials under white LED light. Through this project, I explored how green chemistry can reimagine water treatment – giving new life to everyday plant materials through careful design."
+          }
+        },
+        {
+          "entry": {
+            "side": "right",
+            "image": "applied-science/research-3", "alt": "Trang đầu bản thảo “Improved Traffic-Aware Deep Reinforcement Learning for Simulation-Based Adaptive Air Quality Warning and Traffic Environmental Management in Urban Traffic Environments”", "draft": true,
+            "title": "Traffic-Aware Deep Reinforcement Learning for Adaptive Air Quality Warning | Co-Author",
+            "meta": { "label": "Under Review:", "text": "Journal of Applied Science and Engineering - Scopus Q2" },
+            "text": "I collected, preprocessed, and analyzed data for an urban traffic-environment study. Through this work, I saw how sensing and AI can help cities see pollution sooner."
+          }
+        },
+        {
+          "entry": {
+            "side": "left",
+            "carousel": [
+              { "image": "applied-science/research-4-1", "alt": "Trang 1 bài luận “What discount rate should be applied to long-run environmental policies? Why?”", "draft": true },
+              { "image": "applied-science/research-4-2", "alt": "Trang 2 bài luận về tỉ lệ chiết khấu cho chính sách môi trường dài hạn", "draft": true },
+              { "image": "applied-science/research-4-3", "alt": "Trang 3 bài luận về tỉ lệ chiết khấu cho chính sách môi trường dài hạn", "draft": true }
+            ],
+            "title": "Why No Single Discount Rate Fits Long-Run Environmental Policy",
+            "href": "https://drive.google.com/file/d/1QRc_7J5GdvGjlMEePiFRIwN48T-uWiqM/view",
+            "meta": { "label": "Awarded:", "text": "Very High Commendation in John Locke Essay Competition" },
+            "text": "I extended my research beyond the lab paper and onto the page, taking apart the Ramsey Rule to argue that a century-long horizon calls for a discount rate, not a single fixed number. Rigor, for me, also means putting understanding into words – making a complex idea clear and connecting economics, ethics with the environment."
+          }
+        },
+        {
+          "entry": {
+            "side": "right",
+            "image": "applied-science/research-5", "alt": "Trang đầu bài luận “Building Cities That Can Breathe: Engineering a Living Future”", "draft": true,
+            "title": "Building Cities That Can Breathe: Engineering a Living Future",
+            "href": "https://drive.google.com/file/d/1rqRKzf3hnqYs82mbQc2ULhdzWW2fZ4Tp/view",
+            "meta": { "label": "Awarded:", "text": "Runner-Up Immerse Education Global Essay Competition" },
+            "text": "I looked at my home city as an engineered system, and argued that sustainability must be designed from the start, so that cities adapt to growth rather than scramble to react to it."
+          }
+        }
+      ]
+    },
+    {
+      "id": "personal-product",
+      "title": "Personal Product",
+      "blocks": [
+        { "mt": 24, "variant": "subtitle", "text": "Treatment System for Lead Removal from Household Battery Leakage" },
+        { "mt": 17, "text": "Transforming beakers and equations into tangible solutions, I design tools that give toxic metals nowhere to hide – systems that help households read what an old battery leaves behind, protect their water, and turn chemistry into quiet acts of change." },
+        {
+          "mt": 12, "gap": 15,
+          "row": [
+            { "image": "applied-science/personal-product-1", "alt": "Pin cũ rỉ sét nằm lẫn trong đất cạnh một cây rau non", "draft": true, "note": "In Vietnam, households often throw used batteries away with everyday waste – a quiet habit that lets toxic metals seep into the soil and water around us." },
+            { "image": "applied-science/personal-product-2", "alt": "Nhóm học sinh ngồi trên sàn lắp ráp mô hình thùng chứa pin", "draft": true, "note": "Recognizing this challenge, I led a team of three to prototype a five-layer containment unit for leaking batteries – sand and sawdust to absorb, baking soda to neutralize acid, activated carbon to capture lead – with a pH sensor that flags a leak early, before it can reach soil and water." }
+          ]
+        },
+        {
+          "mt": 14, "gap": 15,
+          "row": [
+            { "image": "applied-science/personal-product-3", "alt": "Thùng nhựa trong chứa các lớp vật liệu lọc, trên nắp đặt pin cũ, gắn cảm biến", "draft": true, "note": "I introduced our product to households and schools, the places where old batteries pile up, and contemplated their feedback for further development." },
+            { "image": "applied-science/personal-product-4", "alt": "Khánh Chi và bạn trình bày sản phẩm bên poster trước ban giám khảo", "draft": true, "note": "After countless refinements born from field tests, I finalized the unit – a fusion of chemistry and sensing. I then brought it to the Vinschool Science & Innovation Challenge, presenting not just a product, but a vision of how humble materials can protect our soil and water." }
+          ]
+        },
+        {
+          "mt": 14, "gap": 15,
+          "row": [
+            { "image": "applied-science/personal-product-5", "alt": "Đội thi cùng thầy cô chụp ảnh trên sân khấu VSIC 2026", "draft": true, "note": "Through three challenging rounds of presentations and evaluations, the project advanced to the final – where it was honored with the Special Prize, a recognition of the harmony between science and the soil and water it serves." },
+            { "spacer": true }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "community",
+      "title": "Community",
+      "blocks": [
+        { "mt": 42, "text": "After diving deep into chemistry and research, I realized its wonder lies not in the lab but in the questions it sparks – even a child can grasp its magic. So I co-organized STEM classes under Youth for Community, bringing hands-on experiments to underprivileged and Dao ethnic students across Northern Vietnam, giving back what I've learned and inspiring young minds to explore the science around them." },
+        {
+          "mt": 37, "gap": 14,
+          "row": [
+            { "image": "applied-science/community-1", "alt": "Khánh Chi cúi xuống giữa đám đông học sinh vùng cao trên sân trường", "draft": true },
+            { "image": "applied-science/community-2", "alt": "Lớp học STEM ngoài trời, học sinh vây quanh các tình nguyện viên áo xanh", "draft": true },
+            { "image": "applied-science/community-3", "alt": "Học sinh dân tộc Dao xem tình nguyện viên làm thí nghiệm tên lửa nước", "draft": true }
+          ]
+        },
+        { "mt": 16, "text": "Through Youth for Community, I taught STEM classes – translating non-Newtonian fluids, natural color indicators, and water rockets into wonder, inviting young minds to see science as the language of curiosity and possibility." },
+        {
+          "mt": 38, "gap": 14,
+          "row": [
+            { "image": "applied-science/community-4", "alt": "Khánh Chi hướng dẫn các đội lắp bệ phóng tên lửa nước trên sân", "draft": true },
+            { "image": "applied-science/community-5", "alt": "Khánh Chi cùng các bạn trước phông nền cuộc thi Tên lửa nước – Khám phá vũ trụ", "draft": true },
+            { "image": "applied-science/community-6", "alt": "Tên lửa nước được phóng lên trước đông người xem", "draft": true }
+          ]
+        },
+        { "mt": 17, "text": "After teaching in small classrooms, I’m eager to see that science spark reaches more students. At the Vietnam STEM, AI and Robotics Championship, I organized a stage where students from across the country came to test their ideas, and co-managed the Water Rocket track, the same experiment I once taught to ethnic children, now launching from the hands of teams who built it themselves." },
+        {
+          "mt": 37, "gap": 14,
+          "row": [
+            { "image": "applied-science/community-7", "alt": "Ảnh chụp màn hình buổi hội thảo trực tuyến X-Interval với các diễn giả", "draft": true, "square": true },
+            { "image": "applied-science/community-8", "alt": "Giấy chứng nhận ban tổ chức X-Interval trao cho Lê Phạm Khánh Chi", "draft": true },
+            { "text": "Beyond the experiments, I set out to change how youngsters approach the environment, as a shared responsibility. I helped organize X-Interval, turning experts’ knowledge about carbon and the energy transition into conversations that anyone could join and carry forward.", "grow": 1.71 }
+          ]
+        },
+        {
+          "mt": 40, "gap": 16,
+          "row": [
+            { "text": "Whether in a workshop or at a community project site during Youth for Impact, I find the same spark in every student – hands raised with wonder, questions flowing about climate, education, and fairness. In their curiosity, I see my younger self, reciting all seventeen SDGs under my breath, tracing how those goals could one day reach the villages I came from.", "grow": 1.71 },
+            { "image": "applied-science/community-9", "alt": "Ảnh chụp màn hình bài trình bày “Leadership with a Global Compass”", "draft": true },
+            { "image": "applied-science/community-10", "alt": "Giấy chứng nhận AIESEC trao cho Lê Phạm Khánh Chi vì dẫn dắt dự án Youth For Impact", "draft": true }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "internship",
+      "title": "Internship",
+      "blocks": [
+        { "mt": 40, "text": "Alongside achievements and research, I ventured into the world where chemistry becomes a working language – applying its precision and patience in a nanotechnology lab and a recycling social enterprise, where my creative designing ideas have to bend to the discarded materials and constraints." },
+        {
+          "mt": 38, "gap": 14,
+          "row": [
+            { "image": "applied-science/internship-1", "alt": "Khánh Chi mặc áo blouse dùng pipet trong phòng thí nghiệm", "draft": true },
+            { "image": "applied-science/internship-2", "alt": "Khánh Chi nhỏ dung dịch vào bình cầu chứa chất lỏng xanh", "draft": true }
+          ]
+        },
+        { "mt": 17, "text": "In collaboration with Prof. Dr. Quoc Trung Vu at the HNUE, I developed green adsorbents from fish scales and rice husks – pulling textile dyes and heavy metal ions out of water, then testing the method on real wastewater from Thuong Tin’s craft villages." },
+        { "mt": 37, "video": { "poster": "applied-science/internship-3", "alt": "Video: Khánh Chi thực tập hè tại phòng Lab ĐHSP Hà Nội", "draft": true, "youtube": "" }, "width": 637 },
+        { "mt": 17, "text": "Stepping into the chemistry lab at HNUE, I was filled with anticipation and curiosity. The air buzzed with the promise of discovery, and I was eager to immerse myself in the world where science meets untreated water." },
+        {
+          "mt": 37, "gap": 15,
+          "row": [
+            { "image": "applied-science/internship-4", "alt": "Khánh Chi ngồi phân loại chai thuỷ tinh cùng chú Đức trong xưởng tái chế", "draft": true },
+            { "image": "applied-science/internship-5", "alt": "Khánh Chi đeo khẩu trang vẽ trang trí lên tấm kính tái chế", "draft": true }
+          ]
+        },
+        { "mt": 16, "text": "As an intern at Red River Recycling, a recycling social enterprise, I met Mr. Duc, its founder, worked beside him through the whole life of discarded glass and plastic – sorting it, processing it into raw material, treating it to be safe, and shaping it into decorative pieces. Through this opportunity, I glimpsed the maker's perspective: how to read a material and let it decide its final form – whether through the patience of sorting or the surprise of shaping." },
+        { "mt": 38, "video": { "poster": "applied-science/internship-6", "alt": "Video: phỏng vấn chú Đức về quy trình và thói quen xử lí, tái chế thuỷ tinh", "draft": true, "youtube": "" }, "width": 637 },
+        { "mt": 16, "variant": "caption", "text": "In conversation with Mr. Duc on how glass is collected, prepared, crashed, decorated, and given a second life." }
+      ]
+    }
+  ]
+}

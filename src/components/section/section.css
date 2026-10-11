@@ -95,7 +95,7 @@
 }
 .page__lead {
   margin: calc(var(--s) * 20) 0 0 calc(var(--s) * -2);
-  font-weight: 500;
+  font-weight: 400;
   font-size: calc(var(--s) * 20);
   line-height: calc(var(--s) * 24);
   color: #222;
@@ -130,7 +130,8 @@
   outline-offset: 4px;
 }
 
-/* Hai lớp nền chồng nhau, chỉ đổi opacity: viền gradient + nền */
+/* Hai lớp nền: nền đỏ cam (thẻ mở) nằm dưới, luôn đục; nền viên thuốc nằm trên, chỉ cao bằng viên thuốc
+   và chỉ lớp này đổi opacity → GPU không phải vẽ lại một lớp gradient cao cả nghìn px mỗi khung hình. */
 .item__bg {
   position: absolute;
   inset: 0;
@@ -138,23 +139,26 @@
   border-radius: inherit;
   border: var(--bw) solid transparent;
   pointer-events: none;
-  transition: opacity var(--dur-expand) var(--ease);
 }
 .item__bg--closed {
+  bottom: auto;
+  height: calc(2 * var(--bw) + var(--s) * 110);
+  transition: opacity var(--dur-expand) var(--ease);
   background:
-    linear-gradient(180deg, rgba(222, 236, 214, 0.55) 0%, rgba(245, 255, 240, 0) 30%, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 0.6) 100%) padding-box,
+    linear-gradient(180deg, rgba(0, 40, 0, 0.012) 0%, rgba(0, 0, 0, 0) 30%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0.4) 100%) padding-box,
     linear-gradient(var(--bg), var(--bg)) padding-box,
     linear-gradient(90deg, #ffd952 0%, #ffd952 6%, #ffada6 34%, #ffd559 60%, #feaa5c 73%, #fc656b 89%, #fc656b 100%) border-box;
-  box-shadow: inset calc(var(--s) * 6) calc(var(--s) * 4) calc(var(--s) * 14) rgba(40, 70, 30, 0.05);
+  box-shadow: inset calc(var(--s) * 4) calc(var(--s) * 3) calc(var(--s) * 10) rgba(40, 70, 30, 0.03);
 }
 .item__bg--open {
-  opacity: 0;
+  z-index: -2;
   background:
     linear-gradient(90deg, #fc656b 0%, #ffae51 100%) padding-box,
     linear-gradient(90deg, #fc656b 0%, #ffd952 100%) border-box;
 }
-.item.is-open .item__bg--open {
-  opacity: 1;
+/* Đóng hẳn: ẩn nền đỏ cam để không lộ viền mép bo góc dưới viên thuốc */
+.item.is-settled .item__bg--open {
+  visibility: hidden;
 }
 .item.is-open .item__bg--closed {
   opacity: 0;
@@ -205,9 +209,8 @@
   overflow: hidden;
 }
 .item__content {
-  display: flex;
-  flex-direction: column;
-  gap: calc(var(--s) * 25);
+  /* Lớp GPU riêng: khi khung giãn/thu không phải vẽ lại ảnh và chữ bên trong mỗi khung hình */
+  will-change: transform;
   padding: 0 calc(var(--s) * 40) calc(var(--s) * 23.1);
 }
 .item__text {
@@ -236,4 +239,187 @@
 }
 .item__pair.is-img-first {
   grid-template-columns: 56.885% 1fr;
+}
+
+.item__legacy {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--s) * 25);
+}
+.item__img.is-square {
+  border-radius: 0;
+}
+
+/* ---------- Khối của Applied Science ---------- */
+.item__text--heading {
+  font-weight: 700;
+  text-align: center;
+  white-space: pre-line;
+}
+.item__text--subtitle {
+  font-weight: 700;
+  font-size: calc(var(--s) * 30);
+}
+.item__text--caption {
+  max-width: calc(var(--s) * 637);
+  margin: 0 auto;
+  font-weight: 700;
+  text-align: center;
+}
+
+.item__flex {
+  display: flex;
+  align-items: flex-start;
+}
+.item__flex.is-center {
+  align-items: center;
+}
+.item__cell {
+  flex-basis: 0;
+  min-width: 0;
+}
+/* Ô chú thích dưới ảnh (Achievements) */
+.item__caption {
+  margin: calc(var(--s) * 8) 0 0;
+  padding: calc(var(--s) * 2) calc(var(--s) * 6);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: calc(var(--s) * 10);
+  background: rgba(255, 255, 255, 0.12);
+  font-weight: 400;
+  font-size: calc(var(--s) * 15);
+  line-height: 1;
+  text-align: center;
+  color: #fff;
+}
+.item__caption strong {
+  font-weight: 700;
+}
+.item__note {
+  margin: calc(var(--s) * 20.8) 0 0;
+  font-weight: 500;
+  font-size: calc(var(--s) * 16);
+  line-height: 1;
+  color: #fff;
+}
+
+.item__link {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: max(1px, calc(var(--s) * 2));
+  text-underline-offset: 0.12em;
+}
+.item__link:hover {
+  text-decoration-thickness: max(2px, calc(var(--s) * 3));
+}
+.item__link:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+}
+
+/* Mục nghiên cứu: ảnh tài liệu một bên, chữ một bên, ngăn bằng đường kẻ */
+.entry {
+  display: grid;
+  grid-template-columns: 1fr calc(var(--s) * 371);
+  column-gap: calc(var(--s) * 28);
+  align-items: center;
+  padding: calc(var(--s) * 45) 0 calc(var(--s) * 44);
+  border-top: max(1px, calc(var(--s) * 2)) solid rgba(255, 255, 255, 0.5);
+}
+.entry.is-last {
+  padding-bottom: 0;
+}
+.entry--right .entry__media {
+  order: 2;
+}
+.entry--left {
+  grid-template-columns: calc(var(--s) * 371) 1fr;
+}
+.entry--left.has-carousel {
+  grid-template-columns: calc(var(--s) * 397) 1fr;
+}
+.entry__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: calc(var(--s) * 30);
+  line-height: 1;
+  color: #fff;
+}
+.entry__meta {
+  margin: calc(var(--s) * 15) 0 calc(var(--s) * 16);
+  font-weight: 400;
+  font-size: calc(var(--s) * 25);
+  line-height: calc(var(--s) * 25);
+  color: #fff;
+}
+.entry__meta strong {
+  font-weight: 700;
+}
+
+.carousel {
+  display: grid;
+  grid-template-columns: calc(var(--s) * 16) 1fr calc(var(--s) * 16);
+  column-gap: calc(var(--s) * 15);
+  align-items: center;
+}
+.carousel__btn {
+  display: grid;
+  place-items: center;
+  width: calc(var(--s) * 16 + 16px);
+  height: calc(var(--s) * 19 + 24px);
+  margin: 0 -8px;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+.carousel__btn svg {
+  width: calc(var(--s) * 16);
+  height: calc(var(--s) * 19);
+  fill: #fff;
+  transition: transform 0.2s var(--ease);
+}
+.carousel__btn:hover svg {
+  transform: scale(1.15);
+}
+.carousel__btn:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+.carousel__viewport {
+  overflow: hidden;
+}
+.carousel__track {
+  display: flex;
+}
+.carousel__slide {
+  flex: 0 0 100%;
+}
+
+.video {
+  position: relative;
+  margin: 0 auto;
+}
+.video__frame {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  border-radius: calc(var(--s) * 20);
+}
+.video__play {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+.video__play svg {
+  width: calc(var(--s) * 68);
+  transition: transform 0.2s var(--ease);
+}
+.video__play:hover svg,
+.video__play:focus-visible svg {
+  transform: scale(1.1);
 }

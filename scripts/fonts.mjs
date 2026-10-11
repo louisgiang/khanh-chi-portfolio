@@ -9,6 +9,7 @@ const OUT = path.join(ROOT, 'src', 'assets', 'fonts');
 
 const FONTS = [
   { src: 'HelveticaNeue-Bold.otf', out: 'hn-700.woff2' },
+  { src: 'HelveticaNeue-Roman.otf', out: 'hn-400.woff2' }, // giới thiệu Applied Science, chú thích, dòng 'Published:'
   { src: 'HelveticaNeue-Medium.otf', out: 'hn-500.woff2' },
   { src: 'HelveticaNeue-LightItalic-09.ttf', out: 'hn-300i.woff2' }, // đoạn giới thiệu My Journey
 ];

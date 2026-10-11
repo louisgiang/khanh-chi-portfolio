@@ -1,4 +1,1839 @@
 {
+  "applied-science/achievements-1": {
+    "width": 1352,
+    "height": 880,
+    "aspect": 1.5364,
+    "alpha": true,
+    "color": "#f8f8f8",
+    "placeholder": "data:image/webp;base64,UklGRtgAAABXRUJQVlA4WAoAAAAQAAAAEwAADAAAQUxQSDwAAAABT6CgbRuGP6gCa/cPiIjIeggmFEWS1FwiPJGwEhABDhCCFETf/hAQ0f8JqCYprgodxiCfNDaVoe+VngdWUDggdgAAAHAEAJ0BKhQADQA+7WKpTamlpCIwCAEwHYlmAJ0ygtP7P/gPHtPLfUAvn8k4APKnpEfbf06HUx7CnPcFL9Fq2CLxOiX5SLFU+jF3qv8SAKV16VyRIXE+qxD+2YJ4BsHA9Aa9z9B65/qLBpPc1PdZb0WEgLwAAAA=",
+    "widths": [
+      480,
+      800,
+      1200
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/applied-science/achievements-1-480.avif",
+        "bytes": 26422
+      },
+      {
+        "w": 800,
+        "src": "/img/applied-science/achievements-1-800.avif",
+        "bytes": 56188
+      },
+      {
+        "w": 1200,
+        "src": "/img/applied-science/achievements-1-1200.avif",
+        "bytes": 90068
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/applied-science/achievements-1-480.webp",
+        "bytes": 27620
+      },
+      {
+        "w": 800,
+        "src": "/img/applied-science/achievements-1-800.webp",
+        "bytes": 59798
+      },
+      {
+        "w": 1200,
+        "src": "/img/applied-science/achievements-1-1200.webp",
+        "bytes": 100394
+      }
+    ]
+  },
+  "applied-science/achievements-2": {
+    "width": 636,
+    "height": 886,
+    "aspect": 0.7178,
+    "alpha": true,
+    "color": "#f8f8f8",
+    "placeholder": "data:image/webp;base64,UklGRv4AAABXRUJQVlA4WAoAAAAQAAAAEwAAGwAAQUxQSEMAAAABYBvJdpM+NOofMu/pRagFyGT+exn/h4QRMQH+IvgZvPxBobJyzEIt+IKGYgL+5rCAiaQq2spnpVBZ2bkmhvtziK0DAFZQOCCUAAAAMAUAnQEqFAAcAD7tZqtNqaWkIjAIATAdiWYAtSFBO7AK6qjLmErnl8l0JJwK2aWCigAA/qK3+ybA3iaKJBofFQ6sh1RNuIZrhE0bL3lYRE4p0tuOcxIOJaWa9xzYnLkdk/OeyuE4pf1F56UWtvidILtHAp0ZmbEd1Nmf+cmtLCEKQHDZ8+2Va3Nqa/Yx4c1OruQAAA==",
+    "widths": [
+      480
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/applied-science/achievements-2-480.avif",
+        "bytes": 38235
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/applied-science/achievements-2-480.webp",
+        "bytes": 40706
+      }
+    ]
+  },
+  "applied-science/achievements-3": {
+    "width": 1328,
+    "height": 892,
+    "aspect": 1.4888,
+    "alpha": true,
+    "color": "#f8f8f8",
+    "placeholder": "data:image/webp;base64,UklGRsYAAABXRUJQVlA4WAoAAAAQAAAAEwAADAAAQUxQSDMAAAABN6CQbQTIH3A0u0cjIuI/NlAV2QZ17yWACCKJoH+Ox5cAEf2fACfGbBy1BZ7UFjiapiwAVlA4IGwAAADwAwCdASoUAA0APu1iqU2ppaOiMAgBMB2JZQAASpL36GQeuNQy0enwAP7nU6+X21k7ThAk05kLHrxNsNhAObDPAx53pmx/no5mP3GI2MxG4cXyKJRx1kNPZBwjVa1Rv8pLagZAxDgf/RXAAAA=",
+    "widths": [
+      480,
+      800,
+      1200
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/applied-science/achievements-3-480.avif",
+        "bytes": 20392
+      },
+      {
+        "w": 800,
+        "src": "/img/applied-science/achievements-3-800.avif",
+        "bytes": 38968
+      },
+      {
+        "w": 1200,
+        "src": "/img/applied-science/achievements-3-1200.avif",
+        "bytes": 61593
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/applied-science/achievements-3-480.webp",
+        "bytes": 24138
+      },
+      {
+        "w": 800,
+        "src": "/img/applied-science/achievements-3-800.webp",
+        "bytes": 47520
+      },
+      {
+        "w": 1200,
+        "src": "/img/applied-science/achievements-3-1200.webp",
+        "bytes": 77214
+      }
+    ]
+  },
+  "applied-science/achievements-4": {
+    "width": 624,
+    "height": 869,
+    "aspect": 0.7181,
+    "alpha": true,
+    "color": "#f8f8f8",
+    "placeholder": "data:image/webp;base64,UklGRgYBAABXRUJQVlA4WAoAAAAQAAAAEwAAGwAAQUxQSEAAAAABYNpIkqMw3uSPvP+w7pa+mRl2u/BhRExAe4kqps7mEOT8NN6ghzIokAzRb84IIuQGvVDe9Mn5qasHS7k42VABVlA4IKAAAADwBACdASoUABwAPu1ur1IppiQiqAgBMB2JQBkTAgr6eBTBNQ/7VTn07nR9Y+xVigAA/tXfAkyqzQ8JiITnD/rfxOEBID0v/3anIb53yBDrRS+iX87Kt6kqqXKNGSsdAIU28ZvEb5P6JTS9nsPKydUs61ocEcZOQOjOv84APSg8Zk2g726D2SOtxqIiUBYwLnjkq4rkrOTUiTrHjDWkpgAA",
+    "widths": [
+      480
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/applied-science/achievements-4-480.avif",
+        "bytes": 27184
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/applied-science/achievements-4-480.webp",
+        "bytes": 31134
+      }
+    ]
+  },
+  "applied-science/achievements-5": {
+    "width": 816,
+    "height": 1136,
+    "aspect": 0.7183,
+    "alpha": true,
+    "color": "#f8f8f8",
+    "placeholder": "data:image/webp;base64,UklGRioBAABXRUJQVlA4WAoAAAAQAAAAEwAAGwAAQUxQSEsAAAABb6CobSPmFuAjv14NjYgIYAAtry6oiWwnyu+gCyg4ROAEB9jACwJOHRjAUFLTRvR/AhqTiGcghe5JjdCYvhEaJ6cmCxLDGbWI+QIAVlA4ILgAAABwBQCdASoUABwAPtFUoU2oJKMiN+gBABoJQBlYAmAJFK7WLTzUZ7kXKxthDAjvEpObzDQAAP7004mrRJ6h9MiX2kz+JxhvdFROx+vbbRjIq/t5Y5x1rCLT9CZENM75hYJ5bb8NrJAmIODJ5gdGL7vU/mPLamKf9Dkz+BPByUSPZrWOYWoL0MxZBz7opDzlpmmHXxEhpSf1mLqxncRCERJRol8DH6+o/H/Ol3kgZl9k7G2UW6zcAAAA",
+    "widths": [
+      480,
+      800
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/applied-science/achievements-5-480.avif",
+        "bytes": 23641
+      },
+      {
+        "w": 800,
+        "src": "/img/applied-science/achievements-5-800.avif",
+        "bytes": 41050
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/applied-science/achievements-5-480.webp",
+        "bytes": 28218
+      },
+      {
+        "w": 800,
+        "src": "/img/applied-science/achievements-5-800.webp",
+        "bytes": 49016
+      }
+    ]
+  },
+  "applied-science/achievements-6": {
+    "width": 844,
+    "height": 1146,
+    "aspect": 0.7365,
+    "alpha": true,
+    "color": "#f8f8f8",
+    "placeholder": "data:image/webp;base64,UklGRgQBAABXRUJQVlA4WAoAAAAQAAAAEwAAGgAAQUxQSEcAAAABZ6CgbRs2p94N6ygsIuIAPBBsAKiptR2bhFDHMRppoY0WNODd/bxfrO9bzRH9n4AGUekPNdQp5qD1/bTQl9k3RUUKuajRAQBWUDgglgAAABAFAJ0BKhQAGwA+7WaqTamlpCIwCAEwHYllAMNnIYNOuHXuA8k+d7xCbMaHmfx5kwAA/uftAmeOTYZEHz7Oh+jzn7RsnUHEBZ4zPbkXYHJZgBEdgZqaixV2EAqt5sLDR9b8mA8G4NkDUmEmppSnqrHhKipArcG2MSIzASpIh9g6jdVU5h/DUAv32aECEubN3E5M3mBgAA==",
+    "widths": [
+      480,
+      800
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/applied-science/achievements-6-480.avif",
+        "bytes": 53920
+      },
+      {
+        "w": 800,
+        "src": "/img/applied-science/achievements-6-800.avif",
+        "bytes": 110044
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/applied-science/achievements-6-480.webp",
+        "bytes": 56564
+      },
+      {
+        "w": 800,
+        "src": "/img/applied-science/achievements-6-800.webp",
+        "bytes": 120526
+      }
+    ]
+  },
+  "applied-science/achievements-7": {
+    "width": 1616,
+    "height": 1170,
+    "aspect": 1.3812,
+    "alpha": true,
+    "color": "#f8f8f8",
+    "placeholder": "data:image/webp;base64,UklGRrgAAABXRUJQVlA4WAoAAAAQAAAAEwAADQAAQUxQSDgAAAABT0CkbePf6/nRUhsREVDmUBPZavSpaA8HuMFA4iB+LstAFQER/Z8AJqSy0aRK8F3T0tGMOdL1AFZQOCBaAAAA8AMAnQEqFAAOAD7tYqlNqaWkIjAIATAdiWUAAF5XFkUUJRTcEzQFIAD+8dwoS57yXU8DgiQPJNsVvF3qmJiqZLlCz9vxMSDprLJ3UMT+okegnREdTh6HEAAA",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/applied-science/achievements-7-480.avif",
+        "bytes": 11069
+      },
+      {
+        "w": 800,
+        "src": "/img/applied-science/achievements-7-800.avif",
+        "bytes": 19482
+      },
+      {
+        "w": 1200,
+        "src": "/img/applied-science/achievements-7-1200.avif",
+        "bytes": 27642
+      },
+      {
+        "w": 1600,
+        "src": "/img/applied-science/achievements-7-1600.avif",
+        "bytes": 34960
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/applied-science/achievements-7-480.webp",
+        "bytes": 12838
+      },
+      {
+        "w": 800,
+        "src": "/img/applied-science/achievements-7-800.webp",
+        "bytes": 24304
+      },
+      {
+        "w": 1200,
+        "src": "/img/applied-science/achievements-7-1200.webp",
+        "bytes": 38034
+      },
+      {
+        "w": 1600,
+        "src": "/img/applied-science/achievements-7-1600.webp",
+        "bytes": 50120
+      }
+    ]
+  },
+  "applied-science/achievements-8": {
+    "width": 816,
+    "height": 1168,
+    "aspect": 0.6986,
+    "alpha": true,
+    "color": "#f8f8f8",
+    "placeholder": "data:image/webp;base64,UklGRuYAAABXRUJQVlA4WAoAAAAQAAAAEwAAHAAAQUxQSDoAAAABYBrZVp2uQFE+HpsUkLivfvcex8PGRcQEtAMzbc62IZJiyKQdZqH5Rb3CCqcjdkRSjNLf656+vl4BVlA4IIYAAABQBQCdASoUAB0APu1mrFAppSQisBgIATAdiWcAuwWn6EsgoAdBUXBM7AZQpcPw4rhrSHAA/sjNii6T7iwMP0tDi6NwFejrRhjZlDRrdQUWhskatIcUwiRpldg9+xsawDLQsdylwa3SBxfRAi8kqq2zEcYh51ZUDFIsV5F2iX9a7ENR1KmAAA==",
+    "widths": [
+      480,
+      800
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/applied-science/achievements-8-480.avif",
+        "bytes": 43650
+      },
+      {
+        "w": 800,
+        "src": "/img/applied-science/achievements-8-800.avif",
+        "bytes": 88647
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/applied-science/achievements-8-480.webp",
+        "bytes": 49744
+      },
+      {
+        "w": 800,
+        "src": "/img/applied-science/achievements-8-800.webp",
+        "bytes": 108578
+      }
+    ]
+  },
+  "applied-science/community-1": {
+    "width": 1028,
+    "height": 1250,
+    "aspect": 0.8224,
+    "alpha": true,
+    "color": "#e8f8f8",
+    "placeholder": "data:image/webp;base64,UklGRlYBAABXRUJQVlA4WAoAAAAQAAAAEwAAFwAAQUxQSEAAAAABX6CmbSOIP6di6tztuwMREelHGzLURJIU8T/ZSlhpSDgJJwUJiLxNiSP6PwE7pxCvpZim4FXw/FQT8C5ou4gLVlA4IPAAAABQBgCdASoUABgAPu1sq1EppaOiqAqpMB2JQBajUGeakgKqD3bjxdHn0gJWVTN+XtHc5VByRohchix10AD+79R0C4qJy5Qj0dR1MkXHJCOK2OZm/YAOHIFH1Uk2v0ZkRVIwxaZN7WRDqFonN01uQHuekMz3Yy0rwKWABYuEpdBm+y0sDN9Vi6QzXNhbAOYVwqk2QbY2UlA8jnSsi1eIku3848ASLq7ewlfaShfN6k9isW1hD7HP8Ghu4b2f0fcgd62Cungk/aGXug5QzwZTan6kgVZU/TClnY5HLKUcgYnd5swqs3YA/41vmKOnC01DkAA=",
+    "widths": [
+      480,
+      800,
+      1028
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/applied-science/community-1-480.avif",
+        "bytes": 65156
+      },
+      {
+        "w": 800,
+        "src": "/img/applied-science/community-1-800.avif",
+        "bytes": 149128
+      },
+      {
+        "w": 1028,
+        "src": "/img/applied-science/community-1-1028.avif",
+        "bytes": 211063
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/applied-science/community-1-480.webp",
+        "bytes": 63602
+      },
+      {
+        "w": 800,
+        "src": "/img/applied-science/community-1-800.webp",
+        "bytes": 151152
+      },
+      {
+        "w": 1028,
+        "src": "/img/applied-science/community-1-1028.webp",
+        "bytes": 224352
+      }
+    ]
+  },
+  "applied-science/community-10": {
+    "width": 1312,
+    "height": 864,
+    "aspect": 1.5185,
+    "alpha": true,
+    "color": "#f8f8f8",
+    "placeholder": "data:image/webp;base64,UklGRtQAAABXRUJQVlA4WAoAAAAQAAAAEwAADAAAQUxQSCkAAAABJ/Df/4iIC8UAmEDrABjCEELIn6v9Aojo/wR04tQGLNMJT6ZTOFZcHABWUDgghAAAAFAEAJ0BKhQADQA+7WSqTimlpCIwCAEwHYlsAJ0ygANgn7xF4SGoLKJ40AAA/uIzI4HegcEpWzFrE7TIjkhojDLreq3s/pm9KNCnUpaSYCR0bYWyd7UHlkF8FhYjX7YkamwOvRYP7ektXWxPowxa8zmoXcsSu86hQe3fiBntM39pTgAAAA==",
+    "widths": [
+      480,
+      800,
+      1200
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/applied-science/community-10-480.avif",
+        "bytes": 10637
+      },
+      {
+        "w": 800,
+        "src": "/img/applied-science/community-10-800.avif",
+        "bytes": 19102
+      },
+      {
+        "w": 1200,
+        "src": "/img/applied-science/community-10-1200.avif",
+        "bytes": 29238
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/applied-science/community-10-480.webp",
+        "bytes": 13594
+      },
+      {
+        "w": 800,
+        "src": "/img/applied-science/community-10-800.webp",
+        "bytes": 26384
+      },
+      {
+        "w": 1200,
+        "src": "/img/applied-science/community-10-1200.webp",
+        "bytes": 42252
+      }
+    ]
+  },
+  "applied-science/community-2": {
+    "width": 1533,
+    "height": 1250,
+    "aspect": 1.2264,
+    "alpha": true,
+    "color": "#181818",
+    "placeholder": "data:image/webp;base64,UklGRgQBAABXRUJQVlA4WAoAAAAQAAAAEwAADwAAQUxQSDYAAAABR0AmbeNf6e6xf7EREYGYHooaSYpml0PHShgJKwkJiKd/CIjo/wTs0LOusJzUIv8sqUVeAQdWUDggqAAAAFAEAJ0BKhQAEAA+7WKpTamlo6IwCAEwHYlkALsygxgDR+loej3ZX2/kYGAA/p+7JPr8l6KATR3jiazJetaDM7IX0nof6DbAqAjqILClaRHdv9+4heUJJnwZS2T11waQH1rEWtTERE+NhoYX5SZ59wE2sSnv5qK7k1jwph37QWEMS1ze2KLJu17rYAHIxgg2OawBfOIU5jnO3FYVtRsZ771FgCFMRk4AAA==",
+    "widths": [
+      480,
+      800,
+      1200,
+      1533
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/applied-science/community-2-480.avif",
+        "bytes": 42330
+      },
+      {
+        "w": 800,
+        "src": "/img/applied-science/community-2-800.avif",
+        "bytes": 84981
+      },
+      {
+        "w": 1200,
+        "src": "/img/applied-science/community-2-1200.avif",
+        "bytes": 128669
+      },
+      {
+        "w": 1533,
+        "src": "/img/applied-science/community-2-1533.avif",
+        "bytes": 160998
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/applied-science/community-2-480.webp",
+        "bytes": 39248
+      },
+      {
+        "w": 800,
+        "src": "/img/applied-science/community-2-800.webp",
+        "bytes": 85248
+      },
+      {
+        "w": 1200,
+        "src": "/img/applied-science/community-2-1200.webp",
+        "bytes": 146042
+      },
+      {
+        "w": 1533,
+        "src": "/img/applied-science/community-2-1533.webp",
+        "bytes": 189076
+      }
+    ]
+  },
+  "applied-science/community-3": {
+    "width": 1533,
+    "height": 1250,
+    "aspect": 1.2264,
+    "alpha": true,
+    "color": "#f8f8f8",
+    "placeholder": "data:image/webp;base64,UklGRgQBAABXRUJQVlA4WAoAAAAQAAAAEwAADwAAQUxQSDsAAAABX6AmACGof1UjM/eGiIish1JoIIptG+//FS10oIkCL8KPJIKQ7k6AiP5PQF/zua9wOKlE/llSidwCDgBWUDggogAAALAEAJ0BKhQAEAA+7WKpTamlo6IwCAEwHYlmALbJ3AuCdyZr4e1nZUF749wxoWAA/IqIItdSIO3wIPZXKibLmi2ZPExsfSDD8SC8BHLrRd9MIdYN3wdTFKHeyNwFbv0ENTEcUevY0+J/0YzkaQyxbwZmOCeQh4A7Aexwj5fikP8QuA8mjkReczd/v/3wLvWUEYW8mmuHcFvltLBI+BgdpAwwAA==",
+    "widths": [
+      480,
+      800,
+      1200,
+      1533
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/applied-science/community-3-480.avif",
+        "bytes": 42949
+      },
+      {
+        "w": 800,
+        "src": "/img/applied-science/community-3-800.avif",
+        "bytes": 88354
+      },
+      {
+        "w": 1200,
+        "src": "/img/applied-science/community-3-1200.avif",
+        "bytes": 149021
+      },
+      {
+        "w": 1533,
+        "src": "/img/applied-science/community-3-1533.avif",
+        "bytes": 202617
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/applied-science/community-3-480.webp",
+        "bytes": 37738
+      },
+      {
+        "w": 800,
+        "src": "/img/applied-science/community-3-800.webp",
+        "bytes": 83464
+      },
+      {
+        "w": 1200,
+        "src": "/img/applied-science/community-3-1200.webp",
+        "bytes": 150634
+      },
+      {
+        "w": 1533,
+        "src": "/img/applied-science/community-3-1533.webp",
+        "bytes": 211592
+      }
+    ]
+  },
+  "applied-science/community-4": {
+    "width": 1028,
+    "height": 1250,
+    "aspect": 0.8224,
+    "alpha": true,
+    "color": "#888888",
+    "placeholder": "data:image/webp;base64,UklGRkQBAABXRUJQVlA4WAoAAAAQAAAAEwAAFwAAQUxQSDcAAAABR0AmDNG/kVhOl9WIiIA+AzWRrFb8ayQgJRKQEgkRz6NMHdH/CQimMZ8SaFkQOj8lqHURMtUFAFZQOCDmAAAAsAUAnQEqFAAYAD7taKlPqaYjoigNUTAdiWgAvkmMvGkCuy1WW1CRVVAdfev/24q12Y2GYLAAAP6arBqiQNsCAjowlZzRdQkPIeJ3wjHDQkR+F3ibKK7vloWWVcJxxxMwTcqJVGaeUk9QNDwczmq941HkOBHLxrWsSRBag8icITtQNwMYn7lzN46zMOQc82QJ+auF/UZmwOy6UWRlyobwhz2GLLD3F8iGftgtT6gKkwuOA+fA0mbk/QXEqmGq6eg6LIzKPSl/9Eo1pgf2MBCp1NnJx22oPo14dwobgVe78mAdbADbAAA=",
+    "widths": [
+      480,
+      800,
+      1028
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/applied-science/community-4-480.avif",
+        "bytes": 61549
+      },
+      {
+        "w": 800,
+        "src": "/img/applied-science/community-4-800.avif",
+        "bytes": 124451
+      },
+      {
+        "w": 1028,
+        "src": "/img/applied-science/community-4-1028.avif",
+        "bytes": 160271
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/applied-science/community-4-480.webp",
+        "bytes": 61948
+      },
+      {
+        "w": 800,
+        "src": "/img/applied-science/community-4-800.webp",
+        "bytes": 136228
+      },
+      {
+        "w": 1028,
+        "src": "/img/applied-science/community-4-1028.webp",
+        "bytes": 184340
+      }
+    ]
+  },
+  "applied-science/community-5": {
+    "width": 1533,
+    "height": 1250,
+    "aspect": 1.2264,
+    "alpha": true,
+    "color": "#b8d8f8",
+    "placeholder": "data:image/webp;base64,UklGRvYAAABXRUJQVlA4WAoAAAAQAAAAEwAADwAAQUxQSDkAAAABV6CgbSOHP9rb9/tDIyICWAj280NRJEnNBZIMJK2Ek4QExDI/BET0fwKW23PfJDWqJP2sUSVpBhwAVlA4IJYAAAAQBQCdASoUABAAPu1iqU2ppaOiMAgBMB2JbACdMoRwIsCrq2+qA8d4FeXEe/b+duhYAPKlgl6UWHcqxjUg97hBMfWELCPknzEfqV5I0uHfRX+FDEdN6rNmp+Jj3pB6R1p9b0DLZTmPzK6+CGjGSomVoSWC48MvwbbC3AS1jYZLGaBkXg0I5X5ZfWWY5c5B0yUIdl5IAAA=",
+    "widths": [
+      480,
+      800,
+      1200,
+      1533
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/applied-science/community-5-480.avif",
+        "bytes": 26109
+      },
+      {
+        "w": 800,
+        "src": "/img/applied-science/community-5-800.avif",
+        "bytes": 60513
+      },
+      {
+        "w": 1200,
+        "src": "/img/applied-science/community-5-1200.avif",
+        "bytes": 115812
+      },
+      {
+        "w": 1533,
+        "src": "/img/applied-science/community-5-1533.avif",
+        "bytes": 177262
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/applied-science/community-5-480.webp",
+        "bytes": 26068
+      },
+      {
+        "w": 800,
+        "src": "/img/applied-science/community-5-800.webp",
+        "bytes": 61912
+      },
+      {
+        "w": 1200,
+        "src": "/img/applied-science/community-5-1200.webp",
+        "bytes": 121320
+      },
+      {
+        "w": 1533,
+        "src": "/img/applied-science/community-5-1533.webp",
+        "bytes": 184532
+      }
+    ]
+  },
+  "applied-science/community-6": {
+    "width": 1533,
+    "height": 1250,
+    "aspect": 1.2264,
+    "alpha": true,
+    "color": "#989898",
+    "placeholder": "data:image/webp;base64,UklGRhYBAABXRUJQVlA4WAoAAAAQAAAAEwAADwAAQUxQSDYAAAABR0AmbeNf6e6xf7EREYGYHooaSYpml0PHShgJKwkJiKd/CIjo/wTs0LOusJzUIv8sqUVeAQdWUDggugAAAPAEAJ0BKhQAEAA+7WKpTamlo6IwCAEwHYlsAJ0ygykmf+yRALa4584Y4VdE28mFQAD+PFr8FV6JhUQdTfLO7T2R9RBHtrnUCHGzrvebjy/hKn3Re01RmvTXcD8LOsYHYIQZj9t38MzNx0NTaLe2lb3RkIQX9IvEZWBlVB7+4qZWEEd3q3nzxpLE+wSNbT8ClHbURjwImesWYjZFlOVdMkmiq58Djg62MHKWDWblov5fu82oKzmHFAAAAA==",
+    "widths": [
+      480,
+      800,
+      1200,
+      1533
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/applied-science/community-6-480.avif",
+        "bytes": 25876
+      },
+      {
+        "w": 800,
+        "src": "/img/applied-science/community-6-800.avif",
+        "bytes": 43817
+      },
+      {
+        "w": 1200,
+        "src": "/img/applied-science/community-6-1200.avif",
+        "bytes": 64396
+      },
+      {
+        "w": 1533,
+        "src": "/img/applied-science/community-6-1533.avif",
+        "bytes": 80685
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/applied-science/community-6-480.webp",
+        "bytes": 26590
+      },
+      {
+        "w": 800,
+        "src": "/img/applied-science/community-6-800.webp",
+        "bytes": 48970
+      },
+      {
+        "w": 1200,
+        "src": "/img/applied-science/community-6-1200.webp",
+        "bytes": 78446
+      },
+      {
+        "w": 1533,
+        "src": "/img/applied-science/community-6-1533.webp",
+        "bytes": 100858
+      }
+    ]
+  },
+  "applied-science/community-7": {
+    "width": 1880,
+    "height": 894,
+    "aspect": 2.1029,
+    "alpha": true,
+    "color": "#080808",
+    "placeholder": "data:image/webp;base64,UklGRrwAAABXRUJQVlA4WAoAAAAQAAAAEwAACQAAQUxQSCYAAAABJyCQTfyhQvvSiIhYhmJGkqBRGIVR2faX2uO1ABH9Tz3xoSNdAFZQOCBwAAAA8AMAnQEqFAAKAD7tYqlNqaWjojAIATAdiWUAxxRMQxT0xqrC5dgsXAD+7Fr/wCMeF19PNE7zrYHxvNU6G5Amlxr40OI/L6skPARTNxfmtjBJIvXfrGlu6UDK00sjY7dcDxoBIMAGozWf3njLVmAAAA==",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/applied-science/community-7-480.avif",
+        "bytes": 5817
+      },
+      {
+        "w": 800,
+        "src": "/img/applied-science/community-7-800.avif",
+        "bytes": 10175
+      },
+      {
+        "w": 1200,
+        "src": "/img/applied-science/community-7-1200.avif",
+        "bytes": 15304
+      },
+      {
+        "w": 1600,
+        "src": "/img/applied-science/community-7-1600.avif",
+        "bytes": 20281
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/applied-science/community-7-480.webp",
+        "bytes": 6214
+      },
+      {
+        "w": 800,
+        "src": "/img/applied-science/community-7-800.webp",
+        "bytes": 11828
+      },
+      {
+        "w": 1200,
+        "src": "/img/applied-science/community-7-1200.webp",
+        "bytes": 18882
+      },
+      {
+        "w": 1600,
+        "src": "/img/applied-science/community-7-1600.webp",
+        "bytes": 25038
+      }
+    ]
+  },
+  "applied-science/community-8": {
+    "width": 688,
+    "height": 894,
+    "aspect": 0.7696,
+    "alpha": true,
+    "color": "#f8f8f8",
+    "placeholder": "data:image/webp;base64,UklGRsYAAABXRUJQVlA4WAoAAAAQAAAAEwAAGQAAQUxQSDQAAAABUBrJVtN/EUgkmlqCSvKD/5/wJEEhI2ICLCY2J0zH9kLlI/2V9s94bg9Qx/YC6ejDpisKVlA4IGwAAABwBACdASoUABoAPu1mqk8ppaOiKA1RMB2JZwAALq1/QLBTojmLe5j71G+AAAD+7aDORR6NeurcWrEf8tRBmriHeBqKWxTsDYYozoXTbGTWkSc2J4Txge0yhCYjUtNJskjLyrxIX++5+4UAKAA=",
+    "widths": [
+      480,
+      688
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/applied-science/community-8-480.avif",
+        "bytes": 17460
+      },
+      {
+        "w": 688,
+        "src": "/img/applied-science/community-8-688.avif",
+        "bytes": 27694
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/applied-science/community-8-480.webp",
+        "bytes": 20692
+      },
+      {
+        "w": 688,
+        "src": "/img/applied-science/community-8-688.webp",
+        "bytes": 32592
+      }
+    ]
+  },
+  "applied-science/community-9": {
+    "width": 1300,
+    "height": 860,
+    "aspect": 1.5116,
+    "alpha": true,
+    "color": "#f8f8f8",
+    "placeholder": "data:image/webp;base64,UklGRrgAAABXRUJQVlA4WAoAAAAQAAAAEwAADAAAQUxQSDcAAAABP0CYbeQPdkz3WzUiImA9IIpsJR8GAqAFvhFsZAT7n/meDBDR/wlIQ8sLTX/AJ0fJBc2Y1e4DAFZQOCBaAAAA0AMAnQEqFAANAD7tYqlNqaWkIjAIATAdiWkAAFwB+J4GnI8jhBEAAP6yP6M4Nt+DtJRSL87vwVdO1KIC3PWmxqsHAbjv5XGaVj4mK4R4PIwD1ksOO6xYsAAA",
+    "widths": [
+      480,
+      800,
+      1200
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/applied-science/community-9-480.avif",
+        "bytes": 12180
+      },
+      {
+        "w": 800,
+        "src": "/img/applied-science/community-9-800.avif",
+        "bytes": 22171
+      },
+      {
+        "w": 1200,
+        "src": "/img/applied-science/community-9-1200.avif",
+        "bytes": 36400
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/applied-science/community-9-480.webp",
+        "bytes": 14020
+      },
+      {
+        "w": 800,
+        "src": "/img/applied-science/community-9-800.webp",
+        "bytes": 27484
+      },
+      {
+        "w": 1200,
+        "src": "/img/applied-science/community-9-1200.webp",
+        "bytes": 44784
+      }
+    ]
+  },
+  "applied-science/internship-1": {
+    "width": 1606,
+    "height": 1710,
+    "aspect": 0.9392,
+    "alpha": true,
+    "color": "#b8b8a8",
+    "placeholder": "data:image/webp;base64,UklGRiYBAABXRUJQVlA4WAoAAAAQAAAAEwAAFAAAQUxQSDsAAAABX6CgbRuGP9Uh+DONiAjkL9EaampryT6YGH8SYB13bWIPu1gRGJ0j+j8BQkjjosmV4lPdyoHm3Cs9DwBWUDggxAAAAHAFAJ0BKhQAFQA+7W6uUimmJCKoCAEwHYlAFnI//LsALI+2N2kfUWSVYWabEl0kLyoce4AA8mUSPdmWGtqGTz4S19Y3cOpnbZO1clG00/IEy7wTfDf+/Vko0+jYzTF4NVyI0VjNgalSEi9JUuxJ5NUtb8V9p5AiQ3QbcuIRkUUeoW9RzxyqtAkz4O6KdQ4mWJYzSwJiIwjc0wo89O9N+cN9BHuIecsaxYcgjYfg9/cct2FVkJvcq2YkO7Md9viy8AMoAAA=",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/applied-science/internship-1-480.avif",
+        "bytes": 17024
+      },
+      {
+        "w": 800,
+        "src": "/img/applied-science/internship-1-800.avif",
+        "bytes": 27676
+      },
+      {
+        "w": 1200,
+        "src": "/img/applied-science/internship-1-1200.avif",
+        "bytes": 39927
+      },
+      {
+        "w": 1600,
+        "src": "/img/applied-science/internship-1-1600.avif",
+        "bytes": 51831
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/applied-science/internship-1-480.webp",
+        "bytes": 18732
+      },
+      {
+        "w": 800,
+        "src": "/img/applied-science/internship-1-800.webp",
+        "bytes": 33480
+      },
+      {
+        "w": 1200,
+        "src": "/img/applied-science/internship-1-1200.webp",
+        "bytes": 53140
+      },
+      {
+        "w": 1600,
+        "src": "/img/applied-science/internship-1-1600.webp",
+        "bytes": 73914
+      }
+    ]
+  },
+  "applied-science/internship-2": {
+    "width": 2547,
+    "height": 1710,
+    "aspect": 1.4895,
+    "alpha": true,
+    "color": "#b8a898",
+    "placeholder": "data:image/webp;base64,UklGRtwAAABXRUJQVlA4WAoAAAAQAAAAEwAADAAAQUxQSDgAAAABV6CgbRuGP9YyeLskIiL7Sw02ENW2of9XakghgQgCiSCCsOavJkBE/yfAiNMXT28K+AQFCJF3DVZQOCB+AAAA8AMAnQEqFAANAD7tYqlNqaWjojAIATAdiWYAnTKAAb8A9iCAeBp4AAD+Vfh/sCj4svRi/gkvFN2CfRy/b7mVKxV4Vb8SFcr6vnJi7pR8SuCT6XMmFxQIwI5U16ccMAJpO3aH3t2FoGRpJEOLhwoL6/v6UPbf+xCCupchYAAA",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/applied-science/internship-2-480.avif",
+        "bytes": 14317
+      },
+      {
+        "w": 800,
+        "src": "/img/applied-science/internship-2-800.avif",
+        "bytes": 24206
+      },
+      {
+        "w": 1200,
+        "src": "/img/applied-science/internship-2-1200.avif",
+        "bytes": 35385
+      },
+      {
+        "w": 1600,
+        "src": "/img/applied-science/internship-2-1600.avif",
+        "bytes": 46087
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/applied-science/internship-2-480.webp",
+        "bytes": 15406
+      },
+      {
+        "w": 800,
+        "src": "/img/applied-science/internship-2-800.webp",
+        "bytes": 28082
+      },
+      {
+        "w": 1200,
+        "src": "/img/applied-science/internship-2-1200.webp",
+        "bytes": 44260
+      },
+      {
+        "w": 1600,
+        "src": "/img/applied-science/internship-2-1600.webp",
+        "bytes": 61628
+      }
+    ]
+  },
+  "applied-science/internship-3": {
+    "width": 2547,
+    "height": 1710,
+    "aspect": 1.4895,
+    "alpha": true,
+    "color": "#080808",
+    "placeholder": "data:image/webp;base64,UklGRvAAAABXRUJQVlA4WAoAAAAQAAAAEwAADAAAQUxQSDgAAAABV6CgbRuGP9YyeLskIiL7Sw02ENW2of9XakghgQgCiSCCsOavJkBE/yfAiNMXT28K+AQFCJF3DVZQOCCSAAAA0AMAnQEqFAANAD7tYqlNqaWjojAIATAdiWIAnQAUxo8nEtnYZBMAAP5anwweTR/OTFzMPJGFgadorOyl8X8RAkYrX6H+qZZkEdDvh/8kr6fVRgd6PKXNcyBvgJO6lmktvbB/d190ahzqul0GlDtlHoE7nPOshezzXuoVILpR57v1YxLdm2J9mzJmJLsXjVb6AAA=",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/applied-science/internship-3-480.avif",
+        "bytes": 14123
+      },
+      {
+        "w": 800,
+        "src": "/img/applied-science/internship-3-800.avif",
+        "bytes": 23107
+      },
+      {
+        "w": 1200,
+        "src": "/img/applied-science/internship-3-1200.avif",
+        "bytes": 33030
+      },
+      {
+        "w": 1600,
+        "src": "/img/applied-science/internship-3-1600.avif",
+        "bytes": 42157
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/applied-science/internship-3-480.webp",
+        "bytes": 15852
+      },
+      {
+        "w": 800,
+        "src": "/img/applied-science/internship-3-800.webp",
+        "bytes": 28702
+      },
+      {
+        "w": 1200,
+        "src": "/img/applied-science/internship-3-1200.webp",
+        "bytes": 45248
+      },
+      {
+        "w": 1600,
+        "src": "/img/applied-science/internship-3-1600.webp",
+        "bytes": 62548
+      }
+    ]
+  },
+  "applied-science/internship-4": {
+    "width": 2076,
+    "height": 1428,
+    "aspect": 1.4538,
+    "alpha": true,
+    "color": "#485848",
+    "placeholder": "data:image/webp;base64,UklGRtYAAABXRUJQVlA4WAoAAAAQAAAAEwAADQAAQUxQSCwAAAABJyAWTPwVA+mdRkQEGmYaIIFRgAhEoX8u9TJARP8nQMSY4sjNeJebcRSnFFZQOCCEAAAAEAQAnQEqFAAOAD7tYqlNqaWjojAIATAdiWYAt7giIIz0uaSp/3brPMAA/nb/aZPje5PufYhnWBuRdaUGEn1Hsc8QpYEddiUm7QjZKWedPZDVnH3gMySB2qhdb4wZ4ciy4jxe9spgeBOWQ8j4XeClBcDO1amd2/1dgh6scvOmIDcM+AAA",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/applied-science/internship-4-480.avif",
+        "bytes": 21369
+      },
+      {
+        "w": 800,
+        "src": "/img/applied-science/internship-4-800.avif",
+        "bytes": 35358
+      },
+      {
+        "w": 1200,
+        "src": "/img/applied-science/internship-4-1200.avif",
+        "bytes": 49442
+      },
+      {
+        "w": 1600,
+        "src": "/img/applied-science/internship-4-1600.avif",
+        "bytes": 62126
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/applied-science/internship-4-480.webp",
+        "bytes": 22030
+      },
+      {
+        "w": 800,
+        "src": "/img/applied-science/internship-4-800.webp",
+        "bytes": 40730
+      },
+      {
+        "w": 1200,
+        "src": "/img/applied-science/internship-4-1200.webp",
+        "bytes": 62480
+      },
+      {
+        "w": 1600,
+        "src": "/img/applied-science/internship-4-1600.webp",
+        "bytes": 84594
+      }
+    ]
+  },
+  "applied-science/internship-5": {
+    "width": 2076,
+    "height": 1428,
+    "aspect": 1.4538,
+    "alpha": true,
+    "color": "#f8f8f8",
+    "placeholder": "data:image/webp;base64,UklGRu4AAABXRUJQVlA4WAoAAAAQAAAAEwAADQAAQUxQSCwAAAABJyAWTPwVA+mdRkQEGmYaIIFRgAhEoX8u9TJARP8nQMSY4sjNeJebcRSnFFZQOCCcAAAAcAQAnQEqFAAOAD7tYqlNqaWjojAIATAdiWQAnTKAAxHLrb0dafNiF4MGCQAA/q1d0ySPxLOIB3U/WHi46ULD5yqb4pLxi85ojIHV9ScrmcBUI4sToAYPsctrqrqxVX7xi7TV7hjDZ0m5uKDw/s9jerBkXqpUb9PeM7VJXibOf1MP3aoRviWWVj0LyXcCtk15A3sTzRW6lzQl4AAA",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/applied-science/internship-5-480.avif",
+        "bytes": 11997
+      },
+      {
+        "w": 800,
+        "src": "/img/applied-science/internship-5-800.avif",
+        "bytes": 17943
+      },
+      {
+        "w": 1200,
+        "src": "/img/applied-science/internship-5-1200.avif",
+        "bytes": 25071
+      },
+      {
+        "w": 1600,
+        "src": "/img/applied-science/internship-5-1600.avif",
+        "bytes": 31887
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/applied-science/internship-5-480.webp",
+        "bytes": 13258
+      },
+      {
+        "w": 800,
+        "src": "/img/applied-science/internship-5-800.webp",
+        "bytes": 22996
+      },
+      {
+        "w": 1200,
+        "src": "/img/applied-science/internship-5-1200.webp",
+        "bytes": 36318
+      },
+      {
+        "w": 1600,
+        "src": "/img/applied-science/internship-5-1600.webp",
+        "bytes": 50970
+      }
+    ]
+  },
+  "applied-science/internship-6": {
+    "width": 2547,
+    "height": 1710,
+    "aspect": 1.4895,
+    "alpha": true,
+    "color": "#080808",
+    "placeholder": "data:image/webp;base64,UklGRu4AAABXRUJQVlA4WAoAAAAQAAAAEwAADAAAQUxQSDgAAAABV6CgbRuGP9YyeLskIiL7Sw02ENW2of9XakghgQgCiSCCsOavJkBE/yfAiNMXT28K+AQFCJF3DVZQOCCQAAAA0AMAnQEqFAANAD7tYqlNqaWjojAIATAdiWcAVH7cIpPnpcR77YgwAM49qYQMcnFTdyVMg5/XM9IuMgo96BXPSh575ayxB9hYnHlG2OLXf7LRiYV0k+C+E5xo7ukpUot0K2qg7/K+m7sW3aIWayST2gMIkO6LUHMzZr9QtCuSBuqcFMR87a4lJvdlUQy8AAAA",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/applied-science/internship-6-480.avif",
+        "bytes": 17796
+      },
+      {
+        "w": 800,
+        "src": "/img/applied-science/internship-6-800.avif",
+        "bytes": 27954
+      },
+      {
+        "w": 1200,
+        "src": "/img/applied-science/internship-6-1200.avif",
+        "bytes": 39636
+      },
+      {
+        "w": 1600,
+        "src": "/img/applied-science/internship-6-1600.avif",
+        "bytes": 50380
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/applied-science/internship-6-480.webp",
+        "bytes": 19432
+      },
+      {
+        "w": 800,
+        "src": "/img/applied-science/internship-6-800.webp",
+        "bytes": 34188
+      },
+      {
+        "w": 1200,
+        "src": "/img/applied-science/internship-6-1200.webp",
+        "bytes": 52750
+      },
+      {
+        "w": 1600,
+        "src": "/img/applied-science/internship-6-1600.webp",
+        "bytes": 71112
+      }
+    ]
+  },
+  "applied-science/personal-product-1": {
+    "width": 2076,
+    "height": 1409,
+    "aspect": 1.4734,
+    "alpha": true,
+    "color": "#080808",
+    "placeholder": "data:image/webp;base64,UklGRvwAAABXRUJQVlA4WAoAAAAQAAAAEwAADQAAQUxQSD4AAAABZ6CQkSTGH/AUHqGX1YiIAJDzC5ZAFclKHgwBiEAHitCHAtrEJCbj+WWAiP5PgCnGKPAQ5vhuPoJ77zWeC1ZQOCCYAAAAsAQAnQEqFAAOAD7tYqlNqaWjojAIATAdiWQAnQHcC4HVCzuTl112B0/TC06DgAD+q6BRBqySKwDjIdf71ARFJDjmihH/pM45TQMwst65uWvlPZq+2dx23GIbW61wkA5WF1KNVhoELQ8R41vx+0yCsBqSfXRCR5snhZbiT0unp+9UICigEA9OdVxzL4fx5VSzCn+Y9mIAAAA=",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/applied-science/personal-product-1-480.avif",
+        "bytes": 33512
+      },
+      {
+        "w": 800,
+        "src": "/img/applied-science/personal-product-1-800.avif",
+        "bytes": 56707
+      },
+      {
+        "w": 1200,
+        "src": "/img/applied-science/personal-product-1-1200.avif",
+        "bytes": 78278
+      },
+      {
+        "w": 1600,
+        "src": "/img/applied-science/personal-product-1-1600.avif",
+        "bytes": 98134
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/applied-science/personal-product-1-480.webp",
+        "bytes": 33218
+      },
+      {
+        "w": 800,
+        "src": "/img/applied-science/personal-product-1-800.webp",
+        "bytes": 64018
+      },
+      {
+        "w": 1200,
+        "src": "/img/applied-science/personal-product-1-1200.webp",
+        "bytes": 101752
+      },
+      {
+        "w": 1600,
+        "src": "/img/applied-science/personal-product-1-1600.webp",
+        "bytes": 139912
+      }
+    ]
+  },
+  "applied-science/personal-product-2": {
+    "width": 2076,
+    "height": 1409,
+    "aspect": 1.4734,
+    "alpha": true,
+    "color": "#787878",
+    "placeholder": "data:image/webp;base64,UklGRvIAAABXRUJQVlA4WAoAAAAQAAAAEwAADQAAQUxQSD4AAAABZ6CQkSTGH/AUHqGX1YiIAJDzC5ZAFclKHgwBiEAHitCHAtrEJCbj+WWAiP5PgCnGKPAQ5vhuPoJ77zWeC1ZQOCCOAAAAsAMAnQEqFAAOAD7tYqlNqaWjojAIATAdiWMAAEpjPeajVBGSdMAA/rx6H7wrG3cTYpJ9KfUyxWvnvhcI84618fqK56GryisFM7zlb0hYMZSZMgCPtfIHkhYuy/nRGmPdLMNOuobhdoOr8diz5wAzU6VpzOQdsT7H5DR4XIVEErIfTNI/ANABaaJ12HgAAA==",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/applied-science/personal-product-2-480.avif",
+        "bytes": 21622
+      },
+      {
+        "w": 800,
+        "src": "/img/applied-science/personal-product-2-800.avif",
+        "bytes": 49051
+      },
+      {
+        "w": 1200,
+        "src": "/img/applied-science/personal-product-2-1200.avif",
+        "bytes": 76219
+      },
+      {
+        "w": 1600,
+        "src": "/img/applied-science/personal-product-2-1600.avif",
+        "bytes": 95875
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/applied-science/personal-product-2-480.webp",
+        "bytes": 22882
+      },
+      {
+        "w": 800,
+        "src": "/img/applied-science/personal-product-2-800.webp",
+        "bytes": 56614
+      },
+      {
+        "w": 1200,
+        "src": "/img/applied-science/personal-product-2-1200.webp",
+        "bytes": 94560
+      },
+      {
+        "w": 1600,
+        "src": "/img/applied-science/personal-product-2-1600.webp",
+        "bytes": 128214
+      }
+    ]
+  },
+  "applied-science/personal-product-3": {
+    "width": 2076,
+    "height": 1690,
+    "aspect": 1.2284,
+    "alpha": true,
+    "color": "#d8d8d8",
+    "placeholder": "data:image/webp;base64,UklGRsAAAABXRUJQVlA4WAoAAAAQAAAAEwAADwAAQUxQSDcAAAABR0AgQPF/rAWFGxER//dUoCaSneq9fPpIoMIAOMAQEhCfpKOP6P8EOJHGRZNV4IusBppzr/Q8AFZQOCBiAAAAMAQAnQEqFAAQAD7tYqlNqaWjojAIATAdiWYAnTKEdwAlX6o0wLDWpyaMAP7UN21AE2Y97Z8nDrr45EBIFC3lhpdtgJtwkumXxJs+R+VPMvIQIB4coeXXe+fBBiVHDLFJAAA=",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/applied-science/personal-product-3-480.avif",
+        "bytes": 10730
+      },
+      {
+        "w": 800,
+        "src": "/img/applied-science/personal-product-3-800.avif",
+        "bytes": 28957
+      },
+      {
+        "w": 1200,
+        "src": "/img/applied-science/personal-product-3-1200.avif",
+        "bytes": 58872
+      },
+      {
+        "w": 1600,
+        "src": "/img/applied-science/personal-product-3-1600.avif",
+        "bytes": 94841
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/applied-science/personal-product-3-480.webp",
+        "bytes": 12032
+      },
+      {
+        "w": 800,
+        "src": "/img/applied-science/personal-product-3-800.webp",
+        "bytes": 32328
+      },
+      {
+        "w": 1200,
+        "src": "/img/applied-science/personal-product-3-1200.webp",
+        "bytes": 69502
+      },
+      {
+        "w": 1600,
+        "src": "/img/applied-science/personal-product-3-1600.webp",
+        "bytes": 117316
+      }
+    ]
+  },
+  "applied-science/personal-product-4": {
+    "width": 2076,
+    "height": 1690,
+    "aspect": 1.2284,
+    "alpha": true,
+    "color": "#2838b8",
+    "placeholder": "data:image/webp;base64,UklGRgABAABXRUJQVlA4WAoAAAAQAAAAEwAADwAAQUxQSDcAAAABR0AgQPF/rAWFGxER//dUoCaSneq9fPpIoMIAOMAQEhCfpKOP6P8EOJHGRZNV4IusBppzr/Q8AFZQOCCiAAAAUAQAnQEqFAAQAD7tYqlNqaWjojAIATAdiWwAsQvAAq/fn4HgrGV9HYfCrAD+y6bwGjYRVBhZCgEhu+5DZYUp+u6bG/LGPOSa+RVKo8gUFPMRKUKUOvmKUo0jXeoeKqwkrRgV1KHEQvnCx1JEqDrm14dAffV4SOokVNMo0/i2fBuc1jY1zUdOKUmh9y/a/j/P4htRonCmCf/BxsLQ/y1QjIAA",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/applied-science/personal-product-4-480.avif",
+        "bytes": 18933
+      },
+      {
+        "w": 800,
+        "src": "/img/applied-science/personal-product-4-800.avif",
+        "bytes": 36045
+      },
+      {
+        "w": 1200,
+        "src": "/img/applied-science/personal-product-4-1200.avif",
+        "bytes": 54925
+      },
+      {
+        "w": 1600,
+        "src": "/img/applied-science/personal-product-4-1600.avif",
+        "bytes": 73178
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/applied-science/personal-product-4-480.webp",
+        "bytes": 19692
+      },
+      {
+        "w": 800,
+        "src": "/img/applied-science/personal-product-4-800.webp",
+        "bytes": 40348
+      },
+      {
+        "w": 1200,
+        "src": "/img/applied-science/personal-product-4-1200.webp",
+        "bytes": 65982
+      },
+      {
+        "w": 1600,
+        "src": "/img/applied-science/personal-product-4-1600.webp",
+        "bytes": 92498
+      }
+    ]
+  },
+  "applied-science/personal-product-5": {
+    "width": 2076,
+    "height": 1448,
+    "aspect": 1.4337,
+    "alpha": true,
+    "color": "#080808",
+    "placeholder": "data:image/webp;base64,UklGRuAAAABXRUJQVlA4WAoAAAAQAAAAEwAADQAAQUxQSDgAAAABT0CYbeQPegx7XaoREYGzHtREslO9fGtKyngAJxhBCqKTVAiI6P8EOCGNiyZVA9/lKtCce6XnAVZQOCCCAAAAEAQAnQEqFAAOAD7tYqlNqaWjojAIATAdiWUAxNgiBtnJ2LYRXJby7IAA/tq2S/yiXSMTXLGQAXSEfOzZm8RGAcgP7RoXE1Y18Pu/mp9UwkhNNju1qQzZvNN3S6kLVOdx1MXUlBCF+Jy7fVks5SjbF2CfhHapA3Gua3GxmMk0oMAAAA==",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/applied-science/personal-product-5-480.avif",
+        "bytes": 20268
+      },
+      {
+        "w": 800,
+        "src": "/img/applied-science/personal-product-5-800.avif",
+        "bytes": 37157
+      },
+      {
+        "w": 1200,
+        "src": "/img/applied-science/personal-product-5-1200.avif",
+        "bytes": 58001
+      },
+      {
+        "w": 1600,
+        "src": "/img/applied-science/personal-product-5-1600.avif",
+        "bytes": 77836
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/applied-science/personal-product-5-480.webp",
+        "bytes": 20204
+      },
+      {
+        "w": 800,
+        "src": "/img/applied-science/personal-product-5-800.webp",
+        "bytes": 40582
+      },
+      {
+        "w": 1200,
+        "src": "/img/applied-science/personal-product-5-1200.webp",
+        "bytes": 68290
+      },
+      {
+        "w": 1600,
+        "src": "/img/applied-science/personal-product-5-1600.webp",
+        "bytes": 96716
+      }
+    ]
+  },
+  "applied-science/research-1": {
+    "width": 1484,
+    "height": 1400,
+    "aspect": 1.06,
+    "alpha": true,
+    "color": "#f8f8f8",
+    "placeholder": "data:image/webp;base64,UklGRoQAAABXRUJQVlA4WAoAAAAQAAAAEwAAEgAAQUxQSBgAAAABF/D3/4iIgTDbaJKTPM19DyCi/8md0QJWUDggRgAAAJADAJ0BKhQAEwA+7W6vUqmmJCKoCAEwHYlpAAAp1qOOIqppDNAA/vHgnQesi7H7cqDOC71cXohGCoSQxTSXdA1eqI3gAAA=",
+    "widths": [
+      480,
+      800,
+      1200,
+      1484
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/applied-science/research-1-480.avif",
+        "bytes": 23217
+      },
+      {
+        "w": 800,
+        "src": "/img/applied-science/research-1-800.avif",
+        "bytes": 50122
+      },
+      {
+        "w": 1200,
+        "src": "/img/applied-science/research-1-1200.avif",
+        "bytes": 84703
+      },
+      {
+        "w": 1484,
+        "src": "/img/applied-science/research-1-1484.avif",
+        "bytes": 110158
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/applied-science/research-1-480.webp",
+        "bytes": 25622
+      },
+      {
+        "w": 800,
+        "src": "/img/applied-science/research-1-800.webp",
+        "bytes": 57286
+      },
+      {
+        "w": 1200,
+        "src": "/img/applied-science/research-1-1200.webp",
+        "bytes": 100278
+      },
+      {
+        "w": 1484,
+        "src": "/img/applied-science/research-1-1484.webp",
+        "bytes": 130592
+      }
+    ]
+  },
+  "applied-science/research-2": {
+    "width": 1484,
+    "height": 860,
+    "aspect": 1.7256,
+    "alpha": true,
+    "color": "#f8f8f8",
+    "placeholder": "data:image/webp;base64,UklGRp4AAABXRUJQVlA4WAoAAAAQAAAAEwAACwAAQUxQSBgAAAABD6AQQADE37nRiIgYCASS9iffIKL/ER9WUDggYAAAAFADAJ0BKhQADAA+7WSqTimlpCIwCAEwHYljAMDcLQt7avYAAP7wMkWO2LPi6y//vVj1ZJCmGs08jQKLWMxorfn8NUPx3gLYvaE6Cem5zZMhhyAvgNQCrTm/lkB6aoAAAA==",
+    "widths": [
+      480,
+      800,
+      1200,
+      1484
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/applied-science/research-2-480.avif",
+        "bytes": 16403
+      },
+      {
+        "w": 800,
+        "src": "/img/applied-science/research-2-800.avif",
+        "bytes": 41009
+      },
+      {
+        "w": 1200,
+        "src": "/img/applied-science/research-2-1200.avif",
+        "bytes": 75050
+      },
+      {
+        "w": 1484,
+        "src": "/img/applied-science/research-2-1484.avif",
+        "bytes": 98393
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/applied-science/research-2-480.webp",
+        "bytes": 19016
+      },
+      {
+        "w": 800,
+        "src": "/img/applied-science/research-2-800.webp",
+        "bytes": 47172
+      },
+      {
+        "w": 1200,
+        "src": "/img/applied-science/research-2-1200.webp",
+        "bytes": 86374
+      },
+      {
+        "w": 1484,
+        "src": "/img/applied-science/research-2-1484.webp",
+        "bytes": 116082
+      }
+    ]
+  },
+  "applied-science/research-3": {
+    "width": 1484,
+    "height": 1388,
+    "aspect": 1.0692,
+    "alpha": true,
+    "color": "#f8f8f8",
+    "placeholder": "data:image/webp;base64,UklGRpAAAABXRUJQVlA4WAoAAAAQAAAAEwAAEgAAQUxQSCMAAAABH6CQbQTIn25Au0cjIuITmAmYhJKUpCTqXgNE9D+DPhlRAABWUDggRgAAABAEAJ0BKhQAEwA+7WSsT6mlJCIwGAgBMB2JaQAALnWcf1bDFJEJk3EAAP7x0NK0gsEjIUjvGn0oTaCMpa7uyDe7aIAAAAA=",
+    "widths": [
+      480,
+      800,
+      1200,
+      1484
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/applied-science/research-3-480.avif",
+        "bytes": 26631
+      },
+      {
+        "w": 800,
+        "src": "/img/applied-science/research-3-800.avif",
+        "bytes": 57064
+      },
+      {
+        "w": 1200,
+        "src": "/img/applied-science/research-3-1200.avif",
+        "bytes": 87551
+      },
+      {
+        "w": 1484,
+        "src": "/img/applied-science/research-3-1484.avif",
+        "bytes": 102933
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/applied-science/research-3-480.webp",
+        "bytes": 29520
+      },
+      {
+        "w": 800,
+        "src": "/img/applied-science/research-3-800.webp",
+        "bytes": 64026
+      },
+      {
+        "w": 1200,
+        "src": "/img/applied-science/research-3-1200.webp",
+        "bytes": 103862
+      },
+      {
+        "w": 1484,
+        "src": "/img/applied-science/research-3-1484.webp",
+        "bytes": 123760
+      }
+    ]
+  },
+  "applied-science/research-4-1": {
+    "width": 1336,
+    "height": 1704,
+    "aspect": 0.784,
+    "alpha": true,
+    "color": "#f8f8f8",
+    "placeholder": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAABQBACdASoUABoAPu1aqE2ppKOiN/VYATAdiWkAAC8rie3Sly3Pl67+pJWYAP7wLDjG7xouehTRkchEKFSQyiCgQ+8EPu1ZRzReSWPNpowxwiR/MG2mBz14iHNaQCauULFDuLeyAAA=",
+    "widths": [
+      480,
+      800,
+      1200
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/applied-science/research-4-1-480.avif",
+        "bytes": 49422
+      },
+      {
+        "w": 800,
+        "src": "/img/applied-science/research-4-1-800.avif",
+        "bytes": 104620
+      },
+      {
+        "w": 1200,
+        "src": "/img/applied-science/research-4-1-1200.avif",
+        "bytes": 173268
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/applied-science/research-4-1-480.webp",
+        "bytes": 55392
+      },
+      {
+        "w": 800,
+        "src": "/img/applied-science/research-4-1-800.webp",
+        "bytes": 120532
+      },
+      {
+        "w": 1200,
+        "src": "/img/applied-science/research-4-1-1200.webp",
+        "bytes": 199264
+      }
+    ]
+  },
+  "applied-science/research-4-2": {
+    "width": 1360,
+    "height": 1732,
+    "aspect": 0.7852,
+    "alpha": true,
+    "color": "#f8f8f8",
+    "placeholder": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAABwBACdASoUABkAPu1kqU2ppaOiMAgBMB2JaQAAW+uDFkD+qz1uQWUGvq8yAAD+8C/NfllGwCcko+jpaQ5gGdKwbc4tROjpQZaaFqZB8tYAAA==",
+    "widths": [
+      480,
+      800,
+      1200
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/applied-science/research-4-2-480.avif",
+        "bytes": 58139
+      },
+      {
+        "w": 800,
+        "src": "/img/applied-science/research-4-2-800.avif",
+        "bytes": 124209
+      },
+      {
+        "w": 1200,
+        "src": "/img/applied-science/research-4-2-1200.avif",
+        "bytes": 204635
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/applied-science/research-4-2-480.webp",
+        "bytes": 65444
+      },
+      {
+        "w": 800,
+        "src": "/img/applied-science/research-4-2-800.webp",
+        "bytes": 142226
+      },
+      {
+        "w": 1200,
+        "src": "/img/applied-science/research-4-2-1200.webp",
+        "bytes": 237576
+      }
+    ]
+  },
+  "applied-science/research-4-3": {
+    "width": 1360,
+    "height": 1732,
+    "aspect": 0.7852,
+    "alpha": true,
+    "color": "#f8f8f8",
+    "placeholder": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAwBACdASoUABkAPu1eq02ppSQiMBgMATAdiWkAAC51wjSVoBBl76KsIAAA/vA1vi9j8nz2kPO7AP14qUSWd5kwqH0N3OjU1JtRtQwp9O7a/ayOlP9KuCPNs6d0cAAA",
+    "widths": [
+      480,
+      800,
+      1200
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/applied-science/research-4-3-480.avif",
+        "bytes": 52188
+      },
+      {
+        "w": 800,
+        "src": "/img/applied-science/research-4-3-800.avif",
+        "bytes": 112355
+      },
+      {
+        "w": 1200,
+        "src": "/img/applied-science/research-4-3-1200.avif",
+        "bytes": 186559
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/applied-science/research-4-3-480.webp",
+        "bytes": 57332
+      },
+      {
+        "w": 800,
+        "src": "/img/applied-science/research-4-3-800.webp",
+        "bytes": 127260
+      },
+      {
+        "w": 1200,
+        "src": "/img/applied-science/research-4-3-1200.webp",
+        "bytes": 214672
+      }
+    ]
+  },
+  "applied-science/research-5": {
+    "width": 1484,
+    "height": 1712,
+    "aspect": 0.8668,
+    "alpha": true,
+    "color": "#f8f8f8",
+    "placeholder": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAAAwBACdASoUABcAPu1qr1CppiQiqAqpMB2JaQAALnWPISYWb1z/DY9mwAAA/vBAlPz34KvyKILInZYPEkhUiTGGo/ZfAlLxODEJYAAA",
+    "widths": [
+      480,
+      800,
+      1200,
+      1484
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/applied-science/research-5-480.avif",
+        "bytes": 52529
+      },
+      {
+        "w": 800,
+        "src": "/img/applied-science/research-5-800.avif",
+        "bytes": 106748
+      },
+      {
+        "w": 1200,
+        "src": "/img/applied-science/research-5-1200.avif",
+        "bytes": 169534
+      },
+      {
+        "w": 1484,
+        "src": "/img/applied-science/research-5-1484.avif",
+        "bytes": 205749
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/applied-science/research-5-480.webp",
+        "bytes": 57766
+      },
+      {
+        "w": 800,
+        "src": "/img/applied-science/research-5-800.webp",
+        "bytes": 122496
+      },
+      {
+        "w": 1200,
+        "src": "/img/applied-science/research-5-1200.webp",
+        "bytes": 197978
+      },
+      {
+        "w": 1484,
+        "src": "/img/applied-science/research-5-1484.webp",
+        "bytes": 241424
+      }
+    ]
+  },
   "home/applied-science-back": {
     "width": 1581,
     "height": 1004,
