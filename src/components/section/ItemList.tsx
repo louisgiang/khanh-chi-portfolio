@@ -1,5 +1,5 @@
 import { memo, useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
-import { motion, useReducedMotion } from 'motion/react';
+import { animate, cancelFrame, frame, motion, useReducedMotion, type AnimationPlaybackControls } from 'motion/react';
 import type { Item } from '../../content';
 import { preloadImage } from '../Img';
 import { ItemContent } from './Blocks';
@@ -43,11 +43,15 @@ export function ItemList({ items }: { items: Item[] }) {
   }, [items]);
 
   // Callback ổn định (không đổi giữa các lần render) → chỉ thẻ đổi trạng thái mới render lại.
-  const toggle = useCallback((id: string) => {
-    const next = openRef.current === id ? null : id;
-    setOpenId(next);
-    writeHash(next);
-  }, []);
+  const toggle = useCallback(
+    (id: string) => {
+      const next = openRef.current === id ? null : id;
+      if (!reduce) pinWhileAnimating(refs.current.get(id));
+      setOpenId(next);
+      writeHash(next);
+    },
+    [reduce],
+  );
   const setRef = useCallback((id: string, el: HTMLElement | null) => {
     if (el) refs.current.set(id, el);
     else refs.current.delete(id);
@@ -117,6 +121,46 @@ const ExpandItem = memo(function ExpandItem({ item, open, onToggle, onOpened, se
   const panelId = `${item.id}-panel`;
   const dur = reduce ? 0 : DUR.expand;
 
+  // Chiều cao khung: chỉ animate phần nằm trong màn hình (thẻ dài 3000px thì 500ms dành cho
+  // phần người xem thấy, phần dưới màn hình đặt thẳng), rồi trả về height:auto.
+  const panelRef = useRef<HTMLDivElement>(null);
+  const anim = useRef<AnimationPlaybackControls | null>(null);
+  const mounted = useRef(false);
+  useLayoutEffect(() => {
+    const el = panelRef.current;
+    if (!el) return;
+    if (!mounted.current) {
+      mounted.current = true;
+      el.style.height = open ? 'auto' : '0px';
+      return;
+    }
+    anim.current?.stop();
+    const r = el.getBoundingClientRect();
+    const from = r.height;
+    const room = Math.max(0, window.innerHeight - r.top) + 40; // phần còn thấy được bên dưới đầu khung
+    if (open) {
+      el.style.height = 'auto';
+      const to = Math.min(el.getBoundingClientRect().height, Math.max(room, from));
+      el.style.height = `${from}px`;
+      anim.current = animate(
+        el,
+        { height: [from, to] },
+        {
+          duration: dur,
+          ease: EASE,
+          onComplete: () => {
+            el.style.height = 'auto';
+            onOpened(item.id);
+          },
+        },
+      );
+    } else {
+      const start = Math.min(from, room);
+      anim.current = animate(el, { height: [start, 0] }, { duration: dur, ease: EASE, onComplete: () => setSettled(true) });
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [open]);
+
   return (
     <section className={`item${open ? ' is-open' : ''}${!open && settled ? ' is-settled' : ''}`} ref={sectionRef}>
       <span className="item__bg item__bg--closed" aria-hidden="true" />
@@ -141,16 +185,13 @@ const ExpandItem = memo(function ExpandItem({ item, open, onToggle, onOpened, se
           </span>
         </button>
       </h2>
-      <motion.div
+      <div
         id={panelId}
         role="region"
         aria-labelledby={btnId}
         className="item__panel"
+        ref={panelRef}
         style={{ visibility: !open && settled ? 'hidden' : undefined }}
-        initial={false}
-        animate={{ height: open ? 'auto' : 0 }}
-        transition={{ duration: dur, ease: EASE }}
-        onAnimationComplete={() => (open ? onOpened(item.id) : setSettled(true))}
       >
         <motion.div
           className="item__content"
@@ -163,7 +204,30 @@ const ExpandItem = memo(function ExpandItem({ item, open, onToggle, onOpened, se
         >
           {content}
         </motion.div>
-      </motion.div>
+      </div>
     </section>
   );
 });
+
+/** Ghim đầu ô vừa bấm tại chỗ trên màn hình suốt lúc chuyển: ô khác phía trên thu lại thì cuộn bù
+ *  ngay trong cùng khung hình (sau khi motion ghi style, trước khi trình duyệt vẽ). */
+let unpin: (() => void) | null = null;
+function pinWhileAnimating(el: HTMLElement | undefined) {
+  unpin?.();
+  if (!el) return;
+  const root = document.documentElement;
+  const y0 = el.getBoundingClientRect().top;
+  const until = performance.now() + (DUR.expand + 0.1) * 1000;
+  root.style.overflowAnchor = 'none'; // tự mình bù, tắt neo cuộn của trình duyệt
+  const step = () => {
+    const d = el.getBoundingClientRect().top - y0;
+    if (Math.abs(d) > 0.5) window.scrollBy(0, d);
+    if (performance.now() > until) unpin?.();
+  };
+  frame.postRender(step, true);
+  unpin = () => {
+    cancelFrame(step);
+    root.style.overflowAnchor = '';
+    unpin = null;
+  };
+}

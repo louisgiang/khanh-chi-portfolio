@@ -99,3 +99,10 @@
 - **Độ mượt (đo kỹ hơn):** máy này dùng GPU AMD Radeon tích hợp. Thẻ Applied Science dài 2000–3500px, lúc đầu GPU bận ~600ms/900ms khi mở thẻ (khung tới 56–78ms ở tốc độ thường). Nguyên nhân: 2 lớp nền gradient cao bằng cả thẻ đổi opacity → GPU vẽ lại mỗi khung. Sửa: nền viên thuốc chỉ cao 116px, nền đỏ cam luôn đục nằm dưới → khung chậm nhất còn 22–33ms. Thêm: chỉ thẻ đổi trạng thái mới render lại (React memo) — xử lý lúc bấm 30ms → 12ms (CPU 4x); nội dung thẻ chỉ dựng khi hover/focus/mở → chuyển tab sang Applied Science 211ms → 44ms (CPU 4x).
 - Còn lại: lần bấm đầu (nếu không hover trước, ví dụ chạm trên điện thoại) phải dựng nội dung ngay lúc bấm → 1 khung chậm.
 - Ngân sách ảnh Applied Science: ảnh nặng nhất ở kích thước hiển thị ~55KB (1x), ~120KB (2x). Không ảnh nào > 150KB.
+
+## Làm mượt mở/thu viên thuốc (theo phản hồi "giật quá")
+- Đo từng khung: khi mở ô B mà ô A phía trên đang mở, A thu lại làm B bị đẩy vọt ra khỏi màn hình (top 622 → −484px) rồi trang cuộn ngược lại → cú giật lớn nhất. Sửa: ghim đầu ô vừa bấm tại chỗ suốt lúc chuyển (cuộn bù trong cùng khung hình, tắt neo cuộn của trình duyệt khi đó).
+- Thẻ dài (Applied Science tới 3500px): trước đây phần nhìn thấy lộ hết trong ~50ms đầu (trông như bật ra). Giờ chỉ animate chiều cao trong phạm vi màn hình (+40px), phần dưới màn hình đặt thẳng khi xong (đã kiểm: bước nhảy nằm dưới mép màn hình). Thu lại cũng vậy.
+- Easing chung đổi sang cubic-bezier(0.4, 0, 0.2, 1), thời lượng mở/thu 550ms (vẫn trong khoảng 450–550ms của brief).
+- Kết quả (tốc độ thường, máy này): khung chậm nhất khi mở 22–44ms, 1–4 khung > 20ms mỗi lần mở.
+- Font: repo có 4 file woff2 Helvetica Neue (Light Italic, Roman, Medium, Bold — chỉ ký tự Latin + tiếng Việt) trong `src/assets/fonts/`; file gốc .otf/.ttf chỉ giữ trên máy (`fonts/` không đưa lên git). Chạy `npm run fonts` để tạo lại woff2 từ file gốc.
