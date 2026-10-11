@@ -1,0 +1,239 @@
+/* Trang thành phần — số đo theo khung thiết kế 1920 (xem NOTES.md, Bước 4), nhân với --s. */
+.page {
+  container-type: inline-size;
+}
+.page__inner {
+  --s: calc(100cqw / 1920);
+  --line: max(1px, calc(var(--s) * 2));
+  padding: calc(var(--s) * 56) calc(var(--s) * 102) calc(var(--s) * 120);
+}
+
+/* ---------- Đầu trang ---------- */
+.sh {
+  border-top: var(--line) solid var(--ink);
+}
+.sh__badge-row {
+  display: flex;
+  justify-content: center;
+  padding: calc(var(--s) * 25) 0 calc(var(--s) * 23);
+  border-bottom: var(--line) solid var(--ink);
+}
+.sh__badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(var(--s) * 273);
+  height: calc(var(--s) * 46);
+  border: var(--line) solid var(--ink);
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: calc(var(--s) * 20);
+  line-height: 1;
+  text-decoration: none;
+  color: var(--ink);
+  transition: background-color 0.2s;
+}
+.sh__badge:hover {
+  background: rgba(0, 0, 0, 0.04);
+}
+.sh__badge:focus-visible,
+.sh__tab:focus-visible {
+  outline: 3px solid var(--blue);
+  outline-offset: 3px;
+}
+
+.sh__tabs {
+  border-bottom: var(--line) solid var(--ink);
+}
+.sh__tabs ul {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.sh__tab {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: calc(var(--s) * 87);
+  padding: 0 calc(var(--s) * 40);
+  font-weight: 700;
+  font-size: calc(var(--s) * 32);
+  line-height: 1;
+  color: var(--blue);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 0.2s var(--ease);
+}
+.sh__tab.is-active {
+  color: #fff;
+}
+.sh__tab-bg {
+  position: absolute;
+  inset: 0;
+  background: var(--blue);
+}
+.sh__tab-label {
+  position: relative;
+}
+
+/* ---------- Thân trang ---------- */
+.page__body {
+  display: grid;
+  grid-template-columns: calc(var(--s) * 568) 1fr;
+  column-gap: calc(var(--s) * 10);
+  align-items: start;
+  padding-top: calc(var(--s) * 53);
+}
+.page__title {
+  margin: calc(var(--s) * 11.4) 0 0 calc(var(--s) * -2);
+  font-weight: 700;
+  font-size: calc(var(--s) * 80);
+  line-height: 1;
+  color: #222;
+}
+.page__lead {
+  margin: calc(var(--s) * 20) 0 0 calc(var(--s) * -2);
+  font-weight: 500;
+  font-size: calc(var(--s) * 20);
+  line-height: calc(var(--s) * 24);
+  color: #222;
+}
+.page__lead.is-italic {
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* ---------- Ô viên thuốc / thẻ mở rộng ---------- */
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--s) * 25);
+}
+
+.item {
+  --r-closed: calc(var(--s) * 58);
+  --r-open: calc(var(--s) * 40);
+  --bw: max(1.5px, calc(var(--s) * 3));
+  position: relative;
+  border-radius: var(--r-closed);
+  padding: var(--bw) var(--bw) calc(var(--bw) + var(--s) * 4.9);
+  transition: border-radius var(--dur-expand) var(--ease);
+  isolation: isolate;
+}
+.item.is-open {
+  border-radius: var(--r-open);
+}
+.item:has(.item__btn:focus-visible) {
+  outline: 3px solid var(--blue);
+  outline-offset: 4px;
+}
+
+/* Hai lớp nền chồng nhau, chỉ đổi opacity: viền gradient + nền */
+.item__bg {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  border: var(--bw) solid transparent;
+  pointer-events: none;
+  transition: opacity var(--dur-expand) var(--ease);
+}
+.item__bg--closed {
+  background:
+    linear-gradient(180deg, rgba(222, 236, 214, 0.55) 0%, rgba(245, 255, 240, 0) 30%, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 0.6) 100%) padding-box,
+    linear-gradient(var(--bg), var(--bg)) padding-box,
+    linear-gradient(90deg, #ffd952 0%, #ffd952 6%, #ffada6 34%, #ffd559 60%, #feaa5c 73%, #fc656b 89%, #fc656b 100%) border-box;
+  box-shadow: inset calc(var(--s) * 6) calc(var(--s) * 4) calc(var(--s) * 14) rgba(40, 70, 30, 0.05);
+}
+.item__bg--open {
+  opacity: 0;
+  background:
+    linear-gradient(90deg, #fc656b 0%, #ffae51 100%) padding-box,
+    linear-gradient(90deg, #fc656b 0%, #ffd952 100%) border-box;
+}
+.item.is-open .item__bg--open {
+  opacity: 1;
+}
+.item.is-open .item__bg--closed {
+  opacity: 0;
+}
+
+.item__h {
+  margin: 0;
+  font: inherit;
+}
+.item__btn {
+  display: grid;
+  width: 100%;
+  padding: calc(var(--s) * 31.1) calc(var(--s) * 40) calc(var(--s) * 24);
+  border: 0;
+  background: none;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  color: inherit;
+}
+.item__t {
+  grid-area: 1 / 1;
+  justify-self: start;
+  font-weight: 700;
+  font-size: calc(var(--s) * 50);
+  line-height: 1;
+  transition: opacity var(--dur-expand) var(--ease);
+}
+.item__t--grad {
+  background: linear-gradient(90deg, #fc656b 0%, #ffae51 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.item__t--white {
+  color: #fff;
+  opacity: 0;
+}
+.item.is-open .item__t--white {
+  opacity: 1;
+}
+.item.is-open .item__t--grad {
+  opacity: 0;
+}
+
+.item__panel {
+  overflow: hidden;
+}
+.item__content {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--s) * 25);
+  padding: 0 calc(var(--s) * 40) calc(var(--s) * 23.1);
+}
+.item__text {
+  margin: 0;
+  font-weight: 500;
+  font-size: calc(var(--s) * 20);
+  line-height: 1;
+  color: #fff;
+}
+.item__row {
+  display: flex;
+  gap: calc(var(--s) * 20);
+}
+.item__row > .item__img {
+  flex: 1 1 0;
+  min-width: 0;
+}
+.item__img {
+  border-radius: calc(var(--s) * 20);
+}
+.item__pair {
+  display: grid;
+  grid-template-columns: 1fr 56.885%;
+  column-gap: calc(var(--s) * 25);
+  align-items: center;
+}
+.item__pair.is-img-first {
+  grid-template-columns: 56.885% 1fr;
+}

@@ -12,3 +12,10 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: 'Helvetica Neue Web';
+  src: url('../assets/fonts/hn-300i.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}

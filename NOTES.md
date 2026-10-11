@@ -69,3 +69,16 @@
 - Trang thành phần hiện là trang tạm để thử click (Bước 4 làm thật).
 - Build thử: lần tải đầu trang chủ ≈ **179KB** (HTML + CSS + JS brotli 131KB + 2 font 47KB), chưa tính ảnh mặt sau.
 - Quay về trang chủ: chỉ hiện dần (bỏ trượt lên 16px — gây cảm giác cả trang giật).
+
+## Bước 4 — Khuôn trang thành phần (làm trên My Journey)
+- Nội dung: `content/my-journey.json` (chép nguyên văn từ ref, giữ cả dấu "–" ở Applied Science và " - " ở Craft Villages, ngoặc kép thẳng). Câu đầu Stage & Screen **không có dấu chấm cuối** — giữ nguyên như thiết kế.
+- **Alt ảnh trong thẻ: bản nháp** (`"draft": true` trong JSON) — cần duyệt.
+- Số đo (khung 1920, co theo chiều rộng màn hình): kẻ ngang 2px, x 102–1818; viên "Khánh Chi's Portfolio" 273×46, Bold 20; tab Bold 32, cao 87, đệm ngang 40 (nền xanh #3C88F8); tiêu đề trang Bold 80; giới thiệu Light Italic 20 / dòng 24; ô viên thuốc 1138×116, cách nhau 25, viền 3px; tên ô Bold 50.
+- Viền ô thu gọn: gradient ngang vàng #FFD952 → hồng #FFADA6 → vàng #FFD559 → cam #FEAA5C → đỏ #FC656B (đo từ ref). Nền "trắng mờ": giả lập bằng bóng đổ trong + vệt sáng đáy.
+- Thẻ mở: nền #FC656B → #FFAE51 (theo ảnh thông số), **viền 3px #FC656B → #FFD952** (đo từ ref), bo góc 58 → 40, chữ Medium 20 / dòng 20, ảnh bo 20, khoảng cách khối 25, ảnh cùng hàng cách 20.
+- So pixel (Chrome headless) với 5 ảnh ref: trùng gần khít, cả vị trí xuống dòng; lệch 1–2px ở vài chỗ.
+- Chuyển động: chiều cao thẻ animate bằng motion (`height: auto`), nền/viền/màu chữ crossfade bằng opacity, bo góc bằng CSS transition — cùng easing/thời lượng trong `src/motion.ts`. Nội dung thẻ dựng sẵn (ẩn) để lúc bấm không phải dựng DOM.
+- Đo trên bản build, Chrome headless, CPU giảm tốc 4x: đổi tab 0 khung rơi; mở/thu thẻ tối đa 1–2 khung ~50ms (lần mở đầu tiên), các lần sau ≤ 1 khung; lật cánh hoa 1–2 khung ~50–67ms lần đầu.
+- Địa chỉ ghi ô đang mở (`/my-journey#craft-villages`), dùng `history.replaceState` (không tạo mục lịch sử, router không tự cuộn). Mở link có `#` → thẻ mở sẵn và cuộn tới.
+- Trang chưa có nội dung (4 trang còn lại) hiện tiêu đề, chưa có ô — chờ nội dung.
+- Thêm font Light Italic (18KB) cho đoạn giới thiệu My Journey.

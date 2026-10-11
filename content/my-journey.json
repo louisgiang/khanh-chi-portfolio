@@ -1,0 +1,52 @@
+{
+  "$note": "Chữ chép nguyên văn từ assets-src/my journey/ref/. Mỗi ô: id (dùng cho #hash), title, layout, blocks theo thứ tự. Block: {text} hoặc {image, alt}. alt có 'draft: true' là bản nháp chờ duyệt.",
+  "title": "My Journey",
+  "introStyle": "italic",
+  "intro": "I was born in the heart of Vong, the village of cốm, where every morning began with the rhythm of pestles pounding young green rice. My maternal hometown, Thuong Tin, rests beside the Red River; my paternal one is only a five-minute ride from Bat Trang Ceramic Village. Between them, I grew up wrapped in sounds, spices, and colors, never guessing that this was where my story with villages was quietly beginning.",
+  "items": [
+    {
+      "id": "craft-villages",
+      "title": "Craft Villages",
+      "layout": "zigzag",
+      "blocks": [
+        { "text": "Step into the journey of Le Pham Khanh Chi, a 12th-grade explorer at the Foreign Language Specialized School, where a childhood among craft villages grows into a lifelong curiosity for their colors, waters, and stories." },
+        { "image": "my-journey/craft-villages-1", "alt": "Khánh Chi đứng giữa bãi cỏ ven sông Hồng, một tay dang rộng", "draft": true },
+        { "image": "my-journey/craft-villages-2", "alt": "Khánh Chi chụp ảnh trong một xưởng sơn mài, tường treo kín đĩa và tranh sơn mài", "draft": true },
+        { "text": "Beyond the river are the workshops, walls of lacquer, shelves of clay, cloth still bright with dye. Every piece looks finished, but behind it are years of hands, habits, and materials. This is where I first learned to ask not only \"how is it made?\" but also \"what does it leave behind?\" To understand a craft, I zoom into what comes before it and after it - its color, its water, its hands." }
+      ]
+    },
+    {
+      "id": "applied-science",
+      "title": "Applied Science",
+      "layout": "grid",
+      "blocks": [
+        { "image": "my-journey/applied-science-1", "alt": "Các bạn học sinh đứng trên sân khấu vòng chung kết Vinschool Science Innovation Challenge", "draft": true },
+        { "image": "my-journey/applied-science-2", "alt": "Khánh Chi cầm giấy chứng nhận và huy chương trước băng rôn WICO 2026 tại Đại học Quốc gia Seoul", "draft": true },
+        { "text": "Science has always been my lens for seeing what villages hide – the chemistry behind a color, the story inside a drop of water. What began as childhood wonder has grown into experiments, nanomaterials, and questions too big for a notebook. Formulas once on paper now flow through the water, shaping how I learn, create, and protect the places I cherish." }
+      ]
+    },
+    {
+      "id": "stage-and-screen",
+      "title": "Stage & Screen",
+      "layout": "grid",
+      "blocks": [
+        { "text": "Step into the journey of Le Pham Khanh Chi, a storyteller who learned very early that a moment can also be held in her movement and behind her frame" },
+        { "image": "my-journey/stage-and-screen-1", "alt": "Hai bé gái trong trang phục múa tạo dáng trước băng rôn cuộc thi tài năng Đoàn Thị Điểm 2015–2016", "draft": true },
+        { "image": "my-journey/stage-and-screen-2", "alt": "Hai bé gái biểu diễn trên sân khấu, một bé đội nón lá cúi chào", "draft": true },
+        { "image": "my-journey/stage-and-screen-3", "alt": "Khánh Chi ôm bó hoa trên sân khấu có rèm hồng", "draft": true },
+        { "text": "As a curious storyteller gathering her stages and frames, I lead you beyond the lab and the classroom, where I express myself through performing dance, acting, and camera. Dance gave me flexibility and resilience in spirit; acting taught me to step into another life and feel it from the inside; the camera taught me to capture a moment, and the hands of artisans at work, before it passes. I learned that a story is never only words. It lives in a held breath, in the gesture of a hand, in the light falling across a face. Looking back, I see those years as a quiet apprenticeship in being seen, and then in learning to see. I stepped onto the stage to be heard, and I picked up the camera to listen." }
+      ]
+    },
+    {
+      "id": "my-little-village",
+      "title": "My Little Village",
+      "layout": "grid",
+      "blocks": [
+        { "image": "my-journey/my-little-village-1", "alt": "Nhóm bạn mặc áo tím Amethyst tạo dáng dưới tán cây trong sân trường", "draft": true },
+        { "image": "my-journey/my-little-village-2", "alt": "Nhóm bạn mặc áo đỏ CEC ngồi trước toà nhà trường học, cầm băng rôn", "draft": true },
+        { "image": "my-journey/my-little-village-3", "alt": "Ba bạn nữ mặc áo xanh nhạt chụp ảnh trước tường trang trí bướm và lá", "draft": true, "wide": true },
+        { "text": "No village is built by one person. I grew up among colors and scents that were all different, and the people who have shown up in my life are the same: different in temperament and story, yet wholly blended. Surrounded by so many people, I learned early to listen and to make room. It is why, wherever I go next, I hope to build a new little village in every place that welcomes me." }
+      ]
+    }
+  ]
+}

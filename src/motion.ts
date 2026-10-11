@@ -10,3 +10,10 @@ export const DUR = {
   expand: 0.5, // mở/thu thẻ (450–550ms)
   contentDelay: 0.1,
 } as const;
+
+// Đưa cùng easing/thời lượng sang CSS (transition của border-radius, nền, màu chữ).
+export function applyMotionCssVars() {
+  const r = document.documentElement.style;
+  r.setProperty('--ease', `cubic-bezier(${EASE.join(',')})`);
+  r.setProperty('--dur-expand', `${DUR.expand}s`);
+}
