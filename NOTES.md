@@ -63,8 +63,9 @@
 - Cỡ chữ đo từ độ rộng chữ trong ref: nhãn cánh Bold 35; "Welcome to / my Portfolio" & "Khanh Chi" Bold 65; "My Story" Bold 34; 4 dòng giới thiệu **Medium 43**. Màu xanh #3C88F8, chữ giới thiệu #2C2D2C. Vị trí chữ chỉnh theo baseline đo trên trình duyệt.
 - Mũi tên "My Story": vẽ lại bằng 1 đường cong + đầu tam giác, lệch ≤1px so với ref.
 - Mặt sau cánh: ảnh "- hover" (đã cắt sẵn) + CSS `clip-path: polygon()` cùng toạ độ với cánh (thay cho `<clipPath>` SVG vì cho phép dùng `<picture>` AVIF/WebP + srcset). Vùng hover/click là lớp SVG đa giác riêng nằm trên cùng.
-- **Tự quyết:** mặt sau có thêm tên mục chữ trắng có bóng mờ (brief cho phép "có thể kèm"; thiết kế hover không có chữ). Bỏ được dễ nếu anh/chị không thích.
+- Mặt sau cánh: chỉ ảnh, không chèn chữ (anh/chị chốt).
 - **Alt ảnh mặt sau: bản nháp, cần duyệt** (trong `Flower.tsx`, hằng `ALT`).
 - Ảnh mặt sau tải sau sự kiện `load` + lúc rảnh, bản 420px (AVIF, tổng ~111KB). Nếu hover trước khi tải xong: hiện ảnh mờ, không bao giờ mặt trắng.
 - Trang thành phần hiện là trang tạm để thử click (Bước 4 làm thật).
 - Build thử: lần tải đầu trang chủ ≈ **179KB** (HTML + CSS + JS brotli 131KB + 2 font 47KB), chưa tính ảnh mặt sau.
+- Quay về trang chủ: chỉ hiện dần (bỏ trượt lên 16px — gây cảm giác cả trang giật).

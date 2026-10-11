@@ -181,9 +181,6 @@ function PetalCard({ petal: p, index, flipped, backsReady }: { petal: Petal; ind
               />
             </div>
           </div>
-          <svg viewBox={`0 0 ${w} ${h}`} className="petal__back-label">
-            {label}
-          </svg>
         </motion.div>
       </motion.div>
     </div>

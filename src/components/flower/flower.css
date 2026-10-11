@@ -72,9 +72,6 @@
   font-size: 35px;
   fill: #fff;
 }
-.petal__back-label .petal__label {
-  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.55);
-}
 
 .petal__shadow {
   position: absolute;
