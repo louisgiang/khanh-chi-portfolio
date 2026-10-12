@@ -1,5 +1,5 @@
 {
-  "$note": "Chữ chép nguyên văn từ My Little Village/ref/. mt = khoảng cách phía trên khối (đơn vị thiết kế 1920). alt draft:true = bản nháp chờ duyệt. Nút: href rỗng = chưa có link. bes-veo = giấy khen VEO cắt tạm từ ref (chưa có ảnh gốc). Cleen ảnh 3–4: chưa có chú thích.",
+  "$note": "Chữ chép nguyên văn từ My Little Village/ref/. mt = khoảng cách phía trên khối (đơn vị thiết kế 1920). alt draft:true = bản nháp chờ duyệt. Nút: href rỗng = chưa có link. Chú thích ảnh 3–4 của Cleen do anh/chị gửi.",
   "title": "My Little Village",
   "intro": "A corner of people and perspectives, where friendships take shape, voices blend, and compassion takes root. Do you think I am only shaped by science, craft villages, and film? Think again. Everyone who has stood beside me left a color in me. Empathy, humility, openness, and the patience to hear another side. A leader who listens, a storyteller who observes, and a volunteer who contributes, cares, and gives back, I cultivate every facet of myself, letting each endeavor color the journey beyond the classroom.",
   "items": [
@@ -35,12 +35,14 @@
             {
               "image": "my-little-village/cleen-3",
               "alt": "Khánh Chi hướng dẫn các em nhỏ làm đồ thủ công",
-              "draft": true
+              "draft": true,
+              "note": "Here, I guided the children in making paper hand fans as an alternative to electric fans, turning a simple craft into a lesson on saving energy and resources."
             },
             {
               "image": "my-little-village/cleen-4",
               "alt": "Lớp học của các em nhỏ trong căn phòng tường gạch",
-              "draft": true
+              "draft": true,
+              "note": "Collaborated with Red River Recycling, we transform 600 kg of plastic into 25 furniture sets (chairs, tables, bookshelves), which we donated to students at Sapa Hope Center, an educational center for disadvantaged students in Vietnam's northern mountains."
             }
           ]
         }

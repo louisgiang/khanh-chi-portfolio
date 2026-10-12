@@ -157,8 +157,8 @@
 - Băng ảnh trượt tự động (ref cắt mép phải): Cleen (ảnh 1–4, cao 266, cách 10, có ô chú thích), ABS (bes-1…4, cao 343), CEC (cec-1…5, cao 331). **Tự quyết:** Youth For Community — ref chỉ hiện 2 ảnh vừa khít, nhưng có 6 ảnh → làm băng trượt (cao 316, cách 20) để hiện đủ 6.
 - Nút "Cineris →" nằm dưới ảnh đầu của băng Cleen (căn giữa theo ảnh, trượt cùng ảnh) như ref.
 - WYEF: hàng ảnh tĩnh bes-5…7 (vừa khít khung như ref).
-- **Thiếu ảnh:** Giấy khen VEO 2024 (ô Business & Economic Simulation) không có trong ảnh gửi → **cắt tạm từ ref @2x** (`bes-veo`, 1089×662). Có ảnh gốc thì thả vào `assets-src/my-little-village/bes-veo.png` rồi `npm run images`.
-- **Thiếu chữ:** chú thích ảnh 3 của Cleen bị cắt trong ref ("Here, I guided the children in … an alternative to electric fans, … a lesson on saving energy and …"); ảnh 4 không có chú thích → để trống, chờ anh/chị gửi.
+- Giấy khen VEO 2024: ảnh gốc `giay khen.png` anh/chị gửi bổ sung → `bes-veo` (thay bản cắt tạm từ ref).
+- Chú thích ảnh 3–4 của Cleen: anh/chị gửi bổ sung (ref bị cắt mép).
 - **Thiếu link:** "Cineris →", "[YOUTH FOR COMMUNITY] Recap Video →" (`href` rỗng). Video "[CEC] PR Tuyển Thành Viên" chưa có link YouTube.
 - Giữ nguyên theo thiết kế: "Cleen", "fieldtrips", "travelled", "for loudness !!" (dấu cách trước "!!").
 - So vị trí với ref (Chrome headless 1920): chiều cao thẻ Cleen 621/621, YFC 608/610, CEC 1095/1092, BES 1717/1731.

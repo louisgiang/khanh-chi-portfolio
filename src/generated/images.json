@@ -6220,49 +6220,49 @@
     ]
   },
   "my-little-village/bes-veo": {
-    "width": 1089,
-    "height": 662,
-    "aspect": 1.645,
+    "width": 1098,
+    "height": 670,
+    "aspect": 1.6388,
     "alpha": true,
     "color": "#f8f8f8",
-    "placeholder": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAADQAwCdASoUAAwAPu1iqk4ppaQiMAgBMB2JQBdgBD0mPWYN1yxJ9AAA/usmfm/MmehHnFyzXitFDlylBQvNSkcJ72z834lvXZb8tDlKBePHIR60E7VS3EcDouBuY+P64SLvMvvmyAAAAA==",
+    "placeholder": "data:image/webp;base64,UklGRsAAAABXRUJQVlA4WAoAAAAQAAAAEwAACwAAQUxQSDIAAAABN0CQbePPeoVt14iI+D8ACiLbtO4dAtwIIomgfw7et0BE/yfAiFaJRU7C15wCi85OBVZQOCBoAAAA0AMAnQEqFAAMAD7tYqlNqaWkIjAIATAdiUAXYAQ9Jj6Wf1Y8+5vQAP7rJn5vzHJenseJRWXg5nEh5QN56+rr/z0K7FHMvAeY0DGt1+eGy3w2tbnegcf6YNYn8cXxsot9oIimCGjAAAA=",
     "widths": [
       480,
       800,
-      1089
+      1098
     ],
     "avif": [
       {
         "w": 480,
         "src": "/img/my-little-village/bes-veo-480.avif",
-        "bytes": 37892
+        "bytes": 37421
       },
       {
         "w": 800,
         "src": "/img/my-little-village/bes-veo-800.avif",
-        "bytes": 77900
+        "bytes": 78085
       },
       {
-        "w": 1089,
-        "src": "/img/my-little-village/bes-veo-1089.avif",
-        "bytes": 106482
+        "w": 1098,
+        "src": "/img/my-little-village/bes-veo-1098.avif",
+        "bytes": 107345
       }
     ],
     "webp": [
       {
         "w": 480,
         "src": "/img/my-little-village/bes-veo-480.webp",
-        "bytes": 30552
+        "bytes": 30310
       },
       {
         "w": 800,
         "src": "/img/my-little-village/bes-veo-800.webp",
-        "bytes": 66766
+        "bytes": 66856
       },
       {
-        "w": 1089,
-        "src": "/img/my-little-village/bes-veo-1089.webp",
-        "bytes": 98226
+        "w": 1098,
+        "src": "/img/my-little-village/bes-veo-1098.webp",
+        "bytes": 98898
       }
     ]
   },
