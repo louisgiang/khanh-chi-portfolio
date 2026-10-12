@@ -521,3 +521,33 @@
   line-height: 1.2;
   color: #fff;
 }
+
+/* Nút viên thuốc (Stage & Screen): link tới video/bài đăng */
+.pill-btn__wrap {
+  margin: 0;
+}
+.pill-btn__wrap.is-center {
+  text-align: center;
+}
+.pill-btn {
+  display: inline-block;
+  padding: calc(var(--s) * 11.5) calc(var(--s) * 20);
+  border-radius: calc(var(--s) * 22);
+  background: rgba(255, 255, 255, 0.7);
+  font-weight: 700;
+  font-size: calc(var(--s) * 20);
+  line-height: 1;
+  color: #000;
+  text-decoration: none;
+}
+a.pill-btn {
+  transition: background 0.2s var(--ease), transform 0.2s var(--ease);
+}
+a.pill-btn:hover {
+  background: rgba(255, 255, 255, 0.9);
+  transform: translateY(-1px);
+}
+a.pill-btn:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+}

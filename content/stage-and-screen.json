@@ -1,0 +1,254 @@
+{
+  "$note": "Chữ chép nguyên văn từ Stage & Screen/ref/. mt = khoảng cách phía trên khối (đơn vị thiết kế 1920, đo từ ref). alt có draft:true = bản nháp chờ duyệt. Nút viên thuốc: href rỗng = chưa có link (anh/chị bổ sung).",
+  "title": "Stage & Screen",
+  "intro": "Step into the vibrant odyssey of Le Pham Khanh Chi, where a childhood on the dancesport floor grows into a drive to tell stories on stage and on screen. From starring and script-writing in the Film Club of CNN English Club to art directing CNN Prom and the CEC Oscar, and directing Colors of FLSS, her vision soars with every creative stride. With each rehearsal and choreography, this chapter pulses with color, weaving performance, art direction, and filmmaking into a bright thread of belonging and shared stories.",
+  "items": [
+    {
+      "id": "cec-oscar-and-prom",
+      "title": "CEC Oscar & Prom",
+      "blocks": [
+        {
+          "mt": 25,
+          "gap": 20,
+          "row": [
+            {
+              "image": "stage-and-screen/cec-1",
+              "alt": "Poster phim ngắn Glitched – “You can't unring a bell”",
+              "draft": true
+            },
+            {
+              "image": "stage-and-screen/cec-2",
+              "alt": "Cảnh phim Glitched: Khánh Chi trong vai Mega đứng giữa đêm tối",
+              "draft": true
+            }
+          ]
+        },
+        {
+          "mt": 36,
+          "text": "I started my journey at CEC as a member, starring in main roles, first as Mega in the horror film Glitched, a girl with obsessive-compulsive disorder, trapped by the details around her. The film went on to win CEC Oscar, the club's most prestigious award."
+        },
+        {
+          "mt": 25,
+          "button": {
+            "text": "[CEC OSCAR 2025] →",
+            "href": ""
+          }
+        },
+        {
+          "mt": 26,
+          "image": "stage-and-screen/cec-3",
+          "alt": "Poster phim ngắn Half-time – “the pause we never named”",
+          "draft": true,
+          "width": 450
+        },
+        {
+          "mt": 30,
+          "text": "The next year, I moved behind the camera. I wrote the script, cast the actors, and directed the cinematography of Half-time, a romance, a long way from the horror of Glitched, where I had once stood in front of the lens."
+        },
+        {
+          "mt": 22,
+          "button": {
+            "text": "[CEC OSCAR 2026 - CEC'S ACTING MONTHS 2025] →",
+            "href": ""
+          }
+        },
+        {
+          "mt": 26,
+          "gap": 20,
+          "row": [
+            {
+              "image": "stage-and-screen/cec-4",
+              "alt": "Các thành viên ngồi trên sân khấu CEC Oscar 2026 Ascendius",
+              "draft": true
+            },
+            {
+              "image": "stage-and-screen/cec-5",
+              "alt": "Đoàn làm phim tạo dáng trên sân khấu CEC Oscar",
+              "draft": true
+            }
+          ]
+        },
+        {
+          "mt": 27,
+          "text": "Beyond the screen, as Co-President the same year, I was in charge of organizing CEC Oscar, the night that screens and awards the year's films, which meant handling logistics, visuals, ticket sales, and the theater rental."
+        },
+        {
+          "mt": 25,
+          "image": "stage-and-screen/cec-6",
+          "alt": "Ban tổ chức Euphoria: Prom Night 2025 cầm giấy chứng nhận trước sân khấu vỏ sò",
+          "draft": true
+        },
+        {
+          "mt": 26,
+          "text": "As art director of Euphoria: Prom Night, I invited and managed the artists, shaped the visuals and theme of the night, and ran the stage. Beyond the celebration, the night raised funds for patients at the National Institute of Hematology and Blood Transfusion."
+        }
+      ]
+    },
+    {
+      "id": "bat-trang-gom-show",
+      "title": "Bat Trang GOm Show",
+      "blocks": [
+        {
+          "mt": 25,
+          "gap": 20,
+          "row": [
+            {
+              "image": "stage-and-screen/bat-trang-1",
+              "alt": "Khánh Chi ngồi nhặt mảnh gốm vỡ bên bao tải ở Bát Tràng",
+              "draft": true
+            },
+            {
+              "image": "stage-and-screen/bat-trang-2",
+              "alt": "Khánh Chi nhặt mảnh sứ vỡ trong xưởng gốm",
+              "draft": true
+            }
+          ]
+        },
+        {
+          "mt": 27,
+          "text": "In Bat Trang, a ceramic village 30km from Hanoi, broken pieces are left behind every day. I gathered the discarded shards of pottery and porcelain, knowing that once enough of them are collected and reprocessed, they can become usable clay."
+        },
+        {
+          "mt": 24,
+          "gap": 20,
+          "row": [
+            {
+              "image": "stage-and-screen/bat-trang-3",
+              "alt": "Sân khấu dựng lò gốm, bày các nhạc cụ làm từ gốm",
+              "draft": true
+            },
+            {
+              "image": "stage-and-screen/bat-trang-4",
+              "alt": "Các nhạc cụ gốm đặt trên sân khấu dưới đèn xanh",
+              "draft": true
+            }
+          ]
+        },
+        {
+          "mt": 27,
+          "text": "These are original instruments crafted from ceramic, made to play the indigenous music of Vietnam. Clay that once held tea and flowers now carries a melody."
+        },
+        {
+          "mt": 24,
+          "gap": 20,
+          "row": [
+            {
+              "image": "stage-and-screen/bat-trang-5",
+              "alt": "Ê-kíp sắp đặt nhạc cụ gốm trên sân khấu Thanh Âm Gốm",
+              "draft": true
+            },
+            {
+              "image": "stage-and-screen/bat-trang-6",
+              "alt": "Các nghệ sĩ biểu diễn nhạc cụ gốm trên sân khấu Thanh Âm Gốm",
+              "draft": true
+            }
+          ]
+        },
+        {
+          "mt": 27,
+          "text": "I co-organized the Bat Trang GOm Show, a performing arts project inspired by the ceramic heritage of Vietnam. Its show, Sound from Ceramics, took these instruments on tour across several cities, so that audiences could see ceramics as an art form to hear, not only to hold."
+        },
+        {
+          "mt": 24,
+          "gap": 20,
+          "row": [
+            {
+              "image": "stage-and-screen/bat-trang-7",
+              "alt": "Khánh Chi mặc áo dài đứng cạnh chum gốm lớn trước lò gốm Thanh Âm Gốm",
+              "draft": true
+            },
+            {
+              "image": "stage-and-screen/bat-trang-8",
+              "alt": "Toàn bộ nghệ sĩ và ê-kíp chào khán giả trên sân khấu Thanh Âm Gốm",
+              "draft": true
+            }
+          ]
+        },
+        {
+          "mt": 27,
+          "text": "I was in charge of the logistics, the quiet work that goes on before any curtain rises: schedules, transport, and setup, again and again. Then the music began. Watching a crowd listen to clay, I understood that ceramics can carry more than shape and glaze. They can carry sound, and that sound could travel far beyond the village where it was born."
+        }
+      ]
+    },
+    {
+      "id": "colors-of-flss",
+      "title": "Colors of FLSS",
+      "blocks": [
+        {
+          "mt": 25,
+          "gap": 20,
+          "row": [
+            {
+              "image": "stage-and-screen/colors-1",
+              "alt": "Tiết mục múa Hàn Quốc trên sân khấu Sắc màu Chuyên Ngoại ngữ 2026",
+              "draft": true
+            },
+            {
+              "image": "stage-and-screen/colors-2",
+              "alt": "Lớp 11H chụp ảnh cùng MC trên sân khấu Sắc màu 2026",
+              "draft": true
+            }
+          ]
+        },
+        {
+          "mt": 27,
+          "text": "Korean is my second language at school, and what sparks curiosity about the culture behind the words. So when the Colors of FLSS showcase came, I chose to bring Korea to the stage. As general director, I took A Harmony of Korean Colors from an idea to performance, showcasing a young woman who travels back in time to discover Korea's most emblematic traditions – Ganggangsullae, the traditional circle dance; Arirang, the Korean folk song; and, bringing the story back to present through modern K-pop dance. From recruiting the members to renting the props, I choreographed, directed, and rehearsed it into life. Amazingly, our performance won First Prize!"
+        },
+        {
+          "mt": 25,
+          "button": {
+            "text": "[Sắc Màu CNN] Bản hoà sắc văn hoá Hàn Quốc",
+            "href": ""
+          },
+          "center": true
+        },
+        {
+          "mt": 26,
+          "image": "stage-and-screen/colors-3",
+          "alt": "Giấy chứng nhận Giải Nhất tiết mục Bản hoà sắc Hàn Quốc, lớp 11H, Sắc màu Chuyên Ngoại ngữ 2026",
+          "draft": true,
+          "width": 515,
+          "center": true
+        }
+      ]
+    },
+    {
+      "id": "aria-project",
+      "title": "Aria Project",
+      "blocks": [
+        {
+          "mt": 25,
+          "gap": 20,
+          "row": [
+            {
+              "image": "stage-and-screen/aria-1",
+              "alt": "Nghệ sĩ trẻ biểu diễn trên sân khấu đêm nhạc Việt Nam Tinh Hoa",
+              "draft": true
+            },
+            {
+              "image": "stage-and-screen/aria-2",
+              "alt": "Các nghệ sĩ cầm giấy chứng nhận trên sân khấu Việt Nam Tinh Hoa",
+              "draft": true
+            },
+            {
+              "image": "stage-and-screen/aria-3",
+              "alt": "Ban nhạc dân tộc biểu diễn trong khán phòng Việt Nam Tinh Hoa",
+              "draft": true
+            }
+          ]
+        },
+        {
+          "mt": 27,
+          "text": "\"The Essence of Vietnam\" (Viet Nam Tinh Hoa) is a night of Vietnamese folk music, played and organized by youngsters. I was responsible for the running order and timing of performances, scheduled and ran the rehearsals, coordinated the performers on the day from call times to who waited in the wings, and worked with the sound and lighting. The concert also raised funds for MSD Vietnam, so that a night of heritage could also be a night of giving."
+        },
+        {
+          "mt": 25,
+          "button": {
+            "text": "[Aria Project] Concert Việt Nam Tinh Hoa",
+            "href": ""
+          }
+        }
+      ]
+    }
+  ]
+}

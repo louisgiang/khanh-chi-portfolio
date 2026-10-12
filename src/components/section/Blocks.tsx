@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState, type CSSProperties } from 'react';
 import { motion, useReducedMotion } from 'motion/react';
 import type { Block, Cell, Entry, ImageRef, Item, MarqueeBlock, RowBlock, SlideshowBlock, VideoBlock } from '../../content';
-import { isDivider, isEntry, isImage, isImageCell, isMarquee, isRow, isSlideshow, isText, isVideo } from '../../content';
+import { isButton, isDivider, isEntry, isImage, isImageCell, isMarquee, isRow, isSlideshow, isText, isVideo } from '../../content';
 import { Img, imageEntry } from '../Img';
 import { DUR, EASE } from '../../motion';
 import { CONTENT_W, imageWidths, rowGrows, toRows, vwSizes } from './sizes';
@@ -33,7 +33,22 @@ export function ItemContent({ item, load }: { item: Item; load: boolean }) {
 
 function BlockView({ block: b, ctx, last }: { block: Block; ctx: Ctx; last: boolean }) {
   if (isText(b)) return <p className={`item__text${b.variant ? ` item__text--${b.variant}` : ''}`}>{b.text}</p>;
-  if (isImage(b)) return <Picture img={b} ctx={ctx} />;
+  if (isImage(b))
+    return <Picture img={b} ctx={ctx} style={b.width ? { width: u(b.width), marginInline: b.center ? 'auto' : undefined } : undefined} />;
+  if (isButton(b)) {
+    const cls = `pill-btn${b.center ? ' is-center' : ''}`;
+    return (
+      <p className={`pill-btn__wrap${b.center ? ' is-center' : ''}`}>
+        {b.button.href ? (
+          <a className={cls} href={b.button.href} target="_blank" rel="noopener noreferrer">
+            {b.button.text}
+          </a>
+        ) : (
+          <span className={cls}>{b.button.text}</span>
+        )}
+      </p>
+    );
+  }
   if (isRow(b)) return <Row row={b} ctx={ctx} />;
   if (isEntry(b)) return <EntryView entry={b.entry} ctx={ctx} last={last} />;
   if (isVideo(b)) return <Video block={b} ctx={ctx} />;

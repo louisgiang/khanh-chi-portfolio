@@ -1,6 +1,7 @@
 import myJourney from '../../content/my-journey.json';
 import appliedScience from '../../content/applied-science.json';
 import craftVillages from '../../content/craft-villages.json';
+import stageAndScreen from '../../content/stage-and-screen.json';
 import type { SectionId } from '../sections';
 
 /** mt = khoảng cách phía trên khối, đơn vị thiết kế 1920 (mặc định 25). */
@@ -8,7 +9,8 @@ type Spaced = { mt?: number };
 
 export type ImageRef = { image: string; alt: string; draft?: boolean; square?: boolean };
 export type TextBlock = Spaced & { text: string; variant?: 'body' | 'heading' | 'subtitle' | 'title' | 'lead' | 'caption' };
-export type ImageBlock = Spaced & ImageRef & { wide?: boolean };
+/** width: độ rộng hiển thị (đơn vị thiết kế, mặc định hết khung nội dung); center: căn giữa. */
+export type ImageBlock = Spaced & ImageRef & { wide?: boolean; width?: number; center?: boolean };
 
 export type Caption = { title: string; text: string; inline?: boolean };
 export type Cell =
@@ -35,10 +37,12 @@ export type VideoBlock = Spaced & { video: { poster: string; alt: string; draft?
 /** minWidth: khung ảnh có chú thích rộng tối thiểu (đơn vị thiết kế) — cho ảnh dọc hẹp, tránh chú thích quá nhiều dòng. */
 export type MarqueeBlock = Spaced & { marquee: (ImageRef & { note?: string })[]; height: number; gap?: number; minWidth?: number };
 export type DividerBlock = Spaced & { divider: true };
+/** Nút dạng viên thuốc (link tới video/bài đăng). Chưa có href → hiện như nhãn, không bấm được. */
+export type ButtonBlock = Spaced & { button: { text: string; href?: string }; center?: boolean };
 /** Trình chiếu full chiều ngang thẻ, lật trang bằng mũi tên (khung theo tỉ lệ ảnh đầu tiên). */
 export type SlideshowBlock = Spaced & { slideshow: ImageRef[]; label?: string };
 
-export type Block = TextBlock | ImageBlock | RowBlock | EntryBlock | VideoBlock | MarqueeBlock | DividerBlock | SlideshowBlock;
+export type Block = TextBlock | ImageBlock | RowBlock | EntryBlock | VideoBlock | MarqueeBlock | DividerBlock | SlideshowBlock | ButtonBlock;
 /** zigzag/grid: bố cục My Journey (tự ghép ảnh/chữ thành hàng). Không có: khối hiển thị theo thứ tự. */
 export type Item = { id: string; title: string; layout?: 'zigzag' | 'grid'; blocks: Block[] };
 export type PageContent = { title: string; intro?: string; introStyle?: 'italic'; items: Item[] };
@@ -48,9 +52,11 @@ export const CONTENT: Partial<Record<SectionId, PageContent>> = {
   'my-journey': myJourney as PageContent,
   'applied-science': appliedScience as PageContent,
   'craft-villages': craftVillages as PageContent,
+  'stage-and-screen': stageAndScreen as PageContent,
 };
 
 export const isImage = (b: Block): b is ImageBlock => 'image' in b;
+export const isButton = (b: Block): b is ButtonBlock => 'button' in b;
 export const isText = (b: Block): b is TextBlock => 'text' in b && !('grow' in b);
 export const isRow = (b: Block): b is RowBlock => 'row' in b;
 export const isEntry = (b: Block): b is EntryBlock => 'entry' in b;

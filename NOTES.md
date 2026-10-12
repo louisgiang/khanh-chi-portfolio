@@ -141,3 +141,12 @@
 - Đã đo thời gian thật bằng Chrome headless (DevTools Protocol): lật đều ~3s/trang, nối vòng liền, rê chuột thì dừng.
 - Kích thước khớp ref (ảnh 1053 rộng, thẻ cao ~730).
 - **Ngân sách ảnh (anh/chị đồng ý giảm thử):** trang photobook dùng AVIF **48** thay vì 55 (`QUALITY_OVERRIDES` trong `scripts/images.mjs`, chỉ áp cho `craft-villages/photography-*`). So ở 100% vùng chữ nhỏ (trang 2) và trang 14: không thấy khác; 42 thì hạt nhiễu bắt đầu mềm nên không dùng. Ở 1920px (bản 1200px): 148–314KB → **66–190KB**, không ảnh nào > 300KB. Chỉ 14 ảnh này được nén lại; ảnh khác không đổi.
+
+## Stage & Screen (Bước 5, trang 3/4) — 2026-10-12
+- Nội dung: `content/stage-and-screen.json`, chữ chép nguyên văn từ `Stage & Screen/ref/` (5 ảnh). 4 ô: CEC Oscar & Prom, Bat Trang GOm Show, Colors of FLSS, Aria Project.
+- Ảnh gốc chỉ sao chép sang `assets-src/stage-and-screen/` (cec-1…6, bat-trang-1…8, colors-1…3, aria-1…3), không sửa file gốc.
+- **Giữ nguyên theo thiết kế:** "Bat Trang **GOm** Show" (chữ O hoa — có lẽ chơi chữ "Gốm"), chữ không dấu "Bat Trang", "Viet Nam Tinh Hoa" trong khi nút ghi "Việt Nam Tinh Hoa".
+- Khối mới: **nút viên thuốc** (`button`) — nền trắng 70%, chữ đen Bold 20, cao 43 (đo từ ref). 4 nút: "[CEC OSCAR 2025] →", "[CEC OSCAR 2026 - CEC'S ACTING MONTHS 2025] →", "[Sắc Màu CNN] Bản hoà sắc văn hoá Hàn Quốc" (căn giữa), "[Aria Project] Concert Việt Nam Tinh Hoa". **Chưa có link** (`href` rỗng → hiện như nhãn, không bấm được) — chờ anh/chị gửi.
+- Ảnh đơn có thể đặt độ rộng / căn giữa (`width`, `center`): poster Half-time rộng 450 (căn trái), giấy chứng nhận Colors of FLSS rộng 515 (căn giữa), như ref.
+- So vị trí với ref (Chrome headless 1920): lệch ≤ ~10px; chiều cao thẻ CEC 2720 / ref 2723.
+- Alt ảnh: bản nháp (`draft: true`), cần duyệt.

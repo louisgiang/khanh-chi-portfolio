@@ -59,7 +59,7 @@ export function imageWidths(item: Item): Map<string, number> {
     return out;
   }
   for (const b of item.blocks) {
-    if (isImage(b)) out.set(b.image, CONTENT_W);
+    if (isImage(b)) out.set(b.image, b.width ?? CONTENT_W);
     else if (isRow(b)) {
       const g = rowGrows(b);
       const sum = g.reduce((a, x) => a + x, 0);
