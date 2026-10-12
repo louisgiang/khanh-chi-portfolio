@@ -1,7 +1,7 @@
 {
   "$note": "Chữ chép nguyên văn từ assets-src/Craft Villages/ref/ (Home - Crafted Villages*.png); chú thích ảnh 3–6 của gallery H'Mong do anh/chị gửi trong chat. mt = khoảng cách phía trên khối (đơn vị thiết kế 1920, đo từ ref). alt có draft:true = bản nháp chờ duyệt. Chú thích gallery Layers of Light do anh/chị gửi. Chú thích gallery Vietnam in Splendor do anh/chị gửi.",
   "title": "Crafted Villages",
-  "intro": "This chapter chronicles the inspiring journey of Le Pham Khanh Chi, a 12th-grade student at Foreign Language Specialized School, as she transforms her passion for chemistry and cultural heritage into a lifelong commitment to Vietnam craft villages.",
+  "intro": "This chapter chronicles the journey of Le Pham Khanh Chi, a 12th-grade student at the Foreign Language Specialized School, as she transforms her passion for chemistry and cultural heritage into a lifelong commitment to Vietnam's craft villages. Her work rests on three pillars, science that treats their waters, a heart that listens to people first, and a love for the heritage they carry.",
   "items": [
     {
       "id": "personal-product",
@@ -11,7 +11,7 @@
         {
           "mt": 22, "gap": 11,
           "row": [
-            { "image": "craft-villages/personal-product-1", "alt": "Khánh Chi hàn mạch điện tử trên bàn thí nghiệm", "draft": true, "box": true, "note": "I set out to build a solar-powered water-treatment boat from recycled materials – a fusion of sunlight, sensors, and chemistry, designed to help craft villages see and treat their water." },
+            { "image": "craft-villages/personal-product-1", "alt": "Khánh Chi hàn mạch điện tử trên bàn thí nghiệm", "link": { "text": "Report", "href": "https://drive.google.com/file/d/143r7EEeMPhhZX2vsxjmqXdAEMEJ_d9tO/view?usp=sharing" }, "draft": true, "box": true, "note": "I set out to build a solar-powered water-treatment boat from recycled materials – a fusion of sunlight, sensors, and chemistry, designed to help craft villages see and treat their water." },
             { "image": "craft-villages/personal-product-2", "alt": "Mô hình thuyền xử lí nước có tấm pin mặt trời, bên cạnh bo mạch điều khiển", "draft": true, "box": true, "note": "After months in the lab, the design came together: an ESP32 reading pH, TDS, temperature; a paddle wheel to aerate the water; a swappable adsorbent module – HAp/PANI for dyes, rice-husk activated carbon for heavy metals; and a hull built to glide past the weeds and debris in water." }
           ]
         },
