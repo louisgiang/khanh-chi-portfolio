@@ -266,6 +266,19 @@ function Slideshow({ block: b, ctx }: { block: SlideshowBlock; ctx: Ctx }) {
   }, []);
 
   const go = (d: number) => {
+    // Đang ở trang đầu mà lùi: nhảy thầm sang bản sao trang đầu (cuối dãy) rồi trượt lùi 1 trang
+    // → chỉ lùi đúng một trang, không tua ngược qua cả dãy.
+    if (d < 0 && i % n === 0 && !reduce) {
+      setInstant(true);
+      setI(n);
+      requestAnimationFrame(() =>
+        requestAnimationFrame(() => {
+          setInstant(false);
+          setI(n - 1);
+        }),
+      );
+      return;
+    }
     setInstant(false);
     setI((x) => {
       const cur = x % n;
@@ -325,6 +338,16 @@ function Slideshow({ block: b, ctx }: { block: SlideshowBlock; ctx: Ctx }) {
           ))}
         </motion.div>
       </div>
+      <button type="button" className="slideshow__btn slideshow__btn--prev" aria-label="Previous page" onClick={() => go(-1)}>
+        <svg viewBox="0 0 16 19" aria-hidden="true">
+          <polygon points="0,9.5 16,0 16,19" />
+        </svg>
+      </button>
+      <button type="button" className="slideshow__btn slideshow__btn--next" aria-label="Next page" onClick={() => go(1)}>
+        <svg viewBox="0 0 16 19" aria-hidden="true">
+          <polygon points="16,9.5 0,0 0,19" />
+        </svg>
+      </button>
       <p className="slideshow__count" aria-live={hold ? 'polite' : 'off'}>
         {page + 1} / {n}
       </p>

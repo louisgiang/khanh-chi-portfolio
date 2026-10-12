@@ -186,3 +186,6 @@
 - Craft Villages › Pa Co: video "An interview with Mr. Sung A Viet" → YouTube ik76TwysiYU; "Introducing the people of Pa Co to a boat" → yVT-QBlnco8; ảnh bìa thay bằng ảnh bìa YouTube chính thức. Video giữa (pa-co-video-2) chưa có link → giữ ảnh cũ, không có nút phát.
 - Craft Villages › Pa Co › gallery Traditional Attire: chèn video XUmulHEcIiE vào đầu hàng ảnh thứ 2 (ô video mới trong hàng ảnh: cao bằng các ảnh bên cạnh; điện thoại chiếm cả bề ngang).
 - **Sửa script ảnh:** trước đây script coi thư mục rỗng `assets-src/<trang>` là "có ảnh gốc" và xoá toàn bộ ảnh đã tối ưu của trang đó (đã xảy ra ở một commit chưa push, đã khôi phục từ GitHub). Giờ chỉ bỏ ảnh khi biết chắc ảnh gốc của nó từng có trên máy này và nay đã bị xoá.
+- Craft Villages › Thuong Tin: video phỏng vấn nghệ nhân (mài, thếp bạc, ô nhiễm nước) → YouTube ZJXbRXoyQLg; video Ninh So Bamboo → ZRqD3VZ6Pt8; ảnh bìa YouTube chính thức.
+- Craft Villages › Xoi Tri: ảnh đầu (xoi-tri-1) thay bằng video HjgU3Ql8lM4 (ô video cao bằng ảnh bên cạnh). Ảnh xoi-tri-1 không còn dùng nhưng vẫn để trong public/img.
+- Photography Portfolio: thêm lại 2 mũi tên ◀ ▶, vẫn tự lật mỗi 3 giây (dừng khi rê chuột). Đang ở trang 1 bấm ◀ → lùi đúng 1 trang sang trang 14 (không tua ngược cả dãy).

@@ -508,6 +508,48 @@
   outline-offset: 3px;
   border-radius: calc(var(--s) * 20);
 }
+/* Mũi tên lật trang (vẫn tự lật mỗi 3 giây) */
+.slideshow__btn {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  width: max(36px, calc(var(--s) * 52));
+  height: max(36px, calc(var(--s) * 52));
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.35);
+  transform: translateY(-50%);
+  cursor: pointer;
+  transition: background 0.2s var(--ease), transform 0.2s var(--ease);
+}
+.slideshow__btn--prev {
+  left: calc(var(--s) * 16);
+}
+.slideshow__btn--next {
+  right: calc(var(--s) * 16);
+}
+.slideshow__btn svg {
+  width: max(11px, calc(var(--s) * 16));
+  height: max(13px, calc(var(--s) * 19));
+  fill: #fff;
+}
+.slideshow__btn--prev svg {
+  margin-right: 8%;
+}
+.slideshow__btn--next svg {
+  margin-left: 8%;
+}
+.slideshow__btn:hover {
+  background: rgba(0, 0, 0, 0.55);
+  transform: translateY(-50%) scale(1.08);
+}
+.slideshow__btn:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
 .slideshow__count {
   position: absolute;
   right: calc(var(--s) * 16);

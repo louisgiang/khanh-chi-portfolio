@@ -118,7 +118,7 @@
           ]
         },
         { "mt": 27, "text": "I co-organized an exhibition-sale for the village's artisans and was responsible for its reach to the mass, and my part was to carry the pieces out of the studio and into people's feeds through photographing their pieces and sharing them online." },
-        { "mt": 24, "video": { "poster": "craft-villages/thuong-tin-video-1", "alt": "Video: phỏng vấn nghệ nhân về quy trình và vấn đề ô nhiễm nước ở làng nghề Hạ Thái", "draft": true, "youtube": "" }, "width": 619 },
+        { "mt": 24, "video": { "poster": "craft-villages/thuong-tin-video-1", "alt": "Video: phỏng vấn nghệ nhân về quy trình và vấn đề ô nhiễm nước ở làng nghề Hạ Thái", "draft": true, "youtube": "https://www.youtube.com/embed/ZJXbRXoyQLg" }, "width": 619 },
         { "mt": 24, "variant": "caption", "text": "Interview with an artisan about the sanding and silver-leafing process and the village's water pollution." },
         { "mt": 22, "divider": true },
         { "mt": 42, "variant": "lead", "text": "Above all, let my gallery guide you through the works." },
@@ -135,7 +135,7 @@
         },
         { "mt": 75, "variant": "title", "text": "2. Ninh So Bamboo and Rattan Weaving Village" },
         { "mt": 66, "text": "Under the same large village Thuong Tin, where there are no glossy colors of lacquer, Ninh So feels quieter. Here the palette is the plain gold of bamboo and rattan, and most of the hands that weave it are older ones." },
-        { "mt": 22, "video": { "poster": "craft-villages/thuong-tin-video-2", "alt": "Video: trò chuyện cùng nghệ nhân làng Ninh Sở, tìm hiểu cách làm và mặt hàng", "draft": true, "youtube": "" }, "width": 619 },
+        { "mt": 22, "video": { "poster": "craft-villages/thuong-tin-video-2", "alt": "Video: trò chuyện cùng nghệ nhân làng Ninh Sở, tìm hiểu cách làm và mặt hàng", "draft": true, "youtube": "https://www.youtube.com/embed/ZRqD3VZ6Pt8" }, "width": 619 },
         { "mt": 24, "variant": "caption", "text": "I had a conversation with Mrs. Hoai about how bamboo and rattan pieces are made, and the range of goods the village weaves." },
         {
           "mt": 24, "gap": 11,
@@ -163,7 +163,7 @@
         {
           "mt": 24, "gap": 11,
           "row": [
-            { "image": "craft-villages/xoi-tri-1", "alt": "Khánh Chi ngồi phân loại chai thuỷ tinh giữa đống bao tải phế liệu", "draft": true },
+            { "video": { "poster": "craft-villages/xoi-tri-video", "alt": "Video: Khánh Chi phân loại chai thuỷ tinh tại làng Xôi Trì", "draft": true, "youtube": "https://www.youtube.com/embed/HjgU3Ql8lM4" } },
             { "image": "craft-villages/xoi-tri-2", "alt": "Khánh Chi xếp chai thuỷ tinh vào két nhựa bên đường làng", "draft": true }
           ]
         },
