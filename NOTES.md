@@ -189,3 +189,5 @@
 - Craft Villages › Thuong Tin: video phỏng vấn nghệ nhân (mài, thếp bạc, ô nhiễm nước) → YouTube ZJXbRXoyQLg; video Ninh So Bamboo → ZRqD3VZ6Pt8; ảnh bìa YouTube chính thức.
 - Craft Villages › Xoi Tri: ảnh đầu (xoi-tri-1) thay bằng video HjgU3Ql8lM4 (ô video cao bằng ảnh bên cạnh). Ảnh xoi-tri-1 không còn dùng nhưng vẫn để trong public/img.
 - Photography Portfolio: thêm lại 2 mũi tên ◀ ▶, vẫn tự lật mỗi 3 giây (dừng khi rê chuột). Đang ở trang 1 bấm ◀ → lùi đúng 1 trang sang trang 14 (không tua ngược cả dãy).
+- Stage & Screen: gắn link 4 nút (CEC Oscar 2025, CEC Oscar 2026, Sắc Màu CNN, Aria Project). My Little Village: nút Cineris (bài báo nongnghiepmoitruong.vn), nút Youth For Community Recap. Đã bỏ tham số theo dõi trong link (si=, fbclid=, app=desktop).
+- My Little Village › CEC: video "A recap of CEC’s recruitment week…" → YouTube rXoW98Rzqdw, ảnh bìa YouTube chính thức (16:9) thay ảnh cũ 1322×832.
