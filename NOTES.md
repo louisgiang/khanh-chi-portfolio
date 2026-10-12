@@ -163,3 +163,12 @@
 - Giữ nguyên theo thiết kế: "Cleen", "fieldtrips", "travelled", "for loudness !!" (dấu cách trước "!!").
 - So vị trí với ref (Chrome headless 1920): chiều cao thẻ Cleen 621/621, YFC 608/610, CEC 1095/1092, BES 1717/1731.
 - Alt ảnh: bản nháp (`draft: true`), cần duyệt.
+
+## Bước 6 — Bố cục điện thoại / tablet (2026-10-12)
+- Anh/chị duyệt đề xuất + chốt: giãn dòng 1.4 cho chữ trong thẻ; băng ảnh vẫn tự trượt. **Bản máy tính giữ nguyên** — mọi thay đổi nằm trong media query.
+- **Kiểm chứng máy tính không đổi:** ghi "dấu vân tay" (vị trí, kích thước, cỡ chữ, giãn dòng, display, bo góc của mọi phần tử) ở 1920 và 1366 trên trang chủ + 5 trang + từng ô mở (56 trang, 6916 phần tử) trước và sau khi sửa: **0 khác biệt**.
+- **Dưới 1280px (tablet):** thang cố định `--s: 0.75px` (chữ thẻ 15px), cột trái (tiêu đề + giới thiệu) lên trên danh sách ô; trong thẻ giữ bố cục 2–3 ảnh một hàng như máy tính; thanh tab chữ 20px, vừa khung thì căn giữa, không vừa thì vuốt ngang; băng ảnh thu nhỏ (`--ms: 0.62px`, ảnh cao ~190–300px); phần tử bề rộng cố định (video, ảnh đơn) không vượt khung; giãn dòng 1.4 (tự quyết áp cho cả tablet vì chữ 15px giãn dòng 1 khó đọc).
+- **Dưới 768px (điện thoại):** một cột; tab 16px cao 44px, tab đang mở tự cuộn vào giữa; tiêu đề trang 40px; ô viên thuốc gọn (tên ô 1 dòng, cỡ chữ co theo màn hình 14–22px để tên dài nhất "Business & Economic Simulation" vẫn vừa — đã kiểm 320/360/390/430/767px); hàng ảnh → mỗi ảnh một dòng, riêng hàng ≥ 4 ô (giấy chứng nhận Achievements) 2 ô một hàng; mục nghiên cứu ảnh lên trên; nút viên thuốc cho xuống dòng.
+- **Trang chủ khi màn hình dọc** (điện thoại, tablet dọc): bông hoa rộng 92% (tối đa 640px) ở trên, "My Story" góc phải trên, khối chữ xuống dưới. Màn hình ngang (kể cả tablet ngang) giữ bố cục máy tính.
+- `sizes` của ảnh thêm điều kiện cho tablet và màn dọc (bông hoa) để tải đúng cỡ; máy tính không đổi.
+- Không trang nào tràn ngang ở 390, 768, 1024px (đo `scrollWidth`).

@@ -76,7 +76,8 @@ export function imageWidths(item: Item): Map<string, number> {
   return out;
 }
 
-/** `sizes`: máy tính theo tỉ lệ khung 1920; điện thoại (< 768px) ảnh chiếm gần hết chiều ngang. */
+/** `sizes`: máy tính (≥ 1280px) theo tỉ lệ khung 1920; tablet (768–1279px) thang cố định 0.75px/đơn vị
+ *  (xem section.css), không quá 90vw; điện thoại (< 768px) ảnh chiếm gần hết chiều ngang. */
 export function vwSizes(designWidth: number): string {
-  return `(max-width: 767px) 92vw, ${((designWidth / 1920) * 100).toFixed(1)}vw`;
+  return `(max-width: 767px) 92vw, (max-width: 1279px) min(${Math.round(designWidth * 0.75)}px, 90vw), ${((designWidth / 1920) * 100).toFixed(1)}vw`;
 }

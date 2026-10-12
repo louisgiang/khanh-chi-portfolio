@@ -173,7 +173,7 @@ function PetalCard({ petal: p, index, flipped, backsReady }: { petal: Petal; ind
               <Img
                 id={`home/${p.id}-back`}
                 alt={ALT[p.id]}
-                sizes={`${((w / 1920) * 100).toFixed(1)}vw`}
+                sizes={`(max-aspect-ratio: 1/1) ${((w / 880) * 92).toFixed(1)}vw, ${((w / 1920) * 100).toFixed(1)}vw`}
                 load={backsReady || flipped}
                 loading="eager"
                 fetchPriority="low"

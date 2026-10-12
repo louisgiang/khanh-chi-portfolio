@@ -17,10 +17,19 @@ function prefetchFirstImage(id: SectionId) {
 export function SectionHeader({ active }: { active: SectionId }) {
   const nav = useRef<HTMLElement>(null);
 
-  // Điện thoại: thanh tab cuộn ngang, giữ tab đang mở trong tầm nhìn.
+  // Điện thoại: thanh tab cuộn ngang, đưa tab đang mở vào giữa tầm nhìn.
   useEffect(() => {
     const el = nav.current?.querySelector<HTMLElement>('[aria-current="page"]');
-    el?.scrollIntoView({ block: 'nearest', inline: 'nearest', behavior: 'smooth' });
+    const bar = nav.current;
+    if (!el || !bar) return;
+    // Máy tính (thanh tab không tràn): giữ hành vi cũ.
+    if (bar.scrollWidth <= bar.clientWidth) {
+      el.scrollIntoView({ block: 'nearest', inline: 'nearest', behavior: 'smooth' });
+      return;
+    }
+    const r = el.getBoundingClientRect();
+    const b = bar.getBoundingClientRect();
+    bar.scrollTo({ left: bar.scrollLeft + r.left - b.left - (b.width - r.width) / 2, behavior: 'smooth' });
   }, [active]);
 
   return (

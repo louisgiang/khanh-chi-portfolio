@@ -555,3 +555,194 @@ a.pill-btn:focus-visible {
 .marquee__btn {
   margin-top: calc(var(--s) * 11);
 }
+
+/* =====================================================================
+   RESPONSIVE — chỉ áp dưới 1280px. Máy tính (≥ 1280px) giữ nguyên toàn bộ phần trên.
+   Tablet (768–1279px): thang cố định 0.75px/đơn vị thiết kế (chữ thẻ 15px), cột trái lên trên,
+   trong thẻ giữ bố cục 2–3 ảnh một hàng như máy tính.
+   ===================================================================== */
+@media (max-width: 1279px) {
+  .page__inner {
+    --s: 0.75px;
+    padding: 24px clamp(16px, 4vw, 40px) 80px;
+  }
+  .page__body {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 28px;
+    padding-top: 28px;
+  }
+  .page__lead {
+    max-width: 640px;
+    font-size: 15px;
+    line-height: 1.4;
+  }
+  .item__text,
+  .item__note,
+  .item__caption {
+    line-height: 1.4;
+  }
+  .item__text--caption {
+    line-height: 1.3;
+  }
+  /* Phần tử có bề rộng cố định (video, ảnh đơn, ảnh tài liệu) không vượt khung */
+  .video,
+  .item__img {
+    max-width: 100%;
+  }
+  .marquee {
+    --ms: 0.62px;
+  }
+  /* Thanh tab: vừa khung thì căn giữa, không vừa thì vuốt ngang (tab đang mở tự cuộn vào giữa) */
+  .sh__tabs {
+    overflow-x: auto;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+  .sh__tabs::-webkit-scrollbar {
+    display: none;
+  }
+  .sh__tabs ul {
+    width: max-content;
+    margin-inline: auto;
+  }
+  .sh__tab {
+    height: 56px;
+    padding: 0 20px;
+    font-size: 20px;
+  }
+  .pill-btn {
+    line-height: 1.3;
+  }
+}
+
+/* Điện thoại (< 768px): một cột */
+@media (max-width: 767px) {
+  .page__inner {
+    padding: 16px 16px 60px;
+  }
+  /* Đầu trang: thanh tab vuốt ngang, tab đang mở tự cuộn vào tầm nhìn */
+  .sh__badge {
+    width: auto;
+    height: 36px;
+    padding: 0 18px;
+    font-size: 15px;
+  }
+  .sh__badge-row {
+    padding: 12px 0;
+  }
+  .sh__tab {
+    height: 44px;
+    padding: 0 14px;
+    font-size: 16px;
+  }
+
+  .page__body {
+    row-gap: 20px;
+    padding-top: 20px;
+  }
+  .page__title {
+    margin: 0;
+    font-size: 40px;
+  }
+  .page__lead {
+    margin: 12px 0 0;
+  }
+
+  /* Ô viên thuốc */
+  .items {
+    gap: 12px;
+  }
+  .item {
+    --r-closed: 28px;
+    --r-open: 24px;
+    padding-bottom: calc(var(--bw) + 4px);
+  }
+  .item__bg--closed {
+    height: calc(2 * var(--bw) + 56px);
+  }
+  .item__btn {
+    padding: 17px 20px 13px;
+  }
+  /* Tên ô luôn một dòng (nền viên thuốc cao cố định): co chữ theo bề ngang, tối đa 22px */
+  .item__t {
+    max-width: 100%;
+    /* tên dài nhất ("Business & Economic Simulation") rộng ~15.6em → vừa khung 100vw − 80px */
+    font-size: clamp(14px, calc((100vw - 80px) / 15.8), 22px);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .item__content {
+    padding: 0 16px 18px;
+  }
+
+  /* Chữ trong thẻ */
+  .item__text {
+    font-size: 15px;
+  }
+  .item__text--subtitle,
+  .item__text--title,
+  .entry__title {
+    font-size: 18px;
+    line-height: 1.25;
+  }
+  .item__text--lead {
+    font-size: 16px;
+    line-height: 1.3;
+  }
+  .item__text--heading {
+    white-space: normal;
+  }
+  .item__note,
+  .item__caption,
+  .entry__meta {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  /* Hàng ảnh/chữ → một cột (hàng ≥ 4 ô nhỏ như giấy chứng nhận: 2 ô một hàng) */
+  .item__flex,
+  .item__row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .item__flex > .item__cell,
+  .item__row > .item__img {
+    flex: none !important;
+    width: 100%;
+  }
+  .item__flex.is-many {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .item__flex.is-many > .item__cell {
+    width: calc(50% - 8px);
+  }
+  .item__cell:has(> :only-child:empty),
+  .item__cell:empty {
+    display: none;
+  }
+  .item__pair,
+  .item__pair.is-img-first {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 14px;
+  }
+
+  /* Mục nghiên cứu: ảnh tài liệu lên trên, chữ dưới */
+  .entry,
+  .entry--left,
+  .entry--left.has-carousel {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 14px;
+  }
+  .entry--right .entry__media {
+    order: 0;
+  }
+  .entry__media {
+    max-width: 320px;
+  }
+
+  .pill-btn {
+    padding: 9px 16px;
+  }
+}

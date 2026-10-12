@@ -10,6 +10,8 @@ const DEFAULT_GAP = 25;
 // Nút tiêu đề đã có đệm dưới 24 → khối đầu tiên trừ đi phần này.
 const TITLE_PAD = 24;
 const u = (n: number) => `calc(var(--s) * ${n})`;
+// Băng ảnh: thang riêng --ms (điện thoại/tablet thu nhỏ băng ảnh); máy tính không đặt → dùng --s.
+const mu = (n: number) => `calc(var(--ms, var(--s)) * ${n})`;
 
 type Ctx = { load: boolean; widths: Map<string, number> };
 
@@ -74,7 +76,10 @@ function Picture({ img, ctx, style }: { img: ImageRef; ctx: Ctx; style?: CSSProp
 function Row({ row, ctx }: { row: RowBlock; ctx: Ctx }) {
   const grows = rowGrows(row);
   return (
-    <div className={`item__flex${row.align === 'center' ? ' is-center' : ''}`} style={{ gap: u(row.gap ?? 20) }}>
+    <div
+      className={`item__flex${row.align === 'center' ? ' is-center' : ''}${row.row.length >= 4 ? ' is-many' : ''}`}
+      style={{ gap: u(row.gap ?? 20) }}
+    >
       {row.row.map((c, i) => (
         <div key={i} className="item__cell" style={{ flexGrow: grows[i] }}>
           <CellView cell={c} ctx={ctx} />
@@ -187,10 +192,10 @@ function Marquee({ block: b, ctx }: { block: MarqueeBlock; ctx: Ctx }) {
       <figure
         key={`${copy}-${c.image}`}
         className="marquee__slide"
-        style={{ width: u(slideW(c)), marginRight: u(gap) }}
+        style={{ width: mu(slideW(c)), marginRight: mu(gap) }}
         aria-hidden={copy > 0 || undefined}
       >
-        <Picture img={c} ctx={ctx} style={{ width: u(imgW(c)), marginInline: 'auto' }} />
+        <Picture img={c} ctx={ctx} style={{ width: mu(imgW(c)), marginInline: 'auto' }} />
         {c.note && <figcaption className="item__note item__note--box">{c.note}</figcaption>}
         {c.button && (
           <p className="pill-btn__wrap is-center marquee__btn">
