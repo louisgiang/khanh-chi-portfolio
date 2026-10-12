@@ -102,6 +102,11 @@ function CellView({ cell: c, ctx }: { cell: Cell; ctx: Ctx }) {
           </p>
         )}
         {c.note && <p className={`item__note${c.box ? ' item__note--box' : ''}`}>{c.note}</p>}
+        {c.link && (
+          <p className="item__img-title">
+            <MaybeLink href={c.link.href}>{c.link.text}</MaybeLink>
+          </p>
+        )}
       </>
     );
   if ('text' in c) return <p className="item__text">{c.text}</p>;

@@ -746,3 +746,12 @@ a.pill-btn:focus-visible {
     padding: 9px 16px;
   }
 }
+
+/* Tiêu đề có link dưới ảnh (Internship: báo cáo trên Google Drive) */
+.item__img-title {
+  margin: calc(var(--s) * 12) 0 0;
+  font-weight: 700;
+  font-size: calc(var(--s) * 20);
+  line-height: 1.15;
+  color: #fff;
+}

@@ -172,3 +172,8 @@
 - **Trang chủ khi màn hình dọc** (điện thoại, tablet dọc): bông hoa rộng 92% (tối đa 640px) ở trên, "My Story" góc phải trên, khối chữ xuống dưới. Màn hình ngang (kể cả tablet ngang) giữ bố cục máy tính.
 - `sizes` của ảnh thêm điều kiện cho tablet và màn dọc (bông hoa) để tải đúng cỡ; máy tính không đổi.
 - Không trang nào tràn ngang ở 390, 768, 1024px (đo `scrollWidth`).
+
+## Applied Science › Internship (anh/chị yêu cầu 2026-10-12)
+- Sửa câu: "…Prof. Dr. Quoc Trung Vu **and Prof Minh Duc Tran** at the HNUE…" (giữ đúng chữ anh/chị gửi, "Prof" không có dấu chấm).
+- 2 ảnh phòng lab: thêm tiêu đề chữ trắng đậm gạch chân dưới mỗi ảnh, bấm mở Google Drive ở tab mới: "FTIR Analysis of HAp-PANi Composite Report", "Results/Discussion Report of Chitosan-Modified Rice Husk Activated Carbon". (Trường `link` của ô ảnh trong JSON.)
+- 2 video: YouTube Zi3fMPmyXrU (thực tập phòng lab) và r8V7SkIE4j8 (In conversation with Mr. Duc). Hiện ảnh bìa + nút phát; bấm mới tải trình phát (youtube-nocookie, tự phát) → trang không phải tải 2 trình phát YouTube (~1MB mỗi cái) khi mở thẻ.

@@ -167,12 +167,12 @@
         {
           "mt": 38, "gap": 14,
           "row": [
-            { "image": "applied-science/internship-1", "alt": "Khánh Chi mặc áo blouse dùng pipet trong phòng thí nghiệm", "draft": true },
-            { "image": "applied-science/internship-2", "alt": "Khánh Chi nhỏ dung dịch vào bình cầu chứa chất lỏng xanh", "draft": true }
+            { "image": "applied-science/internship-1", "alt": "Khánh Chi mặc áo blouse dùng pipet trong phòng thí nghiệm", "draft": true, "link": { "text": "FTIR Analysis of HAp-PANi Composite Report", "href": "https://drive.google.com/file/d/1OZY34QlfvbtxTpRNWeCB-44AlPgieZAn/view?usp=sharing" } },
+            { "image": "applied-science/internship-2", "alt": "Khánh Chi nhỏ dung dịch vào bình cầu chứa chất lỏng xanh", "draft": true, "link": { "text": "Results/Discussion Report of Chitosan-Modified Rice Husk Activated Carbon", "href": "https://drive.google.com/file/d/1xi6BYpvQlV0xybVnYT0lxQ66il6QW4md/view?usp=sharing" } }
           ]
         },
-        { "mt": 17, "text": "In collaboration with Prof. Dr. Quoc Trung Vu at the HNUE, I developed green adsorbents from fish scales and rice husks – pulling textile dyes and heavy metal ions out of water, then testing the method on real wastewater from Thuong Tin’s craft villages." },
-        { "mt": 37, "video": { "poster": "applied-science/internship-3", "alt": "Video: Khánh Chi thực tập hè tại phòng Lab ĐHSP Hà Nội", "draft": true, "youtube": "" }, "width": 637 },
+        { "mt": 17, "text": "In collaboration with Prof. Dr. Quoc Trung Vu and Prof Minh Duc Tran at the HNUE, I developed green adsorbents from fish scales and rice husks – pulling textile dyes and heavy metal ions out of water, then testing the method on real wastewater from Thuong Tin’s craft villages." },
+        { "mt": 37, "video": { "poster": "applied-science/internship-3", "alt": "Video: Khánh Chi thực tập hè tại phòng Lab ĐHSP Hà Nội", "draft": true, "youtube": "https://www.youtube.com/embed/Zi3fMPmyXrU" }, "width": 637 },
         { "mt": 17, "text": "Stepping into the chemistry lab at HNUE, I was filled with anticipation and curiosity. The air buzzed with the promise of discovery, and I was eager to immerse myself in the world where science meets untreated water." },
         {
           "mt": 37, "gap": 15,
@@ -182,7 +182,7 @@
           ]
         },
         { "mt": 16, "text": "As an intern at Red River Recycling, a recycling social enterprise, I met Mr. Duc, its founder, worked beside him through the whole life of discarded glass and plastic – sorting it, processing it into raw material, treating it to be safe, and shaping it into decorative pieces. Through this opportunity, I glimpsed the maker's perspective: how to read a material and let it decide its final form – whether through the patience of sorting or the surprise of shaping." },
-        { "mt": 38, "video": { "poster": "applied-science/internship-6", "alt": "Video: phỏng vấn chú Đức về quy trình và thói quen xử lí, tái chế thuỷ tinh", "draft": true, "youtube": "" }, "width": 637 },
+        { "mt": 38, "video": { "poster": "applied-science/internship-6", "alt": "Video: phỏng vấn chú Đức về quy trình và thói quen xử lí, tái chế thuỷ tinh", "draft": true, "youtube": "https://www.youtube.com/embed/r8V7SkIE4j8" }, "width": 637 },
         { "mt": 16, "variant": "caption", "text": "In conversation with Mr. Duc on how glass is collected, prepared, crashed, decorated, and given a second life." }
       ]
     }

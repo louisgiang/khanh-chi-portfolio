@@ -15,7 +15,7 @@ export type ImageBlock = Spaced & ImageRef & { wide?: boolean; width?: number; c
 
 export type Caption = { title: string; text: string; inline?: boolean };
 export type Cell =
-  | (ImageRef & { caption?: Caption; note?: string; box?: boolean })
+  | (ImageRef & { caption?: Caption; note?: string; box?: boolean; link?: { text: string; href: string } })
   | { text: string; grow: number }
   | { spacer: true };
 export type RowBlock = Spaced & { row: Cell[]; gap?: number; align?: 'start' | 'center' };
