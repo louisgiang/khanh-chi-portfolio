@@ -1,5 +1,5 @@
 {
-  "$note": "Chữ chép nguyên văn từ assets-src/Craft Villages/ref/ (Home - Crafted Villages*.png); chú thích ảnh 3–6 của gallery H'Mong do anh/chị gửi trong chat. mt = khoảng cách phía trên khối (đơn vị thiết kế 1920, đo từ ref). alt có draft:true = bản nháp chờ duyệt. Chú thích ảnh 1 và 5 của gallery Layers of Light do anh/chị gửi; ảnh 2 và 4 chưa có chú thích (ref bị cắt). 2 ô cuối chưa có ảnh → chưa có nội dung.",
+  "$note": "Chữ chép nguyên văn từ assets-src/Craft Villages/ref/ (Home - Crafted Villages*.png); chú thích ảnh 3–6 của gallery H'Mong do anh/chị gửi trong chat. mt = khoảng cách phía trên khối (đơn vị thiết kế 1920, đo từ ref). alt có draft:true = bản nháp chờ duyệt. Chú thích gallery Layers of Light do anh/chị gửi. 2 ô cuối chưa có ảnh → chưa có nội dung.",
   "title": "Crafted Villages",
   "intro": "This chapter chronicles the inspiring journey of Le Pham Khanh Chi, a 12th-grade student at Foreign Language Specialized School, as she transforms her passion for chemistry and cultural heritage into a lifelong commitment to Vietnam craft villages.",
   "items": [
@@ -126,9 +126,9 @@
           "mt": 52, "height": 320, "gap": 10,
           "marquee": [
             { "image": "craft-villages/thuong-tin-gallery-1", "alt": "Những hộp sơn mài đen vẽ mặt người kiểu lập thể, xếp trên kệ kính", "draft": true, "note": "What happens when a traditional craft meets modern art? These boxes are almost Cubist faces and one gold-toned design that echoes Klimt, each lid a small canvas on a glossy black ground." },
-            { "image": "craft-villages/thuong-tin-gallery-2", "alt": "Tranh sơn mài thiếu nữ áo dài đội nón lá trên nền đen", "draft": true },
+            { "image": "craft-villages/thuong-tin-gallery-2", "alt": "Tranh sơn mài thiếu nữ áo dài đội nón lá trên nền đen", "draft": true, "note": "Women in áo dài, their faces tucked beneath pale conical hats, each dressed in her own soft palette – teal and white, pink and violet, orange and blue. Set against a deep black ground, the gowns glow by contrast, an old lacquer trick of letting darkness bring color forward." },
             { "image": "craft-villages/thuong-tin-gallery-3", "alt": "Tranh sơn mài Chùa Một Cột trong khung đen bóng", "draft": true, "note": "Hanoi's cultural heritage, painted in lacquer: one of the works that capture the city's landmarks, this one featuring the One Pillar Pagoda." },
-            { "image": "craft-villages/thuong-tin-gallery-4", "alt": "Tượng sơn mài thiếu nữ đội nón lá nhiều màu cam, trắng, xanh", "draft": true },
+            { "image": "craft-villages/thuong-tin-gallery-4", "alt": "Tượng sơn mài thiếu nữ đội nón lá nhiều màu cam, trắng, xanh", "draft": true, "note": "Orange, white, blue, green, yellow: women in ao dai and conical hats, reduced to a few clean lines. Each carries a tiny painted scene on its body, and pieces in colors like these are traditionally finished with silver applied by hand." },
             { "image": "craft-villages/thuong-tin-gallery-5", "alt": "Hai con rối nước sơn trắng rạn, môi đỏ, đeo vòng bạc ở cổ", "draft": true, "note": "These figures remind of the humor in Vietnamese water puppets in painted brows, red lips, a silver ring at the neck, and a crackled white surface that gives them the patina of age." }
           ]
         },

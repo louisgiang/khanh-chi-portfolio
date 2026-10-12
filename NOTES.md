@@ -123,7 +123,7 @@
 ### Thuong Tin Villages (2026-10-12)
 - Chữ chép nguyên văn từ `Home - Crafted Villages (3).png`; chú thích ảnh hộp sơn mài và rối nước của gallery do anh/chị gửi.
 - Ảnh: `Thuong Tin Villages 1–12` → `thuong-tin-1…9`, `thuong-tin-video-1/2` (ảnh 6, 8), gallery theo thứ tự ảnh anh/chị gửi kèm: 7-3 (hộp), 7 (áo dài), 7-1 (Chùa Một Cột), 7-2 (tượng nón lá), 7-4 (rối nước).
-- **Thiếu chữ:** chú thích ảnh áo dài (7) và tượng nón lá (7-2) trong gallery "Layers of Light" bị cắt mép trong ref → chưa đưa vào, chờ anh/chị gửi đủ.
+- Chú thích ảnh áo dài (7) và tượng nón lá (7-2): anh/chị gửi bản đầy đủ (ref bị cắt mép). Giữ nguyên "áo dài" (có dấu) ở ảnh 7 và "ao dai" (không dấu) ở ảnh 7-2 như anh/chị gửi.
 - Câu "Above all, let my gallery guide you through the works." Bold 25 căn giữa (`variant: "lead"`, đo từ ref).
 - Băng ảnh: khung rộng tối thiểu 420 chỉ áp cho ảnh có chú thích (ảnh hẹp không chú thích giữ đúng tỉ lệ, không chừa khoảng trống).
 - Video "Làng Hạ Thái" / "Làng Ninh Sở" rộng 619 như ref; chưa có link YouTube.
