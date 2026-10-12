@@ -1,5 +1,5 @@
 {
-  "$note": "Chữ chép nguyên văn từ assets-src/Craft Villages/ref/ (Home - Crafted Villages*.png); chú thích ảnh 3–6 của gallery H'Mong do anh/chị gửi trong chat. mt = khoảng cách phía trên khối (đơn vị thiết kế 1920, đo từ ref). alt có draft:true = bản nháp chờ duyệt. Chú thích gallery Layers of Light do anh/chị gửi. 2 ô cuối chưa có ảnh → chưa có nội dung.",
+  "$note": "Chữ chép nguyên văn từ assets-src/Craft Villages/ref/ (Home - Crafted Villages*.png); chú thích ảnh 3–6 của gallery H'Mong do anh/chị gửi trong chat. mt = khoảng cách phía trên khối (đơn vị thiết kế 1920, đo từ ref). alt có draft:true = bản nháp chờ duyệt. Chú thích gallery Layers of Light do anh/chị gửi. Chú thích gallery Vietnam in Splendor do anh/chị gửi.",
   "title": "Crafted Villages",
   "intro": "This chapter chronicles the inspiring journey of Le Pham Khanh Chi, a 12th-grade student at Foreign Language Specialized School, as she transforms her passion for chemistry and cultural heritage into a lifelong commitment to Vietnam craft villages.",
   "items": [
@@ -61,7 +61,7 @@
         },
         { "mt": 58, "variant": "title", "text": "Gallery: Patterns of the H'Mong" },
         {
-          "mt": 52, "height": 316, "gap": 10,
+          "mt": 52, "height": 316, "gap": 10, "minWidth": 420,
           "marquee": [
             { "image": "craft-villages/pa-co-gallery-1", "alt": "Những tấm vải H'Mong vẽ sáp, nhuộm chàm và nâu, treo cạnh nhau", "draft": true, "note": "This gallery features patterns of the H'Mong, all made by hand. The fabric is woven from flax fiber, and each pattern is drawn in beeswax, which keeps the cloth its white color wherever it is painted before dyeing." },
             { "image": "craft-villages/pa-co-gallery-2", "alt": "Cận cảnh vải nâu với hoa văn sừng cừu đan vào nhau", "draft": true, "note": "This brown cloth is dyed from dye yam (Dioscorea cirrhosa), a forest tuber. Its main motif, interlocking ram's horns, stands for couples and the love between partners in H'Mong villages." },
@@ -154,7 +154,84 @@
         { "mt": 30, "text": "I registered a booth for Ninh So’s weavers at the Green Agriculture Festival, to bring their bamboo and rattan work to new buyers and move the craft toward a more valued business." }
       ]
     },
-    { "id": "xoi-tri-glass-village", "title": "Xoi Tri Glass Village", "blocks": [] },
-    { "id": "photography-portfolio", "title": "Photography Portfolio", "blocks": [] }
+    {
+      "id": "xoi-tri-glass-village",
+      "title": "Xoi Tri Glass Village",
+      "blocks": [
+        { "mt": 30, "text": "About 100 kilometers from Hanoi, in Nam Dinh Province, lies Xoi Tri, a village that has blown glass by hand for around seventy years. Its beer glasses, a fixture of Hanoi's street corners, have always been made from shards of old glass. It was the right place for Eco-Wander, my project about giving used glass a second life." },
+        {
+          "mt": 24, "gap": 11,
+          "row": [
+            { "image": "craft-villages/xoi-tri-1", "alt": "Khánh Chi ngồi phân loại chai thuỷ tinh giữa đống bao tải phế liệu", "draft": true },
+            { "image": "craft-villages/xoi-tri-2", "alt": "Khánh Chi xếp chai thuỷ tinh vào két nhựa bên đường làng", "draft": true }
+          ]
+        },
+        { "mt": 27, "text": "I collected used glass from households across the village, bottle by bottle, sorting each as I went. In a village that has blown glass for generations, nearly every home held a little of its own raw material." },
+        {
+          "mt": 24, "gap": 10,
+          "row": [
+            { "image": "craft-villages/xoi-tri-3", "alt": "Khánh Chi đeo găng tay phân loại chai thuỷ tinh nhiều màu", "draft": true },
+            { "image": "craft-villages/xoi-tri-4", "alt": "Khánh Chi đeo găng tay bóc nhãn một chai thuỷ tinh", "draft": true },
+            { "image": "craft-villages/xoi-tri-5", "alt": "Tay cọ rửa chai thuỷ tinh trong thùng nước", "draft": true }
+          ]
+        },
+        { "mt": 27, "text": "I sorted bottles by color and label, stripped caps and plastic wrap, and soaked and scrubbed off stubborn labels, before crushing the glass into small pieces." },
+        {
+          "mt": 24, "gap": 10,
+          "row": [
+            { "image": "craft-villages/xoi-tri-6", "alt": "Tay gắn mảnh thuỷ tinh vụn lên tranh vẽ trong khung gỗ", "draft": true },
+            { "image": "craft-villages/xoi-tri-7", "alt": "Hai bạn học sinh vẽ tranh tại bàn workshop", "draft": true },
+            { "image": "craft-villages/xoi-tri-8", "alt": "Các tranh kính tái chế và lọ màu acrylic trên bàn workshop", "draft": true }
+          ]
+        },
+        { "mt": 27, "text": "Under the Eco-Wander project, I organized a workshop on the theme of Vietnamese tradition, where recycled glass was decorated and glazed, taking on a glossy, vivid finish that catches the eye." },
+        {
+          "mt": 24, "gap": 10,
+          "row": [
+            { "image": "craft-villages/xoi-tri-9", "alt": "Khách xem các bức tranh kính tái chế xếp dọc bàn triển lãm", "draft": true },
+            { "image": "craft-villages/xoi-tri-10", "alt": "Standee triển lãm Việt Nam Gấm Hoa bên cạnh thú bông", "draft": true },
+            { "image": "craft-villages/xoi-tri-11", "alt": "Dãy tranh kính tái chế trưng bày trên bàn phủ khăn đen", "draft": true }
+          ]
+        },
+        { "mt": 27, "text": "What began as bottles thrown away ended as art on canvas. At the Viet Nam Brocade and Blossoms exhibition, which I organized, recycled glass artworks were shown and sold to support the Vietnam Cerebral Palsy Association." },
+        { "mt": 40, "variant": "title", "text": "Gallery: Vietnam in Splendor\n(featuring a few of the exhibition's recycled glass paintings)" },
+        {
+          "mt": 38, "height": 493, "gap": 10,
+          "marquee": [
+            { "image": "craft-villages/xoi-tri-gallery-1", "alt": "Tranh kính tái chế: con thuyền giữa vách đá vôi trên mặt nước xanh ngọc", "draft": true, "note": "Among the Cliffs, a lone boat drifts toward limestone cliffs on emerald water. The green of the water comes from crushed beer bottles." },
+            { "image": "craft-villages/xoi-tri-gallery-2", "alt": "Tranh kính tái chế: thiếu nữ áo đỏ cầm hoa trên nền lá xanh", "draft": true, "note": "Blossom's Grace features a woman in vivid red holds a blossom against lush green. Her deep red-brown blossom comes from wine bottles, and the clear glass around her from water and soft-drink bottles." },
+            { "image": "craft-villages/xoi-tri-gallery-3", "alt": "Tranh kính tái chế: thuyền chở hoa sen hồng giữa nước xanh và lá sen", "draft": true, "note": "Lotus Drift, a boat loaded with pink blossoms drifts through teal water and green leaves. The flowers began as perfume bottles, the leaves as beer bottles, the shadows at the edges as wine bottles." },
+            { "image": "craft-villages/xoi-tri-gallery-4", "alt": "Tranh kính tái chế: người nông dân đội nón gặt lúa chín vàng", "draft": true, "note": "Golden Season features farmers in conical hats harvest a vast field of ripe rice under a soft sky. The gold of the rice comes from cosmetic serum glass bottles." },
+            { "image": "craft-villages/xoi-tri-gallery-5", "alt": "Tranh kính tái chế: cốm xanh gói lá sen bên hoa sen", "draft": true, "note": "Fragrance of Green Rice, young green rice wrapped in lotus leaves beside blooming lotus. The pale greens come from soda and soju bottles." },
+            { "image": "craft-villages/xoi-tri-gallery-6", "alt": "Tranh kính tái chế: ánh nắng rọi vào hang Sơn Đoòng, người chèo thuyền kayak trên nước xanh", "draft": true, "note": "Son Doong Cave, sunbeams pour through the cave opening onto turquoise water, where a lone kayaker drifts. The dark rim is wine bottles and the glints along the water are clear water bottles." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "photography-portfolio",
+      "title": "Photography Portfolio",
+      "blocks": [
+        {
+          "mt": 25, "label": "Photography Portfolio: An Artisan-woven Grace",
+          "slideshow": [
+            { "image": "craft-villages/photography-1", "alt": "Bìa photobook “An Artisan-woven Grace” – Photography Portfolio by Khanh Chi, nền là xưởng treo đầy đồ thủ công", "draft": true },
+            { "image": "craft-villages/photography-2", "alt": "Trang photobook: tượng sơn mài và đoạn văn mở đầu về làng nghề", "draft": true },
+            { "image": "craft-villages/photography-3", "alt": "Trang photobook: người phụ nữ cúi làm việc bên sàn xưởng", "draft": true },
+            { "image": "craft-villages/photography-4", "alt": "Trang photobook: cụ ông đan sọt tre, cận cảnh sọt tre trắng", "draft": true },
+            { "image": "craft-villages/photography-5", "alt": "Trang photobook: cụ bà chẻ nan tre", "draft": true },
+            { "image": "craft-villages/photography-6", "alt": "Trang photobook: thợ đan mây tre đang làm sọt", "draft": true },
+            { "image": "craft-villages/photography-7", "alt": "Trang photobook: cô Dương chà nhám hàng sơn mài", "draft": true },
+            { "image": "craft-villages/photography-8", "alt": "Trang photobook: tay cầm súng phun sơn mài lên bình", "draft": true },
+            { "image": "craft-villages/photography-9", "alt": "Trang photobook: thợ sơn mài vẽ hoạ tiết bằng cọ", "draft": true },
+            { "image": "craft-villages/photography-10", "alt": "Trang photobook: các hộp sơn mài nhiều màu trên kệ", "draft": true },
+            { "image": "craft-villages/photography-11", "alt": "Trang photobook: hộp sơn mài khảm, vẽ hoạ tiết", "draft": true },
+            { "image": "craft-villages/photography-12", "alt": "Trang photobook: thợ gốm trang trí bình gốm nâu", "draft": true },
+            { "image": "craft-villages/photography-13", "alt": "Trang photobook: các phôi gốm đặt trên sàn xưởng", "draft": true },
+            { "image": "craft-villages/photography-14", "alt": "Trang cuối photobook: ghép nhiều ảnh làng nghề với dòng chữ Photography Portfolio by Khanh Chi", "draft": true }
+          ]
+        }
+      ]
+    }
   ]
 }

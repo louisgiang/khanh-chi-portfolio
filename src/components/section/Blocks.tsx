@@ -1,10 +1,10 @@
 import { useState, type CSSProperties } from 'react';
 import { motion, useReducedMotion } from 'motion/react';
-import type { Block, Cell, Entry, ImageRef, Item, MarqueeBlock, RowBlock, VideoBlock } from '../../content';
-import { isDivider, isEntry, isImage, isImageCell, isMarquee, isRow, isText, isVideo } from '../../content';
+import type { Block, Cell, Entry, ImageRef, Item, MarqueeBlock, RowBlock, SlideshowBlock, VideoBlock } from '../../content';
+import { isDivider, isEntry, isImage, isImageCell, isMarquee, isRow, isSlideshow, isText, isVideo } from '../../content';
 import { Img, imageEntry } from '../Img';
 import { DUR, EASE } from '../../motion';
-import { imageWidths, rowGrows, toRows, vwSizes } from './sizes';
+import { CONTENT_W, imageWidths, rowGrows, toRows, vwSizes } from './sizes';
 
 const DEFAULT_GAP = 25;
 // Nút tiêu đề đã có đệm dưới 24 → khối đầu tiên trừ đi phần này.
@@ -39,6 +39,7 @@ function BlockView({ block: b, ctx, last }: { block: Block; ctx: Ctx; last: bool
   if (isVideo(b)) return <Video block={b} ctx={ctx} />;
   if (isMarquee(b)) return <Marquee block={b} ctx={ctx} />;
   if (isDivider(b)) return <hr className="item__divider" />;
+  if (isSlideshow(b)) return <Slideshow block={b} ctx={ctx} />;
   return null;
 }
 
@@ -159,13 +160,12 @@ function Carousel({ images, ctx }: { images: ImageRef[]; ctx: Ctx }) {
 /** Băng ảnh trượt ngang tự động, chạy vòng (dãy ảnh lặp 2 lần, trượt đúng nửa chiều dài rồi quay lại
  *  — khớp liền nên không thấy chỗ nối). Dừng khi rê chuột / focus; giảm chuyển động → đứng yên, cuộn tay. */
 const MARQUEE_SPEED = 45; // đơn vị thiết kế / giây
-const MARQUEE_MIN_W = 420;
 function Marquee({ block: b, ctx }: { block: MarqueeBlock; ctx: Ctx }) {
   const reduce = useReducedMotion();
   const gap = b.gap ?? 10;
   const imgW = (c: ImageRef) => b.height * (imageEntry(c.image)?.aspect ?? 1);
-  // Ảnh dọc hẹp: khung rộng tối thiểu MARQUEE_MIN_W để ô chú thích không bị kéo dài quá nhiều dòng.
-  const slideW = (c: MarqueeBlock['marquee'][number]) => (c.note ? Math.max(imgW(c), MARQUEE_MIN_W) : imgW(c));
+  // Ảnh dọc hẹp có chú thích: khung rộng tối thiểu minWidth (nếu đặt) để chú thích không quá nhiều dòng.
+  const slideW = (c: MarqueeBlock['marquee'][number]) => (c.note ? Math.max(imgW(c), b.minWidth ?? 0) : imgW(c));
   const len = b.marquee.reduce((s, c) => s + slideW(c) + gap, 0);
   const slides = (copy: number) =>
     b.marquee.map((c) => (
@@ -192,6 +192,62 @@ function Marquee({ block: b, ctx }: { block: MarqueeBlock; ctx: Ctx }) {
         {slides(0)}
         {!reduce && slides(1)}
       </div>
+    </div>
+  );
+}
+
+/** Trình chiếu full chiều ngang (Photography Portfolio): lật trang bằng mũi tên hoặc phím ←/→.
+ *  Chỉ tải trang đang xem và hai trang kề bên; trang đã tải thì giữ lại. */
+function Slideshow({ block: b, ctx }: { block: SlideshowBlock; ctx: Ctx }) {
+  const [i, setI] = useState(0);
+  const [seen, setSeen] = useState(() => new Set([0, 1]));
+  const reduce = useReducedMotion();
+  const n = b.slideshow.length;
+  const go = (d: number) => {
+    const next = (i + d + n) % n;
+    setI(next);
+    setSeen((s) => new Set([...s, next, (next + 1) % n, (next - 1 + n) % n]));
+  };
+  const aspect = imageEntry(b.slideshow[0]?.image ?? '')?.aspect ?? 16 / 9;
+  const sizes = vwSizes(CONTENT_W);
+  return (
+    <div
+      className="slideshow"
+      role="group"
+      aria-roledescription="carousel"
+      aria-label={b.label ?? 'Slideshow'}
+      onKeyDown={(e) => {
+        if (e.key === 'ArrowLeft') go(-1);
+        else if (e.key === 'ArrowRight') go(1);
+      }}
+    >
+      <div className="slideshow__viewport" style={{ aspectRatio: aspect }}>
+        <motion.div
+          className="slideshow__track"
+          animate={{ x: `${-i * 100}%` }}
+          initial={false}
+          transition={{ duration: reduce ? 0 : DUR.expand, ease: EASE }}
+        >
+          {b.slideshow.map((img, k) => (
+            <div key={img.image} className="slideshow__slide" aria-hidden={k !== i}>
+              <Img id={img.image} alt={img.alt} sizes={sizes} load={ctx.load && seen.has(k)} fill className="slideshow__img" />
+            </div>
+          ))}
+        </motion.div>
+      </div>
+      <button type="button" className="slideshow__btn slideshow__btn--prev" aria-label="Previous page" onClick={() => go(-1)}>
+        <svg viewBox="0 0 16 19" aria-hidden="true">
+          <polygon points="0,9.5 16,0 16,19" />
+        </svg>
+      </button>
+      <button type="button" className="slideshow__btn slideshow__btn--next" aria-label="Next page" onClick={() => go(1)}>
+        <svg viewBox="0 0 16 19" aria-hidden="true">
+          <polygon points="16,9.5 0,0 0,19" />
+        </svg>
+      </button>
+      <p className="slideshow__count" aria-live="polite">
+        {i + 1} / {n}
+      </p>
     </div>
   );
 }

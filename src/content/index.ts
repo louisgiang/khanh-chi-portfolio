@@ -32,10 +32,13 @@ export type EntryBlock = Spaced & { entry: Entry };
 export type VideoBlock = Spaced & { video: { poster: string; alt: string; draft?: boolean; youtube?: string }; width: number };
 
 /** Băng ảnh trượt ngang tự động (ảnh cao bằng nhau `height`, mỗi ảnh có thể kèm ô chú thích). */
-export type MarqueeBlock = Spaced & { marquee: (ImageRef & { note?: string })[]; height: number; gap?: number };
+/** minWidth: khung ảnh có chú thích rộng tối thiểu (đơn vị thiết kế) — cho ảnh dọc hẹp, tránh chú thích quá nhiều dòng. */
+export type MarqueeBlock = Spaced & { marquee: (ImageRef & { note?: string })[]; height: number; gap?: number; minWidth?: number };
 export type DividerBlock = Spaced & { divider: true };
+/** Trình chiếu full chiều ngang thẻ, lật trang bằng mũi tên (khung theo tỉ lệ ảnh đầu tiên). */
+export type SlideshowBlock = Spaced & { slideshow: ImageRef[]; label?: string };
 
-export type Block = TextBlock | ImageBlock | RowBlock | EntryBlock | VideoBlock | MarqueeBlock | DividerBlock;
+export type Block = TextBlock | ImageBlock | RowBlock | EntryBlock | VideoBlock | MarqueeBlock | DividerBlock | SlideshowBlock;
 /** zigzag/grid: bố cục My Journey (tự ghép ảnh/chữ thành hàng). Không có: khối hiển thị theo thứ tự. */
 export type Item = { id: string; title: string; layout?: 'zigzag' | 'grid'; blocks: Block[] };
 export type PageContent = { title: string; intro?: string; introStyle?: 'italic'; items: Item[] };
@@ -54,6 +57,7 @@ export const isEntry = (b: Block): b is EntryBlock => 'entry' in b;
 export const isVideo = (b: Block): b is VideoBlock => 'video' in b;
 export const isMarquee = (b: Block): b is MarqueeBlock => 'marquee' in b;
 export const isDivider = (b: Block): b is DividerBlock => 'divider' in b;
+export const isSlideshow = (b: Block): b is SlideshowBlock => 'slideshow' in b;
 export const isImageCell = (c: Cell): c is Extract<Cell, { image: string }> => 'image' in c;
 
 /** Mọi ảnh của một ô (để tải sẵn khi hover). */
@@ -68,6 +72,7 @@ export function itemImages(item: Item): string[] {
       for (const c of b.entry.carousel ?? []) out.push(c.image);
     } else if (isVideo(b)) out.push(b.video.poster);
     else if (isMarquee(b)) for (const c of b.marquee) out.push(c.image);
+    else if (isSlideshow(b)) for (const c of b.slideshow) out.push(c.image);
   }
   return out;
 }

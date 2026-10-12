@@ -1,5 +1,5 @@
 import type { Block, Item, RowBlock, TextBlock, ImageBlock } from '../../content';
-import { isImage, isImageCell, isRow, isEntry, isVideo, isText, isMarquee } from '../../content';
+import { isImage, isImageCell, isRow, isEntry, isVideo, isText, isMarquee, isSlideshow } from '../../content';
 import { imageEntry } from '../Img';
 
 // Kích thước theo khung thiết kế 1920: thẻ rộng 1138, nội dung 1053 (lề trong 40 + viền 3).
@@ -70,6 +70,8 @@ export function imageWidths(item: Item): Map<string, number> {
       for (const c of b.entry.carousel ?? []) out.set(c.image, CAROUSEL_IMG_W);
     } else if (isVideo(b)) out.set(b.video.poster, b.width);
     else if (isMarquee(b)) for (const c of b.marquee) out.set(c.image, b.height * aspect(c.image));
+    // Trình chiếu: chỉ trang đầu được tải sẵn khi hover; các trang sau tải khi lật tới gần.
+    else if (isSlideshow(b) && b.slideshow[0]) out.set(b.slideshow[0].image, CONTENT_W);
   }
   return out;
 }

@@ -111,8 +111,7 @@
 - Nội dung: `content/craft-villages.json`. Chữ chép nguyên văn từ 6 ảnh ref; chú thích ảnh 3–6 của "Gallery: Patterns of the H'Mong" do anh/chị gửi trong chat. Tiêu đề trang theo ref: **"Crafted Villages"** (tab vẫn là "Craft Villages").
 - Ảnh gốc anh/chị gửi tên "Personal Product 5…20" nhưng **đều thuộc ô Pa Co Brocade Village** → đổi tên trong `assets-src/craft-villages/` (pa-co-1…6, pa-co-video-1…3, pa-co-gallery-1…6, pa-co-attire-1…3, pa-co-workshop-1…3). Thứ tự gallery: 14, 14-1, 14-2 (cô gái), 14-3 (măng đắng), 14-4 (mặt trời đỏ), 14-5 (anh Huy).
 - Ô Personal Product: dùng ảnh gốc `Personal Product 1–4.png` (anh/chị bổ sung; bản cắt tạm từ ref đã bỏ).
-- **2 ô Xoi Tri Glass Village, Photography Portfolio: chưa có ảnh** → để trống (bấm mở chỉ thấy tiêu đề). Ref đã có chữ của Xoi Tri, chờ ảnh.
-- Khối mới: băng ảnh trượt ngang tự động (`marquee`): dãy ảnh lặp 2 lần, CSS `translateX` chạy vòng (chỉ transform → mượt), tốc độ 45 đơn vị thiết kế/giây; chỉ chạy khi thẻ mở, dừng khi rê chuột/focus; `prefers-reduced-motion` → đứng yên, cuộn tay. Ảnh cao 316, cách 10. Ảnh dọc hẹp (cô gái H'Mong) đặt trong khung rộng tối thiểu 420 để ô chú thích không quá dài (tự quyết).
+- Khối mới: băng ảnh trượt ngang tự động (`marquee`): dãy ảnh lặp 2 lần, CSS `translateX` chạy vòng (chỉ transform → mượt), tốc độ 45 đơn vị thiết kế/giây; chỉ chạy khi thẻ mở, dừng khi rê chuột/focus; `prefers-reduced-motion` → đứng yên, cuộn tay. Ảnh cao 316, cách 10. Ảnh dọc hẹp (cô gái H'Mong) đặt trong khung rộng tối thiểu 420 (`minWidth`, chỉ gallery H'Mong) để ô chú thích không quá dài (tự quyết).
 - Khối mới: đường kẻ ngăn (`divider`), tiêu đề mục căn giữa Bold 30 (`variant: "title"`), ô chú thích có khung (`box: true`).
 - Chú thích có khung: dùng Helvetica Neue Roman 16 (ref Personal Product trông như Light, nhưng không có font Light thẳng — chỉ có Light Italic).
 - 3 khung video (pa-co-video-1…3) là ảnh chụp trình phát YouTube như ref; khi có link thì điền `"youtube"`.
@@ -125,6 +124,19 @@
 - Ảnh: `Thuong Tin Villages 1–12` → `thuong-tin-1…9`, `thuong-tin-video-1/2` (ảnh 6, 8), gallery theo thứ tự ảnh anh/chị gửi kèm: 7-3 (hộp), 7 (áo dài), 7-1 (Chùa Một Cột), 7-2 (tượng nón lá), 7-4 (rối nước).
 - Chú thích ảnh áo dài (7) và tượng nón lá (7-2): anh/chị gửi bản đầy đủ (ref bị cắt mép). Giữ nguyên "áo dài" (có dấu) ở ảnh 7 và "ao dai" (không dấu) ở ảnh 7-2 như anh/chị gửi.
 - Câu "Above all, let my gallery guide you through the works." Bold 25 căn giữa (`variant: "lead"`, đo từ ref).
-- Băng ảnh: khung rộng tối thiểu 420 chỉ áp cho ảnh có chú thích (ảnh hẹp không chú thích giữ đúng tỉ lệ, không chừa khoảng trống).
+- Băng ảnh: chú thích rộng bằng ảnh như ref (không đặt `minWidth`).
 - Video "Làng Hạ Thái" / "Làng Ninh Sở" rộng 619 như ref; chưa có link YouTube.
 - Ảnh gốc trong thư mục `Crafted Villages/` chỉ được sao chép sang `assets-src/`, không sửa/đổi tên file gốc.
+
+### Xoi Tri Glass Village (2026-10-12)
+- Chữ chép nguyên văn từ `Home - Crafted Villages (4).png`; 6 chú thích gallery "Vietnam in Splendor" do anh/chị gửi.
+- Ảnh: `Xoi Tri Glass Village 1–11` → `xoi-tri-1…11` (ảnh 11 = bàn triển lãm, nằm trong hàng ảnh thứ 4). Gallery theo thứ tự chú thích: `11-1` (vách đá), `11 -1` (thiếu nữ áo đỏ — tên file có dấu cách, khác `11-1`), `11-2`, `11-3`, `11-4`, `11-5`.
+- Gallery: ảnh cao 493, cách 10, chú thích rộng bằng ảnh (đúng ref). Tiêu đề gallery 2 dòng (xuống dòng theo ref).
+- So vị trí với ref: lệch ≤ 6px.
+
+### Photography Portfolio (2026-10-12)
+- Ảnh: `Photography Portfolio.png` (bìa) → `photography-1`; `2.png … 14.png` → `photography-2…14` (các trang photobook, chữ in sẵn trong ảnh).
+- **Tự quyết, cần duyệt:** ref (`Home - About Me.png`) chỉ có ảnh bìa phủ hết chiều ngang thẻ, không thể hiện 13 trang sau. Làm thành trình chiếu: bìa là trang 1, mũi tên ◀ ▶ tròn mờ đè hai bên ảnh, số trang "1 / 14" góc dưới phải, phím ←/→, trượt 550ms, vòng lại. **Không tự trượt** vì trang có chữ cần thời gian đọc.
+- Chỉ tải trang đang xem + 2 trang kề bên (bìa tải sẵn khi hover ô).
+- Kích thước khớp ref (ảnh 1053 rộng, thẻ cao ~730).
+- **Ngân sách ảnh:** ở 1920px trình duyệt chọn bản 1200px: 148–314KB AVIF (ảnh có hạt nhiễu kiểu film + chữ nhỏ nên khó nén). **`photography-14` = 314KB > 300KB.** Bìa 99KB. Chỉ tải khi lật tới gần nên không ảnh hưởng lần tải đầu. Nếu cần nhẹ hơn: hạ chất lượng AVIF riêng cho nhóm ảnh này (chữ nhỏ có thể nhoè) — chờ anh/chị quyết.
