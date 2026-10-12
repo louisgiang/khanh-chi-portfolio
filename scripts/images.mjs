@@ -123,12 +123,11 @@ let done = 0,
 
 const files = (await walk(SRC)).map((f) => [f, path.relative(SRC, f).split(path.sep).join('/')]).filter(([, r]) => !skip(r));
 
-// assets-src/ không nằm trong git: máy khác có thể chỉ có ảnh gốc của vài trang.
-// Trang nào không có thư mục gốc trên máy này → giữ nguyên ảnh đã tối ưu (public/img) và mục manifest cũ.
-const localDirs = new Set((await fs.readdir(SRC, { withFileTypes: true })).filter((e) => e.isDirectory()).map((e) => slug(e.name)));
-for (const [id, entry] of Object.entries(await readJson(MANIFEST, {}))) {
-  if (!localDirs.has(id.split('/')[0])) manifest[id] = entry;
-}
+// assets-src/ không nằm trong git: máy khác có thể chỉ có ảnh gốc của vài trang (hoặc thư mục rỗng).
+// Giữ mọi mục manifest cũ, trừ khi biết chắc ảnh gốc của nó từng ở trên máy này (có trong cache) và nay đã bị xoá.
+const localRels = new Set(files.map(([, r]) => r));
+const removedIds = new Set(Object.entries(cache).filter(([rel]) => !localRels.has(rel)).map(([, c]) => c.id));
+const oldManifest = await readJson(MANIFEST, {});
 
 for (const [file, rel] of files) {
   const buf = await fs.readFile(file);
@@ -152,6 +151,9 @@ for (const [file, rel] of files) {
   done++;
   console.log(`✓ ${rel}  →  ${id}  (${kb(buf.length)} → ${entry.avif.map((v) => v.w + ':' + kb(v.bytes)).join(' ')} avif)`);
 }
+
+// Mục cũ không được xử lý lại lần này (ảnh gốc ở máy khác) → giữ nguyên.
+for (const [id, entry] of Object.entries(oldManifest)) if (!(id in manifest) && !removedIds.has(id)) manifest[id] = entry;
 
 // Xóa file output mồ côi (ảnh gốc đã bị xóa/đổi tên).
 const keep = new Set(Object.values(manifest).flatMap((e) => [...e.avif, ...e.webp].map((v) => path.join(ROOT, 'public', v.src))));

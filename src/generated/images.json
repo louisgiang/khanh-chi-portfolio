@@ -940,60 +940,49 @@
     ]
   },
   "applied-science/internship-3": {
-    "width": 2547,
-    "height": 1710,
-    "aspect": 1.4895,
-    "alpha": true,
-    "color": "#080808",
-    "placeholder": "data:image/webp;base64,UklGRvAAAABXRUJQVlA4WAoAAAAQAAAAEwAADAAAQUxQSDgAAAABV6CgbRuGP9YyeLskIiL7Sw02ENW2of9XakghgQgCiSCCsOavJkBE/yfAiNMXT28K+AQFCJF3DVZQOCCSAAAA0AMAnQEqFAANAD7tYqlNqaWjojAIATAdiWIAnQAUxo8nEtnYZBMAAP5anwweTR/OTFzMPJGFgadorOyl8X8RAkYrX6H+qZZkEdDvh/8kr6fVRgd6PKXNcyBvgJO6lmktvbB/d190ahzqul0GlDtlHoE7nPOshezzXuoVILpR57v1YxLdm2J9mzJmJLsXjVb6AAA=",
+    "width": 1280,
+    "height": 720,
+    "aspect": 1.7778,
+    "alpha": false,
+    "color": "#c8c8b8",
+    "placeholder": "data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAACwAwCdASoUAAsAPu1iqU2ppaOiMAgBMB2JQBOgZYARKpDadirTAAD+lIoTsInvV311OHqGbRuImYTpqfBvqxwr1JjKs0x/s7+vNH/VzVXNOuDSemwt9HcYl4wu/8507Vf7Z7f9sZmh+yVYMpZ83GOqDB8h+OD1URS+7hOJyxRAAA==",
     "widths": [
       480,
       800,
-      1200,
-      1600
+      1200
     ],
     "avif": [
       {
         "w": 480,
         "src": "/img/applied-science/internship-3-480.avif",
-        "bytes": 14123
+        "bytes": 12161
       },
       {
         "w": 800,
         "src": "/img/applied-science/internship-3-800.avif",
-        "bytes": 23107
+        "bytes": 21007
       },
       {
         "w": 1200,
         "src": "/img/applied-science/internship-3-1200.avif",
-        "bytes": 33030
-      },
-      {
-        "w": 1600,
-        "src": "/img/applied-science/internship-3-1600.avif",
-        "bytes": 42157
+        "bytes": 31015
       }
     ],
     "webp": [
       {
         "w": 480,
         "src": "/img/applied-science/internship-3-480.webp",
-        "bytes": 15852
+        "bytes": 13160
       },
       {
         "w": 800,
         "src": "/img/applied-science/internship-3-800.webp",
-        "bytes": 28702
+        "bytes": 24692
       },
       {
         "w": 1200,
         "src": "/img/applied-science/internship-3-1200.webp",
-        "bytes": 45248
-      },
-      {
-        "w": 1600,
-        "src": "/img/applied-science/internship-3-1600.webp",
-        "bytes": 62548
+        "bytes": 38738
       }
     ]
   },
@@ -1114,60 +1103,107 @@
     ]
   },
   "applied-science/internship-6": {
-    "width": 2547,
-    "height": 1710,
-    "aspect": 1.4895,
-    "alpha": true,
+    "width": 1280,
+    "height": 720,
+    "aspect": 1.7778,
+    "alpha": false,
     "color": "#080808",
-    "placeholder": "data:image/webp;base64,UklGRu4AAABXRUJQVlA4WAoAAAAQAAAAEwAADAAAQUxQSDgAAAABV6CgbRuGP9YyeLskIiL7Sw02ENW2of9XakghgQgCiSCCsOavJkBE/yfAiNMXT28K+AQFCJF3DVZQOCCQAAAA0AMAnQEqFAANAD7tYqlNqaWjojAIATAdiWcAVH7cIpPnpcR77YgwAM49qYQMcnFTdyVMg5/XM9IuMgo96BXPSh575ayxB9hYnHlG2OLXf7LRiYV0k+C+E5xo7ukpUot0K2qg7/K+m7sW3aIWayST2gMIkO6LUHMzZr9QtCuSBuqcFMR87a4lJvdlUQy8AAAA",
+    "placeholder": "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAADwAwCdASoUAAsAPu1iqU2ppaOiMAgBMB2JZwAAUvp3JXant2wHKsAAAP7eH5GOE1Wd6t8RJ8HL/pKFe7Qww38tacb8Ovyj4IKINPyB5Tc5hk7E7rpWY1bFIyhFsxgoQb6ET0utpwK9TekAdRdd0pr1lAsb6cYcYLroEUxPBNq6uo+70AA=",
     "widths": [
       480,
       800,
-      1200,
-      1600
+      1200
     ],
     "avif": [
       {
         "w": 480,
         "src": "/img/applied-science/internship-6-480.avif",
-        "bytes": 17796
+        "bytes": 13141
       },
       {
         "w": 800,
         "src": "/img/applied-science/internship-6-800.avif",
-        "bytes": 27954
+        "bytes": 21315
       },
       {
         "w": 1200,
         "src": "/img/applied-science/internship-6-1200.avif",
-        "bytes": 39636
-      },
-      {
-        "w": 1600,
-        "src": "/img/applied-science/internship-6-1600.avif",
-        "bytes": 50380
+        "bytes": 30760
       }
     ],
     "webp": [
       {
         "w": 480,
         "src": "/img/applied-science/internship-6-480.webp",
-        "bytes": 19432
+        "bytes": 13410
       },
       {
         "w": 800,
         "src": "/img/applied-science/internship-6-800.webp",
-        "bytes": 34188
+        "bytes": 24054
       },
       {
         "w": 1200,
         "src": "/img/applied-science/internship-6-1200.webp",
-        "bytes": 52750
+        "bytes": 36454
+      }
+    ]
+  },
+  "applied-science/internship-7": {
+    "width": 1500,
+    "height": 2000,
+    "aspect": 0.75,
+    "alpha": false,
+    "color": "#181818",
+    "placeholder": "data:image/webp;base64,UklGRpoAAABXRUJQVlA4II4AAAAQBQCdASoUABsAPu1kqk2ppaQiMAgBMB2JZQAAYe61m7px0JXENaQyDzn58VVI4sAAAP5ohqMvc+uEAdcGqTR2IUe2h8NUD9vQCPdUlWVkx6FcQbulXc5zaqLhKRYGnyD2cUv9Uga2LHfJyOpSEcAHoYHt8cExVjC6m5tuTiP/N2nde/Xmd45L/LQZrgAA",
+    "widths": [
+      480,
+      800,
+      1200,
+      1500
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/applied-science/internship-7-480.avif",
+        "bytes": 28291
       },
       {
-        "w": 1600,
-        "src": "/img/applied-science/internship-6-1600.webp",
-        "bytes": 71112
+        "w": 800,
+        "src": "/img/applied-science/internship-7-800.avif",
+        "bytes": 63863
+      },
+      {
+        "w": 1200,
+        "src": "/img/applied-science/internship-7-1200.avif",
+        "bytes": 102548
+      },
+      {
+        "w": 1500,
+        "src": "/img/applied-science/internship-7-1500.avif",
+        "bytes": 135850
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/applied-science/internship-7-480.webp",
+        "bytes": 32316
+      },
+      {
+        "w": 800,
+        "src": "/img/applied-science/internship-7-800.webp",
+        "bytes": 74938
+      },
+      {
+        "w": 1200,
+        "src": "/img/applied-science/internship-7-1200.webp",
+        "bytes": 130490
+      },
+      {
+        "w": 1500,
+        "src": "/img/applied-science/internship-7-1500.webp",
+        "bytes": 179590
       }
     ]
   },
@@ -2617,60 +2653,49 @@
     ]
   },
   "craft-villages/pa-co-video-1": {
-    "width": 2612,
-    "height": 1544,
-    "aspect": 1.6917,
-    "alpha": true,
+    "width": 1280,
+    "height": 720,
+    "aspect": 1.7778,
+    "alpha": false,
     "color": "#080808",
-    "placeholder": "data:image/webp;base64,UklGRsAAAABXRUJQVlA4WAoAAAAQAAAAEwAACwAAQUxQSDIAAAABN6CQbQTIX/UM/tOIiPgPhlAMAIjT/IcQSij5c6wbAhH9nwBGKC1giJ3B19Q5DBUrT1ZQOCBoAAAAUAQAnQEqFAAMAD7tYqlNqaWjojAIATAdiWMAwoGLruE/EAW6tvWVDWfqAAD+8qqZl8pgcOVZh1+9OwSjKq/HGjjcei75j3025dUNzdouDW5YqORQJpda3yTewTnKCVm5CxhUM/s1AAA=",
+    "placeholder": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAAAQBACdASoUAAsAPu1iqU2ppaOiMAgBMB2JQBhQBDvuaembf5f+mzKAAAD+9CpuvVrft9XkikMXmI6A+CtctkTqbqeVedOIvZPPWWfZqgbgi+mTkgJmbat0Crsa/7msCcK8Z2N5IAA=",
     "widths": [
       480,
       800,
-      1200,
-      1600
+      1200
     ],
     "avif": [
       {
         "w": 480,
         "src": "/img/craft-villages/pa-co-video-1-480.avif",
-        "bytes": 11405
+        "bytes": 9393
       },
       {
         "w": 800,
         "src": "/img/craft-villages/pa-co-video-1-800.avif",
-        "bytes": 18821
+        "bytes": 15717
       },
       {
         "w": 1200,
         "src": "/img/craft-villages/pa-co-video-1-1200.avif",
-        "bytes": 27059
-      },
-      {
-        "w": 1600,
-        "src": "/img/craft-villages/pa-co-video-1-1600.avif",
-        "bytes": 35465
+        "bytes": 22895
       }
     ],
     "webp": [
       {
         "w": 480,
         "src": "/img/craft-villages/pa-co-video-1-480.webp",
-        "bytes": 12056
+        "bytes": 9618
       },
       {
         "w": 800,
         "src": "/img/craft-villages/pa-co-video-1-800.webp",
-        "bytes": 21554
+        "bytes": 18184
       },
       {
         "w": 1200,
         "src": "/img/craft-villages/pa-co-video-1-1200.webp",
-        "bytes": 34372
-      },
-      {
-        "w": 1600,
-        "src": "/img/craft-villages/pa-co-video-1-1600.webp",
-        "bytes": 47768
+        "bytes": 28586
       }
     ]
   },
@@ -2733,60 +2758,49 @@
     ]
   },
   "craft-villages/pa-co-video-3": {
-    "width": 2612,
-    "height": 1544,
-    "aspect": 1.6917,
-    "alpha": true,
+    "width": 1280,
+    "height": 720,
+    "aspect": 1.7778,
+    "alpha": false,
     "color": "#f8f8f8",
-    "placeholder": "data:image/webp;base64,UklGRtQAAABXRUJQVlA4WAoAAAAQAAAAEwAACwAAQUxQSDIAAAABN6CQbQTIX/UM/tOIiPgPhlAMAIjT/IcQSij5c6wbAhH9nwBGKC1giJ3B19Q5DBUrT1ZQOCB8AAAAMAQAnQEqFAAMAD7tYqlNqaWjojAIATAdiWMAqPQh8MvTXL020A16x5ZgAP7uSqB4yq0U/YuIt6kh3Vcla7C8NMFsZQDSU5C3RuHHo9OA+TzYqizA3WEZcX9VBvuLWkMkgIX29oHiBZGeC4N9s2PzDbCV9easyKoZr1OAAA==",
+    "placeholder": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAAAwBACdASoUAAsAPu1iqU2ppaOiMAgBMB2JYgCo9CHw7NXi5QGoJnOYEAAA/u/7gAVCGUHEPOcFmF16n1Ii5FbZPJeg0kbynwwEY+dtP7MFdeU0+ACysLiJ/GME8n4aP51pH05Y6VTlGMxjA16P1C+JetKAkgAA",
     "widths": [
       480,
       800,
-      1200,
-      1600
+      1200
     ],
     "avif": [
       {
         "w": 480,
         "src": "/img/craft-villages/pa-co-video-3-480.avif",
-        "bytes": 19285
+        "bytes": 21244
       },
       {
         "w": 800,
         "src": "/img/craft-villages/pa-co-video-3-800.avif",
-        "bytes": 30437
+        "bytes": 34746
       },
       {
         "w": 1200,
         "src": "/img/craft-villages/pa-co-video-3-1200.avif",
-        "bytes": 42999
-      },
-      {
-        "w": 1600,
-        "src": "/img/craft-villages/pa-co-video-3-1600.avif",
-        "bytes": 53375
+        "bytes": 51690
       }
     ],
     "webp": [
       {
         "w": 480,
         "src": "/img/craft-villages/pa-co-video-3-480.webp",
-        "bytes": 21014
+        "bytes": 21200
       },
       {
         "w": 800,
         "src": "/img/craft-villages/pa-co-video-3-800.webp",
-        "bytes": 38124
+        "bytes": 40002
       },
       {
         "w": 1200,
         "src": "/img/craft-villages/pa-co-video-3-1200.webp",
-        "bytes": 60994
-      },
-      {
-        "w": 1600,
-        "src": "/img/craft-villages/pa-co-video-3-1600.webp",
-        "bytes": 82018
+        "bytes": 63968
       }
     ]
   },
@@ -2939,6 +2953,53 @@
         "w": 750,
         "src": "/img/craft-villages/pa-co-workshop-3-750.webp",
         "bytes": 53060
+      }
+    ]
+  },
+  "craft-villages/pa-co-workshop-video": {
+    "width": 1280,
+    "height": 720,
+    "aspect": 1.7778,
+    "alpha": false,
+    "color": "#a8b8a8",
+    "placeholder": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAAAQBACdASoUAAsAPu1iqU2ppaOiMAgBMB2JYwDCgCIOJQVzGG+1gR9fAAD+Anhtz2ho69FooscOvTId8Ewd+EMF9BsZ4DgRXbFWqWQd1KFtBH947oBuoXElmKCPxyqgD4ETjCdpf38KaypowUUijYlZIgAAAA==",
+    "widths": [
+      480,
+      800,
+      1200
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/pa-co-workshop-video-480.avif",
+        "bytes": 13600
+      },
+      {
+        "w": 800,
+        "src": "/img/craft-villages/pa-co-workshop-video-800.avif",
+        "bytes": 23817
+      },
+      {
+        "w": 1200,
+        "src": "/img/craft-villages/pa-co-workshop-video-1200.avif",
+        "bytes": 36235
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/pa-co-workshop-video-480.webp",
+        "bytes": 13336
+      },
+      {
+        "w": 800,
+        "src": "/img/craft-villages/pa-co-workshop-video-800.webp",
+        "bytes": 26080
+      },
+      {
+        "w": 1200,
+        "src": "/img/craft-villages/pa-co-workshop-video-1200.webp",
+        "bytes": 43256
       }
     ]
   },

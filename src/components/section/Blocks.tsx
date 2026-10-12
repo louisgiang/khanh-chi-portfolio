@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState, type CSSProperties } from 'react';
 import { motion, useReducedMotion } from 'motion/react';
-import type { Block, Cell, Entry, ImageRef, Item, MarqueeBlock, RowBlock, SlideshowBlock, VideoBlock } from '../../content';
-import { isButton, isDivider, isEntry, isImage, isImageCell, isMarquee, isRow, isSlideshow, isText, isVideo } from '../../content';
+import type { Block, Cell, Entry, ImageRef, Item, MarqueeBlock, RowBlock, SlideshowBlock, VideoRef } from '../../content';
+import { isButton, isDivider, isEntry, isImage, isImageCell, isVideoCell, isMarquee, isRow, isSlideshow, isText, isVideo } from '../../content';
 import { Img, imageEntry } from '../Img';
 import { DUR, EASE } from '../../motion';
 import { CONTENT_W, imageWidths, rowGrows, toRows, vwSizes } from './sizes';
@@ -53,7 +53,7 @@ function BlockView({ block: b, ctx, last }: { block: Block; ctx: Ctx; last: bool
   }
   if (isRow(b)) return <Row row={b} ctx={ctx} />;
   if (isEntry(b)) return <EntryView entry={b.entry} ctx={ctx} last={last} />;
-  if (isVideo(b)) return <Video block={b} ctx={ctx} />;
+  if (isVideo(b)) return <Video video={b.video} width={b.width} ctx={ctx} />;
   if (isMarquee(b)) return <Marquee block={b} ctx={ctx} />;
   if (isDivider(b)) return <hr className="item__divider" />;
   if (isSlideshow(b)) return <Slideshow block={b} ctx={ctx} />;
@@ -81,7 +81,7 @@ function Row({ row, ctx }: { row: RowBlock; ctx: Ctx }) {
       style={{ gap: u(row.gap ?? 20) }}
     >
       {row.row.map((c, i) => (
-        <div key={i} className="item__cell" style={{ flexGrow: grows[i] }}>
+        <div key={i} className={`item__cell${isVideoCell(c) ? ' is-video' : ''}`} style={{ flexGrow: grows[i] }}>
           <CellView cell={c} ctx={ctx} />
         </div>
       ))}
@@ -109,6 +109,7 @@ function CellView({ cell: c, ctx }: { cell: Cell; ctx: Ctx }) {
         )}
       </>
     );
+  if (isVideoCell(c)) return <Video video={c.video} ctx={ctx} />;
   if ('text' in c) return <p className="item__text">{c.text}</p>;
   return null;
 }
@@ -202,6 +203,13 @@ function Marquee({ block: b, ctx }: { block: MarqueeBlock; ctx: Ctx }) {
       >
         <Picture img={c} ctx={ctx} style={{ width: mu(imgW(c)), marginInline: 'auto' }} />
         {c.note && <figcaption className="item__note item__note--box">{c.note}</figcaption>}
+        {c.link && (
+          <p className="item__img-title">
+            <a href={c.link.href} target="_blank" rel="noopener noreferrer" className="item__link" tabIndex={copy > 0 ? -1 : undefined}>
+              {c.link.text}
+            </a>
+          </p>
+        )}
         {c.button && (
           <p className="pill-btn__wrap is-center marquee__btn">
             {c.button.href ? (
@@ -331,11 +339,13 @@ function youtubeId(v?: string) {
   return m ? m[1] : /^[\w-]{11}$/.test(v) ? v : null;
 }
 
-function Video({ block: b, ctx }: { block: VideoBlock; ctx: Ctx }) {
-  const id = youtubeId(b.video.youtube);
+/** Video YouTube: ảnh bìa + nút phát, bấm mới tải trình phát. width (đơn vị thiết kế) bỏ trống = rộng 100% ô chứa. */
+function Video({ video, width, ctx }: { video: VideoRef; width?: number; ctx: Ctx }) {
+  const b = { video };
+  const id = youtubeId(video.youtube);
   const [playing, setPlaying] = useState(false);
   return (
-    <div className="video" style={{ width: u(b.width) }}>
+    <div className="video" style={width ? { width: u(width) } : undefined}>
       {playing && id ? (
         <iframe
           className="video__frame"

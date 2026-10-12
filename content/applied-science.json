@@ -165,10 +165,11 @@
       "blocks": [
         { "mt": 40, "text": "Alongside achievements and research, I ventured into the world where chemistry becomes a working language – applying its precision and patience in a nanotechnology lab and a recycling social enterprise, where my creative designing ideas have to bend to the discarded materials and constraints." },
         {
-          "mt": 38, "gap": 14,
-          "row": [
+          "mt": 38, "height": 428, "gap": 14,
+          "marquee": [
             { "image": "applied-science/internship-1", "alt": "Khánh Chi mặc áo blouse dùng pipet trong phòng thí nghiệm", "draft": true, "link": { "text": "FTIR Analysis of HAp-PANi Composite Report", "href": "https://drive.google.com/file/d/1OZY34QlfvbtxTpRNWeCB-44AlPgieZAn/view?usp=sharing" } },
-            { "image": "applied-science/internship-2", "alt": "Khánh Chi nhỏ dung dịch vào bình cầu chứa chất lỏng xanh", "draft": true, "link": { "text": "Results/Discussion Report of Chitosan-Modified Rice Husk Activated Carbon", "href": "https://drive.google.com/file/d/1xi6BYpvQlV0xybVnYT0lxQ66il6QW4md/view?usp=sharing" } }
+            { "image": "applied-science/internship-2", "alt": "Khánh Chi nhỏ dung dịch vào bình cầu chứa chất lỏng xanh", "draft": true, "link": { "text": "Results/Discussion Report of Chitosan-Modified Rice Husk Activated Carbon", "href": "https://drive.google.com/file/d/1xi6BYpvQlV0xybVnYT0lxQ66il6QW4md/view?usp=sharing" } },
+            { "image": "applied-science/internship-7", "alt": "Bột than hoạt tính màu đen trong cốc thuỷ tinh", "draft": true }
           ]
         },
         { "mt": 17, "text": "In collaboration with Prof. Dr. Quoc Trung Vu and Prof Minh Duc Tran at the HNUE, I developed green adsorbents from fish scales and rice husks – pulling textile dyes and heavy metal ions out of water, then testing the method on real wastewater from Thuong Tin’s craft villages." },

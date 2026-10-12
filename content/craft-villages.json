@@ -37,11 +37,11 @@
           ]
         },
         { "mt": 27, "text": "Industrial dye had become a habit in Pa Co, and its leftovers a quiet burden on the canals beside the families’ homes. Here, I introduced the locals to my Solar-Powered Water Treatment Boat – the way sunlight powers it, how HAp/PANI draws the dye out of the water, and how to read its sensors." },
-        { "mt": 25, "video": { "poster": "craft-villages/pa-co-video-1", "alt": "Video: phỏng vấn bác Việt, trưởng thôn, về vấn đề nước thải", "draft": true, "youtube": "" }, "width": 653 },
+        { "mt": 25, "video": { "poster": "craft-villages/pa-co-video-1", "alt": "Video: phỏng vấn bác Việt, trưởng thôn, về vấn đề nước thải", "draft": true, "youtube": "https://www.youtube.com/embed/ik76TwysiYU" }, "width": 653 },
         { "mt": 24, "variant": "caption", "text": "An interview with Mr. Sung A Viet, head of Cha Day village in Pa Co, on the wastewater that flows through the village's canals." },
         { "mt": 24, "video": { "poster": "craft-villages/pa-co-video-2", "alt": "Video: phỏng vấn người dân về thói quen sinh hoạt, xử lí nước thải", "draft": true, "youtube": "" }, "width": 653 },
         { "mt": 24, "variant": "caption", "text": "An interview with families in Pa Co about their daily routines, and where the water goes when the dyeing is done." },
-        { "mt": 24, "video": { "poster": "craft-villages/pa-co-video-3", "alt": "Video: giới thiệu với người dân làng Pà Cò về thuyền xử lí nước thải nhuộm", "draft": true, "youtube": "" }, "width": 653 },
+        { "mt": 24, "video": { "poster": "craft-villages/pa-co-video-3", "alt": "Video: giới thiệu với người dân làng Pà Cò về thuyền xử lí nước thải nhuộm", "draft": true, "youtube": "https://www.youtube.com/embed/yVT-QBlnco8" }, "width": 653 },
         { "mt": 24, "variant": "caption", "text": "Introducing the people of Pa Co to a boat that treats dye wastewater, with the adsorbent built right into it." },
         {
           "mt": 24, "gap": 10,
@@ -85,6 +85,7 @@
         {
           "mt": 26, "gap": 10,
           "row": [
+            { "video": { "poster": "craft-villages/pa-co-workshop-video", "alt": "Video: buổi workshop Morning Tea, Traditional Costume, and Calligraphy", "draft": true, "youtube": "https://www.youtube.com/embed/XUmulHEcIiE" } },
             { "image": "craft-villages/pa-co-workshop-1", "alt": "Ảnh tập thể người tham dự workshop, nhiều người mặc cổ phục", "draft": true },
             { "image": "craft-villages/pa-co-workshop-2", "alt": "Diễn giả cầm micro nói chuyện, bên cạnh là các bạn mặc cổ phục", "draft": true },
             { "image": "craft-villages/pa-co-workshop-3", "alt": "Khánh Chi và bạn mặc áo cổ phục đỏ, xanh, cầm micro giới thiệu", "draft": true }

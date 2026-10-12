@@ -177,3 +177,12 @@
 - Sửa câu: "…Prof. Dr. Quoc Trung Vu **and Prof Minh Duc Tran** at the HNUE…" (giữ đúng chữ anh/chị gửi, "Prof" không có dấu chấm).
 - 2 ảnh phòng lab: thêm tiêu đề chữ trắng đậm gạch chân dưới mỗi ảnh, bấm mở Google Drive ở tab mới: "FTIR Analysis of HAp-PANi Composite Report", "Results/Discussion Report of Chitosan-Modified Rice Husk Activated Carbon". (Trường `link` của ô ảnh trong JSON.)
 - 2 video: YouTube Zi3fMPmyXrU (thực tập phòng lab) và r8V7SkIE4j8 (In conversation with Mr. Duc). Hiện ảnh bìa + nút phát; bấm mới tải trình phát (youtube-nocookie, tự phát) → trang không phải tải 2 trình phát YouTube (~1MB mỗi cái) khi mở thẻ.
+
+## 2026-10-12 (chưa push, chờ anh/chị duyệt)
+- Video Internship: ảnh bìa cũ là ảnh chụp trình phát YouTube bị cắt 2 bên + dính thanh điều khiển → thay bằng ảnh bìa chính thức của YouTube (maxresdefault 1280×720, anh/chị đồng ý). Khung ảnh bìa = khung trình phát = 16:9. Ảnh chụp cũ chuyển vào `assets-src/Applied Science/ref/`. Video phỏng vấn chú Đức có viền đen nằm sẵn trong video.
+- Craft Villages: đoạn giới thiệu đổi theo chữ anh/chị gửi (giữ nháy thẳng "Vietnam's"). Đoạn này nằm ở cột trái nên cũng là đoạn thấy cạnh ô Personal Product — chỉ có 1 chỗ trong nội dung.
+- Craft Villages › Personal Product: link "Report" (Google Drive) dưới ô ghi chú của ảnh đầu.
+- Applied Science › Internship: hàng 2 ảnh lab → băng ảnh tự trượt ngang (cao 428, như cũ) + ảnh thứ 3 cốc than hoạt tính (`Internship 7.jpg`, alt nháp). Tiêu đề có link Google Drive vẫn nằm dưới 2 ảnh đầu.
+- Craft Villages › Pa Co: video "An interview with Mr. Sung A Viet" → YouTube ik76TwysiYU; "Introducing the people of Pa Co to a boat" → yVT-QBlnco8; ảnh bìa thay bằng ảnh bìa YouTube chính thức. Video giữa (pa-co-video-2) chưa có link → giữ ảnh cũ, không có nút phát.
+- Craft Villages › Pa Co › gallery Traditional Attire: chèn video XUmulHEcIiE vào đầu hàng ảnh thứ 2 (ô video mới trong hàng ảnh: cao bằng các ảnh bên cạnh; điện thoại chiếm cả bề ngang).
+- **Sửa script ảnh:** trước đây script coi thư mục rỗng `assets-src/<trang>` là "có ảnh gốc" và xoá toàn bộ ảnh đã tối ưu của trang đó (đã xảy ra ở một commit chưa push, đã khôi phục từ GitHub). Giờ chỉ bỏ ảnh khi biết chắc ảnh gốc của nó từng có trên máy này và nay đã bị xoá.

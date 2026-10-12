@@ -16,6 +16,7 @@ export type ImageBlock = Spaced & ImageRef & { wide?: boolean; width?: number; c
 export type Caption = { title: string; text: string; inline?: boolean };
 export type Cell =
   | (ImageRef & { caption?: Caption; note?: string; box?: boolean; link?: { text: string; href: string } })
+  | { video: VideoRef }
   | { text: string; grow: number }
   | { spacer: true };
 export type RowBlock = Spaced & { row: Cell[]; gap?: number; align?: 'start' | 'center' };
@@ -32,12 +33,13 @@ export type Entry = {
   text: string;
 };
 export type EntryBlock = Spaced & { entry: Entry };
-export type VideoBlock = Spaced & { video: { poster: string; alt: string; draft?: boolean; youtube?: string }; width: number };
+export type VideoRef = { poster: string; alt: string; draft?: boolean; youtube?: string };
+export type VideoBlock = Spaced & { video: VideoRef; width: number };
 
 /** Băng ảnh trượt ngang tự động (ảnh cao bằng nhau `height`, mỗi ảnh có thể kèm ô chú thích). */
 /** minWidth: khung ảnh có chú thích rộng tối thiểu (đơn vị thiết kế) — cho ảnh dọc hẹp, tránh chú thích quá nhiều dòng. */
 export type MarqueeBlock = Spaced & {
-  marquee: (ImageRef & { note?: string; button?: { text: string; href?: string } })[];
+  marquee: (ImageRef & { note?: string; button?: { text: string; href?: string }; link?: { text: string; href: string } })[];
   height: number;
   gap?: number;
   minWidth?: number;
@@ -72,6 +74,7 @@ export const isMarquee = (b: Block): b is MarqueeBlock => 'marquee' in b;
 export const isDivider = (b: Block): b is DividerBlock => 'divider' in b;
 export const isSlideshow = (b: Block): b is SlideshowBlock => 'slideshow' in b;
 export const isImageCell = (c: Cell): c is Extract<Cell, { image: string }> => 'image' in c;
+export const isVideoCell = (c: Cell): c is Extract<Cell, { video: VideoRef }> => 'video' in c;
 
 /** Mọi ảnh của một ô (để tải sẵn khi hover). */
 export function itemImages(item: Item): string[] {
@@ -80,6 +83,7 @@ export function itemImages(item: Item): string[] {
     if (isImage(b)) out.push(b.image);
     else if (isRow(b)) {
       for (const c of b.row) if (isImageCell(c)) out.push(c.image);
+      else if (isVideoCell(c)) out.push(c.video.poster);
     } else if (isEntry(b)) {
       if (b.entry.image) out.push(b.entry.image);
       for (const c of b.entry.carousel ?? []) out.push(c.image);

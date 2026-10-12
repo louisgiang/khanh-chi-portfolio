@@ -1,5 +1,5 @@
 import type { Block, Item, RowBlock, TextBlock, ImageBlock } from '../../content';
-import { isImage, isImageCell, isRow, isEntry, isVideo, isText, isMarquee, isSlideshow } from '../../content';
+import { isImage, isImageCell, isVideoCell, isRow, isEntry, isVideo, isText, isMarquee, isSlideshow } from '../../content';
 import { imageEntry } from '../Img';
 
 // Kích thước theo khung thiết kế 1920: thẻ rộng 1138, nội dung 1053 (lề trong 40 + viền 3).
@@ -43,7 +43,7 @@ export function toRows(item: Item): LegacyRow[] {
 export function rowGrows(row: RowBlock): number[] {
   const imgs = row.row.filter(isImageCell).map((c) => aspect(c.image));
   const avg = imgs.length ? imgs.reduce((a, b) => a + b, 0) / imgs.length : 1;
-  return row.row.map((c) => (isImageCell(c) ? aspect(c.image) : 'grow' in c ? c.grow : avg));
+  return row.row.map((c) => (isImageCell(c) ? aspect(c.image) : isVideoCell(c) ? aspect(c.video.poster) : 'grow' in c ? c.grow : avg));
 }
 
 /** Chiều rộng hiển thị (đơn vị thiết kế) của mọi ảnh trong ô. */
@@ -64,7 +64,10 @@ export function imageWidths(item: Item): Map<string, number> {
       const g = rowGrows(b);
       const sum = g.reduce((a, x) => a + x, 0);
       const free = CONTENT_W - (b.gap ?? GAP_X) * (b.row.length - 1);
-      b.row.forEach((c, i) => isImageCell(c) && out.set(c.image, (free * g[i]) / sum));
+      b.row.forEach((c, i) => {
+        if (isImageCell(c)) out.set(c.image, (free * g[i]) / sum);
+        else if (isVideoCell(c)) out.set(c.video.poster, (free * g[i]) / sum);
+      });
     } else if (isEntry(b)) {
       if (b.entry.image) out.set(b.entry.image, ENTRY_IMG_W);
       for (const c of b.entry.carousel ?? []) out.set(c.image, CAROUSEL_IMG_W);

@@ -718,6 +718,10 @@ a.pill-btn:focus-visible {
   .item__flex.is-many > .item__cell {
     width: calc(50% - 8px);
   }
+  /* Video trong hàng nhiều ảnh: chiếm cả bề ngang để còn xem được */
+  .item__flex.is-many > .item__cell.is-video {
+    width: 100%;
+  }
   .item__cell:has(> :only-child:empty),
   .item__cell:empty {
     display: none;
