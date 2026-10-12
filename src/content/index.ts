@@ -2,6 +2,7 @@ import myJourney from '../../content/my-journey.json';
 import appliedScience from '../../content/applied-science.json';
 import craftVillages from '../../content/craft-villages.json';
 import stageAndScreen from '../../content/stage-and-screen.json';
+import myLittleVillage from '../../content/my-little-village.json';
 import type { SectionId } from '../sections';
 
 /** mt = khoảng cách phía trên khối, đơn vị thiết kế 1920 (mặc định 25). */
@@ -35,7 +36,12 @@ export type VideoBlock = Spaced & { video: { poster: string; alt: string; draft?
 
 /** Băng ảnh trượt ngang tự động (ảnh cao bằng nhau `height`, mỗi ảnh có thể kèm ô chú thích). */
 /** minWidth: khung ảnh có chú thích rộng tối thiểu (đơn vị thiết kế) — cho ảnh dọc hẹp, tránh chú thích quá nhiều dòng. */
-export type MarqueeBlock = Spaced & { marquee: (ImageRef & { note?: string })[]; height: number; gap?: number; minWidth?: number };
+export type MarqueeBlock = Spaced & {
+  marquee: (ImageRef & { note?: string; button?: { text: string; href?: string } })[];
+  height: number;
+  gap?: number;
+  minWidth?: number;
+};
 export type DividerBlock = Spaced & { divider: true };
 /** Nút dạng viên thuốc (link tới video/bài đăng). Chưa có href → hiện như nhãn, không bấm được. */
 export type ButtonBlock = Spaced & { button: { text: string; href?: string }; center?: boolean };
@@ -53,6 +59,7 @@ export const CONTENT: Partial<Record<SectionId, PageContent>> = {
   'applied-science': appliedScience as PageContent,
   'craft-villages': craftVillages as PageContent,
   'stage-and-screen': stageAndScreen as PageContent,
+  'my-little-village': myLittleVillage as PageContent,
 };
 
 export const isImage = (b: Block): b is ImageBlock => 'image' in b;

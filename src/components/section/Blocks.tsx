@@ -192,6 +192,17 @@ function Marquee({ block: b, ctx }: { block: MarqueeBlock; ctx: Ctx }) {
       >
         <Picture img={c} ctx={ctx} style={{ width: u(imgW(c)), marginInline: 'auto' }} />
         {c.note && <figcaption className="item__note item__note--box">{c.note}</figcaption>}
+        {c.button && (
+          <p className="pill-btn__wrap is-center marquee__btn">
+            {c.button.href ? (
+              <a className="pill-btn" href={c.button.href} target="_blank" rel="noopener noreferrer" tabIndex={copy > 0 ? -1 : undefined}>
+                {c.button.text}
+              </a>
+            ) : (
+              <span className="pill-btn">{c.button.text}</span>
+            )}
+          </p>
+        )}
       </figure>
     ));
   return (

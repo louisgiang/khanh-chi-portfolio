@@ -150,3 +150,16 @@
 - Ảnh đơn có thể đặt độ rộng / căn giữa (`width`, `center`): poster Half-time rộng 450 (căn trái), giấy chứng nhận Colors of FLSS rộng 515 (căn giữa), như ref.
 - So vị trí với ref (Chrome headless 1920): lệch ≤ ~10px; chiều cao thẻ CEC 2720 / ref 2723.
 - Alt ảnh: bản nháp (`draft: true`), cần duyệt.
+
+## My Little Village (Bước 5, trang 4/4) — 2026-10-12
+- Nội dung: `content/my-little-village.json`, chữ chép nguyên văn từ `My Little Village/ref/` (5 ảnh). 4 ô: Cleen Project, Youth For Community, Business & Economic Simulation, CNN English Club (CEC).
+- Ảnh gốc chỉ sao chép sang `assets-src/my-little-village/` (cleen-1…4, yfc-1…6, bes-1…7, cec-1…6), không sửa file gốc.
+- Băng ảnh trượt tự động (ref cắt mép phải): Cleen (ảnh 1–4, cao 266, cách 10, có ô chú thích), ABS (bes-1…4, cao 343), CEC (cec-1…5, cao 331). **Tự quyết:** Youth For Community — ref chỉ hiện 2 ảnh vừa khít, nhưng có 6 ảnh → làm băng trượt (cao 316, cách 20) để hiện đủ 6.
+- Nút "Cineris →" nằm dưới ảnh đầu của băng Cleen (căn giữa theo ảnh, trượt cùng ảnh) như ref.
+- WYEF: hàng ảnh tĩnh bes-5…7 (vừa khít khung như ref).
+- **Thiếu ảnh:** Giấy khen VEO 2024 (ô Business & Economic Simulation) không có trong ảnh gửi → **cắt tạm từ ref @2x** (`bes-veo`, 1089×662). Có ảnh gốc thì thả vào `assets-src/my-little-village/bes-veo.png` rồi `npm run images`.
+- **Thiếu chữ:** chú thích ảnh 3 của Cleen bị cắt trong ref ("Here, I guided the children in … an alternative to electric fans, … a lesson on saving energy and …"); ảnh 4 không có chú thích → để trống, chờ anh/chị gửi.
+- **Thiếu link:** "Cineris →", "[YOUTH FOR COMMUNITY] Recap Video →" (`href` rỗng). Video "[CEC] PR Tuyển Thành Viên" chưa có link YouTube.
+- Giữ nguyên theo thiết kế: "Cleen", "fieldtrips", "travelled", "for loudness !!" (dấu cách trước "!!").
+- So vị trí với ref (Chrome headless 1920): chiều cao thẻ Cleen 621/621, YFC 608/610, CEC 1095/1092, BES 1717/1731.
+- Alt ảnh: bản nháp (`draft: true`), cần duyệt.

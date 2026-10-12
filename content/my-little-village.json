@@ -1,0 +1,249 @@
+{
+  "$note": "Chữ chép nguyên văn từ My Little Village/ref/. mt = khoảng cách phía trên khối (đơn vị thiết kế 1920). alt draft:true = bản nháp chờ duyệt. Nút: href rỗng = chưa có link. bes-veo = giấy khen VEO cắt tạm từ ref (chưa có ảnh gốc). Cleen ảnh 3–4: chưa có chú thích.",
+  "title": "My Little Village",
+  "intro": "A corner of people and perspectives, where friendships take shape, voices blend, and compassion takes root. Do you think I am only shaped by science, craft villages, and film? Think again. Everyone who has stood beside me left a color in me. Empathy, humility, openness, and the patience to hear another side. A leader who listens, a storyteller who observes, and a volunteer who contributes, cares, and gives back, I cultivate every facet of myself, letting each endeavor color the journey beyond the classroom.",
+  "items": [
+    {
+      "id": "cleen-project",
+      "title": "Cleen Project",
+      "blocks": [
+        {
+          "mt": 30,
+          "text": "Under Cleen Project, I travelled through many minor edges of my city, bringing environmental conversations beyond the classroom. Through workshops, volunteer trips, lessons, and donation drives, each person and place added a new perspective to how I understand the environment and the people within it."
+        },
+        {
+          "mt": 24,
+          "height": 266,
+          "gap": 10,
+          "marquee": [
+            {
+              "image": "my-little-village/cleen-1",
+              "alt": "Các bạn trẻ ngồi quanh bàn làm đồ trang trí từ rác tái chế",
+              "draft": true,
+              "note": "I organized a workshop where we turned collected waste into handmade decor, upcycling discarded materials.",
+              "button": {
+                "text": "Cineris →",
+                "href": ""
+              }
+            },
+            {
+              "image": "my-little-village/cleen-2",
+              "alt": "Khánh Chi làm thí nghiệm khói hương cho các em nhỏ ở Phú Thọ",
+              "draft": true,
+              "note": "In Phu Tho, I taught children from disadvantaged families about air pollution through experiments using incense smoke."
+            },
+            {
+              "image": "my-little-village/cleen-3",
+              "alt": "Khánh Chi hướng dẫn các em nhỏ làm đồ thủ công",
+              "draft": true
+            },
+            {
+              "image": "my-little-village/cleen-4",
+              "alt": "Lớp học của các em nhỏ trong căn phòng tường gạch",
+              "draft": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "youth-for-community",
+      "title": "Youth For Community",
+      "blocks": [
+        {
+          "mt": 30,
+          "text": "Volunteering taught me that impact isn’t measured by trophies or titles, but by the lives we touch – in every facility I help install, every smile I spark, every act of giving back. And every event with Youth For Community gave me the chance to support more people."
+        },
+        {
+          "mt": 24,
+          "height": 316,
+          "gap": 20,
+          "marquee": [
+            {
+              "image": "my-little-village/yfc-1",
+              "alt": "Tình nguyện viên áo xanh lắp đặt thiết bị trên sân trường vùng cao",
+              "draft": true
+            },
+            {
+              "image": "my-little-village/yfc-2",
+              "alt": "Trao quà Tết sum vầy tại Trường PTDTBT TH Thái Niên",
+              "draft": true
+            },
+            {
+              "image": "my-little-village/yfc-3",
+              "alt": "Khánh Chi cùng các em nhỏ và cô giáo vẫy tay chào",
+              "draft": true
+            },
+            {
+              "image": "my-little-village/yfc-4",
+              "alt": "Tình nguyện viên Tuổi trẻ vì cộng đồng – Y4C cầm giấy chứng nhận",
+              "draft": true
+            },
+            {
+              "image": "my-little-village/yfc-5",
+              "alt": "Đoàn tình nguyện trao quà tại Phòng Công tác Xã hội, Bệnh viện K",
+              "draft": true
+            },
+            {
+              "image": "my-little-village/yfc-6",
+              "alt": "Giấy chứng nhận Youth For Community trao cho Lê Phạm Khánh Chi",
+              "draft": true
+            }
+          ]
+        },
+        {
+          "mt": 25,
+          "button": {
+            "text": "[YOUTH FOR COMMUNITY] Recap Video →",
+            "href": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "business-and-economic-simulation",
+      "title": "Business & Economic Simulation",
+      "blocks": [
+        {
+          "mt": 30,
+          "text": "Business is where ideas meet people – a dance of strategy, adaptability, and perspective. Through simulations and economic forums, I learned that every decision carries weight: to take risks wisely, to understand teammates, and to turn ideas into action."
+        },
+        {
+          "mt": 24,
+          "width": 548,
+          "center": true,
+          "image": "my-little-village/bes-veo",
+          "alt": "Giấy khen Giải Nhì cấp THPT kỳ thi Olympic Kinh tế Việt Nam – VEO 2024 của Lê Phạm Khánh Chi",
+          "draft": true
+        },
+        {
+          "mt": 27,
+          "text": "My first encounter with economics came at Vietnam Economics Olympiad, where I earned Second Prize. If chemistry taught me to look behind the problems of villages, economics helped to bring their crafts further to the market."
+        },
+        {
+          "mt": 57,
+          "text": "Asia Business Simulation (ABS)",
+          "variant": "title"
+        },
+        {
+          "mt": 50,
+          "text": "At ABS regional round, I stepped into a simulated business world where every choice mattered, from managing operations and pitching our ideas to competing in trading challenges. Our team earned Gold and while I placed first in the Yale Economic Quiz, sending us onward to the international stage."
+        },
+        {
+          "mt": 24,
+          "height": 343,
+          "gap": 20,
+          "marquee": [
+            {
+              "image": "my-little-village/bes-1",
+              "alt": "Đội thi thuyết trình trước ban giám khảo vòng khu vực ABS",
+              "draft": true
+            },
+            {
+              "image": "my-little-village/bes-2",
+              "alt": "Khánh Chi cùng đội trên sân khấu giải Super Seeds – Yale YES Business Foundation Quiz",
+              "draft": true
+            },
+            {
+              "image": "my-little-village/bes-3",
+              "alt": "Giấy chứng nhận Gold Award, Asia Business Simulation 2025–2026",
+              "draft": true
+            },
+            {
+              "image": "my-little-village/bes-4",
+              "alt": "Giấy chứng nhận Recognition of Super Seeds Award – YES Business Quiz",
+              "draft": true
+            }
+          ]
+        },
+        {
+          "mt": 56,
+          "text": "World Youth Economic Forum (WYEF)",
+          "variant": "title"
+        },
+        {
+          "mt": 52,
+          "gap": 20,
+          "row": [
+            {
+              "image": "my-little-village/bes-5",
+              "alt": "Đội thi bên gian hàng quảng bá tại World Youth Economic Forum",
+              "draft": true
+            },
+            {
+              "image": "my-little-village/bes-6",
+              "alt": "Đội thi cùng cúp trước phông Emotional Economy, WYEF 2026",
+              "draft": true
+            },
+            {
+              "image": "my-little-village/bes-7",
+              "alt": "Giấy chứng nhận Silver Award, 15th World Youth Economic Forum",
+              "draft": true
+            }
+          ]
+        },
+        {
+          "mt": 27,
+          "text": "Through WYEF, I put ideas into motion alongside competitors from different backgrounds. We pitched, negotiated in market trading games, competed in business operations, and built our promotional booth – experiences that taught me to be flexible to fluctuations and adaptive to last minute trading strategy. I realized that interdisciplinary thinking could unlock solutions to challenges from different angles. Our team ultimately earned Silver Award among 70 teams."
+        }
+      ]
+    },
+    {
+      "id": "cnn-english-club-cec",
+      "title": "CNN English Club (CEC)",
+      "blocks": [
+        {
+          "mt": 30,
+          "text": "Last, but never the least – CNN English Club, my home for three years, and arguably the loudest corner. Between endless meetings and fieldtrips, months spent filming for Oscar filled with laughter, I found my comfort zone among cohorts who made it easier than ever to be myself. This zone also taught me to speak a bit louder, laugh even harder, open up more, and never be afraid to take up space. Three years later, I think some of that noise has inextricably linked with me."
+        },
+        {
+          "mt": 24,
+          "height": 331,
+          "gap": 20,
+          "marquee": [
+            {
+              "image": "my-little-village/cec-1",
+              "alt": "Ban điều hành CEC 25–26 tạo dáng trước phông “this is 2526”",
+              "draft": true
+            },
+            {
+              "image": "my-little-village/cec-2",
+              "alt": "Các thành viên CEC ngồi chụp ảnh vui vẻ trong hành lang",
+              "draft": true
+            },
+            {
+              "image": "my-little-village/cec-3",
+              "alt": "Thành viên CEC cầm cờ CEC 2025–2026",
+              "draft": true
+            },
+            {
+              "image": "my-little-village/cec-4",
+              "alt": "Ảnh tập thể đông đảo thành viên CEC trước sân trường",
+              "draft": true
+            },
+            {
+              "image": "my-little-village/cec-5",
+              "alt": "Thành viên CEC ngồi trên sàn cầm bảng trong buổi sinh hoạt",
+              "draft": true
+            }
+          ]
+        },
+        {
+          "mt": 26,
+          "video": {
+            "poster": "my-little-village/cec-6",
+            "alt": "Video: [CEC] PR Tuyển Thành Viên",
+            "draft": true,
+            "youtube": ""
+          },
+          "width": 661
+        },
+        {
+          "mt": 22,
+          "text": "A recap of CEC’s recruitment week, first place in school for loudness !!",
+          "variant": "caption"
+        }
+      ]
+    }
+  ]
+}
