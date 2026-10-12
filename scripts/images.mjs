@@ -13,6 +13,10 @@ const MANIFEST = path.join(ROOT, 'src', 'generated', 'images.json');
 const CACHE = path.join(ROOT, '.image-cache.json');
 
 const QUALITY = { avif: 55, webp: 75 };
+// Chất lượng riêng theo nhóm ảnh (đường dẫn trong assets-src). Trang photobook nhiều hạt nhiễu + chữ nhỏ:
+// AVIF 48 nhẹ hơn ~40% so với 55, so ở 100% không thấy khác (xem NOTES).
+const QUALITY_OVERRIDES = [{ match: /^craft-villages\/photography-/, avif: 48 }];
+const qualityFor = (rel) => ({ ...QUALITY, ...QUALITY_OVERRIDES.find((o) => o.match.test(rel)) });
 const DEFAULT_WIDTHS = [480, 800, 1200, 1600];
 // Ảnh mặt sau cánh hoa chỉ hiển thị ~250–420px → 2 cỡ là đủ (1x / 2x).
 const PETAL_WIDTHS = [420, 840];
@@ -58,6 +62,7 @@ const exists = (p) => fs.access(p).then(() => true, () => false);
 const kb = (n) => (n / 1024).toFixed(0) + 'KB';
 
 async function processImage(file, rel) {
+  const q = qualityFor(rel);
   const dir = rel.split('/').slice(0, -1).map(slug).join('/');
   const name = slug(path.parse(rel).name.replace(/ - hover$/i, '-back'));
   const id = dir ? `${dir}/${name}` : name;
@@ -81,7 +86,7 @@ async function processImage(file, rel) {
       const info = await base
         .clone()
         .resize({ width: w, withoutEnlargement: true })
-        [fmt]({ quality: QUALITY[fmt], effort: fmt === 'avif' ? 6 : 5 })
+        [fmt]({ quality: q[fmt], effort: fmt === 'avif' ? 6 : 5 })
         .toFile(path.join(OUT, rel2));
       variants.push({ w, fmt, src: `/img/${rel2}`, bytes: info.size });
     }
@@ -128,7 +133,9 @@ for (const [id, entry] of Object.entries(await readJson(MANIFEST, {}))) {
 for (const [file, rel] of files) {
   const buf = await fs.readFile(file);
   srcBytes += buf.length;
-  const hash = createHash('sha1').update(buf).digest('hex');
+  // Ảnh có chất lượng riêng: đưa thông số vào hash → đổi thông số thì chỉ nhóm đó được xử lý lại.
+  const ov = QUALITY_OVERRIDES.find((o) => o.match.test(rel));
+  const hash = createHash('sha1').update(buf).update(ov ? JSON.stringify(qualityFor(rel)) : '').digest('hex');
   const prev = cache[rel];
   if (prev && prev.hash === hash) {
     const ok = await Promise.all([...prev.entry.avif, ...prev.entry.webp].map((v) => exists(path.join(ROOT, 'public', v.src))));

@@ -140,4 +140,4 @@
 - Chỉ tải trang đang xem + trang kế tiếp (bìa tải sẵn khi hover ô).
 - Đã đo thời gian thật bằng Chrome headless (DevTools Protocol): lật đều ~3s/trang, nối vòng liền, rê chuột thì dừng.
 - Kích thước khớp ref (ảnh 1053 rộng, thẻ cao ~730).
-- **Ngân sách ảnh:** ở 1920px trình duyệt chọn bản 1200px: 148–314KB AVIF (ảnh có hạt nhiễu kiểu film + chữ nhỏ nên khó nén). **`photography-14` = 314KB > 300KB.** Bìa 99KB. Chỉ tải khi lật tới gần nên không ảnh hưởng lần tải đầu. Nếu cần nhẹ hơn: hạ chất lượng AVIF riêng cho nhóm ảnh này (chữ nhỏ có thể nhoè) — chờ anh/chị quyết.
+- **Ngân sách ảnh (anh/chị đồng ý giảm thử):** trang photobook dùng AVIF **48** thay vì 55 (`QUALITY_OVERRIDES` trong `scripts/images.mjs`, chỉ áp cho `craft-villages/photography-*`). So ở 100% vùng chữ nhỏ (trang 2) và trang 14: không thấy khác; 42 thì hạt nhiễu bắt đầu mềm nên không dùng. Ở 1920px (bản 1200px): 148–314KB → **66–190KB**, không ảnh nào > 300KB. Chỉ 14 ảnh này được nén lại; ảnh khác không đổi.
