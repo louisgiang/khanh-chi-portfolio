@@ -1,4 +1,4 @@
-import { useState, type CSSProperties } from 'react';
+import { useEffect, useRef, useState, type CSSProperties } from 'react';
 import { motion, useReducedMotion } from 'motion/react';
 import type { Block, Cell, Entry, ImageRef, Item, MarqueeBlock, RowBlock, SlideshowBlock, VideoBlock } from '../../content';
 import { isDivider, isEntry, isImage, isImageCell, isMarquee, isRow, isSlideshow, isText, isVideo } from '../../content';
@@ -196,26 +196,66 @@ function Marquee({ block: b, ctx }: { block: MarqueeBlock; ctx: Ctx }) {
   );
 }
 
-/** Trình chiếu full chiều ngang (Photography Portfolio): lật trang bằng mũi tên hoặc phím ←/→.
- *  Chỉ tải trang đang xem và hai trang kề bên; trang đã tải thì giữ lại. */
+/** Trình chiếu full chiều ngang (Photography Portfolio): tự lật trang mỗi SLIDE_INTERVAL, luôn trượt
+ *  cùng một chiều (sau trang cuối là bản sao trang đầu, tới đó thì nhảy thầm về trang đầu).
+ *  Chỉ chạy khi khung đang hiện trong màn hình (thẻ mở); dừng khi rê chuột / focus; phím ←/→ vẫn lật được.
+ *  Chỉ tải trang đang xem và trang kế tiếp; trang đã tải thì giữ lại. */
+const SLIDE_INTERVAL = 3000;
 function Slideshow({ block: b, ctx }: { block: SlideshowBlock; ctx: Ctx }) {
-  const [i, setI] = useState(0);
-  const [seen, setSeen] = useState(() => new Set([0, 1]));
-  const reduce = useReducedMotion();
   const n = b.slideshow.length;
+  const [i, setI] = useState(0); // 0..n (n = bản sao trang đầu)
+  const [instant, setInstant] = useState(false);
+  const [seen, setSeen] = useState(() => new Set([0, 1 % n]));
+  const [visible, setVisible] = useState(false);
+  const [hold, setHold] = useState(false);
+  const reduce = useReducedMotion();
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const io = new IntersectionObserver(([e]) => setVisible(e.isIntersecting && e.intersectionRatio > 0.3), {
+      threshold: [0, 0.3, 0.6],
+    });
+    io.observe(el);
+    return () => io.disconnect();
+  }, []);
+
   const go = (d: number) => {
-    const next = (i + d + n) % n;
-    setI(next);
-    setSeen((s) => new Set([...s, next, (next + 1) % n, (next - 1 + n) % n]));
+    setInstant(false);
+    setI((x) => {
+      const cur = x % n;
+      if (d < 0) return (cur - 1 + n) % n;
+      return reduce ? (cur + 1) % n : cur + 1; // giảm chuyển động: đổi trang tức thì, không cần bản sao
+    });
   };
+  const page = i % n;
+  useEffect(() => {
+    setSeen((s) => (s.has(page) && s.has((page + 1) % n) ? s : new Set([...s, page, (page + 1) % n])));
+  }, [page, n]);
+
+  useEffect(() => {
+    if (!visible || hold || n < 2) return;
+    const t = window.setTimeout(() => go(1), SLIDE_INTERVAL);
+    return () => window.clearTimeout(t);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [i, visible, hold, n]);
+
   const aspect = imageEntry(b.slideshow[0]?.image ?? '')?.aspect ?? 16 / 9;
   const sizes = vwSizes(CONTENT_W);
+  const slides = [...b.slideshow, b.slideshow[0]];
   return (
     <div
+      ref={ref}
       className="slideshow"
       role="group"
       aria-roledescription="carousel"
       aria-label={b.label ?? 'Slideshow'}
+      tabIndex={0}
+      onMouseEnter={() => setHold(true)}
+      onMouseLeave={() => setHold(false)}
+      onFocus={() => setHold(true)}
+      onBlur={() => setHold(false)}
       onKeyDown={(e) => {
         if (e.key === 'ArrowLeft') go(-1);
         else if (e.key === 'ArrowRight') go(1);
@@ -226,27 +266,23 @@ function Slideshow({ block: b, ctx }: { block: SlideshowBlock; ctx: Ctx }) {
           className="slideshow__track"
           animate={{ x: `${-i * 100}%` }}
           initial={false}
-          transition={{ duration: reduce ? 0 : DUR.expand, ease: EASE }}
+          transition={{ duration: reduce || instant ? 0 : DUR.expand, ease: EASE }}
+          onAnimationComplete={() => {
+            if (i === n) {
+              setInstant(true);
+              setI(0);
+            }
+          }}
         >
-          {b.slideshow.map((img, k) => (
-            <div key={img.image} className="slideshow__slide" aria-hidden={k !== i}>
-              <Img id={img.image} alt={img.alt} sizes={sizes} load={ctx.load && seen.has(k)} fill className="slideshow__img" />
+          {slides.map((img, k) => (
+            <div key={k} className="slideshow__slide" aria-hidden={k % n !== page || k === n}>
+              <Img id={img.image} alt={img.alt} sizes={sizes} load={ctx.load && seen.has(k % n)} fill className="slideshow__img" />
             </div>
           ))}
         </motion.div>
       </div>
-      <button type="button" className="slideshow__btn slideshow__btn--prev" aria-label="Previous page" onClick={() => go(-1)}>
-        <svg viewBox="0 0 16 19" aria-hidden="true">
-          <polygon points="0,9.5 16,0 16,19" />
-        </svg>
-      </button>
-      <button type="button" className="slideshow__btn slideshow__btn--next" aria-label="Next page" onClick={() => go(1)}>
-        <svg viewBox="0 0 16 19" aria-hidden="true">
-          <polygon points="16,9.5 0,0 0,19" />
-        </svg>
-      </button>
-      <p className="slideshow__count" aria-live="polite">
-        {i + 1} / {n}
+      <p className="slideshow__count" aria-live={hold ? 'polite' : 'off'}>
+        {page + 1} / {n}
       </p>
     </div>
   );

@@ -136,7 +136,8 @@
 
 ### Photography Portfolio (2026-10-12)
 - Ảnh: `Photography Portfolio.png` (bìa) → `photography-1`; `2.png … 14.png` → `photography-2…14` (các trang photobook, chữ in sẵn trong ảnh).
-- **Tự quyết, cần duyệt:** ref (`Home - About Me.png`) chỉ có ảnh bìa phủ hết chiều ngang thẻ, không thể hiện 13 trang sau. Làm thành trình chiếu: bìa là trang 1, mũi tên ◀ ▶ tròn mờ đè hai bên ảnh, số trang "1 / 14" góc dưới phải, phím ←/→, trượt 550ms, vòng lại. **Không tự trượt** vì trang có chữ cần thời gian đọc.
-- Chỉ tải trang đang xem + 2 trang kề bên (bìa tải sẵn khi hover ô).
+- Trình chiếu (anh/chị chốt): bìa là trang 1, **tự lật mỗi 3 giây**, không có mũi tên. Luôn trượt cùng chiều (sau trang 14 là bản sao bìa, tới đó nhảy thầm về bìa). Chỉ chạy khi khung hiện trong màn hình (thẻ mở); dừng khi rê chuột / focus; phím ←/→ vẫn lật được; số trang "1 / 14" góc dưới phải. Giảm chuyển động: đổi trang tức thì.
+- Chỉ tải trang đang xem + trang kế tiếp (bìa tải sẵn khi hover ô).
+- Đã đo thời gian thật bằng Chrome headless (DevTools Protocol): lật đều ~3s/trang, nối vòng liền, rê chuột thì dừng.
 - Kích thước khớp ref (ảnh 1053 rộng, thẻ cao ~730).
 - **Ngân sách ảnh:** ở 1920px trình duyệt chọn bản 1200px: 148–314KB AVIF (ảnh có hạt nhiễu kiểu film + chữ nhỏ nên khó nén). **`photography-14` = 314KB > 300KB.** Bìa 99KB. Chỉ tải khi lật tới gần nên không ảnh hưởng lần tải đầu. Nếu cần nhẹ hơn: hạ chất lượng AVIF riêng cho nhóm ảnh này (chữ nhỏ có thể nhoè) — chờ anh/chị quyết.
