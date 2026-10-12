@@ -430,6 +430,11 @@
   font-size: calc(var(--s) * 30);
   text-align: center;
 }
+.item__text--lead {
+  font-weight: 700;
+  font-size: calc(var(--s) * 25);
+  text-align: center;
+}
 /* Ô chú thích có khung (Personal Product, gallery) */
 .item__note--box {
   margin-top: calc(var(--s) * 10);

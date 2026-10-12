@@ -2943,12 +2943,12 @@
     ]
   },
   "craft-villages/personal-product-1": {
-    "width": 2080,
-    "height": 1556,
-    "aspect": 1.3368,
+    "width": 2086,
+    "height": 1571,
+    "aspect": 1.3278,
     "alpha": true,
     "color": "#282828",
-    "placeholder": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAACQBACdASoUAA8APu1iqU2ppaOiMAgBMB2JYwC7GuAAWd4n+xZfbWuTe7nxPAAA/AdybUc8BXJHdtKmXYItg5Uyofv5dNI4AYEyLF+gQHmv+4Botv7zlKK74cS2/Shqgpgg82udzumhPLb20LAw6FI5oXLlGGPGq0hh5mcpQrmB2T2y5VTAAA==",
+    "placeholder": "data:image/webp;base64,UklGRuwAAABXRUJQVlA4WAoAAAAQAAAAEwAADgAAQUxQSD4AAAABb2CmbRv+cHe3nWlERODJz2WBothWqseW1acBGbSJdQygDYxhGhMBKwNE9H8CuLdwXBQpE3zcNHUU517heVZQOCCIAAAAcAQAnQEqFAAPAD7tYqlNqaWjojAIATAdiWUAuxrgAFFstufrVQsCLtU7q+AA/AdybUc/uj4akKmimXYItg59fHyMDUwvK5YTaSeSHhF1qkX8pyM9dBZ3l9rWdMBzNI1CmStmJfpo9sk2xROB3OQdpccbCIxIw3yz9qZux+2hXrrJ7ZcqpgAAAA==",
     "widths": [
       480,
       800,
@@ -2959,54 +2959,54 @@
       {
         "w": 480,
         "src": "/img/craft-villages/personal-product-1-480.avif",
-        "bytes": 20822
+        "bytes": 21496
       },
       {
         "w": 800,
         "src": "/img/craft-villages/personal-product-1-800.avif",
-        "bytes": 47309
+        "bytes": 48601
       },
       {
         "w": 1200,
         "src": "/img/craft-villages/personal-product-1-1200.avif",
-        "bytes": 87728
+        "bytes": 89897
       },
       {
         "w": 1600,
         "src": "/img/craft-villages/personal-product-1-1600.avif",
-        "bytes": 126956
+        "bytes": 129971
       }
     ],
     "webp": [
       {
         "w": 480,
         "src": "/img/craft-villages/personal-product-1-480.webp",
-        "bytes": 20806
+        "bytes": 21492
       },
       {
         "w": 800,
         "src": "/img/craft-villages/personal-product-1-800.webp",
-        "bytes": 50146
+        "bytes": 51600
       },
       {
         "w": 1200,
         "src": "/img/craft-villages/personal-product-1-1200.webp",
-        "bytes": 98122
+        "bytes": 100952
       },
       {
         "w": 1600,
         "src": "/img/craft-villages/personal-product-1-1600.webp",
-        "bytes": 150472
+        "bytes": 154502
       }
     ]
   },
   "craft-villages/personal-product-2": {
-    "width": 2080,
-    "height": 1556,
-    "aspect": 1.3368,
+    "width": 2086,
+    "height": 1563,
+    "aspect": 1.3346,
     "alpha": true,
     "color": "#e8e8d8",
-    "placeholder": "data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAAAwBACdASoUAA8APu1iqU2ppaOiMAgBMB2JZwAAWsVP0u2kKBqt4E1SkOAA/q8WueLNtcU5EVlabycnUx3ohYWJBmUHomYVXdQQe5QqI8hEE8gxA3VyajLNBWDMF10r+5gkszCqBNjDBgOlL5lz45Dv1MQv4lrynnSe2fcb2Yioj/ZiSKCY0AAA",
+    "placeholder": "data:image/webp;base64,UklGRtoAAABXRUJQVlA4WAoAAAAQAAAAEwAADgAAQUxQSDwAAAABV6CgbRuGP9+e/dGIiPh/3jwqG4piW6keK7afBBCHANrAHnaxKrAyQET/J4AJpV8MqRN83LQNDHOv8jxWUDggeAAAABAEAJ0BKhQADwA+7WKpTamlo6IwCAEwHYlnAABcdoKxTnJ9GrVttZwAAP6vEr6rwVeQhFlNql06hTQuWHdUOL+8R6RFPE5P5eapaoXJJP7vCYG9xyXmYuxoyhpPE40Lzwqf+BwN62erfFhyJfxtdtpo0F8D/AAAAA==",
     "widths": [
       480,
       800,
@@ -3017,54 +3017,54 @@
       {
         "w": 480,
         "src": "/img/craft-villages/personal-product-2-480.avif",
-        "bytes": 9230
+        "bytes": 9380
       },
       {
         "w": 800,
         "src": "/img/craft-villages/personal-product-2-800.avif",
-        "bytes": 20546
+        "bytes": 20690
       },
       {
         "w": 1200,
         "src": "/img/craft-villages/personal-product-2-1200.avif",
-        "bytes": 39437
+        "bytes": 40470
       },
       {
         "w": 1600,
         "src": "/img/craft-villages/personal-product-2-1600.avif",
-        "bytes": 63512
+        "bytes": 64274
       }
     ],
     "webp": [
       {
         "w": 480,
         "src": "/img/craft-villages/personal-product-2-480.webp",
-        "bytes": 10000
+        "bytes": 10490
       },
       {
         "w": 800,
         "src": "/img/craft-villages/personal-product-2-800.webp",
-        "bytes": 23518
+        "bytes": 24334
       },
       {
         "w": 1200,
         "src": "/img/craft-villages/personal-product-2-1200.webp",
-        "bytes": 48222
+        "bytes": 49688
       },
       {
         "w": 1600,
         "src": "/img/craft-villages/personal-product-2-1600.webp",
-        "bytes": 79962
+        "bytes": 81518
       }
     ]
   },
   "craft-villages/personal-product-3": {
-    "width": 2080,
-    "height": 1360,
-    "aspect": 1.5294,
+    "width": 2086,
+    "height": 1371,
+    "aspect": 1.5215,
     "alpha": true,
     "color": "#a8a838",
-    "placeholder": "data:image/webp;base64,UklGRpwAAABXRUJQVlA4IJAAAABQBACdASoUAA0APu1iqU2ppaOiMAgBMB2JbACsLwAVdK5zlT1FdHEPAAAAAP3wcj/5hwxKRZrL5GOU3RYjWa0HPkpIUA3acxcsXNNKPArRDLunblHl4AcFdHr4xvLcJBF+IyhfFOy5V0eK675kEc2QFCzRSOjxhaEpx1vX6k3wuGqbjsgwKsmMgB6CcN24AAA=",
+    "placeholder": "data:image/webp;base64,UklGRuoAAABXRUJQVlA4WAoAAAAQAAAAEwAADAAAQUxQSDYAAAABR2CQbSR/1VO4+69GRAROakBU24Y+59j/FgLQQBFRJjxWEyCi/xNggpGNo2zEJ3Ujjp4x1gNWUDggjgAAAFAEAJ0BKhQADQA+7WKpTamlo6IwCAEwHYlsAKwvABV3znOFaqq/delyiHAA/gGQH/AKl2KwRQXMKsIy8Dddso/NkfNbpegUNnkPM2z+dMoByWnbzQ2RtqLTFa8B3yZhdZehXj3/HWwE658bRbnqyAoWaKR0uLTPNQbsasIM6t+BIE6FR51WRHNNJTVzIAA=",
     "widths": [
       480,
       800,
@@ -3075,54 +3075,54 @@
       {
         "w": 480,
         "src": "/img/craft-villages/personal-product-3-480.avif",
-        "bytes": 17780
+        "bytes": 18084
       },
       {
         "w": 800,
         "src": "/img/craft-villages/personal-product-3-800.avif",
-        "bytes": 31502
+        "bytes": 32064
       },
       {
         "w": 1200,
         "src": "/img/craft-villages/personal-product-3-1200.avif",
-        "bytes": 49905
+        "bytes": 50771
       },
       {
         "w": 1600,
         "src": "/img/craft-villages/personal-product-3-1600.avif",
-        "bytes": 67918
+        "bytes": 69487
       }
     ],
     "webp": [
       {
         "w": 480,
         "src": "/img/craft-villages/personal-product-3-480.webp",
-        "bytes": 17892
+        "bytes": 18484
       },
       {
         "w": 800,
         "src": "/img/craft-villages/personal-product-3-800.webp",
-        "bytes": 35082
+        "bytes": 35950
       },
       {
         "w": 1200,
         "src": "/img/craft-villages/personal-product-3-1200.webp",
-        "bytes": 63570
+        "bytes": 65246
       },
       {
         "w": 1600,
         "src": "/img/craft-villages/personal-product-3-1600.webp",
-        "bytes": 92784
+        "bytes": 95098
       }
     ]
   },
   "craft-villages/personal-product-4": {
-    "width": 2080,
-    "height": 1360,
-    "aspect": 1.5294,
+    "width": 2086,
+    "height": 1371,
+    "aspect": 1.5215,
     "alpha": true,
     "color": "#181818",
-    "placeholder": "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAAAQBACdASoUAA0APu1iqU2ppaOiMAgBMB2JQBAAAQlmcaytJ4fZjAXzYAD+1DS9KXjh63nGearkF48u3duXJrh9DPr0xFRcfE+vUNABsZ1R4gBfPYIdvUwAwlgLPifYnrU2oWeydIc6tCEKhygukA9MD+9K+z6rN6JP5mRjpJNq/nIBXTxWyawwAAA=",
+    "placeholder": "data:image/webp;base64,UklGRugAAABXRUJQVlA4WAoAAAAQAAAAEwAADAAAQUxQSDkAAAABV0AmYNG/rX9DjYiI/64PFWoiWa0eFe3HAXIQAA7iI15iFagiIKL/E8CEVi6WNAk+aTo6llHZngcAVlA4IIgAAACwAwCdASoUAA0APu1iqU2ppaOiMAgBMB2JQBAAAQlJwW/VX5I4wAD+1DS9KXjh63nGearkF48cb7gM+E7bsZO3xfr0xFRcfE+vRp2kVrJTusJLswzb1ySazE5RHLsUst7fsqxwU6X6C5rYvfVB+raX0W4G+ohcNIcCzHhXTkJqGb9GBXTxR/AA",
     "widths": [
       480,
       800,
@@ -3133,44 +3133,686 @@
       {
         "w": 480,
         "src": "/img/craft-villages/personal-product-4-480.avif",
-        "bytes": 29631
+        "bytes": 30066
       },
       {
         "w": 800,
         "src": "/img/craft-villages/personal-product-4-800.avif",
-        "bytes": 52116
+        "bytes": 52905
       },
       {
         "w": 1200,
         "src": "/img/craft-villages/personal-product-4-1200.avif",
-        "bytes": 74435
+        "bytes": 75629
       },
       {
         "w": 1600,
         "src": "/img/craft-villages/personal-product-4-1600.avif",
-        "bytes": 94231
+        "bytes": 95933
       }
     ],
     "webp": [
       {
         "w": 480,
         "src": "/img/craft-villages/personal-product-4-480.webp",
-        "bytes": 28584
+        "bytes": 29346
       },
       {
         "w": 800,
         "src": "/img/craft-villages/personal-product-4-800.webp",
-        "bytes": 55492
+        "bytes": 56530
       },
       {
         "w": 1200,
         "src": "/img/craft-villages/personal-product-4-1200.webp",
-        "bytes": 86670
+        "bytes": 88340
       },
       {
         "w": 1600,
         "src": "/img/craft-villages/personal-product-4-1600.webp",
-        "bytes": 116730
+        "bytes": 120034
+      }
+    ]
+  },
+  "craft-villages/thuong-tin-1": {
+    "width": 689,
+    "height": 421,
+    "aspect": 1.6366,
+    "alpha": true,
+    "color": "#a8a8a8",
+    "placeholder": "data:image/webp;base64,UklGRsAAAABXRUJQVlA4WAoAAAAQAAAAEwAACwAAQUxQSEQAAAABb6CgbRuJP8fx+O9MIyICeQ8it6Amkp3qhZIqoAD0/CXEBTjBDh6wlFQYiOj/BHiCmi5Mns4SWPOHGPQsBJ2l7KWeB1ZQOCBWAAAAUAMAnQEqFAAMAD7tYqpOKaWkIjAIATAdiWcAAEOJg38CgAAA/pKTCN/CULfVoIRQ/RJkf5BrLInmxMAqbysApR0Wl5tWYqz5pG5V9QwABZIAPmgAAAA=",
+    "widths": [
+      480,
+      689
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/thuong-tin-1-480.avif",
+        "bytes": 20958
+      },
+      {
+        "w": 689,
+        "src": "/img/craft-villages/thuong-tin-1-689.avif",
+        "bytes": 39136
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/thuong-tin-1-480.webp",
+        "bytes": 20138
+      },
+      {
+        "w": 689,
+        "src": "/img/craft-villages/thuong-tin-1-689.webp",
+        "bytes": 36840
+      }
+    ]
+  },
+  "craft-villages/thuong-tin-2": {
+    "width": 689,
+    "height": 421,
+    "aspect": 1.6366,
+    "alpha": true,
+    "color": "#181818",
+    "placeholder": "data:image/webp;base64,UklGRvAAAABXRUJQVlA4WAoAAAAQAAAAEwAACwAAQUxQSEQAAAABb6CgbRuJP8fx+O9MIyICeQ8it6Amkp3qhZIqoAD0/CXEBTjBDh6wlFQYiOj/BHiCmi5Mns4SWPOHGPQsBJ2l7KWeB1ZQOCCGAAAAUAQAnQEqFAAMAD7tYqlNqaWkIjAIATAdiWIAgAAF7Qj849wwXsVtMzh/AAD+xKbpmj7DGek8kSCWx9kdsyLPu+wFZQWvX/+0hjjqUYVhsz3WGZlLctL4wUJ4QKbO43rW/sSjtM897V3DLQZ+i4aedzf3rkLd3pf9xUfuf3Y70fnKtCVAAAA=",
+    "widths": [
+      480,
+      689
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/thuong-tin-2-480.avif",
+        "bytes": 38409
+      },
+      {
+        "w": 689,
+        "src": "/img/craft-villages/thuong-tin-2-689.avif",
+        "bytes": 65072
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/thuong-tin-2-480.webp",
+        "bytes": 35786
+      },
+      {
+        "w": 689,
+        "src": "/img/craft-villages/thuong-tin-2-689.webp",
+        "bytes": 61300
+      }
+    ]
+  },
+  "craft-villages/thuong-tin-3": {
+    "width": 689,
+    "height": 421,
+    "aspect": 1.6366,
+    "alpha": true,
+    "color": "#f8f8f8",
+    "placeholder": "data:image/webp;base64,UklGRuYAAABXRUJQVlA4WAoAAAAQAAAAEwAACwAAQUxQSEQAAAABb6CgbRuJP8fx+O9MIyICeQ8it6Amkp3qhZIqoAD0/CXEBTjBDh6wlFQYiOj/BHiCmi5Mns4SWPOHGPQsBJ2l7KWeB1ZQOCB8AAAAEAQAnQEqFAAMAD7tYqlNqaWkIjAIATAdiUAAC+TVClzzRrQSHpeAQgAA/rd3OULdGU/aHeTx4DKoVj8sfaAkH1QizU0SVaEIyhbrVoeQP0fkJ2rRvaEKNwCsdoUKCVvJpOGQBRSxbcCg6Ao+W7XmEK86g04km4hGWAAAAA==",
+    "widths": [
+      480,
+      689
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/thuong-tin-3-480.avif",
+        "bytes": 19951
+      },
+      {
+        "w": 689,
+        "src": "/img/craft-villages/thuong-tin-3-689.avif",
+        "bytes": 30573
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/thuong-tin-3-480.webp",
+        "bytes": 20340
+      },
+      {
+        "w": 689,
+        "src": "/img/craft-villages/thuong-tin-3-689.webp",
+        "bytes": 32084
+      }
+    ]
+  },
+  "craft-villages/thuong-tin-4": {
+    "width": 1043,
+    "height": 637,
+    "aspect": 1.6374,
+    "alpha": true,
+    "color": "#181818",
+    "placeholder": "data:image/webp;base64,UklGRu4AAABXRUJQVlA4WAoAAAAQAAAAEwAACwAAQUxQSDsAAAABV6CgbRuGP+G2u6EREQGIwzsLRbWtRJ8V26EBcQiADexhF6vOWiCi/xPAhKE0LNJM8LXp1LEYJYe1AwBWUDggjAAAAFAEAJ0BKhQADAA+7WKpTamlo6IwCAEwHYlAE6ZQZdgQABkuQBVof4iuAqAA/tIZo59W8Kv3lfNagC7W5s8ECdRVarwKcsrD1CAD5RVAqdmjlYrowtCDMfIeajJEx/cTOPx5kB6dvpLwfjowZfigHfGY196of1YdihJOyJmAfrvrwcwO4/NCA061gAAA",
+    "widths": [
+      480,
+      800,
+      1043
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/thuong-tin-4-480.avif",
+        "bytes": 25734
+      },
+      {
+        "w": 800,
+        "src": "/img/craft-villages/thuong-tin-4-800.avif",
+        "bytes": 46801
+      },
+      {
+        "w": 1043,
+        "src": "/img/craft-villages/thuong-tin-4-1043.avif",
+        "bytes": 64501
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/thuong-tin-4-480.webp",
+        "bytes": 23404
+      },
+      {
+        "w": 800,
+        "src": "/img/craft-villages/thuong-tin-4-800.webp",
+        "bytes": 47058
+      },
+      {
+        "w": 1043,
+        "src": "/img/craft-villages/thuong-tin-4-1043.webp",
+        "bytes": 67658
+      }
+    ]
+  },
+  "craft-villages/thuong-tin-5": {
+    "width": 1043,
+    "height": 637,
+    "aspect": 1.6374,
+    "alpha": true,
+    "color": "#f8f8f8",
+    "placeholder": "data:image/webp;base64,UklGRu4AAABXRUJQVlA4WAoAAAAQAAAAEwAACwAAQUxQSDsAAAABV6CgbRuGP+G2u6EREQGIwzsLRbWtRJ8V26EBcQiADexhF6vOWiCi/xPAhKE0LNJM8LXp1LEYJYe1AwBWUDggjAAAANADAJ0BKhQADAA+7WKpTamlo6IwCAEwHYlAE6AChfbO0/Su/G/UAAD+64A+NGTIjMJugHncVxb12bqXZSHtG5CYglbpJJklsWFAtWQcRoYNxVHUx6/iXP/zAuRnq2w5fjugg9zlRB4B1P+f98n5ic+lWWdARWZZTB7VzKj+Zaf7XG8HgqzY8QRhDgAA",
+    "widths": [
+      480,
+      800,
+      1043
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/thuong-tin-5-480.avif",
+        "bytes": 12524
+      },
+      {
+        "w": 800,
+        "src": "/img/craft-villages/thuong-tin-5-800.avif",
+        "bytes": 21753
+      },
+      {
+        "w": 1043,
+        "src": "/img/craft-villages/thuong-tin-5-1043.avif",
+        "bytes": 28919
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/thuong-tin-5-480.webp",
+        "bytes": 12828
+      },
+      {
+        "w": 800,
+        "src": "/img/craft-villages/thuong-tin-5-800.webp",
+        "bytes": 24036
+      },
+      {
+        "w": 1043,
+        "src": "/img/craft-villages/thuong-tin-5-1043.webp",
+        "bytes": 33652
+      }
+    ]
+  },
+  "craft-villages/thuong-tin-6": {
+    "width": 1043,
+    "height": 637,
+    "aspect": 1.6374,
+    "alpha": true,
+    "color": "#181818",
+    "placeholder": "data:image/webp;base64,UklGRuQAAABXRUJQVlA4WAoAAAAQAAAAEwAACwAAQUxQSDsAAAABV6CgbRuGP+G2u6EREQGIwzsLRbWtRJ8V26EBcQiADexhF6vOWiCi/xPAhKE0LNJM8LXp1LEYJYe1AwBWUDggggAAAPADAJ0BKhQADAA+7WKpTamlo6IwCAEwHYlAE6ADpIWz8gPJWgjdCKAA/qsQoHSvpn5AOtFN+OQFzX9XlN7+ULVkFfAd3z0OEf77dLFqrjUj2pqCxACuRKZGXUKG6Fai4lnkIdnHxeFrex7EwrxyQfX63eegv5UIpDtVRfmvTyYAAAA=",
+    "widths": [
+      480,
+      800,
+      1043
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/thuong-tin-6-480.avif",
+        "bytes": 24262
+      },
+      {
+        "w": 800,
+        "src": "/img/craft-villages/thuong-tin-6-800.avif",
+        "bytes": 57191
+      },
+      {
+        "w": 1043,
+        "src": "/img/craft-villages/thuong-tin-6-1043.avif",
+        "bytes": 93404
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/thuong-tin-6-480.webp",
+        "bytes": 23016
+      },
+      {
+        "w": 800,
+        "src": "/img/craft-villages/thuong-tin-6-800.webp",
+        "bytes": 56188
+      },
+      {
+        "w": 1043,
+        "src": "/img/craft-villages/thuong-tin-6-1043.webp",
+        "bytes": 92456
+      }
+    ]
+  },
+  "craft-villages/thuong-tin-7": {
+    "width": 1043,
+    "height": 637,
+    "aspect": 1.6374,
+    "alpha": true,
+    "color": "#585848",
+    "placeholder": "data:image/webp;base64,UklGRtoAAABXRUJQVlA4WAoAAAAQAAAAEwAACwAAQUxQSDsAAAABV6CgbRuGP+G2u6EREQGIwzsLRbWtRJ8V26EBcQiADexhF6vOWiCi/xPAhKE0LNJM8LXp1LEYJYe1AwBWUDggeAAAANADAJ0BKhQADAA+7WKpTamlpCIwCAEwHYlAE6ADpI0P74KrcOQzgAD+g22/jmnMbQGjRWQdwnk6vEpfukMo8nIvwVtEdaQfWqZ4Rdhw4Y6bTzGNleYDQ6px9fU94vRTy3ZWg3RSFLAbSkhaye+qVarrHqp19AAAAA==",
+    "widths": [
+      480,
+      800,
+      1043
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/thuong-tin-7-480.avif",
+        "bytes": 22453
+      },
+      {
+        "w": 800,
+        "src": "/img/craft-villages/thuong-tin-7-800.avif",
+        "bytes": 54262
+      },
+      {
+        "w": 1043,
+        "src": "/img/craft-villages/thuong-tin-7-1043.avif",
+        "bytes": 89914
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/thuong-tin-7-480.webp",
+        "bytes": 21646
+      },
+      {
+        "w": 800,
+        "src": "/img/craft-villages/thuong-tin-7-800.webp",
+        "bytes": 54146
+      },
+      {
+        "w": 1043,
+        "src": "/img/craft-villages/thuong-tin-7-1043.webp",
+        "bytes": 90108
+      }
+    ]
+  },
+  "craft-villages/thuong-tin-8": {
+    "width": 1043,
+    "height": 637,
+    "aspect": 1.6374,
+    "alpha": true,
+    "color": "#080808",
+    "placeholder": "data:image/webp;base64,UklGRuAAAABXRUJQVlA4WAoAAAAQAAAAEwAACwAAQUxQSDoAAAABV6CmbQOGP9yeuzQiIv5je8JAUW0r0WfFdmhAHAJgA3vYxaqzFojo/wQwYSgNizQTfG06dSxGyWHtVlA4IIAAAAAwBACdASoUAAwAPu1iqU2ppaOiMAgBMB2JZgCsMoADTQZIc3zNHSZ0clAA/qlbT+5zqddZhuHE34pM4cxMTVTVLUlgCw8zKVACvgghJdx+75p7JjEyR5uAMLDZFuBt45lXe8IilJoJfyqDxLz3KI4vchoFlSATCAL1CME9DwIAAA==",
+    "widths": [
+      480,
+      800,
+      1043
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/thuong-tin-8-480.avif",
+        "bytes": 39001
+      },
+      {
+        "w": 800,
+        "src": "/img/craft-villages/thuong-tin-8-800.avif",
+        "bytes": 106807
+      },
+      {
+        "w": 1043,
+        "src": "/img/craft-villages/thuong-tin-8-1043.avif",
+        "bytes": 192778
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/thuong-tin-8-480.webp",
+        "bytes": 35284
+      },
+      {
+        "w": 800,
+        "src": "/img/craft-villages/thuong-tin-8-800.webp",
+        "bytes": 100374
+      },
+      {
+        "w": 1043,
+        "src": "/img/craft-villages/thuong-tin-8-1043.webp",
+        "bytes": 184712
+      }
+    ]
+  },
+  "craft-villages/thuong-tin-9": {
+    "width": 1043,
+    "height": 637,
+    "aspect": 1.6374,
+    "alpha": true,
+    "color": "#080808",
+    "placeholder": "data:image/webp;base64,UklGRvAAAABXRUJQVlA4WAoAAAAQAAAAEwAACwAAQUxQSDsAAAABV6CgbRuGP+G2u6EREQGIwzsLRbWtRJ8V26EBcQiADexhF6vOWiCi/xPAhKE0LNJM8LXp1LEYJYe1AwBWUDggjgAAALADAJ0BKhQADAA+7WKpTamlo6IwCAEwHYlsAJ0AG0lYW0Lj2fWgAP7p2DqtswgswLK+vdwLarUpeMqIEIYFf6DQoHYmz1COphg5uHj1dYcKnveWFEaiHh+SQe2KA/otPnq8GA/PI6+o1H0vQo24UUSvmBiCrvEcH4PamMUtmJ9bNZ0Inhc/ORXgOZduwAA=",
+    "widths": [
+      480,
+      800,
+      1043
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/thuong-tin-9-480.avif",
+        "bytes": 39437
+      },
+      {
+        "w": 800,
+        "src": "/img/craft-villages/thuong-tin-9-800.avif",
+        "bytes": 98699
+      },
+      {
+        "w": 1043,
+        "src": "/img/craft-villages/thuong-tin-9-1043.avif",
+        "bytes": 167509
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/thuong-tin-9-480.webp",
+        "bytes": 37430
+      },
+      {
+        "w": 800,
+        "src": "/img/craft-villages/thuong-tin-9-800.webp",
+        "bytes": 96684
+      },
+      {
+        "w": 1043,
+        "src": "/img/craft-villages/thuong-tin-9-1043.webp",
+        "bytes": 161690
+      }
+    ]
+  },
+  "craft-villages/thuong-tin-gallery-1": {
+    "width": 988,
+    "height": 643,
+    "aspect": 1.5365,
+    "alpha": true,
+    "color": "#080808",
+    "placeholder": "data:image/webp;base64,UklGRhoBAABXRUJQVlA4WAoAAAAQAAAAEwAADAAAQUxQSEMAAAABd6CgbSOHP93b6z80IiIA+g6WlK9AU9tKPjOTJvgV7OOsTZyJQCRDGIU/WSCi/xPghpIXkmEqoeKv3uqRkIy5V3keAFZQOCCwAAAAEAUAnQEqFAANAD7tYqlNqaWjojAIATAdiWwAnTKEcCaC8/h48i2kskfceoxqllacgADwIcrxc+8g2TmaCmTPaYBagtazm8pIxvVYabUX0xcTprwwz8xbCQGwWQZLu/griWnnWoxMegp9zvUlCQU4dPSonjFU8IQMTEFJKrmlmD3zwVuUdHgbCYY+E/E++kh78MvjvbfWqS6B52TeHoq8j5e45WKNPXrdRJE2C2UyyAA=",
+    "widths": [
+      480,
+      800
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/thuong-tin-gallery-1-480.avif",
+        "bytes": 32118
+      },
+      {
+        "w": 800,
+        "src": "/img/craft-villages/thuong-tin-gallery-1-800.avif",
+        "bytes": 51476
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/thuong-tin-gallery-1-480.webp",
+        "bytes": 28606
+      },
+      {
+        "w": 800,
+        "src": "/img/craft-villages/thuong-tin-gallery-1-800.webp",
+        "bytes": 52868
+      }
+    ]
+  },
+  "craft-villages/thuong-tin-gallery-2": {
+    "width": 540,
+    "height": 643,
+    "aspect": 0.8398,
+    "alpha": true,
+    "color": "#080808",
+    "placeholder": "data:image/webp;base64,UklGRnABAABXRUJQVlA4WAoAAAAQAAAAEwAAFwAAQUxQSD0AAAABV2Cmbduo3L6DMGyjsIiIn6NZAE0kqakwQYsEXCABCVEQCZmXgAR8Xps6ov8TsDhOKpomnZ96eHtRlRgGAFZQOCAMAQAAcAYAnQEqFAAYAD7taqxRKaWkIqgKqTAdiWwAnTKDyqrTxktMrAWPTTsT3oZ++z1EY7tjkPhReIB7XI1YAP7a0BSl8nE15hetO2uoYtThNQoivqny0lHACahwdsDI8GhrAGosft41qrjVCL9+6uigqdnFOO3raS2ZyXMmsT1HAGICJNsWFmP18UnwNQ/GeaT0jGna+eSu9HrK/XrS3xrLbhMNjep8pjK9NLMoLNrlk4lTLbciJh2Beor3B5zBCVq7D5KlS17Q16q1yMYPrd2vElMzUrlgwgO9q3WF65ZBfKhS9dw6qu9b2lHdCBqx872Y5AhH7UHZ89/CcfP7gN5nDsOZOxa5l5L7GXyAAA==",
+    "widths": [
+      480
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/thuong-tin-gallery-2-480.avif",
+        "bytes": 24382
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/thuong-tin-gallery-2-480.webp",
+        "bytes": 25454
+      }
+    ]
+  },
+  "craft-villages/thuong-tin-gallery-3": {
+    "width": 988,
+    "height": 643,
+    "aspect": 1.5365,
+    "alpha": true,
+    "color": "#080808",
+    "placeholder": "data:image/webp;base64,UklGRvgAAABXRUJQVlA4WAoAAAAQAAAAEwAADAAAQUxQSEMAAAABd6CgbSOHP93b6z80IiIA+g6WlK9AU9tKPjOTJvgV7OOsTZyJQCRDGIU/WSCi/xPghpIXkmEqoeKv3uqRkIy5V3keAFZQOCCOAAAAEAQAnQEqFAANAD7tYqlNqaWjojAIATAdiWIAtOgh6kq+CUCJb9K+mgAA/uX1T+kURFBayHN2TpTOMc6u5Zfq3LBrI/kd/u4QWo5+tVIIhRyyMYHJXQi05mUY+zPjQnWpKkTweBhlI/fHS6hShn36CKxecvJ1hexdpfSvQm5pIS6lmKkcjC4Bl1wEcwAAAA==",
+    "widths": [
+      480,
+      800
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/thuong-tin-gallery-3-480.avif",
+        "bytes": 28519
+      },
+      {
+        "w": 800,
+        "src": "/img/craft-villages/thuong-tin-gallery-3-800.avif",
+        "bytes": 51362
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/thuong-tin-gallery-3-480.webp",
+        "bytes": 26784
+      },
+      {
+        "w": 800,
+        "src": "/img/craft-villages/thuong-tin-gallery-3-800.webp",
+        "bytes": 53564
+      }
+    ]
+  },
+  "craft-villages/thuong-tin-gallery-4": {
+    "width": 540,
+    "height": 643,
+    "aspect": 0.8398,
+    "alpha": true,
+    "color": "#885828",
+    "placeholder": "data:image/webp;base64,UklGRmYBAABXRUJQVlA4WAoAAAAQAAAAEwAAFwAAQUxQSDoAAAABT6CYkSQ4mbmeIzBgi7IREd+DhgBQ1LaRxGmGwLAaHPfuAm6f+47o/wTEfXAfPsQl/vcSTs7DJgoBVlA4IAYBAADwBQCdASoUABgAPu1srlIppaQiqAgBMB2JbACdMoSCqGOnYAGhSNWbNxmnSoOTEU3uRfsVe55kgAD9ZdZWr7SH6KXS0HauarONGQo2NeyHEhEbVq/fNAS52M6Kzu3Wz2L3ac3GFiepWaT7fTEaD9OUOZ8/JYkN1UxOG33NV+kQ2SH5sj5DgmRXgLe35UxbNlW+pDKMgv186SY2iUlgHlq2NiTRKN+OpniqlEgSclNxHVV/HSzRngdN/qGUTyXsNnviwRBw7YvrOuvM14nmvLqemq3MOPQ1gv/H8bvz6jaGs8H372LwJIuCaATjPnnnGR1skWq0GnPpSrlUIVJsGPOnGXIPHAAA",
+    "widths": [
+      480
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/thuong-tin-gallery-4-480.avif",
+        "bytes": 16816
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/thuong-tin-gallery-4-480.webp",
+        "bytes": 19742
+      }
+    ]
+  },
+  "craft-villages/thuong-tin-gallery-5": {
+    "width": 988,
+    "height": 643,
+    "aspect": 1.5365,
+    "alpha": true,
+    "color": "#080808",
+    "placeholder": "data:image/webp;base64,UklGRggBAABXRUJQVlA4WAoAAAAQAAAAEwAADAAAQUxQSEMAAAABd6CgbSOHP93b6z80IiIA+g6WlK9AU9tKPjOTJvgV7OOsTZyJQCRDGIU/WSCi/xPghpIXkmEqoeKv3uqRkIy5V3keAFZQOCCeAAAAcAQAnQEqFAANAD7tYqlNqaWjojAIATAdiWQAnTKDKQNJPauk9K5wV09Td6AA/vDejDP3ED1g3likr5Eop8zVr5M7i2SFxPANBbJmvG24VJYqv68figZXWDAN77ttLZYUrzjxbpXhea3MMq5kJhNVsJgc+7X8WXvIAGx0mz+Y8nyYtFHxRn+Bxa/h6ZwyDpcv/HSMdAkZwXpXRDAAAAA=",
+    "widths": [
+      480,
+      800
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/thuong-tin-gallery-5-480.avif",
+        "bytes": 14925
+      },
+      {
+        "w": 800,
+        "src": "/img/craft-villages/thuong-tin-gallery-5-800.avif",
+        "bytes": 25944
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/thuong-tin-gallery-5-480.webp",
+        "bytes": 15736
+      },
+      {
+        "w": 800,
+        "src": "/img/craft-villages/thuong-tin-gallery-5-800.webp",
+        "bytes": 29940
+      }
+    ]
+  },
+  "craft-villages/thuong-tin-video-1": {
+    "width": 1238,
+    "height": 740,
+    "aspect": 1.673,
+    "alpha": true,
+    "color": "#080808",
+    "placeholder": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAACwAwCdASoUAAwAPu1iqU2ppaOiMAgBMB2JZQDCgCFloE2O4YC1AAD+qbdZL2bSGg3s5rnbC926tuNYYK5Ym3Qw52KTgTv4GIMokBPINLkBL3Dw4poxckls/nmEUohwAEGVPOSeJisH1xIvnrSL2/eYS807+wAA",
+    "widths": [
+      480,
+      800,
+      1200
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/thuong-tin-video-1-480.avif",
+        "bytes": 15844
+      },
+      {
+        "w": 800,
+        "src": "/img/craft-villages/thuong-tin-video-1-800.avif",
+        "bytes": 24676
+      },
+      {
+        "w": 1200,
+        "src": "/img/craft-villages/thuong-tin-video-1-1200.avif",
+        "bytes": 33799
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/thuong-tin-video-1-480.webp",
+        "bytes": 17402
+      },
+      {
+        "w": 800,
+        "src": "/img/craft-villages/thuong-tin-video-1-800.webp",
+        "bytes": 30306
+      },
+      {
+        "w": 1200,
+        "src": "/img/craft-villages/thuong-tin-video-1-1200.webp",
+        "bytes": 46748
+      }
+    ]
+  },
+  "craft-villages/thuong-tin-video-2": {
+    "width": 1238,
+    "height": 740,
+    "aspect": 1.673,
+    "alpha": true,
+    "color": "#080808",
+    "placeholder": "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAADwAwCdASoUAAwAPu1kqU2ppaOiMAgBMB2JQBdmUABNe9PCFFHfpFKgAP5spgGzDkSHoIZK6J/NNagjmRDFqlJk8M5J7oKtXkv+NasOYlQA2pFdy+d4dWhC0Hl7i/nY3WSggtf6uB1/03VOykL1zwjZz9JJLem3gEMM9SESdDKCzjOGwAA=",
+    "widths": [
+      480,
+      800,
+      1200
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/thuong-tin-video-2-480.avif",
+        "bytes": 16615
+      },
+      {
+        "w": 800,
+        "src": "/img/craft-villages/thuong-tin-video-2-800.avif",
+        "bytes": 27307
+      },
+      {
+        "w": 1200,
+        "src": "/img/craft-villages/thuong-tin-video-2-1200.avif",
+        "bytes": 38562
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/thuong-tin-video-2-480.webp",
+        "bytes": 17026
+      },
+      {
+        "w": 800,
+        "src": "/img/craft-villages/thuong-tin-video-2-800.webp",
+        "bytes": 31270
+      },
+      {
+        "w": 1200,
+        "src": "/img/craft-villages/thuong-tin-video-2-1200.webp",
+        "bytes": 48488
       }
     ]
   },

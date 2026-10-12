@@ -1,5 +1,5 @@
 {
-  "$note": "Chữ chép nguyên văn từ assets-src/Craft Villages/ref/ (Home - Crafted Villages*.png); chú thích ảnh 3–6 của gallery H'Mong do anh/chị gửi trong chat. mt = khoảng cách phía trên khối (đơn vị thiết kế 1920, đo từ ref). alt có draft:true = bản nháp chờ duyệt. 3 ô cuối chưa có ảnh → chưa có nội dung.",
+  "$note": "Chữ chép nguyên văn từ assets-src/Craft Villages/ref/ (Home - Crafted Villages*.png); chú thích ảnh 3–6 của gallery H'Mong do anh/chị gửi trong chat. mt = khoảng cách phía trên khối (đơn vị thiết kế 1920, đo từ ref). alt có draft:true = bản nháp chờ duyệt. Chú thích ảnh 1 và 5 của gallery Layers of Light do anh/chị gửi; ảnh 2 và 4 chưa có chú thích (ref bị cắt). 2 ô cuối chưa có ảnh → chưa có nội dung.",
   "title": "Crafted Villages",
   "intro": "This chapter chronicles the inspiring journey of Le Pham Khanh Chi, a 12th-grade student at Foreign Language Specialized School, as she transforms her passion for chemistry and cultural heritage into a lifelong commitment to Vietnam craft villages.",
   "items": [
@@ -94,7 +94,66 @@
         { "mt": 20, "text": "I guided guests through how Vietnamese attire changed across the centuries, with illustrations we drew ourselves. Then Mr. Dong, author of \"Weaving a Dynasty,\" joined us at my invitation to share his knowledge of historical costume culture." }
       ]
     },
-    { "id": "thuong-tin-villages", "title": "Thuong Tin Villages", "blocks": [] },
+    {
+      "id": "thuong-tin-villages",
+      "title": "Thuong Tin Villages",
+      "blocks": [
+        { "mt": 30, "text": "Less than an hour south of Hanoi, beside the Red River, lies Thuong Tin, my mother's hometown, and inside it two small craft villages: Ha Thai, where artisans paint lacquer, and Ninh So, where hands weave bamboo and rattan. These lanes have always felt like home. This time I came back with chemistry and a question – what does the river carry away from the places I love?" },
+        {
+          "mt": 24, "gap": 10,
+          "row": [
+            { "image": "craft-villages/thuong-tin-1", "alt": "Thuyền năng lượng mặt trời nổi giữa mặt nước đục, nhiều rác", "draft": true },
+            { "image": "craft-villages/thuong-tin-2", "alt": "Khánh Chi ngồi xổm bên bờ kênh, đeo găng tay chỉnh thuyền", "draft": true },
+            { "image": "craft-villages/thuong-tin-3", "alt": "Khánh Chi đứng trên bờ cầm bộ điều khiển thuyền", "draft": true }
+          ]
+        },
+        { "mt": 27, "text": "Again, I zoom into the water. It is hard to believe that the lacquer paintings and woven baskets on the shelves come from the same place as this river, and the sight gave me goosebumps. So I brought my solar-powered boat onto it, loaded with rice-husk activated carbon, to draw out what the craft leaves behind." },
+        { "mt": 58, "variant": "title", "text": "1. Ha Thai Lacquer Village" },
+        {
+          "mt": 52, "gap": 11,
+          "row": [
+            { "image": "craft-villages/thuong-tin-4", "alt": "Khánh Chi chụp ảnh các tranh sơn mài trên kệ trưng bày", "draft": true },
+            { "image": "craft-villages/thuong-tin-5", "alt": "Khánh Chi giơ máy ảnh chụp các tượng sơn mài", "draft": true }
+          ]
+        },
+        { "mt": 27, "text": "I co-organized an exhibition-sale for the village's artisans and was responsible for its reach to the mass, and my part was to carry the pieces out of the studio and into people's feeds through photographing their pieces and sharing them online." },
+        { "mt": 24, "video": { "poster": "craft-villages/thuong-tin-video-1", "alt": "Video: phỏng vấn nghệ nhân về quy trình và vấn đề ô nhiễm nước ở làng nghề Hạ Thái", "draft": true, "youtube": "" }, "width": 619 },
+        { "mt": 24, "variant": "caption", "text": "Interview with an artisan about the sanding and silver-leafing process and the village's water pollution." },
+        { "mt": 22, "divider": true },
+        { "mt": 42, "variant": "lead", "text": "Above all, let my gallery guide you through the works." },
+        { "mt": 70, "variant": "title", "text": "Gallery: Layers of Light (featuring lacquer handmade crafts)" },
+        {
+          "mt": 52, "height": 320, "gap": 10,
+          "marquee": [
+            { "image": "craft-villages/thuong-tin-gallery-1", "alt": "Những hộp sơn mài đen vẽ mặt người kiểu lập thể, xếp trên kệ kính", "draft": true, "note": "What happens when a traditional craft meets modern art? These boxes are almost Cubist faces and one gold-toned design that echoes Klimt, each lid a small canvas on a glossy black ground." },
+            { "image": "craft-villages/thuong-tin-gallery-2", "alt": "Tranh sơn mài thiếu nữ áo dài đội nón lá trên nền đen", "draft": true },
+            { "image": "craft-villages/thuong-tin-gallery-3", "alt": "Tranh sơn mài Chùa Một Cột trong khung đen bóng", "draft": true, "note": "Hanoi's cultural heritage, painted in lacquer: one of the works that capture the city's landmarks, this one featuring the One Pillar Pagoda." },
+            { "image": "craft-villages/thuong-tin-gallery-4", "alt": "Tượng sơn mài thiếu nữ đội nón lá nhiều màu cam, trắng, xanh", "draft": true },
+            { "image": "craft-villages/thuong-tin-gallery-5", "alt": "Hai con rối nước sơn trắng rạn, môi đỏ, đeo vòng bạc ở cổ", "draft": true, "note": "These figures remind of the humor in Vietnamese water puppets in painted brows, red lips, a silver ring at the neck, and a crackled white surface that gives them the patina of age." }
+          ]
+        },
+        { "mt": 75, "variant": "title", "text": "2. Ninh So Bamboo and Rattan Weaving Village" },
+        { "mt": 66, "text": "Under the same large village Thuong Tin, where there are no glossy colors of lacquer, Ninh So feels quieter. Here the palette is the plain gold of bamboo and rattan, and most of the hands that weave it are older ones." },
+        { "mt": 22, "video": { "poster": "craft-villages/thuong-tin-video-2", "alt": "Video: trò chuyện cùng nghệ nhân làng Ninh Sở, tìm hiểu cách làm và mặt hàng", "draft": true, "youtube": "" }, "width": 619 },
+        { "mt": 24, "variant": "caption", "text": "I had a conversation with Mrs. Hoai about how bamboo and rattan pieces are made, and the range of goods the village weaves." },
+        {
+          "mt": 24, "gap": 11,
+          "row": [
+            { "image": "craft-villages/thuong-tin-6", "alt": "Nghệ nhân đan sọt tre trước hiên nhà, Khánh Chi ngồi chụp ảnh", "draft": true },
+            { "image": "craft-villages/thuong-tin-7", "alt": "Xưởng đan với nhiều sọt tre, người thợ ngồi làm giữa đống hàng", "draft": true }
+          ]
+        },
+        { "mt": 30, "text": "Again, I photographed the artisans' pieces and promoted them on mass media, so the beauty of a plain-colored craft could reach people who had never seen it up close." },
+        {
+          "mt": 25, "gap": 11,
+          "row": [
+            { "image": "craft-villages/thuong-tin-8", "alt": "Khánh Chi đội nón ngồi giữa gian hàng mây tre đan tại hội chợ", "draft": true },
+            { "image": "craft-villages/thuong-tin-9", "alt": "Khánh Chi đứng trước phông Lễ hội Sản phẩm Xanh 2026", "draft": true }
+          ]
+        },
+        { "mt": 30, "text": "I registered a booth for Ninh So’s weavers at the Green Agriculture Festival, to bring their bamboo and rattan work to new buyers and move the craft toward a more valued business." }
+      ]
+    },
     { "id": "xoi-tri-glass-village", "title": "Xoi Tri Glass Village", "blocks": [] },
     { "id": "photography-portfolio", "title": "Photography Portfolio", "blocks": [] }
   ]

@@ -110,8 +110,8 @@
 ## Craft Villages (Bước 5, trang 2/4) — 2026-10-12
 - Nội dung: `content/craft-villages.json`. Chữ chép nguyên văn từ 6 ảnh ref; chú thích ảnh 3–6 của "Gallery: Patterns of the H'Mong" do anh/chị gửi trong chat. Tiêu đề trang theo ref: **"Crafted Villages"** (tab vẫn là "Craft Villages").
 - Ảnh gốc anh/chị gửi tên "Personal Product 5…20" nhưng **đều thuộc ô Pa Co Brocade Village** → đổi tên trong `assets-src/craft-villages/` (pa-co-1…6, pa-co-video-1…3, pa-co-gallery-1…6, pa-co-attire-1…3, pa-co-workshop-1…3). Thứ tự gallery: 14, 14-1, 14-2 (cô gái), 14-3 (măng đắng), 14-4 (mặt trời đỏ), 14-5 (anh Huy).
-- **Ô Personal Product không có ảnh gốc riêng** → tạm **cắt 4 ảnh từ ref @4x** (`Home - Crafted Villages (1).png`, mỗi ảnh ~2080px, đủ nét). Nếu có file gốc, thả vào `assets-src/craft-villages/personal-product-1…4.png` rồi `npm run images`.
-- **3 ô Thuong Tin Villages, Xoi Tri Glass Village, Photography Portfolio: chưa có ảnh** → để trống (bấm mở chỉ thấy tiêu đề). Ref đã có chữ của Thuong Tin & Xoi Tri, chờ ảnh.
+- Ô Personal Product: dùng ảnh gốc `Personal Product 1–4.png` (anh/chị bổ sung; bản cắt tạm từ ref đã bỏ).
+- **2 ô Xoi Tri Glass Village, Photography Portfolio: chưa có ảnh** → để trống (bấm mở chỉ thấy tiêu đề). Ref đã có chữ của Xoi Tri, chờ ảnh.
 - Khối mới: băng ảnh trượt ngang tự động (`marquee`): dãy ảnh lặp 2 lần, CSS `translateX` chạy vòng (chỉ transform → mượt), tốc độ 45 đơn vị thiết kế/giây; chỉ chạy khi thẻ mở, dừng khi rê chuột/focus; `prefers-reduced-motion` → đứng yên, cuộn tay. Ảnh cao 316, cách 10. Ảnh dọc hẹp (cô gái H'Mong) đặt trong khung rộng tối thiểu 420 để ô chú thích không quá dài (tự quyết).
 - Khối mới: đường kẻ ngăn (`divider`), tiêu đề mục căn giữa Bold 30 (`variant: "title"`), ô chú thích có khung (`box: true`).
 - Chú thích có khung: dùng Helvetica Neue Roman 16 (ref Personal Product trông như Light, nhưng không có font Light thẳng — chỉ có Light Italic).
@@ -119,3 +119,12 @@
 - Alt ảnh: bản nháp (`draft: true`), cần duyệt.
 - **Script ảnh:** `assets-src/` không có trong git nên máy mới chỉ có ảnh gốc của vài trang; trước đây chạy `npm run images` sẽ **xoá ảnh đã tối ưu của các trang khác**. Đã sửa: trang không có thư mục gốc trên máy → giữ nguyên ảnh + manifest cũ.
 - Ngân sách ảnh: ở kích thước hiển thị (1x) ảnh nặng nhất ~110KB AVIF; không ảnh nào > 150KB. JS chính tăng ~37KB (manifest ảnh có ảnh mờ base64).
+
+### Thuong Tin Villages (2026-10-12)
+- Chữ chép nguyên văn từ `Home - Crafted Villages (3).png`; chú thích ảnh hộp sơn mài và rối nước của gallery do anh/chị gửi.
+- Ảnh: `Thuong Tin Villages 1–12` → `thuong-tin-1…9`, `thuong-tin-video-1/2` (ảnh 6, 8), gallery theo thứ tự ảnh anh/chị gửi kèm: 7-3 (hộp), 7 (áo dài), 7-1 (Chùa Một Cột), 7-2 (tượng nón lá), 7-4 (rối nước).
+- **Thiếu chữ:** chú thích ảnh áo dài (7) và tượng nón lá (7-2) trong gallery "Layers of Light" bị cắt mép trong ref → chưa đưa vào, chờ anh/chị gửi đủ.
+- Câu "Above all, let my gallery guide you through the works." Bold 25 căn giữa (`variant: "lead"`, đo từ ref).
+- Băng ảnh: khung rộng tối thiểu 420 chỉ áp cho ảnh có chú thích (ảnh hẹp không chú thích giữ đúng tỉ lệ, không chừa khoảng trống).
+- Video "Làng Hạ Thái" / "Làng Ninh Sở" rộng 619 như ref; chưa có link YouTube.
+- Ảnh gốc trong thư mục `Crafted Villages/` chỉ được sao chép sang `assets-src/`, không sửa/đổi tên file gốc.

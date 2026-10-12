@@ -7,7 +7,7 @@ import type { SectionId } from '../sections';
 type Spaced = { mt?: number };
 
 export type ImageRef = { image: string; alt: string; draft?: boolean; square?: boolean };
-export type TextBlock = Spaced & { text: string; variant?: 'body' | 'heading' | 'subtitle' | 'title' | 'caption' };
+export type TextBlock = Spaced & { text: string; variant?: 'body' | 'heading' | 'subtitle' | 'title' | 'lead' | 'caption' };
 export type ImageBlock = Spaced & ImageRef & { wide?: boolean };
 
 export type Caption = { title: string; text: string; inline?: boolean };

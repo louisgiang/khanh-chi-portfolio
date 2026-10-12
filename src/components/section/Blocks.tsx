@@ -165,7 +165,7 @@ function Marquee({ block: b, ctx }: { block: MarqueeBlock; ctx: Ctx }) {
   const gap = b.gap ?? 10;
   const imgW = (c: ImageRef) => b.height * (imageEntry(c.image)?.aspect ?? 1);
   // Ảnh dọc hẹp: khung rộng tối thiểu MARQUEE_MIN_W để ô chú thích không bị kéo dài quá nhiều dòng.
-  const slideW = (c: ImageRef) => Math.max(imgW(c), MARQUEE_MIN_W);
+  const slideW = (c: MarqueeBlock['marquee'][number]) => (c.note ? Math.max(imgW(c), MARQUEE_MIN_W) : imgW(c));
   const len = b.marquee.reduce((s, c) => s + slideW(c) + gap, 0);
   const slides = (copy: number) =>
     b.marquee.map((c) => (
