@@ -106,3 +106,16 @@
 - Easing chung đổi sang cubic-bezier(0.4, 0, 0.2, 1), thời lượng mở/thu 550ms (vẫn trong khoảng 450–550ms của brief).
 - Kết quả (tốc độ thường, máy này): khung chậm nhất khi mở 22–44ms, 1–4 khung > 20ms mỗi lần mở.
 - Font: repo có 4 file woff2 Helvetica Neue (Light Italic, Roman, Medium, Bold — chỉ ký tự Latin + tiếng Việt) trong `src/assets/fonts/`; file gốc .otf/.ttf chỉ giữ trên máy (`fonts/` không đưa lên git). Chạy `npm run fonts` để tạo lại woff2 từ file gốc.
+
+## Craft Villages (Bước 5, trang 2/4) — 2026-10-12
+- Nội dung: `content/craft-villages.json`. Chữ chép nguyên văn từ 6 ảnh ref; chú thích ảnh 3–6 của "Gallery: Patterns of the H'Mong" do anh/chị gửi trong chat. Tiêu đề trang theo ref: **"Crafted Villages"** (tab vẫn là "Craft Villages").
+- Ảnh gốc anh/chị gửi tên "Personal Product 5…20" nhưng **đều thuộc ô Pa Co Brocade Village** → đổi tên trong `assets-src/craft-villages/` (pa-co-1…6, pa-co-video-1…3, pa-co-gallery-1…6, pa-co-attire-1…3, pa-co-workshop-1…3). Thứ tự gallery: 14, 14-1, 14-2 (cô gái), 14-3 (măng đắng), 14-4 (mặt trời đỏ), 14-5 (anh Huy).
+- **Ô Personal Product không có ảnh gốc riêng** → tạm **cắt 4 ảnh từ ref @4x** (`Home - Crafted Villages (1).png`, mỗi ảnh ~2080px, đủ nét). Nếu có file gốc, thả vào `assets-src/craft-villages/personal-product-1…4.png` rồi `npm run images`.
+- **3 ô Thuong Tin Villages, Xoi Tri Glass Village, Photography Portfolio: chưa có ảnh** → để trống (bấm mở chỉ thấy tiêu đề). Ref đã có chữ của Thuong Tin & Xoi Tri, chờ ảnh.
+- Khối mới: băng ảnh trượt ngang tự động (`marquee`): dãy ảnh lặp 2 lần, CSS `translateX` chạy vòng (chỉ transform → mượt), tốc độ 45 đơn vị thiết kế/giây; chỉ chạy khi thẻ mở, dừng khi rê chuột/focus; `prefers-reduced-motion` → đứng yên, cuộn tay. Ảnh cao 316, cách 10. Ảnh dọc hẹp (cô gái H'Mong) đặt trong khung rộng tối thiểu 420 để ô chú thích không quá dài (tự quyết).
+- Khối mới: đường kẻ ngăn (`divider`), tiêu đề mục căn giữa Bold 30 (`variant: "title"`), ô chú thích có khung (`box: true`).
+- Chú thích có khung: dùng Helvetica Neue Roman 16 (ref Personal Product trông như Light, nhưng không có font Light thẳng — chỉ có Light Italic).
+- 3 khung video (pa-co-video-1…3) là ảnh chụp trình phát YouTube như ref; khi có link thì điền `"youtube"`.
+- Alt ảnh: bản nháp (`draft: true`), cần duyệt.
+- **Script ảnh:** `assets-src/` không có trong git nên máy mới chỉ có ảnh gốc của vài trang; trước đây chạy `npm run images` sẽ **xoá ảnh đã tối ưu của các trang khác**. Đã sửa: trang không có thư mục gốc trên máy → giữ nguyên ảnh + manifest cũ.
+- Ngân sách ảnh: ở kích thước hiển thị (1x) ảnh nặng nhất ~110KB AVIF; không ảnh nào > 150KB. JS chính tăng ~37KB (manifest ảnh có ảnh mờ base64).

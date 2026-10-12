@@ -423,3 +423,60 @@
 .video__play:focus-visible svg {
   transform: scale(1.1);
 }
+
+/* ---------- Khối của Craft Villages ---------- */
+.item__text--title {
+  font-weight: 700;
+  font-size: calc(var(--s) * 30);
+  text-align: center;
+}
+/* Ô chú thích có khung (Personal Product, gallery) */
+.item__note--box {
+  margin-top: calc(var(--s) * 10);
+  padding: calc(var(--s) * 8) calc(var(--s) * 14) calc(var(--s) * 9);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: calc(var(--s) * 10);
+  background: rgba(255, 255, 255, 0.12);
+  font-weight: 400;
+}
+.item__divider {
+  margin: 0;
+  border: 0;
+  border-top: max(1px, calc(var(--s) * 2)) solid rgba(255, 255, 255, 0.5);
+}
+
+.marquee {
+  overflow: hidden;
+  /* Dãy ảnh dài (max-content) không được đẩy giãn cột chứa nó */
+  contain: inline-size;
+}
+.marquee.is-static {
+  overflow-x: auto;
+}
+.marquee__track {
+  display: flex;
+  align-items: flex-start;
+  width: max-content;
+  animation: marquee var(--marquee-dur, 40s) linear infinite;
+  /* Chỉ chạy khi thẻ đang mở (thẻ đóng thì đứng yên, khỏi tốn khung hình) */
+  animation-play-state: paused;
+}
+.item.is-open .marquee__track {
+  animation-play-state: running;
+}
+.item.is-open .marquee:hover .marquee__track,
+.item.is-open .marquee:focus-within .marquee__track {
+  animation-play-state: paused;
+}
+.marquee.is-static .marquee__track {
+  animation: none;
+}
+.marquee__slide {
+  flex: none;
+  margin: 0;
+}
+@keyframes marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "$note": "Chữ chép nguyên văn từ assets-src/Craft Villages/ref/ (Home - Crafted Villages*.png); chú thích ảnh 3–6 của gallery H'Mong do anh/chị gửi trong chat. mt = khoảng cách phía trên khối (đơn vị thiết kế 1920, đo từ ref). alt có draft:true = bản nháp chờ duyệt. 3 ô cuối chưa có ảnh → chưa có nội dung.",
+  "title": "Crafted Villages",
+  "intro": "This chapter chronicles the inspiring journey of Le Pham Khanh Chi, a 12th-grade student at Foreign Language Specialized School, as she transforms her passion for chemistry and cultural heritage into a lifelong commitment to Vietnam craft villages.",
+  "items": [
+    {
+      "id": "personal-product",
+      "title": "Personal Product",
+      "blocks": [
+        { "mt": 24, "variant": "subtitle", "text": "Solar-Powered Craft Village Water Treatment Boat" },
+        {
+          "mt": 22, "gap": 11,
+          "row": [
+            { "image": "craft-villages/personal-product-1", "alt": "Khánh Chi hàn mạch điện tử trên bàn thí nghiệm", "draft": true, "box": true, "note": "I set out to build a solar-powered water-treatment boat from recycled materials – a fusion of sunlight, sensors, and chemistry, designed to help craft villages see and treat their water." },
+            { "image": "craft-villages/personal-product-2", "alt": "Mô hình thuyền xử lí nước có tấm pin mặt trời, bên cạnh bo mạch điều khiển", "draft": true, "box": true, "note": "After months in the lab, the design came together: an ESP32 reading pH, TDS, temperature; a paddle wheel to aerate the water; a swappable adsorbent module – HAp/PANI for dyes, rice-husk activated carbon for heavy metals; and a hull built to glide past the weeds and debris in water." }
+          ]
+        },
+        {
+          "mt": 25, "gap": 11,
+          "row": [
+            { "image": "craft-villages/personal-product-3", "alt": "Tay đặt thuyền năng lượng mặt trời xuống mặt nước kênh", "draft": true, "box": true, "note": "With its swappable adsorbent module, it is now not only a proof of concept but a floating treatment system, ready to make an impact on the water of craft villages and the heritage that depends on it." },
+            { "image": "craft-villages/personal-product-4", "alt": "Khánh Chi ngồi xổm bên bờ kênh, chuẩn bị thả thuyền xuống nước", "draft": true, "box": true, "note": "It was finally time to take my creation to the village’s edge. Seeing it in action on real water made all the experiments worth it." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pa-co-brocade-village",
+      "title": "Pa Co Brocade Village",
+      "blocks": [
+        { "mt": 30, "text": "About 170 kilometers west of Hanoi lies Pa Co, home of the H'Mong people, where brocade glows in every color. Behind it, the ditches run with the dye that colored it. I wondered where that color goes. Under the Kaleidoscope of the Past Project, I came with chemistry, love for this culture, and compassion for its waters to promote its colors while preserving its rivers." },
+        {
+          "mt": 24, "gap": 20,
+          "row": [
+            { "image": "craft-villages/pa-co-1", "alt": "Khánh Chi cúi xuống thả thiết bị đo bên ao, phụ nữ H'Mong đứng xem", "draft": true },
+            { "image": "craft-villages/pa-co-2", "alt": "Khánh Chi cầm bộ điều khiển, chiếc thuyền nhỏ chạy trên mặt ao", "draft": true }
+          ]
+        },
+        { "mt": 27, "text": "Industrial dye had become a habit in Pa Co, and its leftovers a quiet burden on the canals beside the families’ homes. Here, I introduced the locals to my Solar-Powered Water Treatment Boat – the way sunlight powers it, how HAp/PANI draws the dye out of the water, and how to read its sensors." },
+        { "mt": 25, "video": { "poster": "craft-villages/pa-co-video-1", "alt": "Video: phỏng vấn bác Việt, trưởng thôn, về vấn đề nước thải", "draft": true, "youtube": "" }, "width": 653 },
+        { "mt": 24, "variant": "caption", "text": "An interview with Mr. Sung A Viet, head of Cha Day village in Pa Co, on the wastewater that flows through the village's canals." },
+        { "mt": 24, "video": { "poster": "craft-villages/pa-co-video-2", "alt": "Video: phỏng vấn người dân về thói quen sinh hoạt, xử lí nước thải", "draft": true, "youtube": "" }, "width": 653 },
+        { "mt": 24, "variant": "caption", "text": "An interview with families in Pa Co about their daily routines, and where the water goes when the dyeing is done." },
+        { "mt": 24, "video": { "poster": "craft-villages/pa-co-video-3", "alt": "Video: giới thiệu với người dân làng Pà Cò về thuyền xử lí nước thải nhuộm", "draft": true, "youtube": "" }, "width": 653 },
+        { "mt": 24, "variant": "caption", "text": "Introducing the people of Pa Co to a boat that treats dye wastewater, with the adsorbent built right into it." },
+        {
+          "mt": 24, "gap": 10,
+          "row": [
+            { "image": "craft-villages/pa-co-3", "alt": "Khánh Chi cùng một phụ nữ H'Mong đeo gùi hái lá trong rừng", "draft": true },
+            { "image": "craft-villages/pa-co-4", "alt": "Khánh Chi ngồi cùng người dân chặt rễ cây lấy màu nhuộm", "draft": true },
+            { "image": "craft-villages/pa-co-5", "alt": "Khánh Chi cho lá cây vào thùng nước để ngâm lấy màu", "draft": true }
+          ]
+        },
+        { "mt": 28, "text": "Cleaning the water was only half the solution; what’s there to dye instead of industrial bright colors? I followed the locals into the forest, finding roots, leaves, and bark that hold color. Back in the courtyard, I helped them dye the fibre thread, shade after shade, brighter than I had ever imagined. By evening, the gaps between my fingers were full of the color of those roots." },
+        {
+          "mt": 25, "gap": 25, "align": "center",
+          "row": [
+            { "image": "craft-villages/pa-co-6", "alt": "Khánh Chi cầm tấm vải chàm vẽ sáp, phía sau là dãy vải nhuộm nhiều màu phơi trên dây", "draft": true },
+            { "text": "After long days of chopping forest roots, boiling, steeping, and testing, the colors came out lovelier than I had dared to hope. And every shade, from the reds to the blues, came from plants alone.", "grow": 1.6527 }
+          ]
+        },
+        { "mt": 58, "variant": "title", "text": "Gallery: Patterns of the H'Mong" },
+        {
+          "mt": 52, "height": 316, "gap": 10,
+          "marquee": [
+            { "image": "craft-villages/pa-co-gallery-1", "alt": "Những tấm vải H'Mong vẽ sáp, nhuộm chàm và nâu, treo cạnh nhau", "draft": true, "note": "This gallery features patterns of the H'Mong, all made by hand. The fabric is woven from flax fiber, and each pattern is drawn in beeswax, which keeps the cloth its white color wherever it is painted before dyeing." },
+            { "image": "craft-villages/pa-co-gallery-2", "alt": "Cận cảnh vải nâu với hoa văn sừng cừu đan vào nhau", "draft": true, "note": "This brown cloth is dyed from dye yam (Dioscorea cirrhosa), a forest tuber. Its main motif, interlocking ram's horns, stands for couples and the love between partners in H'Mong villages." },
+            { "image": "craft-villages/pa-co-gallery-3", "alt": "Tấm vải chàm vẽ sáp hình cô gái H'Mong đeo vòng cổ", "draft": true, "note": "Drawn in beeswax on a field of blue, featuring a H'Mong girl. The color comes from Assam indigo leaves (Strobilanthes cusia), simmered and left to steep for several days." },
+            { "image": "craft-villages/pa-co-gallery-4", "alt": "Vải xanh chàm đậm với hoa văn tròn hình măng đắng, viền đỏ", "draft": true, "note": "This features the bitter bamboo shoot, a common plant of Pa Co's forest. The deep navy blue comes from the same Assam indigo leaves, steeped for longer to reach this deep shade." },
+            { "image": "craft-villages/pa-co-gallery-5", "alt": "Vải chàm với hoa văn mặt trời, tâm màu đỏ", "draft": true, "note": "At the very center is the red sun, a symbol of hope and of a village that flourishes. The red at its heart comes from gac fruit (Momordica cochinchinensis)." },
+            { "image": "craft-villages/pa-co-gallery-6", "alt": "Khánh Chi cùng anh Huy đứng giữa các bộ trang phục cổ may từ vải nhuộm tự nhiên", "draft": true, "note": "Returning to the city, I met Mr. Huy, founder of Dong Phong Atelier to promote traditional Vietnamese attire of earlier centuries, made from Pa Co's naturally dyed cloth." }
+          ]
+        },
+        { "mt": 45, "variant": "title", "text": "Gallery: Traditional Attire in Natural Color" },
+        { "mt": 48, "text": "These vibrant colors are all extracted from natural plants. Purple is magenta plant (Peristrophe roxburghiana). Green blends Assam indigo (Strobilanthes cusia) with yellow vine (Fibraurea recisa). Yellow comes from turmeric (Curcuma longa), and deep brown from dye yam (Dioscorea cirrhosa)." },
+        {
+          "mt": 24, "gap": 20,
+          "row": [
+            { "image": "craft-villages/pa-co-attire-1", "alt": "Hai bộ áo cổ màu tím và xanh lá trên giá treo, phía trên là nón lá", "draft": true },
+            { "image": "craft-villages/pa-co-attire-2", "alt": "Hai bộ áo cổ màu vàng nghệ và nâu hoa văn trên giá treo", "draft": true },
+            { "image": "craft-villages/pa-co-attire-3", "alt": "Hai bộ áo cổ màu xanh rêu và nâu cam trên giá treo", "draft": true }
+          ]
+        },
+        { "mt": 24, "divider": true },
+        {
+          "mt": 26, "gap": 10,
+          "row": [
+            { "image": "craft-villages/pa-co-workshop-1", "alt": "Ảnh tập thể người tham dự workshop, nhiều người mặc cổ phục", "draft": true },
+            { "image": "craft-villages/pa-co-workshop-2", "alt": "Diễn giả cầm micro nói chuyện, bên cạnh là các bạn mặc cổ phục", "draft": true },
+            { "image": "craft-villages/pa-co-workshop-3", "alt": "Khánh Chi và bạn mặc áo cổ phục đỏ, xanh, cầm micro giới thiệu", "draft": true }
+          ]
+        },
+        { "mt": 30, "text": "To bring these costumes out of the studio and in front of people, I co-organized Morning Tea, Traditional Costume, and Calligraphy, a workshop to display them and introduce audiences to clothing made from natural color." },
+        { "mt": 20, "text": "I guided guests through how Vietnamese attire changed across the centuries, with illustrations we drew ourselves. Then Mr. Dong, author of \"Weaving a Dynasty,\" joined us at my invitation to share his knowledge of historical costume culture." }
+      ]
+    },
+    { "id": "thuong-tin-villages", "title": "Thuong Tin Villages", "blocks": [] },
+    { "id": "xoi-tri-glass-village", "title": "Xoi Tri Glass Village", "blocks": [] },
+    { "id": "photography-portfolio", "title": "Photography Portfolio", "blocks": [] }
+  ]
+}

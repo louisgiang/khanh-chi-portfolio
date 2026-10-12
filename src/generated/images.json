@@ -1834,6 +1834,1346 @@
       }
     ]
   },
+  "craft-villages/pa-co-1": {
+    "width": 2066,
+    "height": 1261,
+    "aspect": 1.6384,
+    "alpha": true,
+    "color": "#181818",
+    "placeholder": "data:image/webp;base64,UklGRtQAAABXRUJQVlA4WAoAAAAQAAAAEwAACwAAQUxQSDQAAAABPyAWTPxRM+ibRkQEZFATSVK0e3fkqwEcoAgJ+I9/MBDR/wkIYqiGRc6ErzkTFlPJw9oBVlA4IHoAAADQAwCdASoUAAwAPu1iqU2ppaOiMAgBMB2JbAC/OCLUvcnvD49rUVAAzjW3M7XofQ020TGwR/hG5DpLFxJ7wsN57jwZMz1PW7PwAyyyeUYZTs+Pcgp5EzVZTbDfLeJHV36M1yx2JRah9e+1MVvFhTfN21ZB+llsT0AAAA==",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/pa-co-1-480.avif",
+        "bytes": 41278
+      },
+      {
+        "w": 800,
+        "src": "/img/craft-villages/pa-co-1-800.avif",
+        "bytes": 108395
+      },
+      {
+        "w": 1200,
+        "src": "/img/craft-villages/pa-co-1-1200.avif",
+        "bytes": 216802
+      },
+      {
+        "w": 1600,
+        "src": "/img/craft-villages/pa-co-1-1600.avif",
+        "bytes": 348187
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/pa-co-1-480.webp",
+        "bytes": 33944
+      },
+      {
+        "w": 800,
+        "src": "/img/craft-villages/pa-co-1-800.webp",
+        "bytes": 89050
+      },
+      {
+        "w": 1200,
+        "src": "/img/craft-villages/pa-co-1-1200.webp",
+        "bytes": 185088
+      },
+      {
+        "w": 1600,
+        "src": "/img/craft-villages/pa-co-1-1600.webp",
+        "bytes": 311596
+      }
+    ]
+  },
+  "craft-villages/pa-co-2": {
+    "width": 2066,
+    "height": 1261,
+    "aspect": 1.6384,
+    "alpha": true,
+    "color": "#f8f8f8",
+    "placeholder": "data:image/webp;base64,UklGRswAAABXRUJQVlA4WAoAAAAQAAAAEwAACwAAQUxQSDQAAAABPyAWTPxRM+ibRkQEZFATSVK0e3fkqwEcoAgJ+I9/MBDR/wkIYqiGRc6ErzkTFlPJw9oBVlA4IHIAAAAwBACdASoUAAwAPu1iqU2ppaOiMAgBMB2JQBjehH0W2f1jiFiWy3InpgAA/omKp6rmccwRnRQW1BfmZ8vXENimXIlhDVWbKz5J7JyUcxMMsZStF1u/gcGrTaAy2Ulzoynxm1qLZPF18ALMH3OpgMkOwAA=",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/pa-co-2-480.avif",
+        "bytes": 14882
+      },
+      {
+        "w": 800,
+        "src": "/img/craft-villages/pa-co-2-800.avif",
+        "bytes": 25916
+      },
+      {
+        "w": 1200,
+        "src": "/img/craft-villages/pa-co-2-1200.avif",
+        "bytes": 38846
+      },
+      {
+        "w": 1600,
+        "src": "/img/craft-villages/pa-co-2-1600.avif",
+        "bytes": 52808
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/pa-co-2-480.webp",
+        "bytes": 15212
+      },
+      {
+        "w": 800,
+        "src": "/img/craft-villages/pa-co-2-800.webp",
+        "bytes": 29150
+      },
+      {
+        "w": 1200,
+        "src": "/img/craft-villages/pa-co-2-1200.webp",
+        "bytes": 48952
+      },
+      {
+        "w": 1600,
+        "src": "/img/craft-villages/pa-co-2-1600.webp",
+        "bytes": 71284
+      }
+    ]
+  },
+  "craft-villages/pa-co-3": {
+    "width": 1378,
+    "height": 1076,
+    "aspect": 1.2807,
+    "alpha": true,
+    "color": "#787878",
+    "placeholder": "data:image/webp;base64,UklGRsYAAABXRUJQVlA4WAoAAAAQAAAAEwAADwAAQUxQSEcAAAABd6CobSSHP61ltK92xTQiImA9SVQOFAUAC23zvElAMF8aeIsgwqIII8p4CRDR/wnQBGLeCi6Ml7AeJnwsRbmwAjlz7U0cBwBWUDggWAAAAHADAJ0BKhQAEAA+7WKpTamlo6IwCAEwHYlpAAAxuikrYR8DAAD1FzcRjHLQYOJ5cJGRDFW0X6Z143KH8zky/skZXtt2QQG38pIPmJ8xP1CKgdKxHfPgAAA=",
+    "widths": [
+      480,
+      800,
+      1200
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/pa-co-3-480.avif",
+        "bytes": 15174
+      },
+      {
+        "w": 800,
+        "src": "/img/craft-villages/pa-co-3-800.avif",
+        "bytes": 26496
+      },
+      {
+        "w": 1200,
+        "src": "/img/craft-villages/pa-co-3-1200.avif",
+        "bytes": 38817
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/pa-co-3-480.webp",
+        "bytes": 17660
+      },
+      {
+        "w": 800,
+        "src": "/img/craft-villages/pa-co-3-800.webp",
+        "bytes": 33950
+      },
+      {
+        "w": 1200,
+        "src": "/img/craft-villages/pa-co-3-1200.webp",
+        "bytes": 54612
+      }
+    ]
+  },
+  "craft-villages/pa-co-4": {
+    "width": 1378,
+    "height": 1076,
+    "aspect": 1.2807,
+    "alpha": true,
+    "color": "#686868",
+    "placeholder": "data:image/webp;base64,UklGRtgAAABXRUJQVlA4WAoAAAAQAAAAEwAADwAAQUxQSEcAAAABd6CobSSHP61ltK92xTQiImA9SVQOFAUAC23zvElAMF8aeIsgwqIII8p4CRDR/wnQBGLeCi6Ml7AeJnwsRbmwAjlz7U0cBwBWUDggagAAABAEAJ0BKhQAEAA+7WKpTamlo6IwCAEwHYllAABVZShy5g2wrbuQxNoAAP4eFjVVZjjPVyV9KLAzPBtGNLuLzEokgAB3H5jMVqDlnFYa+2UN8Kq8Nj4l5p1pLhe3hoHVJcH3AbpbqFj5YAA=",
+    "widths": [
+      480,
+      800,
+      1200
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/pa-co-4-480.avif",
+        "bytes": 10144
+      },
+      {
+        "w": 800,
+        "src": "/img/craft-villages/pa-co-4-800.avif",
+        "bytes": 15671
+      },
+      {
+        "w": 1200,
+        "src": "/img/craft-villages/pa-co-4-1200.avif",
+        "bytes": 21936
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/pa-co-4-480.webp",
+        "bytes": 11822
+      },
+      {
+        "w": 800,
+        "src": "/img/craft-villages/pa-co-4-800.webp",
+        "bytes": 21440
+      },
+      {
+        "w": 1200,
+        "src": "/img/craft-villages/pa-co-4-1200.webp",
+        "bytes": 34100
+      }
+    ]
+  },
+  "craft-villages/pa-co-5": {
+    "width": 1378,
+    "height": 1076,
+    "aspect": 1.2807,
+    "alpha": true,
+    "color": "#787878",
+    "placeholder": "data:image/webp;base64,UklGRtgAAABXRUJQVlA4WAoAAAAQAAAAEwAADwAAQUxQSEcAAAABd6CobSSHP61ltK92xTQiImA9SVQOFAUAC23zvElAMF8aeIsgwqIII8p4CRDR/wnQBGLeCi6Ml7AeJnwsRbmwAjlz7U0cBwBWUDggagAAADAEAJ0BKhQAEAA+7WKpTamlo6IwCAEwHYlAGJsEPUq4oCA/b7mp0mtjWAD+0lzxKliOuUbvpeDCNTg3OEqynsoITO2zljV3KfA2L+bgxJatmBtnEWFPJXpzUTsDi9gSgWgHpEggR9IAAAA=",
+    "widths": [
+      480,
+      800,
+      1200
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/pa-co-5-480.avif",
+        "bytes": 14208
+      },
+      {
+        "w": 800,
+        "src": "/img/craft-villages/pa-co-5-800.avif",
+        "bytes": 24827
+      },
+      {
+        "w": 1200,
+        "src": "/img/craft-villages/pa-co-5-1200.avif",
+        "bytes": 37685
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/pa-co-5-480.webp",
+        "bytes": 14960
+      },
+      {
+        "w": 800,
+        "src": "/img/craft-villages/pa-co-5-800.webp",
+        "bytes": 29156
+      },
+      {
+        "w": 1200,
+        "src": "/img/craft-villages/pa-co-5-1200.webp",
+        "bytes": 48646
+      }
+    ]
+  },
+  "craft-villages/pa-co-6": {
+    "width": 2056,
+    "height": 1244,
+    "aspect": 1.6527,
+    "alpha": true,
+    "color": "#080808",
+    "placeholder": "data:image/webp;base64,UklGRvIAAABXRUJQVlA4WAoAAAAQAAAAEwAACwAAQUxQSDMAAAABN6CQbQTI33MWu0cjIuI/VihoJMWhCUDCSUIC/nW0LwYi+j8BylQiaMid09fSgYbGFRIAVlA4IJgAAAAQBACdASoUAAwAPu1iqU2ppaOiMAgBMB2JbACdACHgLvfYkVJ8bwlyAAD+wHiBhzHeUNXxXhDpYuUE+c/A7FIzogzfylX1Co3RAha/YEZcr+GvZqoVax1ALBdsZ7/6XJA1/X1EVdsGDM7yY2bTeQLISvBCCJWzT5ukRD8el43R/stfhkL2/YTCUVOb/f+MCvPVLP/GBFwAAA==",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/pa-co-6-480.avif",
+        "bytes": 20009
+      },
+      {
+        "w": 800,
+        "src": "/img/craft-villages/pa-co-6-800.avif",
+        "bytes": 44968
+      },
+      {
+        "w": 1200,
+        "src": "/img/craft-villages/pa-co-6-1200.avif",
+        "bytes": 80216
+      },
+      {
+        "w": 1600,
+        "src": "/img/craft-villages/pa-co-6-1600.avif",
+        "bytes": 119973
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/pa-co-6-480.webp",
+        "bytes": 20066
+      },
+      {
+        "w": 800,
+        "src": "/img/craft-villages/pa-co-6-800.webp",
+        "bytes": 47382
+      },
+      {
+        "w": 1200,
+        "src": "/img/craft-villages/pa-co-6-1200.webp",
+        "bytes": 88614
+      },
+      {
+        "w": 1600,
+        "src": "/img/craft-villages/pa-co-6-1600.webp",
+        "bytes": 135320
+      }
+    ]
+  },
+  "craft-villages/pa-co-attire-1": {
+    "width": 1351,
+    "height": 2036,
+    "aspect": 0.6636,
+    "alpha": true,
+    "color": "#e8d8b8",
+    "placeholder": "data:image/webp;base64,UklGRl4BAABXRUJQVlA4WAoAAAAQAAAAEwAAHQAAQUxQSD4AAAABX6CgbRuGP7KCujskIiL7aUETSiNJiu5OERMa/I/+PaEQCzGyGhvR/wlQ1jzTYYJOUCXsfknQZuR0yc91AVZQOCD6AAAAMAYAnQEqFAAeAD7taK9QqaWkIqgKqTAdiWQArDlBUmAMWE+m0JsDV49pYmdFxf80pKOoG2GPrJdaAAD+7d0AWpDAJKlP2UuH7qeq52T8NR6GHxJttbKD51Goiik9HKCJwCPo6EspxZpoygVaMt+y7PLWuIRw8cG0qjOJqp+K+8U0yuRKZ6P8CbdF6BCGmvXBVgOB6wYVtSo3mqeLw33tt7ETR7glpGyZrR2Ub/fYY1aMeAC9VPELSv+Xcl1Y7KIvlnQ03fpXzCXuy+Bjj0Cwq0S7/hiNqW0PXEy84Pq6y9g8Xi0kKM0c8VVFPVpMoGKaHSUEKDGJjAAAAA==",
+    "widths": [
+      480,
+      800,
+      1200
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/pa-co-attire-1-480.avif",
+        "bytes": 25682
+      },
+      {
+        "w": 800,
+        "src": "/img/craft-villages/pa-co-attire-1-800.avif",
+        "bytes": 57460
+      },
+      {
+        "w": 1200,
+        "src": "/img/craft-villages/pa-co-attire-1-1200.avif",
+        "bytes": 110291
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/pa-co-attire-1-480.webp",
+        "bytes": 28066
+      },
+      {
+        "w": 800,
+        "src": "/img/craft-villages/pa-co-attire-1-800.webp",
+        "bytes": 65466
+      },
+      {
+        "w": 1200,
+        "src": "/img/craft-villages/pa-co-attire-1-1200.webp",
+        "bytes": 131196
+      }
+    ]
+  },
+  "craft-villages/pa-co-attire-2": {
+    "width": 1351,
+    "height": 2036,
+    "aspect": 0.6636,
+    "alpha": true,
+    "color": "#e8d8b8",
+    "placeholder": "data:image/webp;base64,UklGRlABAABXRUJQVlA4WAoAAAAQAAAAEwAAHQAAQUxQSD4AAAABX6CgbRuGP7KCujskIiL7aUETSiNJiu5OERMa/I/+PaEQCzGyGhvR/wlQ1jzTYYJOUCXsfknQZuR0yc91AVZQOCDsAAAA8AUAnQEqFAAeAD7tYqtQKaUjorAYCAEwHYlqAJ0y43ZaSZC4DLUIJGHx4LAj77AsGhr/C8blPmAA/u2AOWPDdOs+IFxDggG6icLGgQPPKkfV5T9EI80R8ZTDFZnS8v/A27XnqalbOrpto2nzTaCT05guMdz23Vfg0GuvAIQOWfVjx4AP4D3nxiZDremqJtou6wDVl+vpZCIUKgjXDB7RPEV5bJCILhR5DOKF2+c9XwbB1LW1TAAXgovBohiMBCD5WKrMWOthRKH3q41RfL0YyLXgdfmoLt25XTD7fjIQ/AiOYdX1TxXMlvwAAAA=",
+    "widths": [
+      480,
+      800,
+      1200
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/pa-co-attire-2-480.avif",
+        "bytes": 40273
+      },
+      {
+        "w": 800,
+        "src": "/img/craft-villages/pa-co-attire-2-800.avif",
+        "bytes": 85595
+      },
+      {
+        "w": 1200,
+        "src": "/img/craft-villages/pa-co-attire-2-1200.avif",
+        "bytes": 150814
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/pa-co-attire-2-480.webp",
+        "bytes": 40640
+      },
+      {
+        "w": 800,
+        "src": "/img/craft-villages/pa-co-attire-2-800.webp",
+        "bytes": 91920
+      },
+      {
+        "w": 1200,
+        "src": "/img/craft-villages/pa-co-attire-2-1200.webp",
+        "bytes": 171936
+      }
+    ]
+  },
+  "craft-villages/pa-co-attire-3": {
+    "width": 1351,
+    "height": 2036,
+    "aspect": 0.6636,
+    "alpha": true,
+    "color": "#e8d8b8",
+    "placeholder": "data:image/webp;base64,UklGRlABAABXRUJQVlA4WAoAAAAQAAAAEwAAHQAAQUxQSD4AAAABX6CgbRuGP7KCujskIiL7aUETSiNJiu5OERMa/I/+PaEQCzGyGhvR/wlQ1jzTYYJOUCXsfknQZuR0yc91AVZQOCDsAAAAsAUAnQEqFAAeAD7tZqtPqaUjojAYCAEwHYlsAJ0zGIZ4EoiQe2lH6B7z8TKw3jkuv4NE6x4wAP7rI+vYXZ9I5kqEW97ZRzGOZUNo1A/d1cyyX8tbwIKOFi1SF/7TndCrq1M5+g9ZBC+71tNABwMkS8b8d3yObEaJEmnuMjyN0bHvReyWT9+UNO3G+LzddEj+etp7z3sMygt/tbjfMIpJfoDF9UjtQ1X41niJq7fxw3/f0xhP2UImK6NWsvBEu5gbkU3nLQngrokaqucyCEvomvyiglrvmpIJ/2NesJd3HMKUED+DNUeuZ+0QAAA=",
+    "widths": [
+      480,
+      800,
+      1200
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/pa-co-attire-3-480.avif",
+        "bytes": 25381
+      },
+      {
+        "w": 800,
+        "src": "/img/craft-villages/pa-co-attire-3-800.avif",
+        "bytes": 52169
+      },
+      {
+        "w": 1200,
+        "src": "/img/craft-villages/pa-co-attire-3-1200.avif",
+        "bytes": 93917
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/pa-co-attire-3-480.webp",
+        "bytes": 28330
+      },
+      {
+        "w": 800,
+        "src": "/img/craft-villages/pa-co-attire-3-800.webp",
+        "bytes": 62528
+      },
+      {
+        "w": 1200,
+        "src": "/img/craft-villages/pa-co-attire-3-1200.webp",
+        "bytes": 118012
+      }
+    ]
+  },
+  "craft-villages/pa-co-gallery-1": {
+    "width": 2092,
+    "height": 1266,
+    "aspect": 1.6524,
+    "alpha": true,
+    "color": "#182848",
+    "placeholder": "data:image/webp;base64,UklGRtAAAABXRUJQVlA4WAoAAAAQAAAAEwAACwAAQUxQSDkAAAABT6CgbRuGP9VC6I5pRETAyXyhqrZt6L7JtwgvhgA0EEQUoWcKRPR/AgJh6A2LNIv4mmeOxVTysHYAVlA4IHAAAADQAwCdASoUAAwAPu1iqU2ppaOiMAgBMB2JYgCdABodgC+cjRryhAgA/s7P7qI4Emce3E/SHGM5nY4pMF/BsojYOjIVVCNl2c5pnwUY7gdIgeG/J4WyA/r4lE+DEooPI2NArSCi28s5uESjrXn1EoAA",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/pa-co-gallery-1-480.avif",
+        "bytes": 39851
+      },
+      {
+        "w": 800,
+        "src": "/img/craft-villages/pa-co-gallery-1-800.avif",
+        "bytes": 97908
+      },
+      {
+        "w": 1200,
+        "src": "/img/craft-villages/pa-co-gallery-1-1200.avif",
+        "bytes": 181450
+      },
+      {
+        "w": 1600,
+        "src": "/img/craft-villages/pa-co-gallery-1-1600.avif",
+        "bytes": 278549
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/pa-co-gallery-1-480.webp",
+        "bytes": 38108
+      },
+      {
+        "w": 800,
+        "src": "/img/craft-villages/pa-co-gallery-1-800.webp",
+        "bytes": 99912
+      },
+      {
+        "w": 1200,
+        "src": "/img/craft-villages/pa-co-gallery-1-1200.webp",
+        "bytes": 194464
+      },
+      {
+        "w": 1600,
+        "src": "/img/craft-villages/pa-co-gallery-1-1600.webp",
+        "bytes": 301170
+      }
+    ]
+  },
+  "craft-villages/pa-co-gallery-2": {
+    "width": 2064,
+    "height": 1266,
+    "aspect": 1.6303,
+    "alpha": true,
+    "color": "#582818",
+    "placeholder": "data:image/webp;base64,UklGRrIAAABXRUJQVlA4WAoAAAAQAAAAEwAACwAAQUxQSDEAAAABR0CQbeOPe4CvGhERxBuoiSRF2o1ICfEBQtCAfxlwr4GI/k+AEH1ikZPiay6sWnhfAFZQOCBaAAAA0AMAnQEqFAAMAD7tYqlNqaWjojAIATAdiWMAnQAcTG2QU8jotQAAAP4W3HixWEHr2lYaRw8QM+setVsleL8AF8ejJuSFc1IPRT4GrOI0rbaVKXjrkfWj/PYA",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/pa-co-gallery-2-480.avif",
+        "bytes": 30691
+      },
+      {
+        "w": 800,
+        "src": "/img/craft-villages/pa-co-gallery-2-800.avif",
+        "bytes": 99856
+      },
+      {
+        "w": 1200,
+        "src": "/img/craft-villages/pa-co-gallery-2-1200.avif",
+        "bytes": 219491
+      },
+      {
+        "w": 1600,
+        "src": "/img/craft-villages/pa-co-gallery-2-1600.avif",
+        "bytes": 337193
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/pa-co-gallery-2-480.webp",
+        "bytes": 34644
+      },
+      {
+        "w": 800,
+        "src": "/img/craft-villages/pa-co-gallery-2-800.webp",
+        "bytes": 119602
+      },
+      {
+        "w": 1200,
+        "src": "/img/craft-villages/pa-co-gallery-2-1200.webp",
+        "bytes": 259526
+      },
+      {
+        "w": 1600,
+        "src": "/img/craft-villages/pa-co-gallery-2-1600.webp",
+        "bytes": 418916
+      }
+    ]
+  },
+  "craft-villages/pa-co-gallery-3": {
+    "width": 956,
+    "height": 1266,
+    "aspect": 0.7551,
+    "alpha": true,
+    "color": "#d8d8d8",
+    "placeholder": "data:image/webp;base64,UklGRpIBAABXRUJQVlA4WAoAAAAQAAAAEwAAGQAAQUxQSEUAAAABT6CYkSTIH2xYhmC+165ERGSeDgRFsa1U/nXJkIAO2sACRiACUQzNc+k6ov8TMGJw6ebgizEgDej8WXxgpBmIjTXdfQEAVlA4ICYBAACQBgCdASoUABoAPu1irFAppSQisBgIATAdiWQAnTMxb49kkG0BU7h2ljR3Ud3gVS4q1WwRsaZckX+0TZAAAPw5mZLF6B+mSL32ri+Y5jKR+GkLt73lGSDq3j3Yymm3H4sHTysBoljupzSQOU4vbozquTW5A1lXqRZEhiZkIYxQ1O/XhWRT/YDPRtBhsgyxu+gHracv/K/nMMFK05meXxJ+BntmAkY24Sftdsmv13T6kLLWJRtXylT6ag28WSWue2kqnebAmwOoQ3KZ4NT2tdo28Uy+vdOvNA8JF+bnjDIzraW1guuZck76lrpR5SQ8n4X9P7HJ2+qpzr5+PbcCs3ZINOkWKbhcoqQv6rAKtBBL2Z44pT9Aq65xtcRq1ELavIpOF6OwAAA=",
+    "widths": [
+      480,
+      800
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/pa-co-gallery-3-480.avif",
+        "bytes": 47988
+      },
+      {
+        "w": 800,
+        "src": "/img/craft-villages/pa-co-gallery-3-800.avif",
+        "bytes": 110883
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/pa-co-gallery-3-480.webp",
+        "bytes": 50782
+      },
+      {
+        "w": 800,
+        "src": "/img/craft-villages/pa-co-gallery-3-800.webp",
+        "bytes": 123318
+      }
+    ]
+  },
+  "craft-villages/pa-co-gallery-4": {
+    "width": 1990,
+    "height": 1266,
+    "aspect": 1.5719,
+    "alpha": true,
+    "color": "#080818",
+    "placeholder": "data:image/webp;base64,UklGRtYAAABXRUJQVlA4WAoAAAAQAAAAEwAADAAAQUxQSEYAAAABf6CgjSTFv9BTwHwPJiIi91fuB1SEmlrbsZf5nwIUM1Ljm8wiiCCKMCJ836RARP8nwGiw5UIMS0kbEv2VI18PxEBtdHY+VlA4IGoAAADQAwCdASoUAA0APu1iqU2ppaOiMAgBMB2JQBOgA8MA2+gH27eHhyAA/nveCumpawNHOUqmSLeEm9Cw2aIHskGOH+E0gLIwyizIyi0TmO309XXkFOgSOuGfjCVyclQ+PzfzvfDGZJAq1PAA",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/pa-co-gallery-4-480.avif",
+        "bytes": 34324
+      },
+      {
+        "w": 800,
+        "src": "/img/craft-villages/pa-co-gallery-4-800.avif",
+        "bytes": 83766
+      },
+      {
+        "w": 1200,
+        "src": "/img/craft-villages/pa-co-gallery-4-1200.avif",
+        "bytes": 159421
+      },
+      {
+        "w": 1600,
+        "src": "/img/craft-villages/pa-co-gallery-4-1600.avif",
+        "bytes": 246092
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/pa-co-gallery-4-480.webp",
+        "bytes": 35456
+      },
+      {
+        "w": 800,
+        "src": "/img/craft-villages/pa-co-gallery-4-800.webp",
+        "bytes": 85324
+      },
+      {
+        "w": 1200,
+        "src": "/img/craft-villages/pa-co-gallery-4-1200.webp",
+        "bytes": 169398
+      },
+      {
+        "w": 1600,
+        "src": "/img/craft-villages/pa-co-gallery-4-1600.webp",
+        "bytes": 272312
+      }
+    ]
+  },
+  "craft-villages/pa-co-gallery-5": {
+    "width": 2093,
+    "height": 1266,
+    "aspect": 1.6532,
+    "alpha": true,
+    "color": "#082848",
+    "placeholder": "data:image/webp;base64,UklGRtwAAABXRUJQVlA4WAoAAAAQAAAAEwAACwAAQUxQSD4AAAABX6CobSOGP9d+b4/QiIgAOBBlBTS1reTDRAxqsGsTA/wIRDGCIfmTBSL6PwFhGPNCJk01FH9w1VCsvcbzAFZQOCB4AAAAEAQAnQEqFAAMAD7tYqlNqaWjojAIATAdiWYAnTKAAowDktMEp+1fKAAA/swAS63nO+GGhZ70F0+OKr/HVvwXQ0b/pskjRuCjfSgT8U5WAS8mEaxP2WrUk3aCU5+Bkk3csb0e4P7U4Q5HpFmhPNjKgcAplfwrAAAA",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/pa-co-gallery-5-480.avif",
+        "bytes": 45019
+      },
+      {
+        "w": 800,
+        "src": "/img/craft-villages/pa-co-gallery-5-800.avif",
+        "bytes": 112216
+      },
+      {
+        "w": 1200,
+        "src": "/img/craft-villages/pa-co-gallery-5-1200.avif",
+        "bytes": 216237
+      },
+      {
+        "w": 1600,
+        "src": "/img/craft-villages/pa-co-gallery-5-1600.avif",
+        "bytes": 329419
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/pa-co-gallery-5-480.webp",
+        "bytes": 40980
+      },
+      {
+        "w": 800,
+        "src": "/img/craft-villages/pa-co-gallery-5-800.webp",
+        "bytes": 104422
+      },
+      {
+        "w": 1200,
+        "src": "/img/craft-villages/pa-co-gallery-5-1200.webp",
+        "bytes": 220258
+      },
+      {
+        "w": 1600,
+        "src": "/img/craft-villages/pa-co-gallery-5-1600.webp",
+        "bytes": 349002
+      }
+    ]
+  },
+  "craft-villages/pa-co-gallery-6": {
+    "width": 2086,
+    "height": 1266,
+    "aspect": 1.6477,
+    "alpha": true,
+    "color": "#e8e8c8",
+    "placeholder": "data:image/webp;base64,UklGRvIAAABXRUJQVlA4WAoAAAAQAAAAEwAACwAAQUxQSDgAAAABP6CQbQTIX3UKu0cjIuJ/j0JRbdvUve8xvykUoIEiIug//lMgov8TEImhGhY5E77mTFhMJQ9rB1ZQOCCUAAAAcAQAnQEqFAAMAD7tYqlNqaWkIjAIATAdiWgAnSBMQvfSb5SV0DOQofaLYAAA/pnBXnkd5HDRtLVL/JtTFrZhl0KE62TCGOrLJOqhTMzjYyVKMdYD1ASCpCwMdcwhi37oIxhvKdi9GlQ9/VSRMfLJmeoOvFWXWrMDtZgoA2WpxbgUv2nfrTnzHbAqjGA65x7QBiGoAA==",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/pa-co-gallery-6-480.avif",
+        "bytes": 17441
+      },
+      {
+        "w": 800,
+        "src": "/img/craft-villages/pa-co-gallery-6-800.avif",
+        "bytes": 35955
+      },
+      {
+        "w": 1200,
+        "src": "/img/craft-villages/pa-co-gallery-6-1200.avif",
+        "bytes": 64420
+      },
+      {
+        "w": 1600,
+        "src": "/img/craft-villages/pa-co-gallery-6-1600.avif",
+        "bytes": 102406
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/pa-co-gallery-6-480.webp",
+        "bytes": 18104
+      },
+      {
+        "w": 800,
+        "src": "/img/craft-villages/pa-co-gallery-6-800.webp",
+        "bytes": 38824
+      },
+      {
+        "w": 1200,
+        "src": "/img/craft-villages/pa-co-gallery-6-1200.webp",
+        "bytes": 72914
+      },
+      {
+        "w": 1600,
+        "src": "/img/craft-villages/pa-co-gallery-6-1600.webp",
+        "bytes": 117772
+      }
+    ]
+  },
+  "craft-villages/pa-co-video-1": {
+    "width": 2612,
+    "height": 1544,
+    "aspect": 1.6917,
+    "alpha": true,
+    "color": "#080808",
+    "placeholder": "data:image/webp;base64,UklGRsAAAABXRUJQVlA4WAoAAAAQAAAAEwAACwAAQUxQSDIAAAABN6CQbQTIX/UM/tOIiPgPhlAMAIjT/IcQSij5c6wbAhH9nwBGKC1giJ3B19Q5DBUrT1ZQOCBoAAAAUAQAnQEqFAAMAD7tYqlNqaWjojAIATAdiWMAwoGLruE/EAW6tvWVDWfqAAD+8qqZl8pgcOVZh1+9OwSjKq/HGjjcei75j3025dUNzdouDW5YqORQJpda3yTewTnKCVm5CxhUM/s1AAA=",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/pa-co-video-1-480.avif",
+        "bytes": 11405
+      },
+      {
+        "w": 800,
+        "src": "/img/craft-villages/pa-co-video-1-800.avif",
+        "bytes": 18821
+      },
+      {
+        "w": 1200,
+        "src": "/img/craft-villages/pa-co-video-1-1200.avif",
+        "bytes": 27059
+      },
+      {
+        "w": 1600,
+        "src": "/img/craft-villages/pa-co-video-1-1600.avif",
+        "bytes": 35465
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/pa-co-video-1-480.webp",
+        "bytes": 12056
+      },
+      {
+        "w": 800,
+        "src": "/img/craft-villages/pa-co-video-1-800.webp",
+        "bytes": 21554
+      },
+      {
+        "w": 1200,
+        "src": "/img/craft-villages/pa-co-video-1-1200.webp",
+        "bytes": 34372
+      },
+      {
+        "w": 1600,
+        "src": "/img/craft-villages/pa-co-video-1-1600.webp",
+        "bytes": 47768
+      }
+    ]
+  },
+  "craft-villages/pa-co-video-2": {
+    "width": 2612,
+    "height": 1544,
+    "aspect": 1.6917,
+    "alpha": true,
+    "color": "#080808",
+    "placeholder": "data:image/webp;base64,UklGRuwAAABXRUJQVlA4WAoAAAAQAAAAEwAACwAAQUxQSDIAAAABN6CQbQTIX/UM/tOIiPgPhlAMAIjT/IcQSij5c6wbAhH9nwBGKC1giJ3B19Q5DBUrT1ZQOCCUAAAAMAQAnQEqFAAMAD7tYqlNqaWjojAIATAdiUATpA4ATveZwyjHY+ezNJAAAP7sS4+4UjKU7RE1G1pGIoviNfnPJrMbsTKsL9dSQZxi2Egu+vK1AsxKFlDNoaZnEnlAVO3iA268BI4HEJbt9iuMN//rsTkxFLUJj7pMAIbn4mWeCYzE9TE4p3P86veUuOlSfv+BIIAAAA==",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/pa-co-video-2-480.avif",
+        "bytes": 20573
+      },
+      {
+        "w": 800,
+        "src": "/img/craft-villages/pa-co-video-2-800.avif",
+        "bytes": 33211
+      },
+      {
+        "w": 1200,
+        "src": "/img/craft-villages/pa-co-video-2-1200.avif",
+        "bytes": 47407
+      },
+      {
+        "w": 1600,
+        "src": "/img/craft-villages/pa-co-video-2-1600.avif",
+        "bytes": 60431
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/pa-co-video-2-480.webp",
+        "bytes": 21554
+      },
+      {
+        "w": 800,
+        "src": "/img/craft-villages/pa-co-video-2-800.webp",
+        "bytes": 38386
+      },
+      {
+        "w": 1200,
+        "src": "/img/craft-villages/pa-co-video-2-1200.webp",
+        "bytes": 60736
+      },
+      {
+        "w": 1600,
+        "src": "/img/craft-villages/pa-co-video-2-1600.webp",
+        "bytes": 83666
+      }
+    ]
+  },
+  "craft-villages/pa-co-video-3": {
+    "width": 2612,
+    "height": 1544,
+    "aspect": 1.6917,
+    "alpha": true,
+    "color": "#f8f8f8",
+    "placeholder": "data:image/webp;base64,UklGRtQAAABXRUJQVlA4WAoAAAAQAAAAEwAACwAAQUxQSDIAAAABN6CQbQTIX/UM/tOIiPgPhlAMAIjT/IcQSij5c6wbAhH9nwBGKC1giJ3B19Q5DBUrT1ZQOCB8AAAAMAQAnQEqFAAMAD7tYqlNqaWjojAIATAdiWMAqPQh8MvTXL020A16x5ZgAP7uSqB4yq0U/YuIt6kh3Vcla7C8NMFsZQDSU5C3RuHHo9OA+TzYqizA3WEZcX9VBvuLWkMkgIX29oHiBZGeC4N9s2PzDbCV9easyKoZr1OAAA==",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/pa-co-video-3-480.avif",
+        "bytes": 19285
+      },
+      {
+        "w": 800,
+        "src": "/img/craft-villages/pa-co-video-3-800.avif",
+        "bytes": 30437
+      },
+      {
+        "w": 1200,
+        "src": "/img/craft-villages/pa-co-video-3-1200.avif",
+        "bytes": 42999
+      },
+      {
+        "w": 1600,
+        "src": "/img/craft-villages/pa-co-video-3-1600.avif",
+        "bytes": 53375
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/pa-co-video-3-480.webp",
+        "bytes": 21014
+      },
+      {
+        "w": 800,
+        "src": "/img/craft-villages/pa-co-video-3-800.webp",
+        "bytes": 38124
+      },
+      {
+        "w": 1200,
+        "src": "/img/craft-villages/pa-co-video-3-1200.webp",
+        "bytes": 60994
+      },
+      {
+        "w": 1600,
+        "src": "/img/craft-villages/pa-co-video-3-1600.webp",
+        "bytes": 82018
+      }
+    ]
+  },
+  "craft-villages/pa-co-workshop-1": {
+    "width": 1692,
+    "height": 1033,
+    "aspect": 1.6379,
+    "alpha": true,
+    "color": "#c8c8c8",
+    "placeholder": "data:image/webp;base64,UklGRvIAAABXRUJQVlA4WAoAAAAQAAAAEwAACwAAQUxQSDUAAAABP2CmbRv+TPu2228aERGIVyiKJDXaJYcOJCABSfh/Z14xENH/CbjWM0eYZWpR/RDUojqGAQBWUDgglgAAAHAEAJ0BKhQADAA+7WKpTamlpCIwCAEwHYloAMTbLBOZCUZL2h/OYamRONMAAP35mwn2Rpu7ghyBfcHRkz+MiPQlMoKM85yBzNWjUbOZ7p6ZaE6f5r4OEJFayiUO/NZBdWN4cmjN1Wbs/aoXLhpx/cKakUXh3K/xn4g2w/yf4d3+INf/g1pqeo/bl8Df/3/Ov/ycmT4AAA==",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/pa-co-workshop-1-480.avif",
+        "bytes": 25750
+      },
+      {
+        "w": 800,
+        "src": "/img/craft-villages/pa-co-workshop-1-800.avif",
+        "bytes": 49861
+      },
+      {
+        "w": 1200,
+        "src": "/img/craft-villages/pa-co-workshop-1-1200.avif",
+        "bytes": 75768
+      },
+      {
+        "w": 1600,
+        "src": "/img/craft-villages/pa-co-workshop-1-1600.avif",
+        "bytes": 99756
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/pa-co-workshop-1-480.webp",
+        "bytes": 24826
+      },
+      {
+        "w": 800,
+        "src": "/img/craft-villages/pa-co-workshop-1-800.webp",
+        "bytes": 51498
+      },
+      {
+        "w": 1200,
+        "src": "/img/craft-villages/pa-co-workshop-1-1200.webp",
+        "bytes": 84388
+      },
+      {
+        "w": 1600,
+        "src": "/img/craft-villages/pa-co-workshop-1-1600.webp",
+        "bytes": 118478
+      }
+    ]
+  },
+  "craft-villages/pa-co-workshop-2": {
+    "width": 1692,
+    "height": 1033,
+    "aspect": 1.6379,
+    "alpha": true,
+    "color": "#d8d8d8",
+    "placeholder": "data:image/webp;base64,UklGRu4AAABXRUJQVlA4WAoAAAAQAAAAEwAACwAAQUxQSDUAAAABP2CmbRv+TPu2228aERGIVyiKJDXaJYcOJCABSfh/Z14xENH/CbjWM0eYZWpR/RDUojqGAQBWUDggkgAAABAEAJ0BKhQADAA+7WKpTamlo6IwCAEwHYlsALsgNkKyKhdtNg6CmeAAAPyrnTiMTrt3kAAUn4HEM6CFDrqS1B27oVbsx69I/W0t0TXLUk7oNvYQjqSEZbUK+jLBSVmUQl1t8dIxd697Lrb3e5+1KaB238zgYpcy0iwmMa23FUPdBy6L6L2lP/fU92Rd5nQtQAAA",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/pa-co-workshop-2-480.avif",
+        "bytes": 17691
+      },
+      {
+        "w": 800,
+        "src": "/img/craft-villages/pa-co-workshop-2-800.avif",
+        "bytes": 33081
+      },
+      {
+        "w": 1200,
+        "src": "/img/craft-villages/pa-co-workshop-2-1200.avif",
+        "bytes": 50928
+      },
+      {
+        "w": 1600,
+        "src": "/img/craft-villages/pa-co-workshop-2-1600.avif",
+        "bytes": 67431
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/pa-co-workshop-2-480.webp",
+        "bytes": 17818
+      },
+      {
+        "w": 800,
+        "src": "/img/craft-villages/pa-co-workshop-2-800.webp",
+        "bytes": 36530
+      },
+      {
+        "w": 1200,
+        "src": "/img/craft-villages/pa-co-workshop-2-1200.webp",
+        "bytes": 61234
+      },
+      {
+        "w": 1600,
+        "src": "/img/craft-villages/pa-co-workshop-2-1600.webp",
+        "bytes": 83578
+      }
+    ]
+  },
+  "craft-villages/pa-co-workshop-3": {
+    "width": 750,
+    "height": 1033,
+    "aspect": 0.726,
+    "alpha": true,
+    "color": "#d8d8d8",
+    "placeholder": "data:image/webp;base64,UklGRlABAABXRUJQVlA4WAoAAAAQAAAAEwAAGwAAQUxQSEIAAAABYFtbW5NZMM7tcYhs67GLPTgH6XX8lJYRMQHtSyQ5clYHAaFn9BFpRAfEAUOO798LOYyXW/ROQOgZqn6d5uRp6xRWUDgg6AAAABAFAJ0BKhQAHAA+7WKoTamlo6IwCAEwHYlqAMM0G558Ke/RiZ39eiMgF1ZmDHgQw0AA/rM3lSNjxuR+9fHyDw+P8KB0oQDENx1BPs+ekw/kMponyjieTk/QrJpsDNXImX7O59VNelPIsHv5xrylSJd3L/jo2fTcWTY8po2TnjhkP9cONvMa7lkQZY0T4FYPfATpzY59Zqap3YsHdMvp5rcN4//50wTZW/PsH3X49Ysj0hq56PAOkBDvWaGxQIlvP8U1ajKDHJhydYuaHu7XvSq/+Z7/3AbldnvCA4c+gxjGKmGiWP/oAAA=",
+    "widths": [
+      480,
+      750
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/pa-co-workshop-3-480.avif",
+        "bytes": 29531
+      },
+      {
+        "w": 750,
+        "src": "/img/craft-villages/pa-co-workshop-3-750.avif",
+        "bytes": 45447
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/pa-co-workshop-3-480.webp",
+        "bytes": 32678
+      },
+      {
+        "w": 750,
+        "src": "/img/craft-villages/pa-co-workshop-3-750.webp",
+        "bytes": 53060
+      }
+    ]
+  },
+  "craft-villages/personal-product-1": {
+    "width": 2080,
+    "height": 1556,
+    "aspect": 1.3368,
+    "alpha": true,
+    "color": "#282828",
+    "placeholder": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAACQBACdASoUAA8APu1iqU2ppaOiMAgBMB2JYwC7GuAAWd4n+xZfbWuTe7nxPAAA/AdybUc8BXJHdtKmXYItg5Uyofv5dNI4AYEyLF+gQHmv+4Botv7zlKK74cS2/Shqgpgg82udzumhPLb20LAw6FI5oXLlGGPGq0hh5mcpQrmB2T2y5VTAAA==",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/personal-product-1-480.avif",
+        "bytes": 20822
+      },
+      {
+        "w": 800,
+        "src": "/img/craft-villages/personal-product-1-800.avif",
+        "bytes": 47309
+      },
+      {
+        "w": 1200,
+        "src": "/img/craft-villages/personal-product-1-1200.avif",
+        "bytes": 87728
+      },
+      {
+        "w": 1600,
+        "src": "/img/craft-villages/personal-product-1-1600.avif",
+        "bytes": 126956
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/personal-product-1-480.webp",
+        "bytes": 20806
+      },
+      {
+        "w": 800,
+        "src": "/img/craft-villages/personal-product-1-800.webp",
+        "bytes": 50146
+      },
+      {
+        "w": 1200,
+        "src": "/img/craft-villages/personal-product-1-1200.webp",
+        "bytes": 98122
+      },
+      {
+        "w": 1600,
+        "src": "/img/craft-villages/personal-product-1-1600.webp",
+        "bytes": 150472
+      }
+    ]
+  },
+  "craft-villages/personal-product-2": {
+    "width": 2080,
+    "height": 1556,
+    "aspect": 1.3368,
+    "alpha": true,
+    "color": "#e8e8d8",
+    "placeholder": "data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAAAwBACdASoUAA8APu1iqU2ppaOiMAgBMB2JZwAAWsVP0u2kKBqt4E1SkOAA/q8WueLNtcU5EVlabycnUx3ohYWJBmUHomYVXdQQe5QqI8hEE8gxA3VyajLNBWDMF10r+5gkszCqBNjDBgOlL5lz45Dv1MQv4lrynnSe2fcb2Yioj/ZiSKCY0AAA",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/personal-product-2-480.avif",
+        "bytes": 9230
+      },
+      {
+        "w": 800,
+        "src": "/img/craft-villages/personal-product-2-800.avif",
+        "bytes": 20546
+      },
+      {
+        "w": 1200,
+        "src": "/img/craft-villages/personal-product-2-1200.avif",
+        "bytes": 39437
+      },
+      {
+        "w": 1600,
+        "src": "/img/craft-villages/personal-product-2-1600.avif",
+        "bytes": 63512
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/personal-product-2-480.webp",
+        "bytes": 10000
+      },
+      {
+        "w": 800,
+        "src": "/img/craft-villages/personal-product-2-800.webp",
+        "bytes": 23518
+      },
+      {
+        "w": 1200,
+        "src": "/img/craft-villages/personal-product-2-1200.webp",
+        "bytes": 48222
+      },
+      {
+        "w": 1600,
+        "src": "/img/craft-villages/personal-product-2-1600.webp",
+        "bytes": 79962
+      }
+    ]
+  },
+  "craft-villages/personal-product-3": {
+    "width": 2080,
+    "height": 1360,
+    "aspect": 1.5294,
+    "alpha": true,
+    "color": "#a8a838",
+    "placeholder": "data:image/webp;base64,UklGRpwAAABXRUJQVlA4IJAAAABQBACdASoUAA0APu1iqU2ppaOiMAgBMB2JbACsLwAVdK5zlT1FdHEPAAAAAP3wcj/5hwxKRZrL5GOU3RYjWa0HPkpIUA3acxcsXNNKPArRDLunblHl4AcFdHr4xvLcJBF+IyhfFOy5V0eK675kEc2QFCzRSOjxhaEpx1vX6k3wuGqbjsgwKsmMgB6CcN24AAA=",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/personal-product-3-480.avif",
+        "bytes": 17780
+      },
+      {
+        "w": 800,
+        "src": "/img/craft-villages/personal-product-3-800.avif",
+        "bytes": 31502
+      },
+      {
+        "w": 1200,
+        "src": "/img/craft-villages/personal-product-3-1200.avif",
+        "bytes": 49905
+      },
+      {
+        "w": 1600,
+        "src": "/img/craft-villages/personal-product-3-1600.avif",
+        "bytes": 67918
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/personal-product-3-480.webp",
+        "bytes": 17892
+      },
+      {
+        "w": 800,
+        "src": "/img/craft-villages/personal-product-3-800.webp",
+        "bytes": 35082
+      },
+      {
+        "w": 1200,
+        "src": "/img/craft-villages/personal-product-3-1200.webp",
+        "bytes": 63570
+      },
+      {
+        "w": 1600,
+        "src": "/img/craft-villages/personal-product-3-1600.webp",
+        "bytes": 92784
+      }
+    ]
+  },
+  "craft-villages/personal-product-4": {
+    "width": 2080,
+    "height": 1360,
+    "aspect": 1.5294,
+    "alpha": true,
+    "color": "#181818",
+    "placeholder": "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAAAQBACdASoUAA0APu1iqU2ppaOiMAgBMB2JQBAAAQlmcaytJ4fZjAXzYAD+1DS9KXjh63nGearkF48u3duXJrh9DPr0xFRcfE+vUNABsZ1R4gBfPYIdvUwAwlgLPifYnrU2oWeydIc6tCEKhygukA9MD+9K+z6rN6JP5mRjpJNq/nIBXTxWyawwAAA=",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/personal-product-4-480.avif",
+        "bytes": 29631
+      },
+      {
+        "w": 800,
+        "src": "/img/craft-villages/personal-product-4-800.avif",
+        "bytes": 52116
+      },
+      {
+        "w": 1200,
+        "src": "/img/craft-villages/personal-product-4-1200.avif",
+        "bytes": 74435
+      },
+      {
+        "w": 1600,
+        "src": "/img/craft-villages/personal-product-4-1600.avif",
+        "bytes": 94231
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/craft-villages/personal-product-4-480.webp",
+        "bytes": 28584
+      },
+      {
+        "w": 800,
+        "src": "/img/craft-villages/personal-product-4-800.webp",
+        "bytes": 55492
+      },
+      {
+        "w": 1200,
+        "src": "/img/craft-villages/personal-product-4-1200.webp",
+        "bytes": 86670
+      },
+      {
+        "w": 1600,
+        "src": "/img/craft-villages/personal-product-4-1600.webp",
+        "bytes": 116730
+      }
+    ]
+  },
   "home/applied-science-back": {
     "width": 1581,
     "height": 1004,

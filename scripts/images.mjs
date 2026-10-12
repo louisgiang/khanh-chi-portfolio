@@ -118,6 +118,13 @@ let done = 0,
 
 const files = (await walk(SRC)).map((f) => [f, path.relative(SRC, f).split(path.sep).join('/')]).filter(([, r]) => !skip(r));
 
+// assets-src/ không nằm trong git: máy khác có thể chỉ có ảnh gốc của vài trang.
+// Trang nào không có thư mục gốc trên máy này → giữ nguyên ảnh đã tối ưu (public/img) và mục manifest cũ.
+const localDirs = new Set((await fs.readdir(SRC, { withFileTypes: true })).filter((e) => e.isDirectory()).map((e) => slug(e.name)));
+for (const [id, entry] of Object.entries(await readJson(MANIFEST, {}))) {
+  if (!localDirs.has(id.split('/')[0])) manifest[id] = entry;
+}
+
 for (const [file, rel] of files) {
   const buf = await fs.readFile(file);
   srcBytes += buf.length;

@@ -1,7 +1,7 @@
 import { useState, type CSSProperties } from 'react';
 import { motion, useReducedMotion } from 'motion/react';
-import type { Block, Cell, Entry, ImageRef, Item, RowBlock, VideoBlock } from '../../content';
-import { isEntry, isImage, isImageCell, isRow, isText, isVideo } from '../../content';
+import type { Block, Cell, Entry, ImageRef, Item, MarqueeBlock, RowBlock, VideoBlock } from '../../content';
+import { isDivider, isEntry, isImage, isImageCell, isMarquee, isRow, isText, isVideo } from '../../content';
 import { Img, imageEntry } from '../Img';
 import { DUR, EASE } from '../../motion';
 import { imageWidths, rowGrows, toRows, vwSizes } from './sizes';
@@ -37,6 +37,8 @@ function BlockView({ block: b, ctx, last }: { block: Block; ctx: Ctx; last: bool
   if (isRow(b)) return <Row row={b} ctx={ctx} />;
   if (isEntry(b)) return <EntryView entry={b.entry} ctx={ctx} last={last} />;
   if (isVideo(b)) return <Video block={b} ctx={ctx} />;
+  if (isMarquee(b)) return <Marquee block={b} ctx={ctx} />;
+  if (isDivider(b)) return <hr className="item__divider" />;
   return null;
 }
 
@@ -78,7 +80,7 @@ function CellView({ cell: c, ctx }: { cell: Cell; ctx: Ctx }) {
             {c.caption.text}
           </p>
         )}
-        {c.note && <p className="item__note">{c.note}</p>}
+        {c.note && <p className={`item__note${c.box ? ' item__note--box' : ''}`}>{c.note}</p>}
       </>
     );
   if ('text' in c) return <p className="item__text">{c.text}</p>;
@@ -150,6 +152,46 @@ function Carousel({ images, ctx }: { images: ImageRef[]; ctx: Ctx }) {
       <p className="visually-hidden" aria-live="polite">
         Page {i + 1} of {n}
       </p>
+    </div>
+  );
+}
+
+/** Băng ảnh trượt ngang tự động, chạy vòng (dãy ảnh lặp 2 lần, trượt đúng nửa chiều dài rồi quay lại
+ *  — khớp liền nên không thấy chỗ nối). Dừng khi rê chuột / focus; giảm chuyển động → đứng yên, cuộn tay. */
+const MARQUEE_SPEED = 45; // đơn vị thiết kế / giây
+const MARQUEE_MIN_W = 420;
+function Marquee({ block: b, ctx }: { block: MarqueeBlock; ctx: Ctx }) {
+  const reduce = useReducedMotion();
+  const gap = b.gap ?? 10;
+  const imgW = (c: ImageRef) => b.height * (imageEntry(c.image)?.aspect ?? 1);
+  // Ảnh dọc hẹp: khung rộng tối thiểu MARQUEE_MIN_W để ô chú thích không bị kéo dài quá nhiều dòng.
+  const slideW = (c: ImageRef) => Math.max(imgW(c), MARQUEE_MIN_W);
+  const len = b.marquee.reduce((s, c) => s + slideW(c) + gap, 0);
+  const slides = (copy: number) =>
+    b.marquee.map((c) => (
+      <figure
+        key={`${copy}-${c.image}`}
+        className="marquee__slide"
+        style={{ width: u(slideW(c)), marginRight: u(gap) }}
+        aria-hidden={copy > 0 || undefined}
+      >
+        <Picture img={c} ctx={ctx} style={{ width: u(imgW(c)), marginInline: 'auto' }} />
+        {c.note && <figcaption className="item__note item__note--box">{c.note}</figcaption>}
+      </figure>
+    ));
+  return (
+    <div
+      className={`marquee${reduce ? ' is-static' : ''}`}
+      role="group"
+      aria-roledescription="carousel"
+      aria-label="Gallery"
+      tabIndex={reduce ? 0 : undefined}
+      style={{ '--marquee-dur': `${(len / MARQUEE_SPEED).toFixed(1)}s` } as CSSProperties}
+    >
+      <div className="marquee__track">
+        {slides(0)}
+        {!reduce && slides(1)}
+      </div>
     </div>
   );
 }
