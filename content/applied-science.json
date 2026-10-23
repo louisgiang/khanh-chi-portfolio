@@ -8,24 +8,35 @@
       "title": "Achievements",
       "blocks": [
         { "mt": 32, "text": "Honored with national and international competitions, I’ve turned curiosity into research, and research into a compass pointing me towards communities in need – each award marking not just victory, but a step further along that path." },
-        { "mt": 32, "variant": "heading", "text": "Polyaniline hydroxyapatite materials for environmental treatment\nRice husk-derived Activated Carbon for the Removal of Cu(II) and Pb(II) from Wastewater" },
+        { "mt": 40, "variant": "heading", "text": "Polyaniline hydroxyapatite materials for environmental treatment" },
         {
           "mt": 18, "gap": 20,
           "row": [
-            { "image": "applied-science/achievements-1", "alt": "Giấy chứng nhận iCAN Special Award, cuộc thi International Invention Innovation Competition in Canada 2026", "draft": true, "caption": { "title": "Special Award |", "text": "International Invention Innovation Competition in Canada", "inline": true } },
-            { "image": "applied-science/achievements-2", "alt": "Giấy chứng nhận huy chương bạc, International Invention Innovation Competition in Canada", "draft": true, "caption": { "title": "Silver Medal |", "text": "International Invention Innovation Competition in Canada", "inline": true } },
-            { "image": "applied-science/achievements-3", "alt": "Giấy chứng nhận Great Special Award của Highly Innovative Unique Foundation", "draft": true, "caption": { "title": "Great Special Award", "text": "Highly Innovative and Unique Foundation" } },
-            { "image": "applied-science/achievements-4", "alt": "Giấy chứng nhận Gold Award, WICO 2026", "draft": true, "caption": { "title": "Gold Medal", "text": "World Invention Creativity Olympics" } }
+            { "image": "applied-science/achievements-1", "alt": "Giấy chứng nhận iCAN Special Award, cuộc thi International Invention Innovation Competition in Canada 2026", "draft": true, "caption": { "level": "International", "title": "Special Award", "text": "International Invention Innovation Competition in Canada", "inline": true } },
+            { "image": "applied-science/achievements-2", "alt": "Giấy chứng nhận huy chương bạc, International Invention Innovation Competition in Canada", "draft": true, "caption": { "level": "International", "title": "Silver Medal", "text": "International Invention Innovation Competition in Canada", "inline": true } },
+            { "image": "applied-science/achievements-3", "alt": "Giấy chứng nhận Great Special Award của Highly Innovative Unique Foundation", "draft": true, "caption": { "level": "International", "title": "Great Special Award", "text": "Highly Innovative and Unique Foundation", "inline": true } }
           ]
         },
-        { "mt": 28, "variant": "heading", "text": "These recognized materials were built for craft village wastewater – one removes methyl orange and\nmethylene blue from dyeing effluent, the other captures copper and lead from lacquer wastewater." },
+        { "mt": 40, "variant": "heading", "text": "Rice husk-derived Activated Carbon for the Removal of Cu(II) and Pb(II) from Wastewater" },
         {
-          "mt": 14, "gap": 10,
+          "mt": 18, "width": 320,
           "row": [
-            { "image": "applied-science/achievements-5", "alt": "Giấy chứng nhận giải đặc biệt VSIC 2025 trao cho Lê Phạm Khánh Chi", "draft": true, "caption": { "title": "Special Prize", "text": "Vinschool Science & Innovation Challenge – Treatment System for Heavy Metal Removal from Battery Leakage" } },
-            { "image": "applied-science/achievements-6", "alt": "Giấy chứng nhận Gold Award, International Creative Papers Conference 2025", "draft": true, "caption": { "title": "Gold Award", "text": "International Creative Papers Conference – Green Economy and Vietnam’s Economic Growth" } },
-            { "image": "applied-science/achievements-7", "alt": "Giấy chứng nhận Bronze Award, International Environmental Olympiad 2026", "draft": true, "caption": { "title": "Bronze Award", "text": "International Environmental Olympiad" } },
-            { "image": "applied-science/achievements-8", "alt": "Giấy chứng nhận Very High Commendation, John Locke Institute Global Essay Prize", "draft": true, "caption": { "title": "Very High Commendation", "text": "John Locke Essay Competition – Applying discount rate to long-run environmental policies" } }
+            { "image": "applied-science/achievements-4", "alt": "Giấy chứng nhận Gold Award, WICO 2026", "draft": true, "caption": { "level": "International", "title": "Gold Medal", "text": "World Invention Creativity Olympics", "inline": true } }
+          ]
+        },
+        { "mt": 12, "$note": "ĐỀ XUẤT — chờ duyệt (README-SUA-WEB mục 4.1.6)", "text": "These recognized materials were built for craft village wastewater – one removes methyl orange and methylene blue from the dyeing effluent of Pa Co Brocade Village, the other captures copper and lead from the lacquer wastewater of Ha Thai Village and the varnish wastewater of Ninh So Village." },
+        {
+          "mt": 56, "gap": 20, "width": 680,
+          "row": [
+            { "image": "applied-science/achievements-5", "alt": "Giấy chứng nhận giải đặc biệt VSIC 2025 trao cho Lê Phạm Khánh Chi", "draft": true, "caption": { "level": "State", "title": "Special Prize", "text": "Vinschool Science & Innovation Challenge – Treatment System for Heavy Metal Removal from Battery Leakage", "inline": true } },
+            { "image": "applied-science/achievements-6", "alt": "Giấy chứng nhận Gold Award, International Creative Papers Conference 2025", "draft": true, "caption": { "level": "International", "title": "Gold Award", "text": "International Creative Papers Conference – Green Economy and Vietnam’s Economic Growth", "inline": true } }
+          ]
+        },
+        {
+          "mt": 32, "gap": 20, "width": 940,
+          "row": [
+            { "image": "applied-science/achievements-7", "alt": "Giấy chứng nhận Bronze Award, International Environmental Olympiad 2026", "draft": true, "caption": { "level": "International", "title": "Bronze Award", "text": "International Environmental Olympiad", "inline": true } },
+            { "image": "applied-science/achievements-8", "alt": "Giấy chứng nhận Very High Commendation, John Locke Institute Global Essay Prize", "draft": true, "caption": { "level": "International", "title": "Very High Commendation", "text": "John Locke Essay Competition – Applying discount rate to long-run environmental policies", "inline": true } }
           ]
         }
       ]
@@ -41,6 +52,7 @@
             "side": "right",
             "image": "applied-science/research-1", "alt": "Trang đầu bài báo “Microbial Treatment of Polluted Water: Mechanisms, Treatment Strategies, Applications, and Future Perspectives”", "draft": true,
             "title": "Bioremediation of Polluted Waters using Microorganisms | Co-Author",
+            "$todo": "Chờ link bài của cô Nhung → thêm \"view\"; chờ file bài để đưa cả bài vào (carousel như bài 4)",
             "meta": { "label": "Published:", "text": "Journal of Scientific and Engineering Research" },
             "text": "I synthesized how microbes and constructed wetlands remove heavy metals, dyes, and other pollutants from water – comparing biosorption with biodegradation and exploring how AI and nanobiotechnology could scale them. Where microbes meet pollution, I turned scattered literature into a clearer path toward sustainable treatment."
           }
@@ -50,7 +62,8 @@
             "side": "left",
             "image": "applied-science/research-2", "alt": "Trang bài báo trên ScienceDirect: Green synthesis and characteristics of Ag-ZnO doped nanoparticles utilizing plant extracts as reducing agents", "draft": true,
             "title": "Green-Synthesized Ag-ZnO Nanoparticles for Antibiotic Removal",
-            "meta": { "label": "Published:", "text": "Hybrid Advances (Elsevier) - Scopus Q1", "href": "https://www.sciencedirect.com/science/article/pii/S2773207X26000151#abs0010" },
+            "meta": { "label": "Published:", "text": "Hybrid Advances (Elsevier) - Scopus Q1" },
+            "view": "https://www.sciencedirect.com/science/article/pii/S2773207X26000151",
             "text": "I assisted in synthesizing Ag-ZnO nanoparticles from lime juice and pomelo peel extracts, running tetracycline degradation trials under white LED light. Through this project, I explored how green chemistry can reimagine water treatment – giving new life to everyday plant materials through careful design."
           }
         },
@@ -59,6 +72,7 @@
             "side": "right",
             "image": "applied-science/research-3", "alt": "Trang đầu bản thảo “Improved Traffic-Aware Deep Reinforcement Learning for Simulation-Based Adaptive Air Quality Warning and Traffic Environmental Management in Urban Traffic Environments”", "draft": true,
             "title": "Traffic-Aware Deep Reinforcement Learning for Adaptive Air Quality Warning | Co-Author",
+            "$todo": "Chờ link bài của cô Hà → thêm \"view\"; chờ file bài để đưa cả bài vào (carousel như bài 4)",
             "meta": { "label": "Under Review:", "text": "Journal of Applied Science and Engineering - Scopus Q2" },
             "text": "I collected, preprocessed, and analyzed data for an urban traffic-environment study. Through this work, I saw how sensing and AI can help cities see pollution sooner."
           }
@@ -72,7 +86,7 @@
               { "image": "applied-science/research-4-3", "alt": "Trang 3 bài luận về tỉ lệ chiết khấu cho chính sách môi trường dài hạn", "draft": true }
             ],
             "title": "Why No Single Discount Rate Fits Long-Run Environmental Policy",
-            "href": "https://drive.google.com/file/d/1QRc_7J5GdvGjlMEePiFRIwN48T-uWiqM/view",
+            "view": "https://drive.google.com/file/d/1QRc_7J5GdvGjlMEePiFRIwN48T-uWiqM/view",
             "meta": { "label": "Awarded:", "text": "Very High Commendation in John Locke Essay Competition" },
             "text": "I extended my research beyond the lab paper and onto the page, taking apart the Ramsey Rule to argue that a century-long horizon calls for a discount rate, not a single fixed number. Rigor, for me, also means putting understanding into words – making a complex idea clear and connecting economics, ethics with the environment."
           }
@@ -82,7 +96,8 @@
             "side": "right",
             "image": "applied-science/research-5", "alt": "Trang đầu bài luận “Building Cities That Can Breathe: Engineering a Living Future”", "draft": true,
             "title": "Building Cities That Can Breathe: Engineering a Living Future",
-            "href": "https://drive.google.com/file/d/1rqRKzf3hnqYs82mbQc2ULhdzWW2fZ4Tp/view",
+            "view": "https://drive.google.com/file/d/1rqRKzf3hnqYs82mbQc2ULhdzWW2fZ4Tp/view",
+            "$todo": "Chờ ảnh các trang bài để đưa cả bài vào (carousel như bài 4)",
             "meta": { "label": "Awarded:", "text": "Runner-Up Immerse Education Global Essay Competition" },
             "text": "I looked at my home city as an engineered system, and argued that sustainability must be designed from the start, so that cities adapt to growth rather than scramble to react to it."
           }
@@ -92,6 +107,7 @@
     {
       "id": "personal-product",
       "title": "Personal Product",
+      "$todo": "Video phần trình bày của Khánh Chi (cắt 3:30 đến hết) + [View here]: chờ link file thật (link trong tài liệu chỉ là drive.google.com/drive/my-drive). Nếu là YouTube thì dùng ?start=210.",
       "blocks": [
         { "mt": 24, "variant": "subtitle", "text": "Treatment System for Lead Removal from Household Battery Leakage" },
         { "mt": 17, "text": "Transforming beakers and equations into tangible solutions, I design tools that give toxic metals nowhere to hide – systems that help households read what an old battery leaves behind, protect their water, and turn chemistry into quiet acts of change." },
@@ -105,7 +121,7 @@
         {
           "mt": 14, "gap": 15,
           "row": [
-            { "image": "applied-science/personal-product-3", "alt": "Thùng nhựa trong chứa các lớp vật liệu lọc, trên nắp đặt pin cũ, gắn cảm biến", "draft": true, "note": "I introduced our product to households and schools, the places where old batteries pile up, and contemplated their feedback for further development." },
+            { "image": "applied-science/personal-product-3", "alt": "Thùng nhựa trong chứa các lớp vật liệu lọc, trên nắp đặt pin cũ, gắn cảm biến", "draft": true, "note": "I introduced our product to households and schools, the places where old batteries pile up, and contemplated their feedback for further development. The batteries collected in these units were later treated under the [Cleen Project](/my-little-village#cleen-project).", "$note": "Câu cuối (Cleen Project): ĐỀ XUẤT — chờ duyệt" },
             { "image": "applied-science/personal-product-4", "alt": "Khánh Chi và bạn trình bày sản phẩm bên poster trước ban giám khảo", "draft": true, "note": "After countless refinements born from field tests, I finalized the unit – a fusion of chemistry and sensing. I then brought it to the Vinschool Science & Innovation Challenge, presenting not just a product, but a vision of how humble materials can protect our soil and water." }
           ]
         },
@@ -145,18 +161,18 @@
           "mt": 37, "gap": 14,
           "row": [
             { "image": "applied-science/community-7", "alt": "Ảnh chụp màn hình buổi hội thảo trực tuyến X-Interval với các diễn giả", "draft": true, "square": true },
-            { "image": "applied-science/community-8", "alt": "Giấy chứng nhận ban tổ chức X-Interval trao cho Lê Phạm Khánh Chi", "draft": true },
-            { "text": "Beyond the experiments, I set out to change how youngsters approach the environment, as a shared responsibility. I helped organize X-Interval, turning experts’ knowledge about carbon and the energy transition into conversations that anyone could join and carry forward.", "grow": 1.71 }
+            { "image": "applied-science/community-8", "alt": "Giấy chứng nhận ban tổ chức X-Interval trao cho Lê Phạm Khánh Chi", "draft": true }
           ]
         },
+        { "mt": 17, "text": "Beyond the experiments, I set out to change how youngsters approach the environment, as a shared responsibility. I hosted webinar X-Interval, inviting speaker Loh Wai Lam from National University of Singapore, turning experts’ knowledge about carbon and the energy transition into conversations that anyone could join and carry forward." },
         {
-          "mt": 40, "gap": 16,
+          "mt": 40, "gap": 14,
           "row": [
-            { "text": "Whether in a workshop or at a community project site during Youth for Impact, I find the same spark in every student – hands raised with wonder, questions flowing about climate, education, and fairness. In their curiosity, I see my younger self, reciting all seventeen SDGs under my breath, tracing how those goals could one day reach the villages I came from.", "grow": 1.71 },
             { "image": "applied-science/community-9", "alt": "Ảnh chụp màn hình bài trình bày “Leadership with a Global Compass”", "draft": true },
             { "image": "applied-science/community-10", "alt": "Giấy chứng nhận AIESEC trao cho Lê Phạm Khánh Chi vì dẫn dắt dự án Youth For Impact", "draft": true }
           ]
-        }
+        },
+        { "mt": 17, "text": "Whether in a workshop or at a community project site during Youth for Impact, I find the same spark in every student – hands raised with wonder, questions flowing about climate, education, and fairness. In their curiosity, I see my younger self, reciting all seventeen SDGs under my breath, tracing how those goals could one day reach the villages I came from." }
       ]
     },
     {
@@ -164,19 +180,32 @@
       "title": "Internship",
       "blocks": [
         { "mt": 40, "text": "Alongside achievements and research, I ventured into the world where chemistry becomes a working language – applying its precision and patience in a nanotechnology lab and a recycling social enterprise, where my creative designing ideas have to bend to the discarded materials and constraints." },
+        { "mt": 48, "variant": "subtitle", "text": "Intern at Hanoi National University of Education – Nanotechnology Lab" },
+        { "mt": 30, "variant": "subheading", "text": "Worked with Prof. Dr. Quoc Trung Vu" },
+        { "mt": 14, "$note": "Câu cuối (applied to Pa Co): ĐỀ XUẤT — chờ duyệt", "text": "Researched fish-scale-derived HAp/PANI nanocomposites using room-temperature green chemistry for textile dye removal; achieved superior adsorption, 50% lower cost than commercial activated carbon, and high reusability; won a Special Award at iCAN and HIUF. The material was then applied to treat wastewater in Pa Co Brocade Village." },
         {
-          "mt": 38, "height": 428, "gap": 14,
-          "marquee": [
-            { "image": "applied-science/internship-1", "alt": "Khánh Chi mặc áo blouse dùng pipet trong phòng thí nghiệm", "draft": true, "link": { "text": "FTIR Analysis of HAp-PANi Composite Report", "href": "https://drive.google.com/file/d/1OZY34QlfvbtxTpRNWeCB-44AlPgieZAn/view?usp=sharing" } },
-            { "image": "applied-science/internship-2", "alt": "Khánh Chi nhỏ dung dịch vào bình cầu chứa chất lỏng xanh", "draft": true, "link": { "text": "Results/Discussion Report of Chitosan-Modified Rice Husk Activated Carbon", "href": "https://drive.google.com/file/d/1xi6BYpvQlV0xybVnYT0lxQ66il6QW4md/view?usp=sharing" } },
+          "mt": 24, "gap": 15,
+          "row": [
+            { "image": "applied-science/internship-1", "alt": "Khánh Chi mặc áo blouse dùng pipet trong phòng thí nghiệm", "draft": true },
+            { "video": { "poster": "applied-science/internship-3", "alt": "Video: Khánh Chi thực tập hè tại phòng Lab ĐHSP Hà Nội", "draft": true, "youtube": "https://www.youtube.com/embed/Zi3fMPmyXrU" } }
+          ]
+        },
+        { "mt": 17, "text": "Stepping into the chemistry lab at HNUE, I was filled with anticipation and curiosity. The air buzzed with the promise of discovery, and I was eager to immerse myself in the world where science meets untreated water." },
+        { "mt": 17, "viewLabel": "FTIR Analysis of HAp-PANi Composite Report", "view": "https://drive.google.com/file/d/1OZY34QlfvbtxTpRNWeCB-44AlPgieZAn/view?usp=sharing" },
+        { "mt": 44, "variant": "subheading", "text": "Worked with Dr. Minh Duc Tran" },
+        { "mt": 14, "$note": "Ni(II) ở đây vs Cu(II)/Pb(II) ở Achievements — chờ Khánh Chi xác nhận; chép nguyên văn.", "text": "Developed rice-husk-derived activated carbon for sustainable Ni(II) wastewater treatment, achieving 80% removal under optimized Langmuir model conditions; won Gold at WICO and applied the method to treat bamboo/rattan weaving and lacquer painting wastewater in Ha Thai Lacquer and Ninh So Bamboo/Rattan Weaving Villages." },
+        {
+          "mt": 24, "gap": 15,
+          "$todo": "Ảnh tạm (internship-2, internship-7) — thay bằng ảnh nhóm thầy Đức",
+          "row": [
+            { "image": "applied-science/internship-2", "alt": "Khánh Chi nhỏ dung dịch vào bình cầu chứa chất lỏng xanh", "draft": true },
             { "image": "applied-science/internship-7", "alt": "Bột than hoạt tính màu đen trong cốc thuỷ tinh", "draft": true }
           ]
         },
-        { "mt": 17, "text": "In collaboration with Prof. Dr. Quoc Trung Vu and Prof Minh Duc Tran at the HNUE, I developed green adsorbents from fish scales and rice husks – pulling textile dyes and heavy metal ions out of water, then testing the method on real wastewater from Thuong Tin’s craft villages." },
-        { "mt": 37, "video": { "poster": "applied-science/internship-3", "alt": "Video: Khánh Chi thực tập hè tại phòng Lab ĐHSP Hà Nội", "draft": true, "youtube": "https://www.youtube.com/embed/Zi3fMPmyXrU" }, "width": 637 },
-        { "mt": 17, "text": "Stepping into the chemistry lab at HNUE, I was filled with anticipation and curiosity. The air buzzed with the promise of discovery, and I was eager to immerse myself in the world where science meets untreated water." },
+        { "mt": 17, "viewLabel": "Results/Discussion Report of Chitosan-Modified Rice Husk Activated Carbon", "view": "https://drive.google.com/file/d/1xi6BYpvQlV0xybVnYT0lxQ66il6QW4md/view?usp=sharing" },
+        { "mt": 56, "variant": "subtitle", "text": "Intern at Red River Recycling", "$todo": "Certificate thực tập Red River — chờ ảnh" },
         {
-          "mt": 37, "gap": 15,
+          "mt": 24, "gap": 15,
           "row": [
             { "image": "applied-science/internship-4", "alt": "Khánh Chi ngồi phân loại chai thuỷ tinh cùng chú Đức trong xưởng tái chế", "draft": true },
             { "image": "applied-science/internship-5", "alt": "Khánh Chi đeo khẩu trang vẽ trang trí lên tấm kính tái chế", "draft": true }
