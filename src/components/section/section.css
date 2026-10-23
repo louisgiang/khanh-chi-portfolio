@@ -140,21 +140,32 @@
   border: var(--bw) solid transparent;
   pointer-events: none;
 }
+/* Viên thuốc đóng: chỉ có viền gradient, lòng trong suốt (thấy ảnh nền thuyền giấy phía sau) —
+   mask cắt bỏ phần trong viền. */
 .item__bg--closed {
   bottom: auto;
   height: calc(2 * var(--bw) + var(--s) * 110);
   transition: opacity var(--dur-expand) var(--ease);
-  background:
-    linear-gradient(180deg, rgba(0, 40, 0, 0.012) 0%, rgba(0, 0, 0, 0) 30%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0.4) 100%) padding-box,
-    linear-gradient(var(--bg), var(--bg)) padding-box,
-    linear-gradient(90deg, #ffd952 0%, #ffd952 6%, #ffada6 34%, #ffd559 60%, #feaa5c 73%, #fc656b 89%, #fc656b 100%) border-box;
-  box-shadow: inset calc(var(--s) * 4) calc(var(--s) * 3) calc(var(--s) * 10) rgba(40, 70, 30, 0.03);
+  background: linear-gradient(90deg, #ffd952 0%, #ffd952 6%, #ffada6 34%, #ffd559 60%, #feaa5c 73%, #fc656b 89%, #fc656b 100%) border-box;
+  -webkit-mask:
+    linear-gradient(#000 0 0) padding-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask:
+    linear-gradient(#000 0 0) padding-box exclude,
+    linear-gradient(#000 0 0);
 }
+/* Nền đỏ cam của thẻ mở: lòng viên thuốc giờ trong suốt nên lớp này phải mờ đi khi thu lại
+   (trước đây nền viên thuốc đục che nó). */
 .item__bg--open {
   z-index: -2;
   background:
     linear-gradient(90deg, #fc656b 0%, #ffae51 100%) padding-box,
     linear-gradient(90deg, #fc656b 0%, #ffd952 100%) border-box;
+  transition: opacity var(--dur-expand) var(--ease);
+}
+.item:not(.is-open) .item__bg--open {
+  opacity: 0;
 }
 /* Đóng hẳn: ẩn nền đỏ cam để không lộ viền mép bo góc dưới viên thuốc */
 .item.is-settled .item__bg--open {

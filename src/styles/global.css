@@ -1,13 +1,12 @@
 @import './fonts.css';
 
 :root {
-  --bg: #f5fff0;
+  /* Màu nền khi ảnh nền thuyền giấy (trang thành phần) chưa tải: tông trung bình của ảnh */
+  --bg: #c3ebfc;
   --blue: #3c88f8;
   --ink: #000;
   --ink-2: #2c2d2c;
   --font: 'Helvetica Neue Web', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  /* 1 đơn vị thiết kế (khung 1920×1080), co theo cả chiều ngang lẫn chiều cao */
-  --u: calc(min(100vw, 100svh * 16 / 9) / 1920);
   color-scheme: light;
 }
 
@@ -20,7 +19,6 @@
 html,
 body {
   margin: 0;
-  background: var(--bg);
   color: var(--ink);
   font-family: var(--font);
   -webkit-font-smoothing: antialiased;
@@ -29,7 +27,10 @@ body {
 }
 
 /* Luôn chừa chỗ thanh cuộn: trang dài/ngắn đi (mở/thu thẻ) không làm đổi bề ngang → không co giãn cả trang */
+/* Màu nền chỉ đặt ở html (phủ cả khung trình duyệt). body không có nền — nếu có, nó sẽ vẽ đè lên lớp
+   ảnh nền cố định (.section-bg, z-index −1) trong phạm vi body. */
 html {
+  background: var(--bg);
   scrollbar-gutter: stable;
 }
 
@@ -44,4 +45,15 @@ a {
   overflow: hidden;
   clip: rect(0 0 0 0);
   white-space: nowrap;
+}
+
+/* Nền ảnh thuyền giấy (mờ) của các trang thành phần — xem SectionBackground trong App.tsx */
+.section-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+.section-bg > .img {
+  height: 100%;
 }

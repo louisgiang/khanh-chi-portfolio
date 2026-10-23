@@ -5348,6 +5348,100 @@
       }
     ]
   },
+  "home-new/background": {
+    "width": 7680,
+    "height": 4320,
+    "aspect": 1.7778,
+    "alpha": false,
+    "color": "#08c8f8",
+    "placeholder": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAACwAwCdASoUAAsAPu1iqU2ppaOiMAgBMB2JaACdACHfTCqB4e2AAAD+6nfcAjPDvpmsYAZtE3Ze+MJpJjSrMCGk9F+rBCKIAAA=",
+    "widths": [
+      828,
+      1280,
+      1920
+    ],
+    "avif": [
+      {
+        "w": 828,
+        "src": "/img/home-new/background-828.avif",
+        "bytes": 3062
+      },
+      {
+        "w": 1280,
+        "src": "/img/home-new/background-1280.avif",
+        "bytes": 4181
+      },
+      {
+        "w": 1920,
+        "src": "/img/home-new/background-1920.avif",
+        "bytes": 5994
+      }
+    ],
+    "webp": [
+      {
+        "w": 828,
+        "src": "/img/home-new/background-828.webp",
+        "bytes": 4854
+      },
+      {
+        "w": 1280,
+        "src": "/img/home-new/background-1280.webp",
+        "bytes": 8454
+      },
+      {
+        "w": 1920,
+        "src": "/img/home-new/background-1920.webp",
+        "bytes": 14590
+      }
+    ]
+  },
+  "home-new/home-background": {
+    "width": 7680,
+    "height": 4320,
+    "aspect": 1.7778,
+    "alpha": true,
+    "color": "#08c8f8",
+    "placeholder": "data:image/webp;base64,UklGRqQAAABXRUJQVlA4IJgAAAAwBQCdASoUAAsAPu1iqU2ppaOiMAgBMB2JbACdMoRwN4BvAMkBNIYFA1wqveroJghegAD3CACSAbZtpiO4aOv1JlaHui+YjBh0FqT/vgp046HivOOH3K00RTK94Jgtf/hoPVFxFylQwkB7OfMj4FnMrwocvGoqiUIiWMpPsb1hw2mgr8b4OUozSbKY7mcqT2vrxP+zgCAAAA==",
+    "widths": [
+      828,
+      1280,
+      1920
+    ],
+    "avif": [
+      {
+        "w": 828,
+        "src": "/img/home-new/home-background-828.avif",
+        "bytes": 25075
+      },
+      {
+        "w": 1280,
+        "src": "/img/home-new/home-background-1280.avif",
+        "bytes": 54838
+      },
+      {
+        "w": 1920,
+        "src": "/img/home-new/home-background-1920.avif",
+        "bytes": 102690
+      }
+    ],
+    "webp": [
+      {
+        "w": 828,
+        "src": "/img/home-new/home-background-828.webp",
+        "bytes": 32286
+      },
+      {
+        "w": 1280,
+        "src": "/img/home-new/home-background-1280.webp",
+        "bytes": 72206
+      },
+      {
+        "w": 1920,
+        "src": "/img/home-new/home-background-1920.webp",
+        "bytes": 143016
+      }
+    ]
+  },
   "home/applied-science-back": {
     "width": 1581,
     "height": 1004,

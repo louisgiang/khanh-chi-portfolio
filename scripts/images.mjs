@@ -15,9 +15,18 @@ const CACHE = path.join(ROOT, '.image-cache.json');
 const QUALITY = { avif: 55, webp: 75 };
 // Chất lượng riêng theo nhóm ảnh (đường dẫn trong assets-src). Trang photobook nhiều hạt nhiễu + chữ nhỏ:
 // AVIF 48 nhẹ hơn ~40% so với 55, so ở 100% không thấy khác (xem NOTES).
-const QUALITY_OVERRIDES = [{ match: /^craft-villages\/photography-/, avif: 48 }];
+// Ảnh trang chủ (thuyền giấy): vân giấy vẽ tay, nén mạnh thì nhoè → chất lượng cao hơn (bản 1920 vẫn < 350KB).
+const QUALITY_OVERRIDES = [
+  { match: /^craft-villages\/photography-/, avif: 48 },
+  { match: /^home-new\/home-background\./, avif: 70, webp: 85 },
+];
 const qualityFor = (rel) => ({ ...QUALITY, ...QUALITY_OVERRIDES.find((o) => o.match.test(rel)) });
 const DEFAULT_WIDTHS = [480, 800, 1200, 1600];
+// Ảnh nền toàn màn hình (trang chủ thuyền giấy, nền trang con): theo khổ màn hình 828 / 1280 / 1920.
+const SCREEN_WIDTHS = [828, 1280, 1920];
+const isScreen = (rel) => /^home-new\//.test(rel);
+// Nền trang con là lớp mờ trong suốt ~30% (thiết kế đặt trên nền trắng) → trộn sẵn lên trắng: không cần alpha, nhẹ hơn.
+const FLATTEN = [{ match: /^home-new\/background\./, background: '#ffffff' }];
 // Ảnh mặt sau cánh hoa chỉ hiển thị ~250–420px → 2 cỡ là đủ (1x / 2x).
 const PETAL_WIDTHS = [420, 840];
 
@@ -27,6 +36,7 @@ function skip(rel) {
   const parts = rel.split('/');
   if (parts.includes('ref')) return true;
   if (parts[0] === 'home' && !/ - hover\.\w+$/i.test(rel)) return true;
+  if (/-ref\.\w+$/i.test(rel)) return true; // ảnh thiết kế để đối chiếu (home-new/home-ref.png)
   return !/\.(png|jpe?g|webp|tiff?|heic|avif)$/i.test(rel);
 }
 
@@ -69,13 +79,15 @@ async function processImage(file, rel) {
   const isPetal = /^home\//.test(rel);
 
   // .rotate() không tham số = xoay theo EXIF; sharp mặc định không ghi metadata ra file.
-  const base = sharp(file, { failOn: 'none' }).rotate();
+  const flat = FLATTEN.find((f) => f.match.test(rel));
+  let base = sharp(file, { failOn: 'none' }).rotate();
+  if (flat) base = base.flatten({ background: flat.background });
   const meta = await base.metadata();
   const oriented = meta.orientation >= 5;
   const W = oriented ? meta.height : meta.width;
   const H = oriented ? meta.width : meta.height;
 
-  let widths = (isPetal ? PETAL_WIDTHS : DEFAULT_WIDTHS).filter((w) => w < W);
+  let widths = (isPetal ? PETAL_WIDTHS : isScreen(rel) ? SCREEN_WIDTHS : DEFAULT_WIDTHS).filter((w) => w < W);
   if (widths.length === 0 || (W - widths.at(-1) > 200 && W < (isPetal ? 840 : 1600))) widths.push(W);
 
   await fs.mkdir(path.join(OUT, dir), { recursive: true });
@@ -103,7 +115,7 @@ async function processImage(file, rel) {
       width: W,
       height: H,
       aspect: +(W / H).toFixed(4),
-      alpha: !!meta.hasAlpha,
+      alpha: !!meta.hasAlpha && !flat,
       color: hex,
       placeholder: `data:image/webp;base64,${tiny.toString('base64')}`,
       widths,
@@ -155,9 +167,12 @@ for (const [file, rel] of files) {
 // Mục cũ không được xử lý lại lần này (ảnh gốc ở máy khác) → giữ nguyên.
 for (const [id, entry] of Object.entries(oldManifest)) if (!(id in manifest) && !removedIds.has(id)) manifest[id] = entry;
 
-// Xóa file output mồ côi (ảnh gốc đã bị xóa/đổi tên).
+// File output mồ côi (không còn trong manifest): chỉ báo, không xoá — public/img có file cố ý giữ lại
+// (vd. bản 1600px của ảnh bìa video cũ). Muốn xoá thật: npm run images -- --prune
 const keep = new Set(Object.values(manifest).flatMap((e) => [...e.avif, ...e.webp].map((v) => path.join(ROOT, 'public', v.src))));
-if (await exists(OUT)) for (const f of await walk(OUT)) if (!keep.has(f)) await fs.rm(f);
+const orphans = (await exists(OUT)) ? (await walk(OUT)).filter((f) => !keep.has(f)) : [];
+if (process.argv.includes('--prune')) for (const f of orphans) await fs.rm(f);
+else if (orphans.length) console.log(`(${orphans.length} file trong public/img không còn dùng — giữ lại; xoá bằng --prune)`);
 
 await fs.mkdir(path.dirname(MANIFEST), { recursive: true });
 const sorted = Object.fromEntries(Object.entries(manifest).sort(([a], [b]) => a.localeCompare(b)));

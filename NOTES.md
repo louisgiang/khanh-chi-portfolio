@@ -191,3 +191,9 @@
 - Photography Portfolio: thêm lại 2 mũi tên ◀ ▶, vẫn tự lật mỗi 3 giây (dừng khi rê chuột). Đang ở trang 1 bấm ◀ → lùi đúng 1 trang sang trang 14 (không tua ngược cả dãy).
 - Stage & Screen: gắn link 4 nút (CEC Oscar 2025, CEC Oscar 2026, Sắc Màu CNN, Aria Project). My Little Village: nút Cineris (bài báo nongnghiepmoitruong.vn), nút Youth For Community Recap. Đã bỏ tham số theo dõi trong link (si=, fbclid=, app=desktop).
 - My Little Village › CEC: video "A recap of CEC’s recruitment week…" → YouTube rXoW98Rzqdw, ảnh bìa YouTube chính thức (16:9) thay ảnh cũ 1322×832.
+
+## Trang chủ thuyền giấy + nền trang con (2026-10-23)
+- Ảnh: `assets-src/home-new/home-background.png` (7680×4320, không chữ), `background.png` (lớp mờ alpha ~30%, trộn sẵn lên trắng khi xuất), `home-ref.png` (thiết kế có chữ, 3840×2160, chỉ để đối chiếu, script bỏ qua).
+- Toạ độ trang chủ theo px của ảnh 3840×2160 (`--u`, viewBox SVG). Chữ đo bằng cách trừ ảnh nền khỏi ảnh thiết kế (chỉ còn chữ), rồi so ảnh chụp Chrome headless 3840×2160 với thiết kế: lệch < 1px. Chữ chào: Bold 192.5 / Bold 80 / Roman 56; tên mục Bold 81, màu --blue.
+- Vùng bấm: đa giác đường bao thuyền (3 thuyền tách tự động theo màu, Applied Science và My Journey vẽ tay từ ảnh).
+- Khung 16:9 phủ màn hình nhưng cắt tối đa 10%; màn dọc: phủ chiều cao, cuộn ngang (tạm, chờ ảnh mobile).

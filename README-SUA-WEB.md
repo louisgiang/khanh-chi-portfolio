@@ -73,8 +73,61 @@ Nếu thấy chỗ khác cùng kiểu → tách tương tự và ghi vào báo c
 
 ---
 
-## 2. Homepage và nền
-**Chưa làm** — chờ thiết kế mới. Chỉ để TODO. Không sửa `src/pages/Home.*`, `src/components/flower/*`.
+2. Homepage và nền
+2.1 Homepage — thay bông hoa bằng 5 chiếc thuyền giấy
+
+Thiết kế mới: ảnh mặt nước xanh, 5 thuyền giấy, mỗi thuyền ghi tên 1 mục. Góc trên trái: "Welcome to my Portfolio", "Khanh Chi", dòng tagline. File thiết kế: assets-src/home/home-boats.png (2000×1125, tỉ lệ 16:9).
+
+Hành vi:
+
+Không có hiệu ứng gì trên trang chủ: không animation lúc vào trang, không hover phóng to/đổi màu, không chuyển động thuyền. Chỉ cursor: pointer khi rê lên thuyền và viền focus khi dùng bàn phím (accessibility).
+Bấm vào thuyền nào → chuyển sang trang con tương ứng (dùng Link của react-router, như cánh hoa hiện tại):
+Thuyền	Màu	Trang
+My Journey	xanh lá	/my-journey
+My Little Village	hồng tím	/my-little-village
+Applied Science	xanh ngọc	/applied-science
+Stage & Screen	cam	/stage-and-screen
+Craft Villages	hồng	/craft-villages
+Trang con giữ nguyên như hiện tại (header, menu tab, viên thuốc). Nút "Khánh Chi's Portfolio" trên header vẫn quay về trang chủ.
+Xoá bông hoa: bỏ src/components/flower/*, phần useBacksReady và ảnh mặt sau cánh hoa trong Home.tsx nếu không còn dùng. Mũi tên "My Story" cũng bỏ (không có trong thiết kế mới).
+
+Cách dựng (ưu tiên theo thứ tự):
+
+Nếu có ảnh tách lớp (nền nước riêng + 5 thuyền PNG nền trong suốt, không chữ): nền là ảnh, mỗi thuyền là 1 <a> chứa ảnh thuyền, chữ tên mục và chữ góc trái là chữ HTML thật (font Helvetica Neue có sẵn trong repo). Đây là cách tốt nhất: chữ nét trên mọi màn hình, đọc được bởi Google/trình đọc màn hình.
+Nếu chỉ có 1 ảnh phẳng (như file hiện có): dùng ảnh làm nền object-fit: contain/cover giữ tỉ lệ 16:9, đặt 5 vùng bấm trong suốt (<a> định vị theo % để co giãn theo ảnh) lên đúng 5 thuyền, mỗi <a> có aria-label là tên mục. Chữ góc trái giữ trong ảnh nhưng thêm <h1 class="visually-hidden">Khanh Chi's Portfolio</h1> cho SEO. Vùng bấm gần đúng (theo % ảnh 2000×1125, agent tự căn lại cho khớp, nên dùng clip-path: polygon() theo hình thuyền để 2 thuyền My Little Village và Applied Science không chồng vùng bấm):
+Thuyền	left	top	width	height
+Applied Science	38.8%	14.7%	24.5%	22%
+Stage & Screen	66.5%	13.3%	27.5%	27.5%
+My Little Village	15.8%	30.7%	29%	28%
+Craft Villages	52.5%	48.4%	33.8%	35%
+My Journey	5.8%	63.1%	31.2%	25.8%
+
+⚠ Lỗi chính tả trong ảnh thiết kế: ghi "my Portoflio" → phải là "my Portfolio". Nếu dùng cách 2 (ảnh phẳng) thì cần xin lại ảnh đã sửa chữ; dùng cách 1 thì gõ đúng bằng HTML. Ghi vào báo cáo.
+
+Màn điện thoại: ảnh ngang 16:9 trên màn dọc sẽ làm thuyền rất nhỏ, khó bấm. Đề xuất (ghi vào báo cáo, hỏi trước khi làm nếu không làm được theo cách 1):
+
+Cách 1 (tách lớp): xếp chữ chào lên trên, 5 thuyền xếp so le 2 cột bên dưới trên nền nước, mỗi thuyền rộng ≥ 140px.
+Cách 2 (ảnh phẳng): cần thêm 1 ảnh thiết kế dọc riêng cho mobile (home-boats-mobile.png, khoảng 1080×1920) với vùng bấm riêng. Chưa có → tạm thời cho ảnh ngang phủ chiều cao màn hình (object-fit: cover), cho cuộn ngang được, và đánh TODO.
+
+Ảnh: đưa vào scripts/images.mjs, xuất AVIF/WebP 1920/1280/828, preload bản phù hợp (<link rel="preload" as="image" imagesrcset=…>) vì đây là ảnh đầu tiên người xem thấy. Mục tiêu bản 1920 < 350KB.
+
+2.2 Nền ảnh thuyền giấy cho các trang con
+
+Thiết kế mới: nền các trang con là ảnh thuyền giấy trên mặt nước, mờ, tông xanh nhạt thay cho nền màu be/xanh nhạt hiện tại (
+#F5FFF0).
+
+Nền này cùng bộ với ảnh trang chủ (mục 2.1) nhưng mờ và nhạt hơn. Dùng ảnh nền do thiết kế xuất ra; nếu chưa có, không tự làm mờ ảnh trang chủ — báo lại.
+Ảnh gốc: assets-src/backgrounds/paper-boats.(jpg|png) (bản mobile dọc nếu có: paper-boats-mobile.*). Ảnh đã được làm mờ sẵn trong thiết kế → không dùng CSS filter: blur() (nặng, giật khi cuộn).
+Thêm vào scripts/images.mjs để xuất AVIF/WebP các khổ 1920 / 1280 / 828. Mục tiêu bản 1920 < 200KB (ảnh mờ nén được rất nhỏ, có thể hạ quality).
+Áp cho cả 5 trang con (.page trong SectionPage), không áp cho trang chủ.
+Nền đứng yên khi cuộn và phủ kín màn hình. Không dùng background-attachment: fixed (hỏng trên iPhone Safari) → dùng 1 lớp position: fixed; inset: 0; z-index: -1 chứa ảnh object-fit: cover.
+Khi mở (expand) một viên thuốc, nền vẫn là ảnh thuyền, không đổi sang màu be. Rà mọi chỗ đang tô màu nền cứng (
+#F5FFF0 hoặc màu be) trên body, .page, .page__inner, .page__body, .items, ô đang mở/đóng, lớp phủ khi chuyển cảnh → bỏ hoặc cho trong suốt. Riêng thẻ màu cam/hồng của ô đang mở giữ nguyên như thiết kế.
+Khi chuyển trang (hiệu ứng mờ dần) không được nháy ra nền be: nền ảnh phải nằm ngoài lớp đang animate, hoặc nằm ở RootLayout và chỉ hiện khi đang ở trang con.
+Viền viên thuốc khi đóng: giữ viền gradient, nền trong suốt cho thấy ảnh phía sau (như ảnh thiết kế).
+Kiểm tra chữ đọc rõ trên nền ảnh (đoạn mở đầu bên trái, thanh menu trên cùng). Nếu chỗ nào khó đọc, thêm lớp phủ trắng mỏng (rgba(255,255,255,0.35)) lên ảnh, hỏi chủ dự án trước khi thêm.
+Cập nhật meta theme-color trong index.html cho hợp tông xanh nhạt của ảnh.
+TODO nếu chưa có ảnh: dừng mục này, ghi vào báo cáo..
 
 ---
 

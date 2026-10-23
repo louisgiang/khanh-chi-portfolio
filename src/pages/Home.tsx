@@ -1,57 +1,89 @@
-import { useEffect, useState } from 'react';
-import { Flower } from '../components/flower/Flower';
+import { useNavigate } from 'react-router';
+import { Img } from '../components/Img';
+import { prefetchSection, sectionPath, SECTIONS, type SectionId } from '../sections';
 import './Home.css';
 
-/** Sau khi trang chủ hiện xong (load + lúc rảnh) mới tải 5 ảnh mặt sau cánh hoa. */
-function useBacksReady() {
-  const [ready, setReady] = useState(false);
-  useEffect(() => {
-    let idle = 0;
-    const go = () => {
-      const ric = window.requestIdleCallback ?? ((cb: () => void) => window.setTimeout(cb, 200));
-      idle = ric(() => setReady(true), { timeout: 1500 } as IdleRequestOptions);
-    };
-    if (document.readyState === 'complete') go();
-    else window.addEventListener('load', go, { once: true });
-    return () => {
-      window.removeEventListener('load', go);
-      (window.cancelIdleCallback ?? window.clearTimeout)(idle);
-    };
-  }, []);
-  return ready;
-}
+/** Ảnh nền 16:9 (mặt nước + 5 thuyền, không chữ). Mọi toạ độ dưới đây theo ảnh thiết kế 3840×2160
+ *  (assets-src/home-new/home-ref.png). Chữ là chữ HTML/SVG thật, không nằm trong ảnh. */
+export const HOME_IMAGE = 'home-new/home-background';
+/** `sizes` của ảnh nền — khớp với bề rộng khung (xem Home.css) và với thẻ preload trong index.html. */
+export const HOME_SIZES = '(max-aspect-ratio: 1/1) 178vh, 100vw';
 
+type Boat = {
+  id: SectionId;
+  /** Vùng bấm: đường bao thân + buồm (đo từ ảnh), để hai thuyền gần nhau không chồng vùng bấm. */
+  shape: string;
+  /** Tên mục: tâm dòng chữ (x, y = đường chân chữ) và góc nghiêng theo thân thuyền (độ). */
+  label: { x: number; y: number; angle: number };
+};
+
+// Thứ tự = thứ tự Tab bàn phím, theo thanh tab của trang con (My Journey → … → My Little Village).
+// Toạ độ chữ đã so khớp với ảnh thiết kế (lệch < 1px ở khổ 3840).
+const BOATS: Boat[] = [
+  { id: 'my-journey', shape: '223,1586 787,1371 1413,1613 1114,1908 480,1908', label: { x: 772, y: 1887, angle: 0.8 } },
+  { id: 'applied-science', shape: '1490,584 1908,323 2093,492 2423,472 2208,787 1651,795', label: { x: 1939, y: 660, angle: -4.5 } },
+  { id: 'craft-villages', shape: '2024,1321 2726,1056 3310,1298 3041,1820 2246,1724 2070,1417', label: { x: 2632, y: 1727, angle: 6 } },
+  { id: 'stage-and-screen', shape: '2557,618 3080,296 3602,472 3487,829 2957,914 2834,872', label: { x: 3162, y: 818, angle: -4.25 } },
+  { id: 'my-little-village', shape: '611,983 1102,668 1713,902 1283,1263 1137,1283 826,1210', label: { x: 1068, y: 1111, angle: 1.2 } },
+];
+
+const titleOf = (id: SectionId) => SECTIONS.find((s) => s.id === id)!.title;
+
+// Trang chủ tĩnh: không hiệu ứng vào trang, không hover — chỉ con trỏ tay trên thuyền và viền focus khi dùng bàn phím.
 export default function Home() {
-  const backsReady = useBacksReady();
+  const navigate = useNavigate();
   return (
     <main className="home">
       <div className="home__stage">
-        <nav className="home__flower" aria-label="Portfolio sections">
-          <Flower backsReady={backsReady} />
+        <Img id={HOME_IMAGE} alt="" sizes={HOME_SIZES} loading="eager" fetchPriority="high" fill className="home__bg" />
+
+        <nav className="home__nav" aria-label="Portfolio sections">
+          <svg className="home__boats" viewBox="0 0 3840 2160">
+            {BOATS.map((b) => (
+              <a
+                key={b.id}
+                className="home__boat"
+                href={sectionPath(b.id)}
+                onClick={(e) => {
+                  if (e.metaKey || e.ctrlKey || e.shiftKey || e.button !== 0) return; // mở tab mới: để trình duyệt xử lý
+                  e.preventDefault();
+                  navigate(sectionPath(b.id));
+                }}
+                onPointerEnter={() => prefetchSection(b.id)}
+                onFocus={() => prefetchSection(b.id)}
+              >
+                <polygon className="home__hit" points={b.shape} />
+                <text
+                  className="home__label"
+                  x={b.label.x}
+                  y={b.label.y}
+                  transform={`rotate(${b.label.angle} ${b.label.x} ${b.label.y})`}
+                  textAnchor="middle"
+                >
+                  {titleOf(b.id)}
+                </text>
+              </a>
+            ))}
+          </svg>
         </nav>
 
-        <svg className="home__arrow" viewBox="850 225 185 78" aria-hidden="true">
-          <path d="M1029.5 268 C1004 225 903 207 863 287" fill="none" stroke="currentColor" strokeWidth="3.3" strokeLinecap="round" />
-          <polygon points="854.5,298.5 853,284 868.5,291.5" fill="currentColor" />
-        </svg>
-        <p className="home__story">My Story</p>
-
-        <h1 className="home__welcome">
-          Welcome to
-          <br />
-          my Portfolio
-        </h1>
-
-        <h2 className="home__name">Khanh Chi</h2>
-        <p className="home__tagline">
-          /a discoverer by curiosity,
-          <br />
-          a water healer with care,
-          <br />
-          a storyteller in frames,
-          <br />
-          and a villager at heart/
-        </p>
+        <div className="home__intro">
+          <h1 className="home__welcome">
+            Welcome to
+            <br />
+            my Portfolio
+          </h1>
+          <p className="home__name">Khanh Chi</p>
+          <p className="home__tagline">
+            /a discoverer by curiosity, a
+            <br />
+            water healer with care, a
+            <br />
+            storyteller in frames, and a
+            <br />
+            villager at heart/
+          </p>
+        </div>
       </div>
     </main>
   );

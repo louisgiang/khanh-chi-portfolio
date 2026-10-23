@@ -16,6 +16,22 @@ Nhánh `sua-13-10`, **chưa push**. Xem trên máy: `npm run dev` → http://loc
   - Hàng ảnh có độ rộng riêng bị tràn khung trên điện thoại.
   - Băng ảnh Layers of Light và Cleen có ảnh dọc hẹp, chú thích chữ to bị dồn nhiều dòng. Đã đặt độ rộng chú thích tối thiểu (`minWidth`).
 
+**2. Homepage và nền** (ảnh trong `assets-src/home-new/`, không phải `assets-src/home/home-boats.png` / `assets-src/backgrounds/` như README ghi)
+- 2.1 Trang chủ thuyền giấy:
+  - Ảnh `home-background.png` chỉ có mặt nước + thuyền, **không có chữ**. Vì vậy mình làm theo kiểu lai giữa 2 cách trong README: ảnh là nền; 5 vùng bấm là đa giác SVG theo đường bao từng thuyền (2 thuyền gần nhau không chồng vùng bấm); tên mục và chữ góc trái là chữ thật (HTML/SVG).
+  - "my **Portfolio**" đã gõ đúng chính tả. Ảnh thiết kế `home-ref.png` ghi sai "Portoflio" nhưng không cần xin lại ảnh.
+  - Cỡ chữ, vị trí, góc nghiêng đo từ `home-ref.png`. Đã so bằng Chrome headless ở 3840×2160: mọi dòng chữ lệch < 1px so với thiết kế.
+  - Không hiệu ứng: không animation vào trang (kể cả ảnh không mờ dần), không hover; chỉ con trỏ tay và viền trắng khi focus bằng bàn phím. Thứ tự Tab theo thanh tab.
+  - Đã xoá `src/components/flower/*`, `useBacksReady`, mũi tên "My Story". Ảnh mặt sau cánh hoa vẫn giữ trong `public/img` (không xoá ảnh).
+  - Máy tính: ảnh phủ kín màn hình nhưng cắt tối đa 10% (5% mỗi bên). Màn 16:10 (1440×900) chữ góc trái được đẩy vào trong, 5 thuyền nguyên vẹn. Màn vuông hơn (iPad ngang 4:3) hoặc dài hơn (21:9): phần thiếu tô màu nước, không cắt mất thuyền.
+  - Ảnh xuất 828/1280/1920. Bản 1920 AVIF 100KB (mục tiêu < 350KB). Được preload ngay trong `index.html`, chỉ khi mở trang chủ.
+- 2.2 Nền trang con:
+  - `background.png` là lớp mờ trong suốt ~30% (thiết kế đặt trên nền trắng). Script ảnh trộn sẵn lên trắng nên ảnh không cần alpha: bản 1920 AVIF chỉ 6KB. Không dùng CSS blur.
+  - Lớp `position: fixed` nằm ở RootLayout, ngoài lớp chuyển cảnh. Nền giữ đến khi trang con mờ hẳn rồi mới đổi sang trang chủ, nên không nháy màu be. Đứng yên khi cuộn.
+  - Viên thuốc đóng: chỉ còn viền gradient, lòng trong suốt (dùng mask). Thẻ mở giữ nền cam/hồng; nền này mờ dần khi thu lại.
+  - Bỏ màu nền cứng trên body. Lý do: body có nền thì nó vẽ đè lên lớp ảnh. Màu chờ khi ảnh chưa tải là #C3EBFC (tông trung bình của ảnh). `theme-color` đổi thành #BBEFFF.
+- Script ảnh: thêm nhóm `home-new`; bỏ qua `*-ref.png`. **Không còn tự xoá file "mồ côi" trong public/img** (trước đây xoá mất bản 1600px cố ý giữ). Muốn xoá thật: `npm run images -- --prune`.
+
 **3. My Journey:** đoạn mở đầu bỏ in nghiêng, chỉ nghiêng chữ *cốm*. Giãn dòng trong các ô là 1.7.
 
 **4. Applied Science**
@@ -71,10 +87,11 @@ Mỗi mục có trường `"$todo"` trong `content/*.json`, trừ mục 6 (My Li
   - Summer Programme (Brown, Stanford).
   - Hoạt động từ thiện (triển lãm tranh, Hội Bại não).
   - Chỗ đặt chủ đề Môi trường / bền vững.
-- [ ] Mục 2: Homepage và nền, chờ thiết kế mới.
+- [ ] Trang chủ trên điện thoại: hiện ảnh ngang phủ chiều cao màn hình, vuốt ngang để thấy 5 thuyền (chữ chào co vừa màn hình). Cần ảnh thiết kế dọc riêng (`home-boats-mobile`, ~1080×1920), hoặc 5 thuyền PNG tách nền để xếp lại 2 cột như README đề xuất.
 - [ ] Report thuyền năng lượng mặt trời trên Drive (thêm Pà Cò, đổi Thường Tín → Ninh Sở, căn đều): chủ dự án tự sửa trên Drive.
 
 ## 4. Cần xác nhận
+- **Độ dễ đọc trên nền mới:** chữ tab menu xanh #3C88F8 trên nền xanh nhạt có độ tương phản ~2.8:1, hơi thấp (chuẩn cho chữ to là 3:1). Chữ cam của tên ô trên vùng thuyền hồng nhạt cũng hơi chìm. Chưa thêm lớp phủ trắng mỏng `rgba(255,255,255,0.35)` vì README dặn hỏi trước.
 - **Ni(II) hay Cu(II)/Pb(II):** đoạn Internship 1b ghi Ni(II), nhưng tên đề tài WICO ở Achievements ghi Cu(II) và Pb(II). Đang chép nguyên văn cả hai.
 - **"3 nơi Intern":** đang hiểu là 2 thầy ở lab ĐHSP (1a, 1b) + Red River.
 - **Độ rộng ảnh WICO:** README ghi "≈ 1 ảnh hàng trên × 1.3". Hiểu theo chiều rộng thì ảnh quá to, nên đang để rộng 320 (cao ≈ bằng 4 giải bên dưới). Có thể đổi số `"width"` trong JSON.

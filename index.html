@@ -3,7 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#F5FFF0" />
+    <meta name="theme-color" content="#BBEFFF" />
+    <script>
+      // Ảnh thuyền giấy là thứ đầu tiên người xem thấy ở trang chủ → tải ngay, không chờ JS.
+      // Chỉ ở trang chủ (mở thẳng trang con thì không tải thừa). srcset/sizes khớp HOME_IMAGE/HOME_SIZES trong src/pages/Home.tsx.
+      if (location.pathname === '/') {
+        var l = document.createElement('link');
+        l.rel = 'preload';
+        l.as = 'image';
+        l.type = 'image/avif';
+        l.fetchPriority = 'high';
+        l.setAttribute('imagesrcset', '/img/home-new/home-background-828.avif 828w, /img/home-new/home-background-1280.avif 1280w, /img/home-new/home-background-1920.avif 1920w');
+        l.setAttribute('imagesizes', '(max-aspect-ratio: 1/1) 178vh, 100vw');
+        document.head.appendChild(l);
+      }
+    </script>
     <title>Khánh Chi's Portfolio</title>
     <meta name="description" content="Khanh Chi — a discoverer by curiosity, a water healer with care, a storyteller in frames, and a villager at heart." />
   </head>
