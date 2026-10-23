@@ -96,8 +96,8 @@
 .page__lead {
   margin: calc(var(--s) * 20) 0 0 calc(var(--s) * -2);
   font-weight: 400;
-  font-size: calc(var(--s) * 20);
-  line-height: calc(var(--s) * 24);
+  font-size: calc(var(--s) * 22);
+  line-height: 1.45;
   color: #222;
 }
 .page__lead.is-italic {
@@ -216,9 +216,26 @@
 .item__text {
   margin: 0;
   font-weight: 500;
-  font-size: calc(var(--s) * 20);
-  line-height: 1;
+  font-size: calc(var(--s) * 24);
+  line-height: 1.45;
   color: #fff;
+}
+/* Đoạn văn căn đều hai bên (tiêu đề / chú thích căn giữa đặt lại text-align ở dưới) */
+.page__lead,
+.item__text,
+.item__note,
+.entry__text {
+  text-align: justify;
+  hyphens: auto;
+}
+/* Nghiêng trong nội dung (*chữ*): font chỉ có Light Italic → dùng họ font chỉ có chữ đứng
+   để trình duyệt tự nghiêng đúng độ đậm của đoạn chứa nó (kể cả đậm + nghiêng). */
+.page__body em {
+  font-family: 'Helvetica Neue Upright', var(--font);
+}
+/* My Journey: giãn dòng rộng hơn các trang khác */
+.page--my-journey .item__text {
+  line-height: 1.7;
 }
 .item__row {
   display: flex;
@@ -253,23 +270,34 @@
 /* ---------- Khối của Applied Science ---------- */
 .item__text--heading {
   font-weight: 700;
+  line-height: 1.25;
   text-align: center;
   white-space: pre-line;
 }
 .item__text--subtitle {
   font-weight: 700;
   font-size: calc(var(--s) * 30);
+  line-height: 1.25;
+  text-align: left;
+}
+.item__text--subheading {
+  font-weight: 700;
+  font-size: calc(var(--s) * 26);
+  line-height: 1.25;
+  text-align: left;
 }
 .item__text--caption {
   max-width: calc(var(--s) * 637);
   margin: 0 auto;
   font-weight: 700;
+  line-height: 1.35;
   text-align: center;
 }
 
 .item__flex {
   display: flex;
   align-items: flex-start;
+  max-width: 100%;
 }
 .item__flex.is-center {
   align-items: center;
@@ -286,19 +314,37 @@
   border-radius: calc(var(--s) * 10);
   background: rgba(255, 255, 255, 0.12);
   font-weight: 400;
-  font-size: calc(var(--s) * 15);
-  line-height: 1;
+  font-size: calc(var(--s) * 19);
+  line-height: 1.35;
   text-align: center;
   color: #fff;
 }
 .item__caption strong {
   font-weight: 700;
 }
+/* Hàng giấy chứng nhận: các ô tên giải cao bằng nhau */
+.item__flex:has(.item__caption) {
+  align-items: stretch;
+}
+.item__cell:has(> .item__caption) {
+  display: flex;
+  flex-direction: column;
+}
+.item__cell:has(> .item__caption) > .img {
+  flex: none;
+}
+.item__cell > .item__caption {
+  flex: 1;
+}
+.item__caption-level {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
 .item__note {
   margin: calc(var(--s) * 20.8) 0 0;
   font-weight: 500;
-  font-size: calc(var(--s) * 16);
-  line-height: 1;
+  font-size: calc(var(--s) * 20);
+  line-height: 1.45;
   color: #fff;
 }
 
@@ -428,12 +474,14 @@
 .item__text--title {
   font-weight: 700;
   font-size: calc(var(--s) * 30);
+  line-height: 1.25;
   text-align: center;
   white-space: pre-line;
 }
 .item__text--lead {
   font-weight: 700;
   font-size: calc(var(--s) * 25);
+  line-height: 1.25;
   text-align: center;
 }
 /* Ô chú thích có khung (Personal Product, gallery) */
@@ -444,6 +492,8 @@
   border-radius: calc(var(--s) * 10);
   background: rgba(255, 255, 255, 0.12);
   font-weight: 400;
+  font-size: calc(var(--s) * 19);
+  line-height: 1.4;
 }
 .item__divider {
   margin: 0;
@@ -615,16 +665,7 @@ a.pill-btn:focus-visible {
   }
   .page__lead {
     max-width: 640px;
-    font-size: 15px;
-    line-height: 1.4;
-  }
-  .item__text,
-  .item__note,
-  .item__caption {
-    line-height: 1.4;
-  }
-  .item__text--caption {
-    line-height: 1.3;
+    font-size: 16.5px;
   }
   /* Phần tử có bề rộng cố định (video, ảnh đơn, ảnh tài liệu) không vượt khung */
   .video,
@@ -688,6 +729,7 @@ a.pill-btn:focus-visible {
   }
   .page__lead {
     margin: 12px 0 0;
+    font-size: 17px;
   }
 
   /* Ô viên thuốc */
@@ -720,7 +762,7 @@ a.pill-btn:focus-visible {
 
   /* Chữ trong thẻ */
   .item__text {
-    font-size: 15px;
+    font-size: 17px;
   }
   .item__text--subtitle,
   .item__text--title,
@@ -736,7 +778,9 @@ a.pill-btn:focus-visible {
     white-space: normal;
   }
   .item__note,
-  .item__caption,
+  .item__caption {
+    font-size: 15px;
+  }
   .entry__meta {
     font-size: 13px;
     line-height: 1.4;
@@ -793,11 +837,25 @@ a.pill-btn:focus-visible {
   }
 }
 
-/* Tiêu đề có link dưới ảnh (Internship: báo cáo trên Google Drive) */
-.item__img-title {
-  margin: calc(var(--s) * 12) 0 0;
+/* Link bài báo / report: tên report (nếu có) + dòng "[View here]" riêng ở cuối khối */
+.view__label,
+.view__link {
+  margin: 0;
   font-weight: 700;
-  font-size: calc(var(--s) * 20);
-  line-height: 1.15;
+  font-size: calc(var(--s) * 24);
+  line-height: 1.3;
   color: #fff;
+}
+.view__link {
+  margin-top: calc(var(--s) * 4);
+}
+.item__cell > .view,
+.entry__body > .view {
+  margin-top: calc(var(--s) * 14);
+}
+@media (max-width: 767px) {
+  .view__label,
+  .view__link {
+    font-size: 17px;
+  }
 }

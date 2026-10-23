@@ -9,27 +9,30 @@ import type { SectionId } from '../sections';
 type Spaced = { mt?: number };
 
 export type ImageRef = { image: string; alt: string; draft?: boolean; square?: boolean };
-export type TextBlock = Spaced & { text: string; variant?: 'body' | 'heading' | 'subtitle' | 'title' | 'lead' | 'caption' };
+export type TextBlock = Spaced & { text: string; variant?: 'body' | 'heading' | 'subtitle' | 'subheading' | 'title' | 'lead' | 'caption' };
 /** width: độ rộng hiển thị (đơn vị thiết kế, mặc định hết khung nội dung); center: căn giữa. */
 export type ImageBlock = Spaced & ImageRef & { wide?: boolean; width?: number; center?: boolean };
 
-export type Caption = { title: string; text: string; inline?: boolean };
+/** level: dòng loại giải (International / State) phía trên. inline: "title | text" trên một dòng. */
+export type Caption = { level?: string; title: string; text: string; inline?: boolean };
+/** Link bài báo / report: một dòng "[View here]" riêng ở cuối khối; viewLabel: tên report ở dòng phía trên. */
+export type View = { view?: string; viewLabel?: string };
 export type Cell =
-  | (ImageRef & { caption?: Caption; note?: string; box?: boolean; link?: { text: string; href: string } })
+  | (ImageRef & View & { caption?: Caption; note?: string; box?: boolean })
   | { video: VideoRef }
   | { text: string; grow: number }
   | { spacer: true };
-export type RowBlock = Spaced & { row: Cell[]; gap?: number; align?: 'start' | 'center' };
+/** width: độ rộng cả hàng (đơn vị thiết kế, căn giữa); bỏ trống = hết khung nội dung. */
+export type RowBlock = Spaced & { row: Cell[]; gap?: number; align?: 'start' | 'center'; width?: number };
 
-export type Entry = {
+export type Entry = View & {
   side: 'left' | 'right';
   image?: string;
   alt?: string;
   draft?: boolean;
   carousel?: ImageRef[];
   title: string;
-  href?: string;
-  meta: { label: string; text: string; href?: string };
+  meta: { label: string; text: string };
   text: string;
 };
 export type EntryBlock = Spaced & { entry: Entry };
@@ -39,7 +42,7 @@ export type VideoBlock = Spaced & { video: VideoRef; width: number };
 /** Băng ảnh trượt ngang tự động (ảnh cao bằng nhau `height`, mỗi ảnh có thể kèm ô chú thích). */
 /** minWidth: khung ảnh có chú thích rộng tối thiểu (đơn vị thiết kế) — cho ảnh dọc hẹp, tránh chú thích quá nhiều dòng. */
 export type MarqueeBlock = Spaced & {
-  marquee: (ImageRef & { note?: string; button?: { text: string; href?: string }; link?: { text: string; href: string } })[];
+  marquee: (ImageRef & { note?: string; button?: { text: string; href?: string } })[];
   height: number;
   gap?: number;
   minWidth?: number;
@@ -50,7 +53,10 @@ export type ButtonBlock = Spaced & { button: { text: string; href?: string }; ce
 /** Trình chiếu full chiều ngang thẻ, lật trang bằng mũi tên (khung theo tỉ lệ ảnh đầu tiên). */
 export type SlideshowBlock = Spaced & { slideshow: ImageRef[]; label?: string };
 
-export type Block = TextBlock | ImageBlock | RowBlock | EntryBlock | VideoBlock | MarqueeBlock | DividerBlock | SlideshowBlock | ButtonBlock;
+/** Dòng "[View here]" đứng riêng (kèm tên report phía trên nếu có viewLabel). */
+export type ViewBlock = Spaced & { view: string; viewLabel?: string };
+
+export type Block = TextBlock | ImageBlock | RowBlock | EntryBlock | VideoBlock | MarqueeBlock | DividerBlock | SlideshowBlock | ButtonBlock | ViewBlock;
 /** zigzag/grid: bố cục My Journey (tự ghép ảnh/chữ thành hàng). Không có: khối hiển thị theo thứ tự. */
 export type Item = { id: string; title: string; layout?: 'zigzag' | 'grid'; blocks: Block[] };
 export type PageContent = { title: string; intro?: string; introStyle?: 'italic'; items: Item[] };
@@ -73,6 +79,7 @@ export const isVideo = (b: Block): b is VideoBlock => 'video' in b;
 export const isMarquee = (b: Block): b is MarqueeBlock => 'marquee' in b;
 export const isDivider = (b: Block): b is DividerBlock => 'divider' in b;
 export const isSlideshow = (b: Block): b is SlideshowBlock => 'slideshow' in b;
+export const isView = (b: Block): b is ViewBlock => 'view' in b;
 export const isImageCell = (c: Cell): c is Extract<Cell, { image: string }> => 'image' in c;
 export const isVideoCell = (c: Cell): c is Extract<Cell, { video: VideoRef }> => 'video' in c;
 

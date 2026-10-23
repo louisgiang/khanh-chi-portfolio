@@ -63,7 +63,7 @@ export function imageWidths(item: Item): Map<string, number> {
     else if (isRow(b)) {
       const g = rowGrows(b);
       const sum = g.reduce((a, x) => a + x, 0);
-      const free = CONTENT_W - (b.gap ?? GAP_X) * (b.row.length - 1);
+      const free = (b.width ?? CONTENT_W) - (b.gap ?? GAP_X) * (b.row.length - 1);
       b.row.forEach((c, i) => {
         if (isImageCell(c)) out.set(c.image, (free * g[i]) / sum);
         else if (isVideoCell(c)) out.set(c.video.poster, (free * g[i]) / sum);

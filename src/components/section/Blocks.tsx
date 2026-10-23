@@ -1,8 +1,9 @@
 import { useEffect, useRef, useState, type CSSProperties } from 'react';
 import { motion, useReducedMotion } from 'motion/react';
 import type { Block, Cell, Entry, ImageRef, Item, MarqueeBlock, RowBlock, SlideshowBlock, VideoRef } from '../../content';
-import { isButton, isDivider, isEntry, isImage, isImageCell, isVideoCell, isMarquee, isRow, isSlideshow, isText, isVideo } from '../../content';
+import { isButton, isDivider, isEntry, isImage, isImageCell, isVideoCell, isMarquee, isRow, isSlideshow, isText, isVideo, isView } from '../../content';
 import { Img, imageEntry } from '../Img';
+import { RichText } from '../RichText';
 import { DUR, EASE } from '../../motion';
 import { CONTENT_W, imageWidths, rowGrows, toRows, vwSizes } from './sizes';
 
@@ -34,7 +35,13 @@ export function ItemContent({ item, load }: { item: Item; load: boolean }) {
 }
 
 function BlockView({ block: b, ctx, last }: { block: Block; ctx: Ctx; last: boolean }) {
-  if (isText(b)) return <p className={`item__text${b.variant ? ` item__text--${b.variant}` : ''}`}>{b.text}</p>;
+  if (isText(b))
+    return (
+      <p className={`item__text${b.variant ? ` item__text--${b.variant}` : ''}`}>
+        <RichText text={b.text} />
+      </p>
+    );
+  if (isView(b)) return <ViewLink href={b.view} label={b.viewLabel} />;
   if (isImage(b))
     return <Picture img={b} ctx={ctx} style={b.width ? { width: u(b.width), marginInline: b.center ? 'auto' : undefined } : undefined} />;
   if (isButton(b)) {
@@ -75,13 +82,16 @@ function Picture({ img, ctx, style }: { img: ImageRef; ctx: Ctx; style?: CSSProp
 
 function Row({ row, ctx }: { row: RowBlock; ctx: Ctx }) {
   const grows = rowGrows(row);
+  // Tổng flex-grow < 1 (vd. một ảnh dọc đứng riêng) thì flex chỉ chia một phần chỗ trống → nâng tổng lên 1.
+  const sum = grows.reduce((a, x) => a + x, 0);
+  const k = sum < 1 ? 1 / sum : 1;
   return (
     <div
       className={`item__flex${row.align === 'center' ? ' is-center' : ''}${row.row.length >= 4 ? ' is-many' : ''}`}
-      style={{ gap: u(row.gap ?? 20) }}
+      style={{ gap: u(row.gap ?? 20), ...(row.width ? { width: u(row.width), marginInline: 'auto' } : null) }}
     >
       {row.row.map((c, i) => (
-        <div key={i} className={`item__cell${isVideoCell(c) ? ' is-video' : ''}`} style={{ flexGrow: grows[i] }}>
+        <div key={i} className={`item__cell${isVideoCell(c) ? ' is-video' : ''}`} style={{ flexGrow: grows[i] * k }}>
           <CellView cell={c} ctx={ctx} />
         </div>
       ))}
@@ -96,30 +106,52 @@ function CellView({ cell: c, ctx }: { cell: Cell; ctx: Ctx }) {
         <Picture img={c} ctx={ctx} />
         {c.caption && (
           <p className="item__caption">
-            <strong>{c.caption.title}</strong>
-            {c.caption.inline ? ' ' : <br />}
-            {c.caption.text}
+            {c.caption.level && (
+              <>
+                <span className="item__caption-level">{c.caption.level}</span>
+                <br />
+              </>
+            )}
+            <strong>
+              <RichText text={c.caption.title} />
+            </strong>
+            {c.caption.inline ? ' | ' : <br />}
+            <RichText text={c.caption.text} />
           </p>
         )}
-        {c.note && <p className={`item__note${c.box ? ' item__note--box' : ''}`}>{c.note}</p>}
-        {c.link && (
-          <p className="item__img-title">
-            <MaybeLink href={c.link.href}>{c.link.text}</MaybeLink>
+        {c.note && (
+          <p className={`item__note${c.box ? ' item__note--box' : ''}`}>
+            <RichText text={c.note} />
           </p>
         )}
+        {c.view && <ViewLink href={c.view} label={c.viewLabel} />}
       </>
     );
   if (isVideoCell(c)) return <Video video={c.video} ctx={ctx} />;
-  if ('text' in c) return <p className="item__text">{c.text}</p>;
+  if ('text' in c)
+    return (
+      <p className="item__text">
+        <RichText text={c.text} />
+      </p>
+    );
   return null;
 }
 
-function MaybeLink({ href, children }: { href?: string; children: React.ReactNode }) {
-  if (!href) return <>{children}</>;
+/** Link bài báo / report: dòng "[View here]" riêng (giữ cả ngoặc vuông), mở tab mới; label = tên report ở dòng trên. */
+function ViewLink({ href, label }: { href: string; label?: string }) {
   return (
-    <a href={href} target="_blank" rel="noopener noreferrer" className="item__link">
-      {children}
-    </a>
+    <div className="view">
+      {label && (
+        <p className="view__label">
+          <RichText text={label} />
+        </p>
+      )}
+      <p className="view__link">
+        <a href={href} target="_blank" rel="noopener noreferrer" className="item__link">
+          [View here]
+        </a>
+      </p>
+    </div>
   );
 }
 
@@ -133,13 +165,14 @@ function EntryView({ entry: e, ctx, last }: { entry: Entry; ctx: Ctx; last: bool
     <article className={`entry entry--${e.side}${e.carousel ? ' has-carousel' : ''}${last ? ' is-last' : ''}`}>
       <div className="entry__media">{media}</div>
       <div className="entry__body">
-        <h3 className="entry__title">
-          <MaybeLink href={e.href}>{e.title}</MaybeLink>
-        </h3>
+        <h3 className="entry__title">{e.title}</h3>
         <p className="entry__meta">
-          <strong>{e.meta.label}</strong> <MaybeLink href={e.meta.href}>{e.meta.text}</MaybeLink>
+          <strong>{e.meta.label}</strong> {e.meta.text}
         </p>
-        <p className="item__text">{e.text}</p>
+        <p className="item__text entry__text">
+          <RichText text={e.text} />
+        </p>
+        {e.view && <ViewLink href={e.view} label={e.viewLabel} />}
       </div>
     </article>
   );
@@ -202,13 +235,10 @@ function Marquee({ block: b, ctx }: { block: MarqueeBlock; ctx: Ctx }) {
         aria-hidden={copy > 0 || undefined}
       >
         <Picture img={c} ctx={ctx} style={{ width: mu(imgW(c)), marginInline: 'auto' }} />
-        {c.note && <figcaption className="item__note item__note--box">{c.note}</figcaption>}
-        {c.link && (
-          <p className="item__img-title">
-            <a href={c.link.href} target="_blank" rel="noopener noreferrer" className="item__link" tabIndex={copy > 0 ? -1 : undefined}>
-              {c.link.text}
-            </a>
-          </p>
+        {c.note && (
+          <figcaption className="item__note item__note--box">
+            <RichText text={c.note} />
+          </figcaption>
         )}
         {c.button && (
           <p className="pill-btn__wrap is-center marquee__btn">
@@ -401,7 +431,12 @@ function LegacyContent({ item, ctx }: { item: Item; ctx: Ctx }) {
   return (
     <div className="item__legacy">
       {toRows(item).map((row, i) => {
-        if (row.kind === 'text') return <p key={i} className="item__text">{row.block.text}</p>;
+        if (row.kind === 'text')
+          return (
+            <p key={i} className="item__text">
+              <RichText text={row.block.text} />
+            </p>
+          );
         if (row.kind === 'images')
           return (
             <div key={i} className="item__row">
@@ -418,7 +453,7 @@ function LegacyContent({ item, ctx }: { item: Item; ctx: Ctx }) {
                 <Picture key={b.image} img={b} ctx={ctx} />
               ) : (
                 <p key="t" className="item__text">
-                  {isText(b) ? b.text : null}
+                  {isText(b) ? <RichText text={b.text} /> : null}
                 </p>
               ),
             )}
