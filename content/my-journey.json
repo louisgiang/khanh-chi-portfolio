@@ -1,8 +1,7 @@
 {
   "$note": "Chữ chép nguyên văn từ assets-src/my journey/ref/. Mỗi ô: id (dùng cho #hash), title, layout, blocks theo thứ tự. Block: {text} hoặc {image, alt}. alt có 'draft: true' là bản nháp chờ duyệt.",
   "title": "My Journey",
-  "introStyle": "italic",
-  "intro": "I was born in the heart of Vong, the village of cốm, where every morning began with the rhythm of pestles pounding young green rice. My maternal hometown, Thuong Tin, rests beside the Red River; my paternal one is only a five-minute ride from Bat Trang Ceramic Village. Between them, I grew up wrapped in sounds, spices, and colors, never guessing that this was where my story with villages was quietly beginning.",
+  "intro": "I was born in the heart of Vong, the village of *cốm*, where every morning began with the rhythm of pestles pounding young green rice. My maternal hometown, Thuong Tin, rests beside the Red River; my paternal one is only a five-minute ride from Bat Trang Ceramic Village. Between them, I grew up wrapped in sounds, spices, and colors, never guessing that this was where my story with villages was quietly beginning.",
   "items": [
     {
       "id": "craft-villages",
