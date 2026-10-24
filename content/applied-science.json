@@ -52,7 +52,8 @@
             "side": "right",
             "image": "applied-science/research-1", "alt": "Trang đầu bài báo “Microbial Treatment of Polluted Water: Mechanisms, Treatment Strategies, Applications, and Future Perspectives”", "draft": true,
             "title": "Bioremediation of Polluted Waters using Microorganisms | Co-Author",
-            "$todo": "Chờ link bài của cô Nhung → thêm \"view\"; chờ file bài để đưa cả bài vào (carousel như bài 4)",
+            "view": "https://jsaer.com/download/vol-13-iss-10-2026/JSAER2026-13-10-75-83.pdf",
+            "$todo": "Chờ file bài để đưa cả bài vào (carousel như bài 4)",
             "meta": { "label": "Published:", "text": "Journal of Scientific and Engineering Research" },
             "text": "I synthesized how microbes and constructed wetlands remove heavy metals, dyes, and other pollutants from water – comparing biosorption with biodegradation and exploring how AI and nanobiotechnology could scale them. Where microbes meet pollution, I turned scattered literature into a clearer path toward sustainable treatment."
           }
@@ -72,7 +73,8 @@
             "side": "right",
             "image": "applied-science/research-3", "alt": "Trang đầu bản thảo “Improved Traffic-Aware Deep Reinforcement Learning for Simulation-Based Adaptive Air Quality Warning and Traffic Environmental Management in Urban Traffic Environments”", "draft": true,
             "title": "Traffic-Aware Deep Reinforcement Learning for Adaptive Air Quality Warning | Co-Author",
-            "$todo": "Chờ link bài của cô Hà → thêm \"view\"; chờ file bài để đưa cả bài vào (carousel như bài 4)",
+            "view": "https://drive.google.com/file/d/1SutCh6jIrzpaj-rEuH5zSfggx28AODgs/view",
+            "$todo": "Chờ file bài để đưa cả bài vào (carousel như bài 4)",
             "meta": { "label": "Under Review:", "text": "Journal of Applied Science and Engineering - Scopus Q2" },
             "text": "I collected, preprocessed, and analyzed data for an urban traffic-environment study. Through this work, I saw how sensing and AI can help cities see pollution sooner."
           }
@@ -110,6 +112,7 @@
       "$todo": "Video phần trình bày của Khánh Chi (cắt 3:30 đến hết) + [View here]: chờ link file thật (link trong tài liệu chỉ là drive.google.com/drive/my-drive). Nếu là YouTube thì dùng ?start=210.",
       "blocks": [
         { "mt": 24, "variant": "subtitle", "text": "Treatment System for Lead Removal from Household Battery Leakage" },
+        { "mt": 8, "$note": "Report: [VSIC] BÁO CÁO NGHIÊN CỨU - HỘP XỬ LÍ PIN ĐÃ QUA SỬ DỤNG", "view": "https://drive.google.com/file/d/1MmB221LfCK4XKwAl8xbQJTovQXAms4Nl/view?usp=sharing" },
         { "mt": 17, "text": "Transforming beakers and equations into tangible solutions, I design tools that give toxic metals nowhere to hide – systems that help households read what an old battery leaves behind, protect their water, and turn chemistry into quiet acts of change." },
         {
           "mt": 12, "gap": 15,
