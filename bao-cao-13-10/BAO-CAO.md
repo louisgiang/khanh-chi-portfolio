@@ -52,7 +52,7 @@ Nhánh `sua-13-10`, **chưa push**. Xem trên máy: `npm run dev` → http://loc
   - Đã sửa câu "By evening…".
   - Ảnh chú Huy chuyển xuống gallery Traditional Attire: ảnh một dòng, chữ một dòng.
   - Đã tách `pa-co-6`.
-- 5.3 Đổi tên ô thành **Ha Thai & Ninh So Villages**, id `ha-thai-ninh-so-villages`. Đã grep: không còn chỗ nào dùng id cũ. Đã sửa đoạn "Again, I zoom…". Video phỏng vấn nghệ nhân đưa lên trên ảnh 4–5. **_Áo dài_** in đậm nghiêng, kèm giải nghĩa.
+- 5.3 Đổi tên ô thành **Ha Thai & Ninh So Villages**, id `ha-thai-ninh-so-villages`. Đã grep: không còn chỗ nào dùng id cũ. Đoạn "Again, I zoom…" giữ nguyên bản gốc (chủ dự án chốt không đổi). Video phỏng vấn nghệ nhân đưa lên trên ảnh 4–5. cả cụm **_Áo dài (Vietnam's national dress)_** in đậm nghiêng, kèm giải nghĩa.
 
 **7. Kiểm tra**
 - `npm run build` không lỗi. Đã thử bản build bằng `npm run preview`.
@@ -63,7 +63,6 @@ Nhánh `sua-13-10`, **chưa push**. Xem trên máy: `npm run dev` → http://loc
 2. (Personal Product, ảnh hộp) "The batteries collected in these units were later treated under the Cleen Project."
 3. (Internship 1a, câu cuối) "The material was then applied to treat wastewater in Pa Co Brocade Village."
 4. (Pa Co) "By the end of those days, the gaps between my fingers were stained with the color of those roots."
-5. (Ha Thai & Ninh So) "Again, I zoom into the water. It is hard to believe that the lacquer paintings and woven baskets on the shelves come from the same villages as these murky canals and ponds, and the sight gave me goosebumps. So I brought my solar-powered boat onto them, loaded with rice-husk activated carbon, to draw out what each craft leaves behind."
 
 Trong JSON, các câu này có ghi chú `"$note"` để dễ tìm.
 
