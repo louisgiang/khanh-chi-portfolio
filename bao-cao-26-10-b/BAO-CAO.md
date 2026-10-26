@@ -1,0 +1,38 @@
+# Báo cáo sửa web — đợt 26/10 (tối)
+
+Nhánh `sua-26-10-b` (tạo từ `main` mới nhất), **chưa push**. Mỗi mục 1 commit. `npm run build` không lỗi.
+
+## 1. Trang chủ — tagline to hơn ✅
+- Cỡ chữ `--u * 56` → **`--u * 70`**, dòng `--u * 57` → **`--u * 84`** (1.2). Giữ màu, chữ thường.
+- Chữ to hơn thì dòng 3 cũ ("storyteller in frames, and a") đè lên buồm thuyền Applied Science ở màn 1440×900 → ngắt lại thành dòng ngắn, **không đổi chữ, giữ `/` đầu và cuối**:
+  ```
+  /a discoverer by curiosity,
+  a water healer with care,
+  a storyteller in frames,
+  and a villager
+  at heart/
+  ```
+  Bản 4 dòng gợi ý trong README vẫn chạm sát mép buồm ở 1440×900 (dòng "and a villager at heart/" cách buồm ~9px). Lý do: màn 16:10 cắt mép ảnh nên khối chữ bị đẩy vào trong 16px. Vì vậy mình tách thêm 1 dòng.
+- Kiểm bằng điểm ảnh thật của thuyền: mọi dòng cách thuyền ≥ 42 đơn vị (khung 3840) ở 1440×900; xa hơn nữa ở 1920×1080 và trên điện thoại.
+- Điện thoại (375×812): chữ 26px, dòng dài nhất kết thúc ở 316px (< 375), không đè thuyền.
+- Ảnh: `truoc-home-1440.jpg` / `sau-home-1440.jpg`, `truoc-home-375.jpg` / `sau-home-375.jpg`.
+
+## 2. Applied Science › Community — 2 cột như Research ⚠ (1 hàng đạt, 1 hàng không đạt được)
+- Thêm khối mới `split` (không đụng `entry` của Research). Khối có cột chữ và cột ảnh (các ảnh cạnh nhau, cao bằng nhau), căn giữa theo chiều dọc. Khoảng cách cột, cỡ chữ, màu, giãn dòng giống Research.
+- Ở 1440px: cột chữ 419px (mức tối thiểu ~420 của README), cột ảnh 341px. Hai hàng xen kẽ: X-Interval ảnh trái, Youth for Impact ảnh phải.
+- **Hàng X-Interval: đạt.** Ảnh webinar được cắt khung về ô của diễn giả **Loh Wai Lam** (README cho phép "cover, không mất mặt diễn giả"). Giấy chứng nhận giữ nguyên. Chiều cao ảnh / chữ = **1.00** ở 1280, 1440 và 1920px.
+- **Hàng Youth for Impact: không đạt mức chênh ≤ 10%, ảnh chỉ cao ≈ 0.53 lần đoạn chữ.** Lý do là giới hạn hình học, không phải lỗi code. Hai ảnh đều nằm ngang (~1.5:1); đặt cạnh nhau trong cột ảnh thì tổng bề ngang rất lớn so với chiều cao. Với cột chữ ≥ 420px, chiều cao ảnh tối đa chỉ ~0.6 lần chữ, dù chia cột thế nào. Muốn đạt thì phải cắt giấy chứng nhận AIESEC (README cấm) hoặc cắt slide "Leadership with a Global Compass" (mất chữ trên slide). **Cần chủ dự án chọn hướng**, xem mục "Cần quyết định".
+- Hai câu chữ giữ nguyên văn. Đoạn văn không còn khoảng hở lớn do căn đều (cột chữ rộng hơn trước: ~28% → ~54% bề ngang).
+- Điện thoại: ảnh lên trên (xếp dọc, mỗi ảnh hết bề ngang, **không cắt** ảnh webinar), chữ xuống dưới. Không có cuộn ngang.
+- Ảnh: `truoc-/sau-community-x-interval.jpg`, `truoc-/sau-community-youth-for-impact.jpg`.
+
+## 3. My Little Village › Youth For Community — video nhúng ✅
+- Bỏ nút "[YOUTH FOR COMMUNITY] Recap Video →". Thay bằng video `kBUT5B0IGnI`, rộng 637, đúng cách đã làm ở Colors of FLSS / Aria Project. Caption là **YOUTH FOR COMMUNITY**.
+- Ảnh bìa: `maxresdefault` chính thức (1280×720), lưu ở `assets-src/My Little Village/yfc-video.jpg` (thư mục thật trên máy tên có chữ hoa, id ảnh vẫn là `my-little-village/yfc-video`) → `npm run images`. Manifest chỉ thêm đúng ảnh này.
+- Đã bấm thử: nút play tải trình phát YouTube (`youtube-nocookie.com/embed/kBUT5B0IGnI`). YouTube xác nhận video cho phép nhúng.
+- Ảnh: `truoc-/sau-youth-for-community.jpg`.
+
+## Cần quyết định (Community, hàng Youth for Impact)
+1. **Giữ như hiện tại:** 2 cột, ảnh nhỏ hơn chữ (~0.53), căn giữa theo chiều dọc.
+2. **Cắt slide "Leadership with a Global Compass"** về phần tiêu đề + gạch đầu dòng bên trái: đạt khoảng 0.65, vẫn chưa tới mức chênh 10%, và mất phần "7 days / 17 goals / 1 mission".
+3. **Hàng này để như bản gốc:** 2 ảnh cạnh nhau phủ hết bề ngang, đoạn chữ ở dòng dưới. Ảnh to, chữ không bị hẹp; chỉ hàng X-Interval theo kiểu 2 cột.
