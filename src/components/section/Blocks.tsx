@@ -1,11 +1,11 @@
 import { useEffect, useRef, useState, type CSSProperties } from 'react';
 import { motion, useReducedMotion } from 'motion/react';
-import type { Block, Cell, Entry, ImageRef, Item, MarqueeBlock, MarqueeItem, RowBlock, SlideshowBlock, SplitBlock, VideoRef } from '../../content';
-import { isButton, isDivider, isEntry, isImage, isImageCell, isVideoCell, isMarquee, isMarqueeVideo, isRow, isSlideshow, isSplit, isText, isVideo, isView } from '../../content';
+import type { Block, Cell, Entry, ImageRef, Item, MarqueeBlock, MarqueeItem, RowBlock, SlideshowBlock, VideoRef } from '../../content';
+import { isButton, isDivider, isEntry, isImage, isImageCell, isVideoCell, isMarquee, isMarqueeVideo, isRow, isSlideshow, isText, isVideo, isView } from '../../content';
 import { Img, imageEntry } from '../Img';
 import { RichText } from '../RichText';
 import { DUR, EASE } from '../../motion';
-import { CONTENT_W, SPLIT_IMG_GAP, imageWidths, rowGrows, splitAspect, toRows, vwSizes } from './sizes';
+import { CONTENT_W, imageWidths, rowGrows, toRows, vwSizes } from './sizes';
 
 const DEFAULT_GAP = 25;
 // Nút tiêu đề đã có đệm dưới 24 → khối đầu tiên trừ đi phần này.
@@ -60,7 +60,6 @@ function BlockView({ block: b, ctx, last }: { block: Block; ctx: Ctx; last: bool
   }
   if (isRow(b)) return <Row row={b} ctx={ctx} />;
   if (isEntry(b)) return <EntryView entry={b.entry} ctx={ctx} last={last} />;
-  if (isSplit(b)) return <Split block={b} ctx={ctx} />;
   if (isVideo(b)) return <Video video={b.video} width={b.width} ctx={ctx} />;
   if (isMarquee(b)) return <Marquee block={b} ctx={ctx} />;
   if (isDivider(b)) return <hr className="item__divider" />;
@@ -156,48 +155,22 @@ function ViewLink({ href, label, tabIndex }: { href: string; label?: string; tab
   );
 }
 
-/** Khối 2 cột (Community): chữ một bên, cột ảnh một bên — các ảnh cao bằng nhau (flex-grow theo tỉ lệ khung). */
-function Split({ block: { split: s }, ctx }: { block: SplitBlock; ctx: Ctx }) {
-  // Tổng flex-grow < 1 (vd. một ảnh dọc) thì flex không lấp hết cột → nâng tổng lên 1 (như Row).
-  const sum = s.images.reduce((a, c) => a + splitAspect(c), 0);
-  const k = sum < 1 ? 1 / sum : 1;
-  return (
-    <div
-      className={`split split--media-${s.side}${s.stack ? ' split--stack' : ''}`}
-      style={{ '--split-media': u(s.mediaWidth), '--split-gap': u(SPLIT_IMG_GAP) } as CSSProperties}
-    >
-      <div className="split__media">
-        {s.images.map((c) => (
-          <div key={c.image} className="split__img" style={{ flexGrow: splitAspect(c) * k }}>
-            <Picture
-              img={c}
-              ctx={ctx}
-              style={{ ...(c.crop ? { '--crop': String(c.crop) } : null), ...(c.focus ? { '--focus': c.focus } : null) } as CSSProperties}
-            />
-          </div>
-        ))}
-      </div>
-      <p className="item__text entry__text split__text">
-        <RichText text={s.text} />
-      </p>
-    </div>
-  );
-}
-
 function EntryView({ entry: e, ctx, last }: { entry: Entry; ctx: Ctx; last: boolean }) {
   const media = e.carousel ? (
-    <Carousel images={e.carousel} ctx={ctx} />
+    <Carousel images={e.carousel} ctx={ctx} aspect={e.carouselAspect} autoplay={e.autoplay} />
   ) : e.image ? (
     <Picture img={{ image: e.image, alt: e.alt ?? '', square: true }} ctx={ctx} />
   ) : null;
   return (
-    <article className={`entry entry--${e.side}${e.carousel ? ' has-carousel' : ''}${last ? ' is-last' : ''}`}>
+    <article className={`entry entry--${e.side}${e.carousel ? ' has-carousel' : ''}${e.carouselAspect ? ' has-frame' : ''}${last ? ' is-last' : ''}`}>
       <div className="entry__media">{media}</div>
       <div className="entry__body">
-        <h3 className="entry__title">{e.title}</h3>
-        <p className="entry__meta">
-          <strong>{e.meta.label}</strong> {e.meta.text}
-        </p>
+        {e.title && <h3 className="entry__title">{e.title}</h3>}
+        {e.meta && (
+          <p className="entry__meta">
+            <strong>{e.meta.label}</strong> {e.meta.text}
+          </p>
+        )}
         <p className="item__text entry__text">
           <RichText text={e.text} />
         </p>
@@ -207,28 +180,93 @@ function EntryView({ entry: e, ctx, last }: { entry: Entry; ctx: Ctx; last: bool
   );
 }
 
-function Carousel({ images, ctx }: { images: ImageRef[]; ctx: Ctx }) {
-  const [i, setI] = useState(0);
+/** Trình chiếu trong mục nghiên cứu. Mặc định: bấm tay, khung theo tỉ lệ ảnh (Research bài 4).
+ *  aspect: khung cố định tỉ lệ, ảnh thu vừa khung (contain). autoplay: tự trượt mỗi CAROUSEL_INTERVAL, luôn tiến
+ *  (sau ảnh cuối là bản sao ảnh đầu, tới đó nhảy thầm về đầu); dừng khi rê chuột / focus / khung không hiện
+ *  trong màn hình (thẻ đóng); bấm tay thì đếm lại; giảm chuyển động → không tự chạy. */
+const CAROUSEL_INTERVAL = 3500;
+function Carousel({ images, ctx, aspect, autoplay = false }: { images: ImageRef[]; ctx: Ctx; aspect?: number; autoplay?: boolean }) {
+  const [i, setI] = useState(0); // autoplay: 0..n (n = bản sao ảnh đầu)
+  const [instant, setInstant] = useState(false);
+  const [visible, setVisible] = useState(false);
+  const [hold, setHold] = useState(false);
   const reduce = useReducedMotion();
+  const ref = useRef<HTMLDivElement>(null);
   const n = images.length;
-  const go = (d: number) => setI((x) => (x + d + n) % n);
+  const loop = autoplay && !reduce; // chỉ chế độ tự trượt mới cần bản sao để luôn tiến
+
+  useEffect(() => {
+    if (!autoplay) return;
+    const el = ref.current;
+    if (!el) return;
+    const io = new IntersectionObserver(([en]) => setVisible(en.isIntersecting && en.intersectionRatio > 0.3), { threshold: [0, 0.3, 0.6] });
+    io.observe(el);
+    return () => io.disconnect();
+  }, [autoplay]);
+
+  const go = (d: number) => {
+    if (!loop) {
+      setI((x) => (x % n + d + n) % n);
+      return;
+    }
+    // Đang ở ảnh đầu mà lùi: nhảy thầm sang bản sao (cuối dãy) rồi trượt lùi đúng 1 ảnh.
+    if (d < 0 && i % n === 0) {
+      setInstant(true);
+      setI(n);
+      requestAnimationFrame(() => requestAnimationFrame(() => { setInstant(false); setI(n - 1); }));
+      return;
+    }
+    setInstant(false);
+    setI((x) => (d < 0 ? (x % n) - 1 : (x % n) + 1));
+  };
+
+  // Mỗi lần đổi ảnh (kể cả bấm tay) effect chạy lại → đếm lại từ đầu.
+  useEffect(() => {
+    if (!loop || !visible || hold || n < 2) return;
+    const t = window.setTimeout(() => go(1), CAROUSEL_INTERVAL);
+    return () => window.clearTimeout(t);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [i, loop, visible, hold, n]);
+
+  const page = i % n;
+  const slides = loop ? [...images, images[0]] : images;
   return (
-    <div className="carousel" role="group" aria-roledescription="carousel" aria-label="Essay pages">
+    <div
+      ref={ref}
+      className={`carousel${aspect ? ' is-frame' : ''}`}
+      role="group"
+      aria-roledescription="carousel"
+      aria-label={aspect ? 'Gallery' : 'Essay pages'}
+      onMouseEnter={autoplay ? () => setHold(true) : undefined}
+      onMouseLeave={autoplay ? () => setHold(false) : undefined}
+      onFocus={autoplay ? () => setHold(true) : undefined}
+      onBlur={autoplay ? () => setHold(false) : undefined}
+    >
       <button type="button" className="carousel__btn carousel__btn--prev" aria-label="Previous page" onClick={() => go(-1)}>
         <svg viewBox="0 0 16 19" aria-hidden="true">
           <polygon points="0,9.5 16,0 16,19" />
         </svg>
       </button>
-      <div className="carousel__viewport">
+      <div className="carousel__viewport" style={aspect ? { aspectRatio: String(aspect) } : undefined}>
         <motion.div
           className="carousel__track"
           animate={{ x: `${-i * 100}%` }}
           initial={false}
-          transition={{ duration: reduce ? 0 : DUR.tab + 0.1, ease: EASE }}
+          transition={{ duration: reduce || instant ? 0 : DUR.tab + 0.1, ease: EASE }}
+          onAnimationComplete={() => {
+            if (loop && i === n) {
+              setInstant(true);
+              setI(0);
+            }
+          }}
         >
-          {images.map((img, k) => (
-            <div key={img.image} className="carousel__slide" aria-hidden={k !== i}>
-              <Picture img={{ ...img, square: true }} ctx={ctx} />
+          {slides.map((img, k) => (
+            <div key={k} className="carousel__slide" aria-hidden={k % n !== page || k === n}>
+              {aspect ? (
+                <Img id={img.image} alt={img.alt} sizes={vwSizes(ctx.widths.get(img.image) ?? 335)} load={ctx.load} fill className="carousel__img" />
+              ) : (
+                <Picture img={{ ...img, square: true }} ctx={ctx} />
+              )}
             </div>
           ))}
         </motion.div>
@@ -238,8 +276,8 @@ function Carousel({ images, ctx }: { images: ImageRef[]; ctx: Ctx }) {
           <polygon points="16,9.5 0,0 0,19" />
         </svg>
       </button>
-      <p className="visually-hidden" aria-live="polite">
-        Page {i + 1} of {n}
+      <p className="visually-hidden" aria-live={hold || !autoplay ? 'polite' : 'off'}>
+        Page {page + 1} of {n}
       </p>
     </div>
   );

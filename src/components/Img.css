@@ -16,8 +16,6 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* Ảnh bị cắt khung (crop): giữ phần quan trọng — đặt --focus trên khung ảnh */
-  object-position: var(--focus, 50% 50%);
 }
 /* Ảnh mờ: phóng lên + làm mờ để giấu điểm ảnh 20px */
 .img__ph {

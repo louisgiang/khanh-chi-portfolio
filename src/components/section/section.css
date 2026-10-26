@@ -394,6 +394,22 @@
 .entry--left.has-carousel {
   grid-template-columns: calc(var(--s) * 397) 1fr;
 }
+.entry--right.has-carousel {
+  grid-template-columns: 1fr calc(var(--s) * 397);
+}
+/* Khung trình chiếu cố định (Community): ảnh khác tỉ lệ thu vừa khung, phần trống là nền tối nhẹ */
+.carousel.is-frame .carousel__viewport {
+  border-radius: calc(var(--s) * 20);
+  background: rgba(0, 0, 0, 0.15);
+}
+.carousel.is-frame .carousel__track,
+.carousel.is-frame .carousel__slide {
+  height: 100%;
+}
+.carousel__img > img,
+.carousel__img picture > img {
+  object-fit: contain;
+}
 .entry__title {
   margin: 0;
   font-weight: 700;
@@ -843,7 +859,8 @@ a.pill-btn:focus-visible {
   /* Mục nghiên cứu: ảnh tài liệu lên trên, chữ dưới */
   .entry,
   .entry--left,
-  .entry--left.has-carousel {
+  .entry--left.has-carousel,
+  .entry--right.has-carousel {
     grid-template-columns: minmax(0, 1fr);
     row-gap: 14px;
   }
@@ -852,6 +869,10 @@ a.pill-btn:focus-visible {
   }
   .entry__media {
     max-width: 320px;
+  }
+  /* Khung trình chiếu Community: hết bề ngang */
+  .entry.has-frame .entry__media {
+    max-width: none;
   }
 
   .pill-btn {
@@ -882,59 +903,3 @@ a.pill-btn:focus-visible {
   }
 }
 
-/* Khối 2 cột (Community): như mục Research — chữ một bên, cột ảnh một bên, căn giữa theo chiều dọc.
-   Bề rộng cột ảnh đặt trong content (--split-media) để chiều cao ảnh ≈ chiều cao đoạn chữ. */
-.split {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) var(--split-media);
-  column-gap: calc(var(--s) * 28);
-  align-items: center;
-}
-.split--media-left {
-  grid-template-columns: var(--split-media) minmax(0, 1fr);
-}
-.split--media-right .split__media {
-  order: 2;
-}
-.split__media {
-  display: flex;
-  align-items: flex-start;
-  gap: var(--split-gap);
-}
-.split__img {
-  flex-basis: 0;
-  min-width: 0;
-}
-/* Ảnh xếp chồng trên – dưới, cùng bề rộng cột ảnh */
-.split--stack .split__media {
-  flex-direction: column;
-}
-.split--stack .split__img {
-  flex: none !important;
-  width: 100%;
-}
-/* Cắt khung (crop) chỉ khi 2 cột; điện thoại ảnh hết bề ngang nên giữ nguyên khung gốc */
-@media (min-width: 768px) {
-  .split__img > .img[style*='--crop'] {
-    aspect-ratio: var(--crop) !important;
-  }
-}
-@media (max-width: 767px) {
-  /* Điện thoại: ảnh lên trên (xếp dọc, mỗi ảnh hết bề ngang), chữ xuống dưới */
-  .split,
-  .split--media-left {
-    grid-template-columns: minmax(0, 1fr);
-    row-gap: 14px;
-  }
-  .split--media-right .split__media {
-    order: 0;
-  }
-  .split__media {
-    flex-direction: column;
-    gap: 12px;
-  }
-  .split__img {
-    flex: none !important;
-    width: 100%;
-  }
-}

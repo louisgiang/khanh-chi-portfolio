@@ -76,3 +76,29 @@ Nhánh `sua-26-10-b` (tạo từ `main` mới nhất), **chưa push**. Mỗi m�
     - Hàng Youth for Impact: không có cách nào nếu không cắt giấy chứng nhận AIESEC.
 - **Điện thoại (375px):** đặt cạnh nhau thì mỗi ảnh < 150px (certificate X-Interval ~80px, Leadership/AIESEC ~147px), nên theo quy tắc → **xếp dọc**, ảnh trên, chữ dưới, full ngang. Không cuộn ngang.
 - **Ảnh 1440px:** trước `truoc-v3-community-*.jpg` (bản v2), sau `sau-v3-community-*.jpg`.
+
+---
+
+## Mục 2 — bản v4 (khung ảnh tự trượt, layout `entry` của Research) — thay các bản v1–v3
+- **Đã gỡ khối `split`** (bố cục v1–v3) và phần cắt khung ảnh đi kèm, vì không còn chỗ nào dùng.
+- **Mỗi hàng là một `entry`** như Research, không có title/meta.
+  - Đã cho phép bỏ trống `title`/`meta`; không hiện dòng trống.
+  - Khung ảnh là `carousel` rộng như cột carousel của Research (`--s * 397`).
+  - X-Interval: khung trái (webinar → certificate). Youth for Impact: khung phải (Leadership → AIESEC). Chữ giữ nguyên, kiểu chữ giống Research.
+- **Khung cố định tỉ lệ 1.38** (hơi dẹt hơn 4:3). Ảnh khác tỉ lệ thu vừa khung (`contain`), không cắt chữ trên giấy chứng nhận, không nhảy khung khi đổi ảnh.
+- **Cân chiều cao khung / đoạn chữ: 1.00** ở cả 1280, 1440, 1920px (cả 2 hàng).
+- **Tự trượt** (`"autoplay": true` trên entry, mặc định tắt → **Research bài 4 không đổi**, đã kiểm). Đã kiểm bằng Chrome headless:
+  - Đổi ảnh mỗi 3.5 giây, trượt ngang, hết ảnh cuối thì tiến tiếp sang ảnh đầu (không tua ngược).
+  - Dừng khi rê chuột / focus vào khung, khi khung không nằm trong màn hình, khi ô Community đóng.
+  - Bấm ◀ ▶ vẫn chạy và đếm lại thời gian.
+  - `prefers-reduced-motion: reduce` thì không tự chạy.
+- **Nền phần trống trong khung:** mặc định `rgba(0,0,0,.15)` bo góc như ảnh khác. Ảnh chụp cả 2 kiểu:
+  - `sau-v4-*-nen-toi.jpg` (nền tối nhẹ)
+  - `sau-v4-*-trong-suot.jpg` (trong suốt)
+
+  Đổi sang trong suốt chỉ cần sửa 1 dòng CSS (`.carousel.is-frame .carousel__viewport`).
+- **Điện thoại (375px):** khung hết bề ngang phía trên, chữ bên dưới, vẫn tự trượt, không cuộn ngang (`sau-v4-community-375.jpg`).
+- **`hyphens: auto` đã xoá** (từ bản v3), giữ `text-align: justify`. Trên điện thoại cột hẹp nên vài dòng căn đều có khoảng trắng rộng hơn.
+- **Ảnh 1440px:**
+  - Trước (bản v3): `truoc-v4-community-*.jpg`.
+  - Sau: `sau-v4-{x-interval,youth-for-impact}-anh{1,2}-{nen-toi,trong-suot}.jpg`.
