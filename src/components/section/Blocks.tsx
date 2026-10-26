@@ -158,14 +158,17 @@ function ViewLink({ href, label, tabIndex }: { href: string; label?: string; tab
 
 /** Khối 2 cột (Community): chữ một bên, cột ảnh một bên — các ảnh cao bằng nhau (flex-grow theo tỉ lệ khung). */
 function Split({ block: { split: s }, ctx }: { block: SplitBlock; ctx: Ctx }) {
+  // Tổng flex-grow < 1 (vd. một ảnh dọc) thì flex không lấp hết cột → nâng tổng lên 1 (như Row).
+  const sum = s.images.reduce((a, c) => a + splitAspect(c), 0);
+  const k = sum < 1 ? 1 / sum : 1;
   return (
     <div
-      className={`split split--media-${s.side}`}
+      className={`split split--media-${s.side}${s.stack ? ' split--stack' : ''}`}
       style={{ '--split-media': u(s.mediaWidth), '--split-gap': u(SPLIT_IMG_GAP) } as CSSProperties}
     >
       <div className="split__media">
         {s.images.map((c) => (
-          <div key={c.image} className="split__img" style={{ flexGrow: splitAspect(c) }}>
+          <div key={c.image} className="split__img" style={{ flexGrow: splitAspect(c) * k }}>
             <Picture
               img={c}
               ctx={ctx}

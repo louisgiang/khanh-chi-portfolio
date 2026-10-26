@@ -906,6 +906,14 @@ a.pill-btn:focus-visible {
   flex-basis: 0;
   min-width: 0;
 }
+/* Ảnh xếp chồng trên – dưới, cùng bề rộng cột ảnh */
+.split--stack .split__media {
+  flex-direction: column;
+}
+.split--stack .split__img {
+  flex: none !important;
+  width: 100%;
+}
 /* Cắt khung (crop) chỉ khi 2 cột; điện thoại ảnh hết bề ngang nên giữ nguyên khung gốc */
 @media (min-width: 768px) {
   .split__img > .img[style*='--crop'] {

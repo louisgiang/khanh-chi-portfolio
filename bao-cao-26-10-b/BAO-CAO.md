@@ -36,3 +36,25 @@ Nhánh `sua-26-10-b` (tạo từ `main` mới nhất), **chưa push**. Mỗi m�
 1. **Giữ như hiện tại:** 2 cột, ảnh nhỏ hơn chữ (~0.53), căn giữa theo chiều dọc.
 2. **Cắt slide "Leadership with a Global Compass"** về phần tiêu đề + gạch đầu dòng bên trái: đạt khoảng 0.65, vẫn chưa tới mức chênh 10%, và mất phần "7 days / 17 goals / 1 mission".
 3. **Hàng này để như bản gốc:** 2 ảnh cạnh nhau phủ hết bề ngang, đoạn chữ ở dòng dưới. Ảnh to, chữ không bị hẹp; chỉ hàng X-Interval theo kiểu 2 cột.
+
+---
+
+## Mục 2 — làm lại theo bố cục mới (bản v2, thay bản 2 cột ở trên)
+- **Hàng 1 X-Interval:**
+  - Ảnh webinar đứng một mình một hàng, hết bề ngang, đúng tỉ lệ gốc (bỏ `square`, không cắt).
+  - Bên dưới là 2 cột: giấy chứng nhận bên trái, caption bên phải.
+- **Hàng 2 Youth for Impact:** 2 cột, đoạn chữ bên trái; bên phải là Leadership (trên) và AIESEC (dưới) xếp chồng, cùng bề rộng.
+- **Đo tỉ lệ cao ảnh / cao chữ:** đều đạt (≤ 10%).
+
+  | Màn | Hàng 1 | Hàng 2 | Cột chữ |
+  |---|---|---|---|
+  | 1280px | 1.02 | 1.01 | 585–594px |
+  | 1440px | 1.02 | 1.01 | 659–669px |
+  | 1920px | 1.02 | 1.01 | 881–894px |
+
+- **Hệ quả:** ảnh nhỏ. Vì đoạn chữ chỉ cao ~5 dòng khi cột chữ rộng, ảnh cũng phải thấp theo:
+  - Giấy chứng nhận X-Interval rộng ~**100px** ở 1440.
+  - Mỗi ảnh hàng 2 rộng ~**90px** ở 1440, chữ trên slide và giấy chứng nhận AIESEC gần như không đọc được.
+  - Đây là giới hạn của yêu cầu "cao bằng nhau", không phải lỗi.
+- **Điện thoại:** xếp dọc hết bề ngang, không cuộn ngang. Mình chọn **ảnh trước, chữ sau** cho cả 2 hàng: hàng 1 là webinar → giấy chứng nhận → caption; hàng 2 là Leadership → AIESEC → đoạn chữ. Cách này đọc giống hàng 1 và giống các mục khác.
+- **Ảnh 1440px:** `sau-v2-community-x-interval.jpg`, `sau-v2-community-youth-for-impact.jpg` (ảnh trước: `truoc-community-*.jpg`).

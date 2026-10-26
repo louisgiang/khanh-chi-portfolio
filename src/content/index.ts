@@ -41,7 +41,8 @@ export type EntryBlock = Spaced & { entry: Entry };
 export type SplitImage = ImageRef & { crop?: number; focus?: string };
 /** Khối 2 cột như mục Research: một cột chữ, một cột ảnh (các ảnh đứng cạnh nhau, cao bằng nhau),
  *  căn giữa theo chiều dọc. side = phía của cột ảnh; mediaWidth = bề rộng cột ảnh (đơn vị thiết kế). */
-export type SplitBlock = Spaced & { split: { side: 'left' | 'right'; images: SplitImage[]; text: string; mediaWidth: number } };
+/** stack: các ảnh xếp chồng trên – dưới (cùng bề rộng = mediaWidth) thay vì đứng cạnh nhau. */
+export type SplitBlock = Spaced & { split: { side: 'left' | 'right'; images: SplitImage[]; text: string; mediaWidth: number; stack?: boolean } };
 export type VideoRef = { poster: string; alt: string; draft?: boolean; youtube?: string };
 export type VideoBlock = Spaced & { video: VideoRef; width: number };
 

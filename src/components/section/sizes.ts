@@ -76,7 +76,7 @@ export function imageWidths(item: Item): Map<string, number> {
       const r = b.split.images.map(splitAspect);
       const sum = r.reduce((a, x) => a + x, 0);
       const free = b.split.mediaWidth - SPLIT_IMG_GAP * (r.length - 1);
-      b.split.images.forEach((c, i) => out.set(c.image, (free * r[i]) / sum));
+      b.split.images.forEach((c, i) => out.set(c.image, b.split.stack ? b.split.mediaWidth : (free * r[i]) / sum));
     } else if (isEntry(b)) {
       if (b.entry.image) out.set(b.entry.image, ENTRY_IMG_W);
       for (const c of b.entry.carousel ?? []) out.set(c.image, CAROUSEL_IMG_W);

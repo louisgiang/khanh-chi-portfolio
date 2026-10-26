@@ -160,19 +160,19 @@
           ]
         },
         { "mt": 17, "text": "After teaching in small classrooms, I’m eager to see that science spark reaches more students. At the Vietnam STEM, AI and Robotics Championship, I organized a stage where students from across the country came to test their ideas, and co-managed the Water Rocket track, the same experiment I once taught to ethnic children, now launching from the hands of teams who built it themselves." },
-        { "mt": 37, "split": {
-            "side": "left", "mediaWidth": 459,
+        { "mt": 37, "image": "applied-science/community-7", "alt": "Ảnh chụp màn hình buổi hội thảo trực tuyến X-Interval với các diễn giả", "draft": true },
+        { "mt": 20, "split": {
+            "side": "left", "mediaWidth": 136,
             "images": [
-              {"image": "applied-science/community-7", "alt": "Ảnh chụp màn hình buổi hội thảo trực tuyến X-Interval với các diễn giả", "draft": true, "square": true, "crop": 0.83, "focus": "74% 50%"},
-              {"image": "applied-science/community-8", "alt": "Giấy chứng nhận ban tổ chức X-Interval trao cho Lê Phạm Khánh Chi", "draft": true}
+              { "image": "applied-science/community-8", "alt": "Giấy chứng nhận ban tổ chức X-Interval trao cho Lê Phạm Khánh Chi", "draft": true }
             ],
             "text": "Beyond the experiments, I set out to change how youngsters approach the environment, as a shared responsibility. I hosted webinar X-Interval, inviting speaker Loh Wai Lam from National University of Singapore, turning experts’ knowledge about carbon and the energy transition into conversations that anyone could join and carry forward."
         } },
         { "mt": 40, "split": {
-            "side": "right", "mediaWidth": 459,
+            "side": "right", "stack": true, "mediaWidth": 123,
             "images": [
-              {"image": "applied-science/community-9", "alt": "Ảnh chụp màn hình bài trình bày “Leadership with a Global Compass”", "draft": true},
-              {"image": "applied-science/community-10", "alt": "Giấy chứng nhận AIESEC trao cho Lê Phạm Khánh Chi vì dẫn dắt dự án Youth For Impact", "draft": true}
+              { "image": "applied-science/community-9", "alt": "Ảnh chụp màn hình bài trình bày “Leadership with a Global Compass”", "draft": true },
+              { "image": "applied-science/community-10", "alt": "Giấy chứng nhận AIESEC trao cho Lê Phạm Khánh Chi vì dẫn dắt dự án Youth For Impact", "draft": true }
             ],
             "text": "Whether in a workshop or at a community project site during Youth for Impact, I find the same spark in every student – hands raised with wonder, questions flowing about climate, education, and fairness. In their curiosity, I see my younger self, reciting all seventeen SDGs under my breath, tracing how those goals could one day reach the villages I came from."
         } }
