@@ -76,13 +76,16 @@ export default function Home() {
           </h1>
           <p className="home__name">Khanh Chi</p>
           <p className="home__tagline">
-            /a discoverer by curiosity, a
+            {/* Ngắt dòng ngắn để chữ cỡ 70 không chạm buồm thuyền Applied Science */}
+            /a discoverer by curiosity,
             <br />
-            water healer with care, a
+            a water healer with care,
             <br />
-            storyteller in frames, and a
+            a storyteller in frames,
             <br />
-            villager at heart/
+            and a villager
+            <br />
+            at heart/
           </p>
         </div>
       </div>

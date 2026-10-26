@@ -98,8 +98,8 @@
   left: calc(var(--u) * 95.5);
   top: calc(var(--u) * 608);
   font-weight: 400;
-  font-size: calc(var(--u) * 56);
-  line-height: calc(var(--u) * 57);
+  font-size: calc(var(--u) * 70);
+  line-height: calc(var(--u) * 84);
   color: #f4ffd2;
 }
 
