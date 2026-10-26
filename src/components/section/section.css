@@ -237,7 +237,6 @@
 .item__note,
 .entry__text {
   text-align: justify;
-  hyphens: auto;
 }
 /* Nghiêng trong nội dung (*chữ*): font chỉ có Light Italic → dùng họ font chỉ có chữ đứng
    để trình duyệt tự nghiêng đúng độ đậm của đoạn chứa nó (kể cả đậm + nghiêng). */

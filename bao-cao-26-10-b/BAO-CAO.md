@@ -58,3 +58,21 @@ Nhánh `sua-26-10-b` (tạo từ `main` mới nhất), **chưa push**. Mỗi m�
   - Đây là giới hạn của yêu cầu "cao bằng nhau", không phải lỗi.
 - **Điện thoại:** xếp dọc hết bề ngang, không cuộn ngang. Mình chọn **ảnh trước, chữ sau** cho cả 2 hàng: hàng 1 là webinar → giấy chứng nhận → caption; hàng 2 là Leadership → AIESEC → đoạn chữ. Cách này đọc giống hàng 1 và giống các mục khác.
 - **Ảnh 1440px:** `sau-v2-community-x-interval.jpg`, `sau-v2-community-youth-for-impact.jpg` (ảnh trước: `truoc-community-*.jpg`).
+
+---
+
+## Mục 2 — bản v3 (theo mẫu Research, 2 ảnh cạnh nhau) — thay bản v2
+- **Bố cục:** 2 cột như Research, căn giữa theo chiều dọc, xen kẽ.
+  - Hàng X-Interval: ảnh trái (webinar giữ tỉ lệ gốc, **bỏ `square`**, không cắt + certificate), chữ phải.
+  - Hàng Youth for Impact: chữ trái, ảnh phải (Leadership + AIESEC).
+  - Ở 1440px: cột ảnh **380px**, cột chữ **380px**.
+- **Bỏ ngắt chữ giữa từ:** đã xoá `hyphens: auto` (chỉ có 1 chỗ trong `section.css`), giữ `text-align: justify`.
+  - Lưu ý: "X-Interval" vẫn có thể xuống dòng ngay sau dấu "-". Đó là dấu gạch thật trong chữ, không phải ngắt từ tự động. Muốn chặn thì phải đổi ký tự thành gạch nối không ngắt (U+2011), tức là đổi chữ, nên chưa làm.
+- **Không đạt "chênh ≤ 10%":** cụm ảnh cao **0.62** (X-Interval) và **0.52** (Youth for Impact) lần đoạn chữ. Số này giống nhau ở 1280 / 1440 / 1920px.
+  - **Đây là mức cao nhất có thể** khi giữ các điều kiện: 2 ảnh cạnh nhau, không cắt ảnh, cột chữ ≥ 360px.
+  - Lý do: 2 ảnh đặt ngang thành một dải rất dẹt (webinar 2.1:1 + certificate 0.77:1; Leadership 1.5:1 + AIESEC 1.5:1). Nới cột ảnh thì cột chữ hẹp lại và đoạn chữ cao lên tương ứng, nên tỉ lệ không vượt quá ~0.62 / ~0.53 dù chia cột thế nào.
+  - Muốn đạt ≤ 10%:
+    - Hàng X-Interval: chỉ cần cho phép **cắt khung ảnh webinar** về ô diễn giả (như bản v1, đã đạt 1.00).
+    - Hàng Youth for Impact: không có cách nào nếu không cắt giấy chứng nhận AIESEC.
+- **Điện thoại (375px):** đặt cạnh nhau thì mỗi ảnh < 150px (certificate X-Interval ~80px, Leadership/AIESEC ~147px), nên theo quy tắc → **xếp dọc**, ảnh trên, chữ dưới, full ngang. Không cuộn ngang.
+- **Ảnh 1440px:** trước `truoc-v3-community-*.jpg` (bản v2), sau `sau-v3-community-*.jpg`.
