@@ -7500,6 +7500,53 @@
       }
     ]
   },
+  "my-little-village/yfc-video": {
+    "width": 1280,
+    "height": 720,
+    "aspect": 1.7778,
+    "alpha": false,
+    "color": "#181828",
+    "placeholder": "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAAAQBACdASoUAAsAPu1iqU2ppaOiMAgBMB2JZACdBJfwf7g6p+kkr2AguAD8B2wfOt2L2IM2lTHXZxnOpTpFj7+G5TzNa5gnYeVuzmO3sb9N8U/eUPqKAoXkabaSfW0r85U1AejwOtyHgSLRXcGyC7OtdYH6cxyk6JK+I5XfKdXm/E7frJM1i33nkAA=",
+    "widths": [
+      480,
+      800,
+      1200
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/my-little-village/yfc-video-480.avif",
+        "bytes": 21624
+      },
+      {
+        "w": 800,
+        "src": "/img/my-little-village/yfc-video-800.avif",
+        "bytes": 34642
+      },
+      {
+        "w": 1200,
+        "src": "/img/my-little-village/yfc-video-1200.avif",
+        "bytes": 49027
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/my-little-village/yfc-video-480.webp",
+        "bytes": 20938
+      },
+      {
+        "w": 800,
+        "src": "/img/my-little-village/yfc-video-800.webp",
+        "bytes": 36698
+      },
+      {
+        "w": 1200,
+        "src": "/img/my-little-village/yfc-video-1200.webp",
+        "bytes": 56650
+      }
+    ]
+  },
   "stage-and-screen/aria-1": {
     "width": 676,
     "height": 454,
