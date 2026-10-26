@@ -20,11 +20,12 @@ type Boat = {
 // Thứ tự = thứ tự Tab bàn phím, theo thanh tab của trang con (My Journey → … → My Little Village).
 // Toạ độ chữ đã so khớp với ảnh thiết kế (lệch < 1px ở khổ 3840).
 const BOATS: Boat[] = [
-  { id: 'my-journey', shape: '223,1586 787,1371 1413,1613 1114,1908 480,1908', label: { x: 772, y: 1887, angle: 0.8 } },
-  { id: 'applied-science', shape: '1490,584 1908,323 2093,492 2423,472 2208,787 1651,795', label: { x: 1939, y: 660, angle: -4.5 } },
-  { id: 'craft-villages', shape: '2024,1321 2726,1056 3310,1298 3041,1820 2246,1724 2070,1417', label: { x: 2632, y: 1727, angle: 6 } },
-  { id: 'stage-and-screen', shape: '2557,618 3080,296 3602,472 3487,829 2957,914 2834,872', label: { x: 3162, y: 818, angle: -4.25 } },
-  { id: 'my-little-village', shape: '611,983 1102,668 1713,902 1283,1263 1137,1283 826,1210', label: { x: 1068, y: 1111, angle: 1.2 } },
+  // Thứ tự câu chuyện (cũng là thứ tự phím Tab): My Journey → Applied Science → Craft Villages → Stage & Screen → My Little Village.
+  { id: 'my-journey', shape: '223,1586 787,1371 1413,1613 1114,1908 480,1908', label: { x: 772, y: 1887, angle: 0.8 } }, // dưới trái, xanh lá
+  { id: 'applied-science', shape: '611,983 1102,668 1713,902 1283,1263 1137,1283 826,1210', label: { x: 1068, y: 1111, angle: 1.2 } }, // giữa trái, hồng tím
+  { id: 'craft-villages', shape: '1490,584 1908,323 2093,492 2423,472 2208,787 1651,795', label: { x: 1939, y: 660, angle: -4.5 } }, // trên giữa, xanh ngọc
+  { id: 'stage-and-screen', shape: '2557,618 3080,296 3602,472 3487,829 2957,914 2834,872', label: { x: 3162, y: 818, angle: -4.25 } }, // trên phải, cam
+  { id: 'my-little-village', shape: '2024,1321 2726,1056 3310,1298 3041,1820 2246,1724 2070,1417', label: { x: 2632, y: 1727, angle: 6 } }, // dưới phải, hồng
 ];
 
 const titleOf = (id: SectionId) => SECTIONS.find((s) => s.id === id)!.title;
