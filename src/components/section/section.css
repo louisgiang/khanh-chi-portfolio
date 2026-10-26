@@ -533,8 +533,16 @@
   animation-play-state: running;
 }
 .item.is-open .marquee:hover .marquee__track,
-.item.is-open .marquee:focus-within .marquee__track {
+.item.is-open .marquee:focus-within .marquee__track,
+.item.is-open .marquee.is-playing .marquee__track {
   animation-play-state: paused;
+}
+/* Chú thích dưới video trong băng ảnh: chữ thường, không khung */
+.marquee__note {
+  margin-top: calc(var(--s) * 12);
+}
+.marquee__slide > .view {
+  margin-top: calc(var(--s) * 12);
 }
 .marquee.is-static .marquee__track {
   animation: none;

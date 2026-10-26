@@ -180,28 +180,16 @@
         { "mt": 40, "text": "Alongside achievements and research, I ventured into the world where chemistry becomes a working language – applying its precision and patience in a nanotechnology lab and a recycling social enterprise, where my creative designing ideas have to bend to the discarded materials and constraints." },
         { "mt": 48, "variant": "subtitle", "text": "Intern at Hanoi National University of Education – Nanotechnology Lab" },
         { "mt": 14, "text": "In collaboration with Prof. Dr. Quoc Trung Vu, I developed a low-cost fish-scale nanocomposite for dye removal, applied in Pa Co Brocade Village. With Dr. Minh Duc Tran, I developed rice-husk activated carbon for Ni(II) removal, tested in Ha Thai Lacquer and Ninh So Bamboo/Rattan Weaving Villages." },
-        { "mt": 30, "variant": "subheading", "text": "Worked with Prof. Dr. Quoc Trung Vu" },
-        { "mt": 14, "$note": "Câu cuối (applied to Pa Co): ĐỀ XUẤT — chờ duyệt", "text": "Researched fish-scale-derived HAp/PANI nanocomposites using room-temperature green chemistry for textile dye removal; achieved superior adsorption, 50% lower cost than commercial activated carbon, and high reusability; won a Special Award at iCAN and HIUF. The material was then applied to treat wastewater in Pa Co Brocade Village." },
         {
-          "mt": 24, "gap": 15,
-          "row": [
-            { "image": "applied-science/internship-1", "alt": "Khánh Chi mặc áo blouse dùng pipet trong phòng thí nghiệm", "draft": true },
-            { "video": { "poster": "applied-science/internship-3", "alt": "Video: Khánh Chi thực tập hè tại phòng Lab ĐHSP Hà Nội", "draft": true, "youtube": "https://www.youtube.com/embed/Zi3fMPmyXrU" } }
+          "mt": 24, "height": 428, "gap": 14,
+          "$note": "Dải ảnh chạy (đợt 26/10): 2 ảnh lab kèm report, ảnh than hoạt tính, video lab; caption video = đoạn 'Stepping into…'.",
+          "marquee": [
+            { "image": "applied-science/internship-1", "alt": "Khánh Chi mặc áo blouse dùng pipet trong phòng thí nghiệm", "draft": true, "viewLabel": "FTIR Analysis of HAp-PANi Composite Report", "view": "https://drive.google.com/file/d/1OZY34QlfvbtxTpRNWeCB-44AlPgieZAn/view?usp=sharing" },
+            { "image": "applied-science/internship-2", "alt": "Khánh Chi nhỏ dung dịch vào bình cầu chứa chất lỏng xanh", "draft": true, "viewLabel": "Results/Discussion Report of Chitosan-Modified Rice Husk Activated Carbon", "view": "https://drive.google.com/file/d/1xi6BYpvQlV0xybVnYT0lxQ66il6QW4md/view?usp=sharing" },
+            { "image": "applied-science/internship-7", "alt": "Bột than hoạt tính màu đen trong cốc thuỷ tinh", "draft": true },
+            { "video": { "poster": "applied-science/internship-3", "alt": "Video: Khánh Chi thực tập hè tại phòng Lab ĐHSP Hà Nội", "draft": true, "youtube": "https://www.youtube.com/embed/Zi3fMPmyXrU" }, "note": "Stepping into the chemistry lab at HNUE, I was filled with anticipation and curiosity. The air buzzed with the promise of discovery, and I was eager to immerse myself in the world where science meets untreated water." }
           ]
         },
-        { "mt": 17, "text": "Stepping into the chemistry lab at HNUE, I was filled with anticipation and curiosity. The air buzzed with the promise of discovery, and I was eager to immerse myself in the world where science meets untreated water." },
-        { "mt": 17, "viewLabel": "FTIR Analysis of HAp-PANi Composite Report", "view": "https://drive.google.com/file/d/1OZY34QlfvbtxTpRNWeCB-44AlPgieZAn/view?usp=sharing" },
-        { "mt": 44, "variant": "subheading", "text": "Worked with Dr. Minh Duc Tran" },
-        { "mt": 14, "$note": "Ni(II) ở đây vs Cu(II)/Pb(II) ở Achievements — chờ Khánh Chi xác nhận; chép nguyên văn.", "text": "Developed rice-husk-derived activated carbon for sustainable Ni(II) wastewater treatment, achieving 80% removal under optimized Langmuir model conditions; won Gold at WICO and applied the method to treat bamboo/rattan weaving and lacquer painting wastewater in Ha Thai Lacquer and Ninh So Bamboo/Rattan Weaving Villages." },
-        {
-          "mt": 24, "gap": 15,
-          "$todo": "Ảnh tạm (internship-2, internship-7) — thay bằng ảnh nhóm thầy Đức",
-          "row": [
-            { "image": "applied-science/internship-2", "alt": "Khánh Chi nhỏ dung dịch vào bình cầu chứa chất lỏng xanh", "draft": true },
-            { "image": "applied-science/internship-7", "alt": "Bột than hoạt tính màu đen trong cốc thuỷ tinh", "draft": true }
-          ]
-        },
-        { "mt": 17, "viewLabel": "Results/Discussion Report of Chitosan-Modified Rice Husk Activated Carbon", "view": "https://drive.google.com/file/d/1xi6BYpvQlV0xybVnYT0lxQ66il6QW4md/view?usp=sharing" },
         { "mt": 56, "variant": "subtitle", "text": "Intern at Red River Recycling", "$todo": "Certificate thực tập Red River — chờ ảnh" },
         {
           "mt": 24, "gap": 15,

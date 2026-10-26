@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState, type CSSProperties } from 'react';
 import { motion, useReducedMotion } from 'motion/react';
-import type { Block, Cell, Entry, ImageRef, Item, MarqueeBlock, RowBlock, SlideshowBlock, VideoRef } from '../../content';
-import { isButton, isDivider, isEntry, isImage, isImageCell, isVideoCell, isMarquee, isRow, isSlideshow, isText, isVideo, isView } from '../../content';
+import type { Block, Cell, Entry, ImageRef, Item, MarqueeBlock, MarqueeItem, RowBlock, SlideshowBlock, VideoRef } from '../../content';
+import { isButton, isDivider, isEntry, isImage, isImageCell, isVideoCell, isMarquee, isMarqueeVideo, isRow, isSlideshow, isText, isVideo, isView } from '../../content';
 import { Img, imageEntry } from '../Img';
 import { RichText } from '../RichText';
 import { DUR, EASE } from '../../motion';
@@ -138,7 +138,7 @@ function CellView({ cell: c, ctx }: { cell: Cell; ctx: Ctx }) {
 }
 
 /** Link bài báo / report: dòng "[View here]" riêng (giữ cả ngoặc vuông), mở tab mới; label = tên report ở dòng trên. */
-function ViewLink({ href, label }: { href: string; label?: string }) {
+function ViewLink({ href, label, tabIndex }: { href: string; label?: string; tabIndex?: number }) {
   return (
     <div className="view">
       {label && (
@@ -147,7 +147,7 @@ function ViewLink({ href, label }: { href: string; label?: string }) {
         </p>
       )}
       <p className="view__link">
-        <a href={href} target="_blank" rel="noopener noreferrer" className="item__link">
+        <a href={href} target="_blank" rel="noopener noreferrer" className="item__link" tabIndex={tabIndex}>
           [View here]
         </a>
       </p>
@@ -221,26 +221,41 @@ function Carousel({ images, ctx }: { images: ImageRef[]; ctx: Ctx }) {
 const MARQUEE_SPEED = 45; // đơn vị thiết kế / giây
 function Marquee({ block: b, ctx }: { block: MarqueeBlock; ctx: Ctx }) {
   const reduce = useReducedMotion();
+  // Video trong băng đang phát → dừng băng (rê chuột / focus đã dừng bằng CSS).
+  const [playing, setPlaying] = useState(false);
   const gap = b.gap ?? 10;
-  const imgW = (c: ImageRef) => b.height * (imageEntry(c.image)?.aspect ?? 1);
+  const idOf = (c: MarqueeItem) => (isMarqueeVideo(c) ? c.video.poster : c.image);
+  const imgW = (c: MarqueeItem) => b.height * (imageEntry(idOf(c))?.aspect ?? 1);
   // Ảnh dọc hẹp có chú thích: khung rộng tối thiểu minWidth (nếu đặt) để chú thích không quá nhiều dòng.
-  const slideW = (c: MarqueeBlock['marquee'][number]) => (c.note ? Math.max(imgW(c), b.minWidth ?? 0) : imgW(c));
+  const slideW = (c: MarqueeItem) => (c.note ? Math.max(imgW(c), b.minWidth ?? 0) : imgW(c));
   const len = b.marquee.reduce((s, c) => s + slideW(c) + gap, 0);
   const slides = (copy: number) =>
     b.marquee.map((c) => (
       <figure
-        key={`${copy}-${c.image}`}
+        key={`${copy}-${idOf(c)}`}
         className="marquee__slide"
         style={{ width: mu(slideW(c)), marginRight: mu(gap) }}
         aria-hidden={copy > 0 || undefined}
       >
-        <Picture img={c} ctx={ctx} style={{ width: mu(imgW(c)), marginInline: 'auto' }} />
+        {isMarqueeVideo(c) ? (
+          copy > 0 ? (
+            // Bản sao lặp: chỉ ảnh bìa (không phát video lần 2)
+            <Picture img={{ image: c.video.poster, alt: '' }} ctx={ctx} style={{ width: mu(imgW(c)), marginInline: 'auto' }} />
+          ) : (
+            <div style={{ width: mu(imgW(c)), marginInline: 'auto' }}>
+              <Video video={c.video} ctx={ctx} onPlay={() => setPlaying(true)} />
+            </div>
+          )
+        ) : (
+          <Picture img={c} ctx={ctx} style={{ width: mu(imgW(c)), marginInline: 'auto' }} />
+        )}
         {c.note && (
-          <figcaption className="item__note item__note--box">
+          <figcaption className={`item__note${isMarqueeVideo(c) ? ' marquee__note' : ' item__note--box'}`}>
             <RichText text={c.note} />
           </figcaption>
         )}
-        {c.button && (
+        {!isMarqueeVideo(c) && c.view && <ViewLink href={c.view} label={c.viewLabel} tabIndex={copy > 0 ? -1 : undefined} />}
+        {!isMarqueeVideo(c) && c.button && (
           <p className="pill-btn__wrap is-center marquee__btn">
             {c.button.href ? (
               <a className="pill-btn" href={c.button.href} target="_blank" rel="noopener noreferrer" tabIndex={copy > 0 ? -1 : undefined}>
@@ -255,7 +270,7 @@ function Marquee({ block: b, ctx }: { block: MarqueeBlock; ctx: Ctx }) {
     ));
   return (
     <div
-      className={`marquee${reduce ? ' is-static' : ''}`}
+      className={`marquee${reduce ? ' is-static' : ''}${playing ? ' is-playing' : ''}`}
       role="group"
       aria-roledescription="carousel"
       aria-label="Gallery"
@@ -393,7 +408,7 @@ function youtubeId(v?: string) {
 }
 
 /** Video YouTube: ảnh bìa + nút phát, bấm mới tải trình phát. width (đơn vị thiết kế) bỏ trống = rộng 100% ô chứa. */
-function Video({ video, width, ctx }: { video: VideoRef; width?: number; ctx: Ctx }) {
+function Video({ video, width, ctx, onPlay }: { video: VideoRef; width?: number; ctx: Ctx; onPlay?: () => void }) {
   const b = { video };
   const id = youtubeId(video.youtube);
   const [playing, setPlaying] = useState(false);
@@ -413,7 +428,11 @@ function Video({ video, width, ctx }: { video: VideoRef; width?: number; ctx: Ct
           <Picture img={{ image: b.video.poster, alt: b.video.alt }} ctx={ctx} />
           {/* Chừa khung: khi có link YouTube (trường "youtube" trong content) sẽ bấm để phát. */}
           {id && (
-            <button type="button" className="video__play" aria-label={`Play video: ${b.video.alt}`} onClick={() => setPlaying(true)}>
+            <button type="button" className="video__play" aria-label={`Play video: ${b.video.alt}`} onClick={() => {
+                setPlaying(true);
+                onPlay?.();
+              }}
+            >
               <svg viewBox="0 0 68 48" aria-hidden="true">
                 <path d="M66.5 7.7a8.5 8.5 0 0 0-6-6C55.3.3 34 .3 34 .3s-21.3 0-26.5 1.4a8.5 8.5 0 0 0-6 6C.1 13 .1 24 .1 24s0 11 1.4 16.3a8.5 8.5 0 0 0 6 6C12.7 47.7 34 47.7 34 47.7s21.3 0 26.5-1.4a8.5 8.5 0 0 0 6-6C67.9 35 67.9 24 67.9 24s0-11-1.4-16.3z" fill="#f00" />
                 <path d="M27 34V14l18 10z" fill="#fff" />

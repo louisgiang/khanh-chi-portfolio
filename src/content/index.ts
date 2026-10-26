@@ -41,8 +41,13 @@ export type VideoBlock = Spaced & { video: VideoRef; width: number };
 
 /** Băng ảnh trượt ngang tự động (ảnh cao bằng nhau `height`, mỗi ảnh có thể kèm ô chú thích). */
 /** minWidth: khung ảnh có chú thích rộng tối thiểu (đơn vị thiết kế) — cho ảnh dọc hẹp, tránh chú thích quá nhiều dòng. */
+/** Phần tử băng ảnh: ảnh (kèm chú thích / nút / dòng [View here]) hoặc một video YouTube (kèm chú thích). */
+export type MarqueeImage = ImageRef & View & { note?: string; button?: { text: string; href?: string } };
+export type MarqueeVideo = { video: VideoRef; note?: string };
+export type MarqueeItem = MarqueeImage | MarqueeVideo;
+export const isMarqueeVideo = (c: MarqueeItem): c is MarqueeVideo => 'video' in c;
 export type MarqueeBlock = Spaced & {
-  marquee: (ImageRef & { note?: string; button?: { text: string; href?: string } })[];
+  marquee: MarqueeItem[];
   height: number;
   gap?: number;
   minWidth?: number;
@@ -95,7 +100,7 @@ export function itemImages(item: Item): string[] {
       if (b.entry.image) out.push(b.entry.image);
       for (const c of b.entry.carousel ?? []) out.push(c.image);
     } else if (isVideo(b)) out.push(b.video.poster);
-    else if (isMarquee(b)) for (const c of b.marquee) out.push(c.image);
+    else if (isMarquee(b)) for (const c of b.marquee) out.push(isMarqueeVideo(c) ? c.video.poster : c.image);
     else if (isSlideshow(b)) for (const c of b.slideshow) out.push(c.image);
   }
   return out;
