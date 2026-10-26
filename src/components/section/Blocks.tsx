@@ -169,7 +169,7 @@ function Split({ block: { split: s }, ctx }: { block: SplitBlock; ctx: Ctx }) {
             <Picture
               img={c}
               ctx={ctx}
-              style={{ ...(c.crop ? { aspectRatio: String(c.crop) } : null), ...(c.focus ? { '--focus': c.focus } : null) } as CSSProperties}
+              style={{ ...(c.crop ? { '--crop': String(c.crop) } : null), ...(c.focus ? { '--focus': c.focus } : null) } as CSSProperties}
             />
           </div>
         ))}

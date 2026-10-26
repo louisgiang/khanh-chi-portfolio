@@ -906,6 +906,12 @@ a.pill-btn:focus-visible {
   flex-basis: 0;
   min-width: 0;
 }
+/* Cắt khung (crop) chỉ khi 2 cột; điện thoại ảnh hết bề ngang nên giữ nguyên khung gốc */
+@media (min-width: 768px) {
+  .split__img > .img[style*='--crop'] {
+    aspect-ratio: var(--crop) !important;
+  }
+}
 @media (max-width: 767px) {
   /* Điện thoại: ảnh lên trên (xếp dọc, mỗi ảnh hết bề ngang), chữ xuống dưới */
   .split,
