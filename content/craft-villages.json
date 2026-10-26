@@ -45,11 +45,10 @@
         { "mt": 24, "variant": "caption", "text": "Introducing the people of Pa Co to a boat that treats dye wastewater, with the adsorbent built right into it." },
         {
           "mt": 24, "gap": 10,
-          "$todo": "Thay 3 ảnh mờ pa-co-3, pa-co-4, pa-co-5 — chờ ảnh mới",
           "row": [
             { "image": "craft-villages/pa-co-3", "alt": "Khánh Chi cùng một phụ nữ H'Mong đeo gùi hái lá trong rừng", "draft": true },
             { "image": "craft-villages/pa-co-4", "alt": "Khánh Chi ngồi cùng người dân chặt rễ cây lấy màu nhuộm", "draft": true },
-            { "image": "craft-villages/pa-co-5", "alt": "Khánh Chi cho lá cây vào thùng nước để ngâm lấy màu", "draft": true }
+            { "image": "craft-villages/pa-co-5", "alt": "Khánh Chi ngồi cùng người phụ nữ H'Mong băm củ, rễ cây trên thớt gỗ để lấy màu nhuộm", "draft": true }
           ]
         },
         { "mt": 28, "text": "Cleaning the water was only half the solution; what’s there to dye instead of industrial bright colors? I followed the locals into the forest, finding roots, leaves, and bark that hold color. Back in the courtyard, I helped them dye the fibre thread, shade after shade, brighter than I had ever imagined. By the end of those days, the gaps between my fingers were stained with the color of those roots.", "$note": "Câu cuối: ĐỀ XUẤT — chờ duyệt" },
@@ -67,17 +66,17 @@
           ]
         },
         { "mt": 45, "variant": "title", "text": "Gallery: Traditional Attire in Natural Color", "$todo": "Thêm ảnh cổ phục: ảnh buổi chụp, ảnh chú Huy gửi biểu diễn trên sân khấu, cảnh ngoài trời" },
-        { "mt": 48, "text": "These vibrant colors are all extracted from natural plants. Purple is magenta plant (Peristrophe roxburghiana). Green blends Assam indigo (Strobilanthes cusia) with yellow vine (Fibraurea recisa). Yellow comes from turmeric (Curcuma longa), and deep brown from dye yam (Dioscorea cirrhosa)." },
-        { "mt": 24, "image": "craft-villages/pa-co-gallery-6", "alt": "Khánh Chi cùng anh Huy đứng giữa các bộ trang phục cổ may từ vải nhuộm tự nhiên", "draft": true, "width": 760, "center": true },
+        { "mt": 30, "image": "craft-villages/pa-co-gallery-6", "alt": "Khánh Chi cùng anh Huy đứng giữa các bộ trang phục cổ may từ vải nhuộm tự nhiên", "draft": true, "width": 760, "center": true },
         { "mt": 17, "text": "Returning to the city, I met Mr. Huy, founder of Dong Phong Atelier to promote traditional Vietnamese attire of earlier centuries, made from Pa Co's naturally dyed cloth." },
         {
-          "mt": 24, "gap": 20,
+          "mt": 28, "gap": 20,
           "row": [
             { "image": "craft-villages/pa-co-attire-1", "alt": "Hai bộ áo cổ màu tím và xanh lá trên giá treo, phía trên là nón lá", "draft": true },
             { "image": "craft-villages/pa-co-attire-2", "alt": "Hai bộ áo cổ màu vàng nghệ và nâu hoa văn trên giá treo", "draft": true },
             { "image": "craft-villages/pa-co-attire-3", "alt": "Hai bộ áo cổ màu xanh rêu và nâu cam trên giá treo", "draft": true }
           ]
         },
+        { "mt": 17, "text": "These vibrant colors are all extracted from natural plants. Purple is magenta plant (Peristrophe roxburghiana). Green blends Assam indigo (Strobilanthes cusia) with yellow vine (Fibraurea recisa). Yellow comes from turmeric (Curcuma longa), and deep brown from dye yam (Dioscorea cirrhosa)." },
         { "mt": 24, "divider": true },
         {
           "mt": 26, "gap": 10,
