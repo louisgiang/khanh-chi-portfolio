@@ -4,6 +4,99 @@
   "intro": "A corner of people and perspectives, where friendships take shape, voices blend, and compassion takes root. Do you think I am only shaped by science, craft villages, and film? Think again. Everyone who has stood beside me left a color in me. Empathy, humility, openness, and the patience to hear another side. A leader who listens, a storyteller who observes, and a volunteer who contributes, cares, and gives back, I cultivate every facet of myself, letting each endeavor color the journey beyond the classroom.",
   "items": [
     {
+      "id": "summer-programs",
+      "title": "Summer Programs",
+      "blocks": [
+        {
+          "mt": 30,
+          "text": "Far from home, I learned how the world measures its rivers and its climate, then carried those questions back to the villages I care about."
+        },
+        {
+          "mt": 30,
+          "variant": "subtitle",
+          "text": "Summer@Brown"
+        },
+        {
+          "mt": 20,
+          "height": 380,
+          "gap": 14,
+          "$note": "Ảnh Brown: thư mục Brown/1–6. Ảnh 3 (thẻ sinh viên) đã che Banner ID, Brown ID, mã vạch, số thẻ.",
+          "marquee": [
+            {
+              "image": "my-little-village/summer-brown-1",
+              "alt": "Khánh Chi cầm khung ảnh #BrownPreCollege trước tượng gấu Brown",
+              "draft": true
+            },
+            {
+              "image": "my-little-village/summer-brown-2",
+              "alt": "Khánh Chi trong phòng học của Đại học Brown",
+              "draft": true
+            },
+            {
+              "image": "my-little-village/summer-brown-3",
+              "alt": "Tay cầm thẻ Brown Summer Student trên bãi cỏ khuôn viên trường",
+              "draft": true
+            },
+            {
+              "image": "my-little-village/summer-brown-4",
+              "alt": "Lớp học Global Climate Change, laptop mở trên bàn",
+              "draft": true
+            },
+            {
+              "image": "my-little-village/summer-brown-6",
+              "alt": "Màn chiếu bài giảng về phổ điện từ trong lớp học",
+              "draft": true
+            }
+          ]
+        },
+        {
+          "mt": 24,
+          "width": 760,
+          "center": true,
+          "image": "my-little-village/summer-brown-5",
+          "alt": "Bảng điểm khoá học Summer@Brown của Chi Le, tổng 99.25%",
+          "draft": true
+        },
+        {
+          "mt": 17,
+          "text": "At Summer@Brown, climate change stopped being a headline and became something I could model. With the Global Climate Change program, I joined climate science with international policy to design mitigation strategies, learning that a good answer needs the data and the people it will affect. Back at the Cleen Project, I turned those models into environmental lessons, so what I met in Providence could reach students at home."
+        },
+        {
+          "mt": 44,
+          "variant": "subtitle",
+          "text": "Stanford Pre-Collegiate Summer Institutes"
+        },
+        {
+          "mt": 20,
+          "width": 860,
+          "center": true,
+          "image": "my-little-village/summer-stanford-1",
+          "alt": "Thư trúng tuyển Stanford Pre-Collegiate Summer Institutes 2025, khoá Environmental Solutions",
+          "draft": true
+        },
+        {
+          "mt": 20,
+          "gap": 15,
+          "row": [
+            {
+              "image": "my-little-village/summer-stanford-2",
+              "alt": "Slide nhóm: Wetlands turn nitrate into harmless nitrogen gas",
+              "draft": true
+            },
+            {
+              "image": "my-little-village/summer-stanford-3",
+              "alt": "Ảnh chụp màn hình lớp học trực tuyến Stanford với các bạn học",
+              "draft": true
+            }
+          ]
+        },
+        {
+          "mt": 17,
+          "text": "Stanford’s Chemical and Environmental Engineering course began with a plain problem: nitrogen washing off farmland and into the water. Guided by Dr. Jim Doherty of UW–Madison, my team proposed restoring wetlands to catch it, weighing what the land gives nature against what it gives people. Within two weeks, I was reading water in a new way, and soon put it to work on adsorbents at the Nanotechnology Lab."
+        }
+      ]
+    },
+    {
       "id": "cleen-project",
       "title": "Cleen Project",
       "blocks": [

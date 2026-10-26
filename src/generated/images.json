@@ -6850,6 +6850,396 @@
       }
     ]
   },
+  "my-little-village/summer-brown-1": {
+    "width": 960,
+    "height": 1280,
+    "aspect": 0.75,
+    "alpha": false,
+    "color": "#4878c8",
+    "placeholder": "data:image/webp;base64,UklGRuAAAABXRUJQVlA4INQAAABQBQCdASoUABsAPu1qrVCppiQiqAqpMB2JagC7Mxmv/i2bQrWWm71KuIYvgg+oUTi24UAAzCF93JWZ/mc8mdqAoqap3u3blE4I2WaIPFcJ7ugG8WUvqVqTNWo/h2bDsMkho7mERLVTYDTX1DbGN2nPAzzHr5v068vL24QPHY8skhRy5wuKUxVLUpHJCbLnjjUfOY6lqB9/pYnOpARU+tJvXoBdgbM9osK3jcu5R9UkMlyNSnj1Ynf0cM80m8WypgEo7I0RBGDZSceVfShJfZ3z67AAAA==",
+    "widths": [
+      480,
+      800
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/my-little-village/summer-brown-1-480.avif",
+        "bytes": 48196
+      },
+      {
+        "w": 800,
+        "src": "/img/my-little-village/summer-brown-1-800.avif",
+        "bytes": 121755
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/my-little-village/summer-brown-1-480.webp",
+        "bytes": 46794
+      },
+      {
+        "w": 800,
+        "src": "/img/my-little-village/summer-brown-1-800.webp",
+        "bytes": 123738
+      }
+    ]
+  },
+  "my-little-village/summer-brown-2": {
+    "width": 1170,
+    "height": 2080,
+    "aspect": 0.5625,
+    "alpha": false,
+    "color": "#988878",
+    "placeholder": "data:image/webp;base64,UklGRugAAABXRUJQVlA4INwAAACQBgCdASoUACQAPu1wq1KppiOipWsxMB2JZwDKBAgR4HuxFM9JWwTbwQYSFVzgB2FpvG8sJsgCRYcoCoawAPyycuphiU2PCCGkZNJfO8dBL2ZBh5mZavye8zJtLyjSPuQ00W3P3Wz+eYMFuOjLLRehLtKWPakE1x8XZZM2hrgp2kK61hGKqdVux4WcBwgZ7efLBIS3/MOCRl/1BdUIAAvtEyprDaUnzxCh2VZQlW+QAYBHnn5+I7i6lpfP8bTYKFmNyIF7QufoAGXIAiqixDNAEt4Qg4WDzn6TUAAA",
+    "widths": [
+      480,
+      800,
+      1170
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/my-little-village/summer-brown-2-480.avif",
+        "bytes": 24822
+      },
+      {
+        "w": 800,
+        "src": "/img/my-little-village/summer-brown-2-800.avif",
+        "bytes": 50338
+      },
+      {
+        "w": 1170,
+        "src": "/img/my-little-village/summer-brown-2-1170.avif",
+        "bytes": 92323
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/my-little-village/summer-brown-2-480.webp",
+        "bytes": 28796
+      },
+      {
+        "w": 800,
+        "src": "/img/my-little-village/summer-brown-2-800.webp",
+        "bytes": 62168
+      },
+      {
+        "w": 1170,
+        "src": "/img/my-little-village/summer-brown-2-1170.webp",
+        "bytes": 104532
+      }
+    ]
+  },
+  "my-little-village/summer-brown-3": {
+    "width": 960,
+    "height": 1280,
+    "aspect": 0.75,
+    "alpha": false,
+    "color": "#f8f8f8",
+    "placeholder": "data:image/webp;base64,UklGRtQAAABXRUJQVlA4IMgAAAAwBQCdASoUABsAPu1ur1KppiQiqAgBMB2JZgC2yArCxHrXU95xTdKp98easna0BUfAAAD+bJar5Jz2NRXbBNuV0YBIyF7FbBmT1eAtg1wYysXtoxwExjqfeCw+Knsremerz/WvHfC9GOwlzXDE+kl+lwVv6UZWJI0VacbVOh/prnOmIVKU8bwt2TvlPr8UHlWivX1hNNYhO95MR624V0yx9JtLxxjit90gl3vORdadQQ3PxwuWHglhcOYtk5LQOyzVxdqyoAAAAA==",
+    "widths": [
+      480,
+      800
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/my-little-village/summer-brown-3-480.avif",
+        "bytes": 64271
+      },
+      {
+        "w": 800,
+        "src": "/img/my-little-village/summer-brown-3-800.avif",
+        "bytes": 179901
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/my-little-village/summer-brown-3-480.webp",
+        "bytes": 64336
+      },
+      {
+        "w": 800,
+        "src": "/img/my-little-village/summer-brown-3-800.webp",
+        "bytes": 185742
+      }
+    ]
+  },
+  "my-little-village/summer-brown-4": {
+    "width": 960,
+    "height": 1280,
+    "aspect": 0.75,
+    "alpha": false,
+    "color": "#786848",
+    "placeholder": "data:image/webp;base64,UklGRtgAAABXRUJQVlA4IMwAAADQBACdASoUABsAPu1ur1KppiQiqAgBMB2JQBOmZfgYdJC4aJ8m6f3RlBdjzNjAAAD+offQBIDiOla/gyj7zhv/lIh8U2irri4jcISOznNS4wdQk0t6fNwN4sBQaUsef1EtYLWIpoXAgpiyMwDmKhjI/IZlj7tjhPYFH5Y7xJq0p+S1pugg7fP5A105ZFE8tJXvBCUOl3UMBkx73KHfIX2y1E3Y2CMS2nj9PAYMBzC7ZpwmSQVbyqtNCpcQd7PWgMIZTvn0NLkG5ksFoAA=",
+    "widths": [
+      480,
+      800
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/my-little-village/summer-brown-4-480.avif",
+        "bytes": 24987
+      },
+      {
+        "w": 800,
+        "src": "/img/my-little-village/summer-brown-4-800.avif",
+        "bytes": 41779
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/my-little-village/summer-brown-4-480.webp",
+        "bytes": 28542
+      },
+      {
+        "w": 800,
+        "src": "/img/my-little-village/summer-brown-4-800.webp",
+        "bytes": 51026
+      }
+    ]
+  },
+  "my-little-village/summer-brown-5": {
+    "width": 1966,
+    "height": 1620,
+    "aspect": 1.2136,
+    "alpha": true,
+    "color": "#f8f8f8",
+    "placeholder": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAAAwAwCdASoUABAAPu1iqU2ppaOiMAgBMB2JaQAAUp+/UeKAAP64UR84h+yiNgtBFEbyn9+82zVWQaAA",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/my-little-village/summer-brown-5-480.avif",
+        "bytes": 10437
+      },
+      {
+        "w": 800,
+        "src": "/img/my-little-village/summer-brown-5-800.avif",
+        "bytes": 21599
+      },
+      {
+        "w": 1200,
+        "src": "/img/my-little-village/summer-brown-5-1200.avif",
+        "bytes": 35323
+      },
+      {
+        "w": 1600,
+        "src": "/img/my-little-village/summer-brown-5-1600.avif",
+        "bytes": 50764
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/my-little-village/summer-brown-5-480.webp",
+        "bytes": 12044
+      },
+      {
+        "w": 800,
+        "src": "/img/my-little-village/summer-brown-5-800.webp",
+        "bytes": 27180
+      },
+      {
+        "w": 1200,
+        "src": "/img/my-little-village/summer-brown-5-1200.webp",
+        "bytes": 46802
+      },
+      {
+        "w": 1600,
+        "src": "/img/my-little-village/summer-brown-5-1600.webp",
+        "bytes": 67838
+      }
+    ]
+  },
+  "my-little-village/summer-brown-6": {
+    "width": 960,
+    "height": 1280,
+    "aspect": 0.75,
+    "alpha": false,
+    "color": "#684808",
+    "placeholder": "data:image/webp;base64,UklGRroAAABXRUJQVlA4IK4AAAAQBQCdASoUABsAPu1kqk2ppaQiMAgBMB2JbACxHtU+ACT2mytOlcsTdSqROm7WmUi4APnsc6llNh3+qmZp2mv3D4WwN9aQ7No1lEd+fn99L2Xb5m76994gE3kN9E9GcELvG/2pDg71vFx6IVXyGs0w+c1wuqbMj1TijrW824R3eRaiYMv/LvmW2rzMs5eG/iWF2ooc5NgHc6tkA13GH7rIQ5odEFMcXVLra3O3gAA=",
+    "widths": [
+      480,
+      800
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/my-little-village/summer-brown-6-480.avif",
+        "bytes": 14722
+      },
+      {
+        "w": 800,
+        "src": "/img/my-little-village/summer-brown-6-800.avif",
+        "bytes": 27835
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/my-little-village/summer-brown-6-480.webp",
+        "bytes": 17210
+      },
+      {
+        "w": 800,
+        "src": "/img/my-little-village/summer-brown-6-800.webp",
+        "bytes": 34508
+      }
+    ]
+  },
+  "my-little-village/summer-stanford-1": {
+    "width": 1207,
+    "height": 1303,
+    "aspect": 0.9263,
+    "alpha": false,
+    "color": "#f8f8f8",
+    "placeholder": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAABwBACdASoUABYAPu1ip04ppSMiMBgMATAdiWkAAC51m5n9/tJ/b994xljgAAD+8DnHGnR8xO1+iDIkL9igdLziTmiuTkbwa5dKSlV5hUl3jklIAAA=",
+    "widths": [
+      480,
+      800,
+      1200
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/my-little-village/summer-stanford-1-480.avif",
+        "bytes": 30723
+      },
+      {
+        "w": 800,
+        "src": "/img/my-little-village/summer-stanford-1-800.avif",
+        "bytes": 67791
+      },
+      {
+        "w": 1200,
+        "src": "/img/my-little-village/summer-stanford-1-1200.avif",
+        "bytes": 116568
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/my-little-village/summer-stanford-1-480.webp",
+        "bytes": 36398
+      },
+      {
+        "w": 800,
+        "src": "/img/my-little-village/summer-stanford-1-800.webp",
+        "bytes": 81036
+      },
+      {
+        "w": 1200,
+        "src": "/img/my-little-village/summer-stanford-1-1200.webp",
+        "bytes": 138226
+      }
+    ]
+  },
+  "my-little-village/summer-stanford-2": {
+    "width": 2940,
+    "height": 1622,
+    "aspect": 1.8126,
+    "alpha": true,
+    "color": "#f8f8f8",
+    "placeholder": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADwAwCdASoUAAsAPu1iqk4ppaQiMAgBMB2JZwAAXg7Uso6rnCXVkDYAAP7uEzp0qpPmD62+rVYIm/E2GJmVGKI6bEyLglEh4mgti/ZguPuKyhfHE51MIxJnwAA=",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/my-little-village/summer-stanford-2-480.avif",
+        "bytes": 10242
+      },
+      {
+        "w": 800,
+        "src": "/img/my-little-village/summer-stanford-2-800.avif",
+        "bytes": 20868
+      },
+      {
+        "w": 1200,
+        "src": "/img/my-little-village/summer-stanford-2-1200.avif",
+        "bytes": 34568
+      },
+      {
+        "w": 1600,
+        "src": "/img/my-little-village/summer-stanford-2-1600.avif",
+        "bytes": 49622
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/my-little-village/summer-stanford-2-480.webp",
+        "bytes": 11234
+      },
+      {
+        "w": 800,
+        "src": "/img/my-little-village/summer-stanford-2-800.webp",
+        "bytes": 25136
+      },
+      {
+        "w": 1200,
+        "src": "/img/my-little-village/summer-stanford-2-1200.webp",
+        "bytes": 45004
+      },
+      {
+        "w": 1600,
+        "src": "/img/my-little-village/summer-stanford-2-1600.webp",
+        "bytes": 66604
+      }
+    ]
+  },
+  "my-little-village/summer-stanford-3": {
+    "width": 986,
+    "height": 686,
+    "aspect": 1.4373,
+    "alpha": true,
+    "color": "#080808",
+    "placeholder": "data:image/webp;base64,UklGRqwAAABXRUJQVlA4IKAAAADQAwCdASoUAA4APu1iqU2ppaOiMAgBMB2JYwCdAYwcukdGF+3mHgAAzXjzOrbjOwfSMfO45mNRdwwup3tdISoqw7XYXfUqqJcmbxXrJG/23nSGvXp8atVlYvoks52R6af4gBmYkkxrTcjW2BTd2i+9njvBbZUrQ5oU25rG/fjNTgLreAhcD7K0qR5lhAvTfTFHX3txNvDlMcArSabtAAAA",
+    "widths": [
+      480,
+      800
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/my-little-village/summer-stanford-3-480.avif",
+        "bytes": 17102
+      },
+      {
+        "w": 800,
+        "src": "/img/my-little-village/summer-stanford-3-800.avif",
+        "bytes": 26488
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/my-little-village/summer-stanford-3-480.webp",
+        "bytes": 17428
+      },
+      {
+        "w": 800,
+        "src": "/img/my-little-village/summer-stanford-3-800.webp",
+        "bytes": 29716
+      }
+    ]
+  },
   "my-little-village/yfc-1": {
     "width": 1036,
     "height": 632,
