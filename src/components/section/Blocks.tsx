@@ -1,11 +1,11 @@
 import { useEffect, useRef, useState, type CSSProperties } from 'react';
 import { motion, useReducedMotion } from 'motion/react';
-import type { Block, Cell, Entry, ImageRef, Item, MarqueeBlock, MarqueeItem, RowBlock, SlideshowBlock, VideoRef } from '../../content';
-import { isButton, isDivider, isEntry, isImage, isImageCell, isVideoCell, isMarquee, isMarqueeVideo, isRow, isSlideshow, isText, isVideo, isView } from '../../content';
+import type { Block, Cell, Entry, ImageRef, Item, MarqueeBlock, MarqueeItem, RowBlock, SlideshowBlock, SplitBlock, VideoRef } from '../../content';
+import { isButton, isDivider, isEntry, isImage, isImageCell, isVideoCell, isMarquee, isMarqueeVideo, isRow, isSlideshow, isSplit, isText, isVideo, isView } from '../../content';
 import { Img, imageEntry } from '../Img';
 import { RichText } from '../RichText';
 import { DUR, EASE } from '../../motion';
-import { CONTENT_W, imageWidths, rowGrows, toRows, vwSizes } from './sizes';
+import { CONTENT_W, SPLIT_IMG_GAP, imageWidths, rowGrows, splitAspect, toRows, vwSizes } from './sizes';
 
 const DEFAULT_GAP = 25;
 // Nút tiêu đề đã có đệm dưới 24 → khối đầu tiên trừ đi phần này.
@@ -60,6 +60,7 @@ function BlockView({ block: b, ctx, last }: { block: Block; ctx: Ctx; last: bool
   }
   if (isRow(b)) return <Row row={b} ctx={ctx} />;
   if (isEntry(b)) return <EntryView entry={b.entry} ctx={ctx} last={last} />;
+  if (isSplit(b)) return <Split block={b} ctx={ctx} />;
   if (isVideo(b)) return <Video video={b.video} width={b.width} ctx={ctx} />;
   if (isMarquee(b)) return <Marquee block={b} ctx={ctx} />;
   if (isDivider(b)) return <hr className="item__divider" />;
@@ -150,6 +151,31 @@ function ViewLink({ href, label, tabIndex }: { href: string; label?: string; tab
         <a href={href} target="_blank" rel="noopener noreferrer" className="item__link" tabIndex={tabIndex}>
           [View here]
         </a>
+      </p>
+    </div>
+  );
+}
+
+/** Khối 2 cột (Community): chữ một bên, cột ảnh một bên — các ảnh cao bằng nhau (flex-grow theo tỉ lệ khung). */
+function Split({ block: { split: s }, ctx }: { block: SplitBlock; ctx: Ctx }) {
+  return (
+    <div
+      className={`split split--media-${s.side}`}
+      style={{ '--split-media': u(s.mediaWidth), '--split-gap': u(SPLIT_IMG_GAP) } as CSSProperties}
+    >
+      <div className="split__media">
+        {s.images.map((c) => (
+          <div key={c.image} className="split__img" style={{ flexGrow: splitAspect(c) }}>
+            <Picture
+              img={c}
+              ctx={ctx}
+              style={{ ...(c.crop ? { aspectRatio: String(c.crop) } : null), ...(c.focus ? { '--focus': c.focus } : null) } as CSSProperties}
+            />
+          </div>
+        ))}
+      </div>
+      <p className="item__text entry__text split__text">
+        <RichText text={s.text} />
       </p>
     </div>
   );

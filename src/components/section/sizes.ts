@@ -1,5 +1,5 @@
-import type { Block, Item, RowBlock, TextBlock, ImageBlock } from '../../content';
-import { isImage, isImageCell, isVideoCell, isRow, isEntry, isVideo, isText, isMarquee, isSlideshow } from '../../content';
+import type { Block, Item, RowBlock, TextBlock, ImageBlock, SplitImage } from '../../content';
+import { isImage, isImageCell, isVideoCell, isRow, isEntry, isVideo, isText, isMarquee, isSlideshow, isSplit } from '../../content';
 import { imageEntry } from '../Img';
 
 // Kích thước theo khung thiết kế 1920: thẻ rộng 1138, nội dung 1053 (lề trong 40 + viền 3).
@@ -8,8 +8,12 @@ export const GAP_X = 20;
 export const ZIGZAG_IMG_W = 599;
 export const ENTRY_IMG_W = 371;
 export const CAROUSEL_IMG_W = 335;
+/** Khối 2 cột (split): khoảng cách giữa các ảnh trong cột ảnh. */
+export const SPLIT_IMG_GAP = 14;
 
 const aspect = (id: string) => imageEntry(id)?.aspect ?? 1;
+/** Tỉ lệ khung hiển thị của ảnh trong khối 2 cột (đã cắt nếu có crop). */
+export const splitAspect = (c: SplitImage) => c.crop ?? aspect(c.image);
 
 /** Bố cục My Journey: chia khối thành hàng (ảnh liền nhau cùng hàng, trừ ảnh `wide`; chữ một hàng).
  *  zigzag: ghép từng cặp chữ + ảnh thành một hàng 2 cột. */
@@ -68,6 +72,11 @@ export function imageWidths(item: Item): Map<string, number> {
         if (isImageCell(c)) out.set(c.image, (free * g[i]) / sum);
         else if (isVideoCell(c)) out.set(c.video.poster, (free * g[i]) / sum);
       });
+    } else if (isSplit(b)) {
+      const r = b.split.images.map(splitAspect);
+      const sum = r.reduce((a, x) => a + x, 0);
+      const free = b.split.mediaWidth - SPLIT_IMG_GAP * (r.length - 1);
+      b.split.images.forEach((c, i) => out.set(c.image, (free * r[i]) / sum));
     } else if (isEntry(b)) {
       if (b.entry.image) out.set(b.entry.image, ENTRY_IMG_W);
       for (const c of b.entry.carousel ?? []) out.set(c.image, CAROUSEL_IMG_W);

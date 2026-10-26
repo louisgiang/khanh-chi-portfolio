@@ -882,3 +882,46 @@ a.pill-btn:focus-visible {
     font-size: 17px;
   }
 }
+
+/* Khối 2 cột (Community): như mục Research — chữ một bên, cột ảnh một bên, căn giữa theo chiều dọc.
+   Bề rộng cột ảnh đặt trong content (--split-media) để chiều cao ảnh ≈ chiều cao đoạn chữ. */
+.split {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) var(--split-media);
+  column-gap: calc(var(--s) * 28);
+  align-items: center;
+}
+.split--media-left {
+  grid-template-columns: var(--split-media) minmax(0, 1fr);
+}
+.split--media-right .split__media {
+  order: 2;
+}
+.split__media {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--split-gap);
+}
+.split__img {
+  flex-basis: 0;
+  min-width: 0;
+}
+@media (max-width: 767px) {
+  /* Điện thoại: ảnh lên trên (xếp dọc, mỗi ảnh hết bề ngang), chữ xuống dưới */
+  .split,
+  .split--media-left {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 14px;
+  }
+  .split--media-right .split__media {
+    order: 0;
+  }
+  .split__media {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .split__img {
+    flex: none !important;
+    width: 100%;
+  }
+}

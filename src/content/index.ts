@@ -36,6 +36,12 @@ export type Entry = View & {
   text: string;
 };
 export type EntryBlock = Spaced & { entry: Entry };
+/** Ảnh trong cột ảnh của khối 2 cột. crop: cắt về tỉ lệ khung này (rộng/cao, object-fit cover);
+ *  focus: điểm giữ lại khi cắt (object-position, vd. "70% 50%"). */
+export type SplitImage = ImageRef & { crop?: number; focus?: string };
+/** Khối 2 cột như mục Research: một cột chữ, một cột ảnh (các ảnh đứng cạnh nhau, cao bằng nhau),
+ *  căn giữa theo chiều dọc. side = phía của cột ảnh; mediaWidth = bề rộng cột ảnh (đơn vị thiết kế). */
+export type SplitBlock = Spaced & { split: { side: 'left' | 'right'; images: SplitImage[]; text: string; mediaWidth: number } };
 export type VideoRef = { poster: string; alt: string; draft?: boolean; youtube?: string };
 export type VideoBlock = Spaced & { video: VideoRef; width: number };
 
@@ -61,7 +67,7 @@ export type SlideshowBlock = Spaced & { slideshow: ImageRef[]; label?: string };
 /** Dòng "[View here]" đứng riêng (kèm tên report phía trên nếu có viewLabel). */
 export type ViewBlock = Spaced & { view: string; viewLabel?: string };
 
-export type Block = TextBlock | ImageBlock | RowBlock | EntryBlock | VideoBlock | MarqueeBlock | DividerBlock | SlideshowBlock | ButtonBlock | ViewBlock;
+export type Block = TextBlock | ImageBlock | RowBlock | EntryBlock | VideoBlock | MarqueeBlock | DividerBlock | SlideshowBlock | ButtonBlock | ViewBlock | SplitBlock;
 /** zigzag/grid: bố cục My Journey (tự ghép ảnh/chữ thành hàng). Không có: khối hiển thị theo thứ tự. */
 export type Item = { id: string; title: string; layout?: 'zigzag' | 'grid'; blocks: Block[] };
 export type PageContent = { title: string; intro?: string; introStyle?: 'italic'; items: Item[] };
@@ -84,6 +90,7 @@ export const isVideo = (b: Block): b is VideoBlock => 'video' in b;
 export const isMarquee = (b: Block): b is MarqueeBlock => 'marquee' in b;
 export const isDivider = (b: Block): b is DividerBlock => 'divider' in b;
 export const isSlideshow = (b: Block): b is SlideshowBlock => 'slideshow' in b;
+export const isSplit = (b: Block): b is SplitBlock => 'split' in b;
 export const isView = (b: Block): b is ViewBlock => 'view' in b;
 export const isImageCell = (c: Cell): c is Extract<Cell, { image: string }> => 'image' in c;
 export const isVideoCell = (c: Cell): c is Extract<Cell, { video: VideoRef }> => 'video' in c;
@@ -96,6 +103,8 @@ export function itemImages(item: Item): string[] {
     else if (isRow(b)) {
       for (const c of b.row) if (isImageCell(c)) out.push(c.image);
       else if (isVideoCell(c)) out.push(c.video.poster);
+    } else if (isSplit(b)) {
+      for (const c of b.split.images) out.push(c.image);
     } else if (isEntry(b)) {
       if (b.entry.image) out.push(b.entry.image);
       for (const c of b.entry.carousel ?? []) out.push(c.image);
