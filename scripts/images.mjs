@@ -35,6 +35,8 @@ const PETAL_WIDTHS = [420, 840];
 function skip(rel) {
   const parts = rel.split('/');
   if (parts.includes('ref')) return true;
+  // Thư mục bắt đầu bằng "_" (vd. _moi-26-10 ảnh chờ xếp, _cu ảnh cũ cất đi): không xuất bản.
+  if (parts.slice(0, -1).some((p) => p.startsWith('_'))) return true;
   if (parts[0] === 'home' && !/ - hover\.\w+$/i.test(rel)) return true;
   if (/-ref\.\w+$/i.test(rel)) return true; // ảnh thiết kế để đối chiếu (home-new/home-ref.png)
   return !/\.(png|jpe?g|webp|tiff?|heic|avif)$/i.test(rel);
@@ -148,6 +150,15 @@ for (const [file, rel] of files) {
   const ov = QUALITY_OVERRIDES.find((o) => o.match.test(rel));
   const hash = createHash('sha1').update(buf).update(ov ? JSON.stringify(qualityFor(rel)) : '').digest('hex');
   const prev = cache[rel];
+  // Ảnh gốc không đổi trên máy này nhưng manifest trong git đã khác (ảnh được thay ở máy khác, vd. ảnh bìa
+  // YouTube chính thức) → tin manifest trong git, không ghi đè bằng bản cũ trong cache máy này.
+  if (prev && prev.hash === hash && oldManifest[prev.id] && JSON.stringify(oldManifest[prev.id]) !== JSON.stringify(prev.entry)) {
+    manifest[prev.id] = oldManifest[prev.id];
+    nextCache[rel] = { ...prev, entry: oldManifest[prev.id] };
+    skipped++;
+    console.log(`= ${rel}: giữ bản trong git (đã được thay ở máy khác)`);
+    continue;
+  }
   if (prev && prev.hash === hash) {
     const ok = await Promise.all([...prev.entry.avif, ...prev.entry.webp].map((v) => exists(path.join(ROOT, 'public', v.src))));
     if (ok.every(Boolean)) {
