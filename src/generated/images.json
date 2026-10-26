@@ -7185,6 +7185,53 @@
       }
     ]
   },
+  "stage-and-screen/aria-video": {
+    "width": 1280,
+    "height": 720,
+    "aspect": 1.7778,
+    "alpha": false,
+    "color": "#380808",
+    "placeholder": "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAAAwBACdASoUAAsAPu1iqU2ppaOiMAgBMB2JZgCdMoADAROh9Ki8/+vHRCwA/qMe9cBHV8zElyzrRX7dfG112EejUV4WKK85egJQAiIno2xTQUZMYJHsWckNakaxpK+EAFBC9HaR3OucA0A/VECd6uJxHOJ9j9hTHfsj6liRyBIuvWn2AAA=",
+    "widths": [
+      480,
+      800,
+      1200
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/stage-and-screen/aria-video-480.avif",
+        "bytes": 8422
+      },
+      {
+        "w": 800,
+        "src": "/img/stage-and-screen/aria-video-800.avif",
+        "bytes": 13995
+      },
+      {
+        "w": 1200,
+        "src": "/img/stage-and-screen/aria-video-1200.avif",
+        "bytes": 20890
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/stage-and-screen/aria-video-480.webp",
+        "bytes": 9058
+      },
+      {
+        "w": 800,
+        "src": "/img/stage-and-screen/aria-video-800.webp",
+        "bytes": 16952
+      },
+      {
+        "w": 1200,
+        "src": "/img/stage-and-screen/aria-video-1200.webp",
+        "bytes": 26742
+      }
+    ]
+  },
   "stage-and-screen/bat-trang-1": {
     "width": 1033,
     "height": 631,
@@ -7937,6 +7984,53 @@
         "w": 1034,
         "src": "/img/stage-and-screen/colors-3-1034.webp",
         "bytes": 35734
+      }
+    ]
+  },
+  "stage-and-screen/colors-video": {
+    "width": 1280,
+    "height": 720,
+    "aspect": 1.7778,
+    "alpha": false,
+    "color": "#181838",
+    "placeholder": "data:image/webp;base64,UklGRrQAAABXRUJQVlA4IKgAAACQBACdASoUAAsAPu1iqU2ppaOiMAgBMB2JbACdMoMlj0apVmtm8FK+yIHp4QAA/Xi6/lNMtjferAtxhG3jYQ8CjykTbGClW29D3E3byOlsn8Ro2qU32D1kV0vggO9AylnCNKcBYaDIlkDPEc6PwMMT11vADuGun8u8wyIiU6yuxTODDW+xRG7rWuQ4uw0Pi8E4XV7hN0TPpdxlyLWC+EwHgQkVPLHUAAA=",
+    "widths": [
+      480,
+      800,
+      1200
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/stage-and-screen/colors-video-480.avif",
+        "bytes": 19345
+      },
+      {
+        "w": 800,
+        "src": "/img/stage-and-screen/colors-video-800.avif",
+        "bytes": 34571
+      },
+      {
+        "w": 1200,
+        "src": "/img/stage-and-screen/colors-video-1200.avif",
+        "bytes": 56089
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/stage-and-screen/colors-video-480.webp",
+        "bytes": 17708
+      },
+      {
+        "w": 800,
+        "src": "/img/stage-and-screen/colors-video-800.webp",
+        "bytes": 35226
+      },
+      {
+        "w": 1200,
+        "src": "/img/stage-and-screen/colors-video-1200.webp",
+        "bytes": 66172
       }
     ]
   }

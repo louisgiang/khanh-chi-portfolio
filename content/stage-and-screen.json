@@ -196,11 +196,18 @@
         },
         {
           "mt": 25,
-          "button": {
-            "text": "[Sắc Màu CNN] Bản hoà sắc văn hoá Hàn Quốc",
-            "href": "https://www.youtube.com/watch?v=br6gfJwQAJU"
+          "video": {
+            "poster": "stage-and-screen/colors-video",
+            "alt": "Video: tiết mục Bản hoà sắc văn hoá Hàn Quốc của lớp 11H tại Sắc Màu CNN",
+            "draft": true,
+            "youtube": "https://www.youtube.com/embed/br6gfJwQAJU"
           },
-          "center": true
+          "width": 637
+        },
+        {
+          "mt": 16,
+          "variant": "caption",
+          "text": "[Sắc Màu CNN] Bản hoà sắc văn hoá Hàn Quốc"
         },
         {
           "mt": 26,
@@ -243,10 +250,18 @@
         },
         {
           "mt": 25,
-          "button": {
-            "text": "[Aria Project] Concert Việt Nam Tinh Hoa",
-            "href": "https://www.youtube.com/watch?v=R4KpIswf_dE"
-          }
+          "video": {
+            "poster": "stage-and-screen/aria-video",
+            "alt": "Video: đêm nhạc dân tộc Việt Nam Tinh Hoa của Aria Project",
+            "draft": true,
+            "youtube": "https://www.youtube.com/embed/R4KpIswf_dE"
+          },
+          "width": 637
+        },
+        {
+          "mt": 16,
+          "variant": "caption",
+          "text": "[Aria Project] Concert Việt Nam Tinh Hoa"
         }
       ]
     }
