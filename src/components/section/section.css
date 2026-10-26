@@ -325,7 +325,7 @@
   border-radius: calc(var(--s) * 10);
   background: rgba(255, 255, 255, 0.12);
   font-weight: 400;
-  font-size: calc(var(--s) * 19);
+  font-size: calc(var(--s) * 24);
   line-height: 1.35;
   text-align: center;
   color: #fff;
@@ -348,6 +348,7 @@
   flex: 1;
 }
 .item__caption-level {
+  font-size: calc(var(--s) * 22);
   font-weight: 500;
   letter-spacing: 0.02em;
 }
@@ -790,7 +791,10 @@ a.pill-btn:focus-visible {
   }
   .item__note,
   .item__caption {
-    font-size: 15px;
+    font-size: 17px;
+  }
+  .item__caption-level {
+    font-size: 16px;
   }
   .entry__meta {
     font-size: 13px;
