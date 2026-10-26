@@ -102,3 +102,18 @@ Nhánh `sua-26-10-b` (tạo từ `main` mới nhất), **chưa push**. Mỗi m�
 - **Ảnh 1440px:**
   - Trước (bản v3): `truoc-v4-community-*.jpg`.
   - Sau: `sau-v4-{x-interval,youth-for-impact}-anh{1,2}-{nen-toi,trong-suot}.jpg`.
+
+---
+
+## Mục 2 — chỉnh v5 (chia đôi 50/50 + zoom ảnh webinar)
+- **Chia đôi:** khung ảnh và đoạn chữ mỗi bên nửa bề ngang (ở 1440px: 380px / 380px).
+- **Tỉ lệ khung chỉnh riêng từng hàng** để khung cao bằng đoạn chữ:
+  - X-Interval: 1.61
+  - Youth for Impact: 1.44
+
+  Đo được 1.00 ở cả 1280, 1440, 1920px.
+- **Ảnh webinar phóng ×1.18 trong khung** (trường `"zoom"`), để bớt khoảng hở trên/dưới:
+  - Hai mép trái/phải bị cắt bớt ~9% mỗi bên; vẫn thấy mặt Cecilia S. Dewi, Loh Wai Lam và ô Nguyễn Minh Anh.
+  - Phóng kín hẳn (cover) đã thử, nhưng cắt mất nửa mặt bà Cecilia nên không dùng.
+- Giấy chứng nhận và slide không phóng (giữ đủ chữ).
+- **Ảnh 1440px:** `sau-v5-{x-interval,youth-for-impact}-anh{1,2}.jpg`.

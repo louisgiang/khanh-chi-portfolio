@@ -185,7 +185,7 @@ function EntryView({ entry: e, ctx, last }: { entry: Entry; ctx: Ctx; last: bool
  *  (sau ảnh cuối là bản sao ảnh đầu, tới đó nhảy thầm về đầu); dừng khi rê chuột / focus / khung không hiện
  *  trong màn hình (thẻ đóng); bấm tay thì đếm lại; giảm chuyển động → không tự chạy. */
 const CAROUSEL_INTERVAL = 3500;
-function Carousel({ images, ctx, aspect, autoplay = false }: { images: ImageRef[]; ctx: Ctx; aspect?: number; autoplay?: boolean }) {
+function Carousel({ images, ctx, aspect, autoplay = false }: { images: (ImageRef & { zoom?: number })[]; ctx: Ctx; aspect?: number; autoplay?: boolean }) {
   const [i, setI] = useState(0); // autoplay: 0..n (n = bản sao ảnh đầu)
   const [instant, setInstant] = useState(false);
   const [visible, setVisible] = useState(false);
@@ -263,7 +263,7 @@ function Carousel({ images, ctx, aspect, autoplay = false }: { images: ImageRef[
           {slides.map((img, k) => (
             <div key={k} className="carousel__slide" aria-hidden={k % n !== page || k === n}>
               {aspect ? (
-                <Img id={img.image} alt={img.alt} sizes={vwSizes(ctx.widths.get(img.image) ?? 335)} load={ctx.load} fill className="carousel__img" />
+                <Img id={img.image} alt={img.alt} sizes={vwSizes(ctx.widths.get(img.image) ?? 335)} load={ctx.load} fill className="carousel__img" style={img.zoom ? ({ '--zoom': img.zoom } as CSSProperties) : undefined} />
               ) : (
                 <Picture img={{ ...img, square: true }} ctx={ctx} />
               )}

@@ -70,7 +70,9 @@ export function imageWidths(item: Item): Map<string, number> {
       });
     } else if (isEntry(b)) {
       if (b.entry.image) out.set(b.entry.image, ENTRY_IMG_W);
-      for (const c of b.entry.carousel ?? []) out.set(c.image, CAROUSEL_IMG_W);
+      // Khung cố định (Community) chiếm nửa bề ngang: nửa nội dung trừ khoảng giữa 2 cột và 2 nút mũi tên.
+      const w = b.entry.carouselAspect ? (CONTENT_W - 28) / 2 - 62 : CAROUSEL_IMG_W;
+      for (const c of b.entry.carousel ?? []) out.set(c.image, w);
     } else if (isVideo(b)) out.set(b.video.poster, b.width);
     else if (isMarquee(b))
       for (const c of b.marquee) {

@@ -397,6 +397,11 @@
 .entry--right.has-carousel {
   grid-template-columns: 1fr calc(var(--s) * 397);
 }
+/* Khung trình chiếu Community: khung ảnh và đoạn chữ chia đôi bề ngang (50/50) */
+.entry--left.has-frame,
+.entry--right.has-frame {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+}
 /* Khung trình chiếu cố định (Community): ảnh khác tỉ lệ thu vừa khung, phần trống là nền tối nhẹ */
 .carousel.is-frame .carousel__viewport {
   border-radius: calc(var(--s) * 20);
@@ -406,9 +411,15 @@
 .carousel.is-frame .carousel__slide {
   height: 100%;
 }
+/* Ảnh phóng (zoom) không lấn sang ảnh bên cạnh khi trượt */
+.carousel.is-frame .carousel__slide {
+  overflow: hidden;
+}
 .carousel__img > img,
 .carousel__img picture > img {
   object-fit: contain;
+  /* zoom (content): phóng nhẹ ảnh rất ngang/dọc để bớt khoảng hở trong khung */
+  transform: scale(var(--zoom, 1));
 }
 .entry__title {
   margin: 0;

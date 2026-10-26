@@ -30,7 +30,8 @@ export type Entry = View & {
   image?: string;
   alt?: string;
   draft?: boolean;
-  carousel?: ImageRef[];
+  /** zoom: phóng ảnh trong khung (vd. 1.18) để bớt khoảng hở khi ảnh khác tỉ lệ khung — mép ngoài bị cắt bớt tương ứng. */
+  carousel?: (ImageRef & { zoom?: number })[];
   /** Khung trình chiếu cố định tỉ lệ (rộng/cao), ảnh khác tỉ lệ thu vừa khung (contain) — không nhảy khi đổi ảnh. */
   carouselAspect?: number;
   /** Trình chiếu tự trượt (mặc định tắt). */
