@@ -138,7 +138,7 @@ function CellView({ cell: c, ctx }: { cell: Cell; ctx: Ctx }) {
 }
 
 /** Link bài báo / report: dòng "[View here]" riêng (giữ cả ngoặc vuông), mở tab mới; label = tên report ở dòng trên. */
-function ViewLink({ href, label, tabIndex }: { href: string; label?: string; tabIndex?: number }) {
+function ViewLink({ href, label, tabIndex }: { href?: string; label?: string; tabIndex?: number }) {
   return (
     <div className="view">
       {label && (
@@ -146,11 +146,13 @@ function ViewLink({ href, label, tabIndex }: { href: string; label?: string; tab
           <RichText text={label} />
         </p>
       )}
-      <p className="view__link">
-        <a href={href} target="_blank" rel="noopener noreferrer" className="item__link" tabIndex={tabIndex}>
-          [View here]
-        </a>
-      </p>
+      {href && (
+        <p className="view__link">
+          <a href={href} target="_blank" rel="noopener noreferrer" className="item__link" tabIndex={tabIndex}>
+            [View here]
+          </a>
+        </p>
+      )}
     </div>
   );
 }
@@ -288,7 +290,7 @@ function Carousel({ images, ctx, aspect, autoplay = false }: { images: (ImageRef
 const MARQUEE_SPEED = 45; // đơn vị thiết kế / giây
 function Marquee({ block: b, ctx }: { block: MarqueeBlock; ctx: Ctx }) {
   const reduce = useReducedMotion();
-  // Video trong băng đang phát → dừng băng (rê chuột / focus đã dừng bằng CSS).
+  // Video trong băng đang phát → dừng băng; video tạm dừng / kết thúc → băng chạy lại. (Rê chuột: CSS.)
   const [playing, setPlaying] = useState(false);
   const gap = b.gap ?? 10;
   const idOf = (c: MarqueeItem) => (isMarqueeVideo(c) ? c.video.poster : c.image);
@@ -310,7 +312,7 @@ function Marquee({ block: b, ctx }: { block: MarqueeBlock; ctx: Ctx }) {
             <Picture img={{ image: c.video.poster, alt: '' }} ctx={ctx} style={{ width: mu(imgW(c)), marginInline: 'auto' }} />
           ) : (
             <div style={{ width: mu(imgW(c)), marginInline: 'auto' }}>
-              <Video video={c.video} ctx={ctx} onPlay={() => setPlaying(true)} />
+              <Video video={c.video} ctx={ctx} onPlay={() => setPlaying(true)} onStop={() => setPlaying(false)} />
             </div>
           )
         ) : (
@@ -321,7 +323,7 @@ function Marquee({ block: b, ctx }: { block: MarqueeBlock; ctx: Ctx }) {
             <RichText text={c.note} />
           </figcaption>
         )}
-        {!isMarqueeVideo(c) && c.view && <ViewLink href={c.view} label={c.viewLabel} tabIndex={copy > 0 ? -1 : undefined} />}
+        {!isMarqueeVideo(c) && (c.view || c.viewLabel) && <ViewLink href={c.view} label={c.viewLabel} tabIndex={copy > 0 ? -1 : undefined} />}
         {!isMarqueeVideo(c) && c.button && (
           <p className="pill-btn__wrap is-center marquee__btn">
             {c.button.href ? (
@@ -475,16 +477,45 @@ function youtubeId(v?: string) {
 }
 
 /** Video YouTube: ảnh bìa + nút phát, bấm mới tải trình phát. width (đơn vị thiết kế) bỏ trống = rộng 100% ô chứa. */
-function Video({ video, width, ctx, onPlay }: { video: VideoRef; width?: number; ctx: Ctx; onPlay?: () => void }) {
+function Video({ video, width, ctx, onPlay, onStop }: { video: VideoRef; width?: number; ctx: Ctx; onPlay?: () => void; onStop?: () => void }) {
   const b = { video };
   const id = youtubeId(video.youtube);
   const [playing, setPlaying] = useState(false);
+  const frame = useRef<HTMLIFrameElement>(null);
+  // Có onStop (video trong dải ảnh chạy): bật API trình phát YouTube để biết khi video tạm dừng / kết thúc.
+  const track = !!onStop;
+  const cb = useRef({ onPlay, onStop });
+  cb.current = { onPlay, onStop };
+  useEffect(() => {
+    if (!track || !playing) return;
+    const onMsg = (e: MessageEvent) => {
+      if (e.source !== frame.current?.contentWindow || typeof e.data !== 'string') return;
+      let d: { event?: string; info?: unknown };
+      try {
+        d = JSON.parse(e.data);
+      } catch {
+        return;
+      }
+      const state =
+        d.event === 'onStateChange' ? d.info : d.event === 'infoDelivery' ? (d.info as { playerState?: number } | null)?.playerState : undefined;
+      if (state === 1) cb.current.onPlay?.(); // đang phát
+      else if (state === 0 || state === 2 || state === 5) cb.current.onStop?.(); // kết thúc / tạm dừng / dừng hẳn
+    };
+    window.addEventListener('message', onMsg);
+    return () => {
+      window.removeEventListener('message', onMsg);
+      cb.current.onStop?.(); // video bị gỡ (thẻ đóng) → băng không kẹt ở trạng thái dừng
+    };
+  }, [track, playing]);
+  const listen = () => frame.current?.contentWindow?.postMessage(JSON.stringify({ event: 'listening', id: 1 }), '*');
   return (
     <div className="video" style={width ? { width: u(width) } : undefined}>
       {playing && id ? (
         <iframe
+          ref={frame}
           className="video__frame"
-          src={`https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0`}
+          src={`https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0${track ? `&enablejsapi=1&origin=${encodeURIComponent(location.origin)}` : ''}`}
+          onLoad={track ? listen : undefined}
           title={b.video.alt}
           style={{ aspectRatio: imageEntry(b.video.poster)?.aspect }}
           allow="autoplay; encrypted-media; picture-in-picture; fullscreen"

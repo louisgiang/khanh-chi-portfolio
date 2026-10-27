@@ -558,10 +558,15 @@
 .item.is-open .marquee__track {
   animation-play-state: running;
 }
-.item.is-open .marquee:hover .marquee__track,
-.item.is-open .marquee:focus-within .marquee__track,
+/* Dừng khi video trong dải đang phát; rê chuột chỉ dừng trên thiết bị có chuột.
+   (Không dừng theo focus: bấm "[View here]" mở tab mới, link giữ focus → quay lại trang dải bị đơ.) */
 .item.is-open .marquee.is-playing .marquee__track {
   animation-play-state: paused;
+}
+@media (hover: hover) {
+  .item.is-open .marquee:hover .marquee__track {
+    animation-play-state: paused;
+  }
 }
 /* Chú thích dưới video trong băng ảnh: chữ thường, không khung */
 .marquee__note {

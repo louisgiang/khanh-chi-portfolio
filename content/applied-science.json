@@ -191,7 +191,7 @@
           "marquee": [
             { "image": "applied-science/internship-1", "alt": "Khánh Chi mặc áo blouse dùng pipet trong phòng thí nghiệm", "draft": true, "viewLabel": "FTIR Analysis of HAp-PANi Composite Report", "view": "https://drive.google.com/file/d/1OZY34QlfvbtxTpRNWeCB-44AlPgieZAn/view?usp=sharing" },
             { "image": "applied-science/internship-2", "alt": "Khánh Chi nhỏ dung dịch vào bình cầu chứa chất lỏng xanh", "draft": true, "viewLabel": "Results/Discussion Report of Chitosan-Modified Rice Husk Activated Carbon", "view": "https://drive.google.com/file/d/1xi6BYpvQlV0xybVnYT0lxQ66il6QW4md/view?usp=sharing" },
-            { "image": "applied-science/internship-7", "alt": "Bột than hoạt tính màu đen trong cốc thuỷ tinh", "draft": true },
+            { "image": "applied-science/internship-7", "alt": "Bột than hoạt tính màu đen trong cốc thuỷ tinh", "draft": true, "viewLabel": "Rice-Husk Activated Carbon Sample for Ni(II) Removal" },
             { "video": { "poster": "applied-science/internship-3", "alt": "Video: Khánh Chi thực tập hè tại phòng Lab ĐHSP Hà Nội", "draft": true, "youtube": "https://www.youtube.com/embed/Zi3fMPmyXrU" }, "note": "Stepping into the chemistry lab at HNUE, I was filled with anticipation and curiosity. The air buzzed with the promise of discovery, and I was eager to immerse myself in the world where science meets untreated water." }
           ]
         },
