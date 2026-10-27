@@ -68,16 +68,14 @@
         },
         {
           "mt": 20,
-          "width": 860,
-          "center": true,
-          "image": "my-little-village/summer-stanford-1",
-          "alt": "Thư trúng tuyển Stanford Pre-Collegiate Summer Institutes 2025, khoá Environmental Solutions",
-          "draft": true
-        },
-        {
-          "mt": 20,
-          "gap": 15,
-          "row": [
+          "height": 380,
+          "gap": 14,
+          "marquee": [
+            {
+              "image": "my-little-village/summer-stanford-1",
+              "alt": "Thư trúng tuyển Stanford Pre-Collegiate Summer Institutes 2025, khoá Environmental Solutions",
+              "draft": true
+            },
             {
               "image": "my-little-village/summer-stanford-2",
               "alt": "Slide nhóm: Wetlands turn nitrate into harmless nitrogen gas",
@@ -86,6 +84,11 @@
             {
               "image": "my-little-village/summer-stanford-3",
               "alt": "Ảnh chụp màn hình lớp học trực tuyến Stanford với các bạn học",
+              "draft": true
+            },
+            {
+              "image": "my-little-village/summer-stanford-4",
+              "alt": "Thầy Jim Doherty, Ph.D., giảng viên Stanford Online High School, trong buổi học trực tuyến",
               "draft": true
             }
           ]

@@ -7240,6 +7240,42 @@
       }
     ]
   },
+  "my-little-village/summer-stanford-4": {
+    "width": 930,
+    "height": 478,
+    "aspect": 1.9456,
+    "alpha": false,
+    "color": "#786858",
+    "placeholder": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAADQAwCdASoUAAoAPu1iqk2ppaQiMAgBMB2JaACdMoRwABbrthwl6FgA/j4eWp2JyXE3SjgBv3QNIcJlo/LYQpFSaeowAn9ySedgrpmwTRFOoXIR7YV2Gd034/64txanhTodegAA",
+    "widths": [
+      480,
+      800
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/my-little-village/summer-stanford-4-480.avif",
+        "bytes": 11297
+      },
+      {
+        "w": 800,
+        "src": "/img/my-little-village/summer-stanford-4-800.avif",
+        "bytes": 18841
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/my-little-village/summer-stanford-4-480.webp",
+        "bytes": 12406
+      },
+      {
+        "w": 800,
+        "src": "/img/my-little-village/summer-stanford-4-800.webp",
+        "bytes": 21250
+      }
+    ]
+  },
   "my-little-village/yfc-1": {
     "width": 1036,
     "height": 632,
