@@ -76,7 +76,7 @@ export default function Home() {
           </h1>
           <p className="home__name">Khanh Chi</p>
           <p className="home__tagline">
-            {/* Ngắt dòng ngắn để chữ cỡ 70 không chạm buồm thuyền Applied Science */}
+            {/* Ngắt dòng ngắn để chữ không chạm buồm thuyền Applied Science */}
             /a discoverer by curiosity,
             <br />
             a water healer with care,

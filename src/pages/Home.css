@@ -98,9 +98,17 @@
   left: calc(var(--u) * 95.5);
   top: calc(var(--u) * 608);
   font-weight: 400;
-  font-size: calc(var(--u) * 70);
-  line-height: calc(var(--u) * 84);
+  font-size: calc(var(--u) * 78);
+  line-height: calc(var(--u) * 94);
   color: #f4ffd2;
+}
+/* Màn hình ngang khác 16:9 (vd. 1440×900): ảnh bị cắt 2 bên, khối chữ bị đẩy vào trong → cỡ 78 sẽ chạm buồm
+   thuyền Applied Science. Co cỡ chữ theo phần ảnh còn thấy (--fit); màn hình 16:9 vẫn đúng cỡ 78. */
+@media (min-aspect-ratio: 1/1) {
+  .home__tagline {
+    font-size: min(calc(var(--u) * 78), calc(var(--fit) / 3840 * 78));
+    line-height: min(calc(var(--u) * 94), calc(var(--fit) / 3840 * 94));
+  }
 }
 
 /* Màn hình dọc (điện thoại): ảnh ngang phủ chiều cao màn hình, vuốt ngang để xem hết 5 thuyền.
