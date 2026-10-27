@@ -8283,6 +8283,56 @@
       }
     ]
   },
+  "stage-and-screen/cec-oscar-2025-video": {
+    "width": 480,
+    "height": 270,
+    "aspect": 1.7778,
+    "alpha": false,
+    "color": "#080808",
+    "placeholder": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAADQAwCdASoUAAsAPu1iqU2ppaQiMAgBMB2JYwDA3B4YNEKCU6GoDmAA/vQyo/Y8aGZAjcxge1981iKYvl38RyWckQ2cMug5e+wFam1n59FLIJ2K5AAa95fwbxZyJM1onAA=",
+    "widths": [
+      480
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/stage-and-screen/cec-oscar-2025-video-480.avif",
+        "bytes": 12039
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/stage-and-screen/cec-oscar-2025-video-480.webp",
+        "bytes": 11732
+      }
+    ]
+  },
+  "stage-and-screen/cec-oscar-2026-video": {
+    "width": 480,
+    "height": 270,
+    "aspect": 1.7778,
+    "alpha": false,
+    "color": "#080808",
+    "placeholder": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAADQAwCdASoUAAsAPu1iqU2ppaQiMAgBMB2JYwDA3B4YNEKCU6GoDmAA/vQyo/Y8aGZAjcxge1981iKYvl38RyWckQ2cMug5e+wFam1n59FLIJ2K5BYUWISAN30AKRpIBSgAAA==",
+    "widths": [
+      480
+    ],
+    "avif": [
+      {
+        "w": 480,
+        "src": "/img/stage-and-screen/cec-oscar-2026-video-480.avif",
+        "bytes": 12322
+      }
+    ],
+    "webp": [
+      {
+        "w": 480,
+        "src": "/img/stage-and-screen/cec-oscar-2026-video-480.webp",
+        "bytes": 12030
+      }
+    ]
+  },
   "stage-and-screen/colors-1": {
     "width": 1033,
     "height": 631,

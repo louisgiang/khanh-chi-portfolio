@@ -29,10 +29,18 @@
         },
         {
           "mt": 25,
-          "button": {
-            "text": "[CEC OSCAR 2025] →",
-            "href": "https://www.youtube.com/watch?v=QU1Gas7Bfh4"
-          }
+          "video": {
+            "poster": "stage-and-screen/cec-oscar-2025-video",
+            "alt": "Video: phim ngắn Glitched – CEC Oscar 2025",
+            "draft": true,
+            "youtube": "https://www.youtube.com/embed/QU1Gas7Bfh4"
+          },
+          "width": 637
+        },
+        {
+          "mt": 16,
+          "variant": "caption",
+          "text": "[CEC OSCAR 2025] →"
         },
         {
           "mt": 26,
@@ -47,10 +55,18 @@
         },
         {
           "mt": 22,
-          "button": {
-            "text": "[CEC OSCAR 2026 - CEC'S ACTING MONTHS 2025] →",
-            "href": "https://www.youtube.com/watch?v=o16ha_WI_dI"
-          }
+          "video": {
+            "poster": "stage-and-screen/cec-oscar-2026-video",
+            "alt": "Video: phim ngắn Half-time – CEC Oscar 2026, CEC's Acting Months 2025",
+            "draft": true,
+            "youtube": "https://www.youtube.com/embed/o16ha_WI_dI"
+          },
+          "width": 637
+        },
+        {
+          "mt": 16,
+          "variant": "caption",
+          "text": "[CEC OSCAR 2026 - CEC'S ACTING MONTHS 2025] →"
         },
         {
           "mt": 26,
